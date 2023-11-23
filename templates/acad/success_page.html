@@ -1,0 +1,30 @@
+{% extends 'base_user.html' %}
+{% block title %}Success Page{% endblock %}
+
+{% load static %}
+{% block head_extra %}
+<link rel="stylesheet" href="{% static 'css/success_page.css' %}">
+{% endblock head_extra %}
+
+
+{% block content %}
+
+<p>You have Saved your Grades</p>
+ 
+    <h3>Course:{{ course }}, Year Level:{{year_level}}</h3><br>
+    <br><br>
+<div class="container">
+<div class="row">
+    <div class="column1">
+        <img src="{% static 'images/com.png' %}" alt="Girl Image">
+    </div>
+<div class="column2">
+    <a href="{% url 'test_home' %}" class="submit-button" id="submit-button"><b>Test Home</b></a>
+    <a href="{% url 'start_test' %}" class="submit-button" id="submit-button"><b>Take Test</b></a>
+
+</div>
+
+
+
+</div>
+{% endblock content %}
