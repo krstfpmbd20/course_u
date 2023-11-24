@@ -22,13 +22,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         {% endif %}
-        <section class="copy">
+        <section class="copy" style="margin-top:120px;">
             <h2> Sign In to Course U </h2>
-            <div class="login-container">
-                <p>Already have an account? <a href="{% url 'login_user' %}">
-                    <strong>Log In</strong>
-                </a></p>
-            </div>
+            
         </section>
         {{ form.as_p}}
         <div class="input-container cta">
@@ -39,14 +35,20 @@
             </label>
         </div>
         <button class="signup-btn" type="submit"> Sign Up </button>
-        <section class="copy legal">
-            <p> <span class="small"> By continuing, you agree to accept our <br> <a href="#"> Privacy Policy </a> &amp; <a href="#"> Terms of Service</a>.</span></p>
-        </section>
+        <div class="login-container" style="margin-bottom:100px;">
+            <p>Already have an account? <a href="{% url 'login_user' %}">
+                <strong>Log In</strong>
+            </a></p>
+        </div>
+       
         
         </form>
         </div>
         <div class="side">
             <img src="{% static 'images/signup.jpg' %}">
+            <section class="copy legal">
+                <p> <span class="small"> By continuing, you agree to accept our <br> <a href="#"> Privacy Policy </a> &amp; <a href="#"> Terms of Service</a>.</span></p>
+            </section>
         </div>
     </div>
 {% endblock content %}

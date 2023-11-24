@@ -55,32 +55,38 @@
         border-top: 2px solid rgba(255, 255, 255, 0.1);
         
         width:100%:
-        
-    }
-    .side_menu_section>ul>li>a:hover{
-        color:black;
     }
     .side_menu_section>ul>li>a{
         text-decoration:none;
         color:white;
-        cursor:pointer;
     }
 </style>
 <div class="main_section" >
     <div class="dp_section">
         <h2>Welcome User!</h3>
         <p>
-            {{ user.first_name}} {{ user.last_name}}
+            Engr Umair
         </p>
         {% if user.is_authenticated %}
         <div id="dp_img">
-            {% if user.userprofile.profile_picture %}
-                <img src="{{ user.userprofile.profile_picture.url }}" alt="">
-                <a href="/remove_profile_picture" style="font-size:12px;">Remove Profile Picture</a>
-            {% else %}
+            
             <img src="{% static 'images/no-profile-pic.png' %}" alt="">
-                <p style="font-size:12px;">No profile picture available.<a href="/upload_profile_pic">Upload Now</a>.</p>
-            {% endif %}
+            <form action="/upload_profile_pic/" method="post" enctype="multipart/form-data">
+                <!-- CSRF token for security -->
+                {% csrf_token %}
+            
+                <!-- Input field for selecting an image file -->
+                <label for="profile_picture">Choose a picture:</label>
+                
+                <input type="file" id="profile_picture" name="profile_picture" accept="image/*">
+            
+                <!-- Submit button -->
+                
+                <button type="submit" style="margin-top:8px;">Upload</button>
+              </form>
+            
+            {% comment %} <p style="font-size:12px;">No profile picture available.<a href="">Upload Now</a>.</p> {% endcomment %}
+            
         </div>
         {% else %}
             <div id="dp_img">

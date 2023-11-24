@@ -8,7 +8,6 @@
 
 
 {% block head_extra %}
-<link rel="stylesheet" href="{% static 'css/recommendation_jobs.css' %}">
 
 {% endblock head_extra %}
 
@@ -16,7 +15,7 @@
 
 <p><a href="">recommendation</a>/<a href="">{{ field.field_name}}</a>/jobs</p>
 <br>
-<h3>Jobs for <b>{{ field.field_name}}</b></h3>
+<h2>Jobs for <b>{{ field.field_name}}</b></h2>
 <p>Explore more about the possible jobs in this Field</p>
 <br>
 {% for job in jobs %}

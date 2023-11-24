@@ -1,0 +1,71 @@
+{% extends 'base_user.html' %}
+
+{% block title %}Settings{% endblock %}
+{% load static %}
+{% block head_extra %}
+<link rel="stylesheet" href="{% static 'css/user_profile.css' %}">
+{% endblock head_extra %}
+
+{% block content %}
+<style>
+    .reset-password-form {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin-bottom: 8px;
+        color: #555;
+    }
+    
+    input {
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+<div class="reset-password-form">
+    <h2>Password Reset</h2>
+
+    <form action="/settings/" method="post">{% csrf_token %}
+        <!-- New Password -->
+        <label for="new-password">New Password:</label>
+        <input type="password" id="new-password" name="new_password" required>
+        <br>
+
+        <!-- Confirm New Password -->
+        <label for="confirm-password">Confirm New Password:</label>
+        <input type="password" id="confirm-password" name="confirm_password" required>
+        <br>
+
+        <input type="submit" value="Reset Password">
+    </form>
+</div>
+
+
+{% endblock content %}

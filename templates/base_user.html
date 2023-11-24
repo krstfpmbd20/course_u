@@ -18,6 +18,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+        <!-- Font Awesome -->
+        {% block css %}{% endblock css %}
+
 
 
 
@@ -25,7 +28,27 @@
 
 
     {% endblock head_extra %}
+    <style>
+        .message {
+            padding: 17px;
+            
+            border-radius: 15px;
+            width:350px;
+            margin:auto;
+            margin-bottom: 10px;
+            text-align:center;
+        }
 
+        .success {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        .error {
+            background-color: #f44336;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,33 +57,39 @@
         {% include 'navbar_2.html' %}
 
         <!-- main -->
-
+        
         <div class="main">
-            <div class="topbar">
+             <div class="topbar">
                 <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </div>
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
                 <!-- header/Search -->
-
+            {% if user.is_authenticated %}
                 <!-- user -->
                 <div class="user">
-                    <p>Welcome, <a href="">username</a></p>
-                    <a href="">Logout</a>
+                    <p>Welcome! {{ user.username }}.</p>
+                    
                 </div>
+                {% endif %}
                 <div class="user_profile">
-                    <img src="" alt="User DP">
+                    {% if profile_picture_url != None %}
+                    <img src="{{ profile_picture_url }}" alt="User DP">
+                    {% else %}
+                    <img src="{% static 'images/no-profile-pic.png' %}" alt="Dp">
+                    {% endif %}
                 </div>
             </div>
 
             <!-- content -->
             <div class="content">
 
-                {% if messages %}{% for message in messages %}
-                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    {{ message }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-                {% endfor %}{% endif %}
+                {% if messages %}
+                {% for message in messages %}
+                    <div class="message {% if message.tags == 'error' %}error{% elif message.tags == 'success' %}success{% endif %}" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
 
 
                 {% if user.is_authenticated %}
@@ -91,6 +120,11 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- MDB -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.js"
+    ></script>
     <script>
         // Menu Toggle
         let toggle = document.querySelector('.toggle');
@@ -113,10 +147,13 @@
         item.addEventListener('mouseover', activeLink));
     </script>
     <script>
-        window.setTimeout(function () {
-            $(".alert").fadeTo(500, 0).slideUp(500, function () {
-                $(this).remove();
-            });
-        }, 5000);
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                var messages = document.querySelectorAll('.message');
+                messages.forEach(function (message) {
+                    message.style.display = 'none';
+                });
+            }, 3000);
+        });
     </script>
 </body>

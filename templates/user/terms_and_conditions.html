@@ -9,14 +9,50 @@
 
 {% block head_extra %}
 <link rel="stylesheet" href="{% static 'css/terms_and_conditions.css' %}">
-
+<style>
+    section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
 {% endblock head_extra %}
 
 {% block content %}
 
-<div>
+<header>
+    <h1>Terms and Conditions</h1>
+</header>
 
+<section>
+    <h2>Storage, Backup and Recovery Procedure</h2>
+    <p>
+        The CCIS Faculty and Researchers will utilize Cloud Storage Tools such as Google Drive and online repositories such as Github for Storage, Backup, and Recovery Procedures.
+    </p>
+</section>
 
-</div>
+<section>
+    <h2>Security Procedures</h2>
+    <p>
+        Securing the data of the students is very vital since it contains sensitive information that should be protected by the system to maintain the integrity and availability of the data. To ensure the security of all the CCIS students in PUP, there should be a backup for data in any case that there's an unexpected circumstance. Only authorized personnel, including faculty, professors, and administrators, will manage the data.
+    </p>
+</section>
+
+<section>
+    <h2>Policies and Procedures</h2>
+    <p>
+        CCIS will furnish the policies and guidelines after the website is implemented on campus. This will encompass details such as the assessment date, instructions for responding to and reviewing the examination, and the process of categorizing students into different tracks based on their assessment results.
+    </p>
+</section>
+
 
 {% endblock content %}

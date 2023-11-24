@@ -1,4 +1,4 @@
-
+{% comment %} 
 <div class="details">
     <!-- accoutns table -->
     <div class="accounts">
@@ -32,7 +32,7 @@
         <table class="table table-sm">
             {% for user in auth_user %}
             <tr>
-                <td width="60px"><div class="imgBx"><img src="" alt=""></div></td>
+                <td width="60px"><div class="imgBx"><img src="{{user.userprofile.profile_picture.url}}" alt=""></div></td>
                 <td><h4>{{ user.first_name }}<br><span>{{ user.last_name }}</span></h4></td>
             </tr>
             {% endfor %}
@@ -112,4 +112,63 @@
 <div class="col-md-6">
     
 </div>
+</div> {% endcomment %}
+<style>
+    table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .user-image {
+        max-width: 50px; /* Adjust the maximum width of the user image */
+        max-height: 50px; /* Adjust the maximum height of the user image */
+    }
+</style>
+
+<div style="padding:15px;">
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date Joined</th>
+            <th>Profile Picture</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in all_users %}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td><a href="/reports/{{user.id}}/">{{ user.username }}</a></td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.first_name }}</td>
+            <td>{{ user.last_name }}</td>
+            <td>{{ user.date_joined }}</td>
+            <td>
+                {% if user.userprofile.profile_picture %}
+                    <img src="{{ user.userprofile.profile_picture.url }}" alt="{{ user.username }} Image" class="user-image">
+                {% else %}
+                    No Image
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
 </div>
