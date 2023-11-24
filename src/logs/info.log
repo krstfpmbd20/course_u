@@ -1,0 +1,2 @@
+INFO 2023-11-24 16:16:11,981 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-24 16:17:16,450 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader

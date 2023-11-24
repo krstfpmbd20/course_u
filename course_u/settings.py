@@ -89,14 +89,14 @@ WSGI_APPLICATION = 'course_u.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'courseu_db',
-        'USER': 'root',
-        'PASSWORD': 'sql2023',#'022002',sawadeeKA456', #'022002'
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.environ["PGDATABASE"],
+        'USER': os.environ["PGUSER"],
+        'PASSWORD': os.environ["PGPASSWORD"],
+        'HOST': os.environ["PGHOST"],
+        'PORT': os.environ["PGPORT"],
     }
-} 
+}
 
 
 # Password validation
