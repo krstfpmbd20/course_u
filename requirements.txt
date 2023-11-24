@@ -19,6 +19,6 @@ tenacity
 threadpoolctl
 typing_extensions
 tzdata
-postgresql
+psycopg2
 pillow
 
