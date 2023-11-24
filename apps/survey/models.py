@@ -1,6 +1,13 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 class Survey(models.Model):
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='surveys',
+        verbose_name='User',
+        default = 1
+    )
     q1 = models.CharField(
         max_length=100,
         choices=[('IT', 'Information Technology'), ('CS', 'Computer Science')],

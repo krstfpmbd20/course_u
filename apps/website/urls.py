@@ -44,6 +44,12 @@ urlpatterns = [
     #for grade levl
    # path ('', views.grade_level, name='grade_level'),
 
+
+   #########################################Work By Engr Umair####################################
+   path("upload_profile_pic/",views.upload_profile_pic, name="uploadprofilepic"),
+   path("remove_profile_picture/", views.remove_profile_picture, name="removeprofilepicture"),
+   path("reports/<int:id>/", views.reports, name="reports"),
+
 ]
 
 

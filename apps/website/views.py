@@ -6,10 +6,11 @@ from django.contrib.auth.views import LogoutView
 from django.contrib.sessions.models import Session
 from django.contrib import messages
 from django.urls import reverse
-from django.http import HttpResponse 
-from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.db.models import Count
+from django.contrib.auth import update_session_auth_hash
 
 #from website.utils import *
 from apps.website.forms import SignUpForm, StudentScoreForm
@@ -20,11 +21,12 @@ from apps.assessment.models import Test, QuestionSet
 from apps.jobs.models import JobPosting
 
 from utilities.decorators import unauthenticated_user, allowed_users, admin_only
-
+from .models import *
 # Other Imports
 import json
 import logging
 import plotly.express as px
+from apps.survey.models import Survey
 
 #logger = logging.getLogger(__name__)
 logger = logging.getLogger("django") # name of logger : django
@@ -65,8 +67,6 @@ def home(request):
     # Filter out the recommended fields from the field_items queryset
     field_items = field_items.exclude(pk__in=recommended_field_ids)
 
-    
-        
 
     return render(request, 'home.html', {
         'specialization_items': specialization_items, 
@@ -126,35 +126,38 @@ def home_field(request, field_id=None):
 def admin_home(request):
     admin = True
 
-    # Get a list of fields
-    fields = Field.objects.all()
+    # # Get a list of fields
+    # fields = Field.objects.all()
 
-    # Query to count tests for each field
-    field_test_counts = Test.objects.values('field').annotate(test_count=Count('field'))
+    # # Query to count tests for each field
+    # field_test_counts = Test.objects.values('field').annotate(test_count=Count('field'))
 
-    # Create a dictionary to store the field names and their corresponding test counts
-    field_test_count_dict = {}
-    for field_data in field_test_counts:
-        field_id = field_data['field']
-        test_count = field_data['test_count']
-        field_name = Field.objects.get(field=field_id).field_name  # Get the field name
-        field_test_count_dict[field_name] = test_count
+    # # Create a dictionary to store the field names and their corresponding test counts
+    # field_test_count_dict = {}
+    # for field_data in field_test_counts:
+    #     field_id = field_data['field']
+    #     test_count = field_data['test_count']
+    #     field_name = Field.objects.get(field=field_id).field_name  # Get the field name
+    #     field_test_count_dict[field_name] = test_count
 
-    # Get other counts
-    auth_user = User.objects.all()
-    JobPosting_count = JobPosting.objects.all().count()
-    Specialization_count = Specialization.objects.all().count()
-    QuestionSet_count = QuestionSet.objects.all().count()
+    # # Get other counts
+    # auth_user = User.objects.all()
+    # JobPosting_count = JobPosting.objects.all().count()
+    # Specialization_count = Specialization.objects.all().count()
+    # QuestionSet_count = QuestionSet.objects.all().count()
 
-    return render(request, 'admin_home.html', {
-        'admin': admin,
-        'field_test_count_dict': field_test_count_dict,
-        'auth_user': auth_user,
-        'JobPosting_count': JobPosting_count,
-        'Specialization_count': Specialization_count,
-        'QuestionSet_count': QuestionSet_count,
-        'fields': fields,  # Pass the list of fields
-    })
+    # return render(request, 'admin_home.html', {
+    #     'admin': admin,
+    #     'field_test_count_dict': field_test_count_dict,
+    #     'auth_user': auth_user,
+    #     'JobPosting_count': JobPosting_count,
+    #     'Specialization_count': Specialization_count,
+    #     'QuestionSet_count': QuestionSet_count,
+    #     'fields': fields,  # Pass the list of fields
+    # })
+    all_users = User.objects.all()
+    return render(request, 'admin_home.html', {'all_users': all_users})
+    
 
 @admin_only # only admin can access this page # if admin only, then no need to add @login_required it will be redundant
 def admin_students(request):
@@ -235,10 +238,26 @@ def user_profile(request):
 
 @login_required(login_url='login_user')
 def edit_profile(request):
+    
     user = request.user
-    # Query additional user profile data if using a custom user profile model
-    context = {'user': user}
-    return render(request, 'user/user_profile.html', context)
+    print(user.username,user.first_name,user.last_name,user.email)
+    if request.method == 'POST':
+        # Retrieve form inputs
+        username = request.POST.get('username')
+        first_name = request.POST.get('firstname')
+        last_name = request.POST.get('lastname')
+        email = request.POST.get('email')
+
+        # Update the user's profile
+        user.username = username
+        user.first_name = first_name
+        user.last_name = last_name
+        user.email = email
+        user.save()
+
+        return redirect('user_profile')
+    
+    return render(request, 'user/edit_profile.html')
 
 @login_required(login_url='login_user')
 def terms_and_conditions(request):
@@ -250,9 +269,28 @@ def terms_and_conditions(request):
 @login_required(login_url='login_user')
 def settings(request):
     user = request.user
-    # Query additional user profile data if using a custom user profile model
-    context = {'user': user}
-    return render(request, 'user/user_profile.html', context)
+    if request.method == 'POST':
+        
+        new_password1 = request.POST.get('new_password')
+        new_password2 = request.POST.get('confirm_password')
+
+
+        # Check if new passwords match
+        if new_password1 != new_password2:
+            messages.error(request, 'New passwords do not match. Please try again.')
+            return redirect('change_password')
+
+        # Update the user's password
+        request.user.set_password(new_password1)
+        request.user.save()
+
+        # Update the user's session to avoid logging out after a password change
+        update_session_auth_hash(request, request.user)
+
+        messages.success(request, 'Your password was successfully updated!')
+        return redirect('user_profile')
+    
+    return render(request, 'user/settings.html')
 
 class CustomLogoutView(LogoutView):
     template_name = 'user/custom_logout.html'  # Optionally, specify a custom logout template
@@ -324,3 +362,25 @@ def field_page(request, field_id=None):
     test_items = Test.objects.filter(field=field_id)
     
     return render(request, 'field.html', {'field_object' : field_object, 'specialization_items': specialization_items, 'test_items': test_items})
+
+
+
+###########################################Engr Umair Worked ##################################
+def upload_profile_pic(request):
+    if request.method == "POST":
+        profile_picture = request.FILES.get('profile_picture')
+        obj = UserProfile(user=request.user,profile_picture=profile_picture)
+        obj.save()
+        return redirect("user_profile")
+    return render(request,"user/upload.html")
+def remove_profile_picture(request):
+    obj = UserProfile.objects.get(user=request.user)
+    
+    obj.delete()
+    return redirect("user_profile")
+def reports(request,id):
+    surveys = Survey.objects.filter(user=id)
+    s_count = surveys.count()
+    context = {'surveys': surveys,'s_count' : s_count} 
+    return render(request, 'reports.html', context)
+    

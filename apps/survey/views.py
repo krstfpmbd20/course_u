@@ -5,7 +5,7 @@ def survey(request):
     if request.method == 'POST':
         form = SurveyForm(request.POST)
         if form.is_valid():
-            form.save()
+            form.save(user=request.user)
             return redirect('thank_you')
     else:
         form = SurveyForm()
