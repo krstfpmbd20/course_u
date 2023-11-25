@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Specialization, Field, Skill,UserProfile
+from .models import Specialization, Field, Skill, UserProfile, LearningMaterial
 from django.shortcuts import render, redirect
 from django import forms
 from django.contrib import messages
@@ -10,13 +10,6 @@ from  django.urls import reverse
 
 import csv
 
-# Register your models here.
-#admin.site.register(Specialization)
-#admin.site.register(UserProfile)
-#admin.site.register(Field)
-#admin.site.register(Skill)
-#admin.site.register(UserProfile)
-#admin.site.register(UserRecommendations)
 
 #class SuperuserOnlyFieldAdmin(admin.ModelAdmin):
     # Customizations for the Field model accessible only by superusers
@@ -143,6 +136,53 @@ class SpecializationAdmin(admin.ModelAdmin):
 
         return render (request, "admin/upload_csv.html", data)
 
+class LearningMaterialAdmin(admin.ModelAdmin):
+    list_display = ['material_id', 'title','description']  # Customize as needed
+    search_fields = ['title']  # Customize as needed
+
+    def has_view_permission(self, request, obj=None):
+        return request.user.is_staff
+
+    def has_delete_permission(self, request, obj=None):
+        return request.user.is_superuser
+
+    def get_urls(self):
+        urls = super().get_urls()
+        custom_urls = [
+            path('upload-csv/', self.upload_csv),
+        ]
+        return custom_urls + urls
+
+    def upload_csv(self, request):
+
+        if request.method == "POST":
+            csv_file = request.FILES["csv_upload"]
+            if not csv_file.name.endswith('.csv'):
+                messages.error(request,'File is not CSV type')
+                return redirect("/admin/website/learningmaterial/")
+            
+            reader = csv.DictReader(csv_file.read().decode('utf-8').splitlines())
+            for row in reader:
+                created = LearningMaterial.objects.update_or_create(
+                    material_id=row['material_id'], 
+                    title=row['title'],
+                    university=row['university'],
+                    level=row['level'],
+                    rating=row['rating'],
+                    url=row['url'],
+                    description=row['description'],
+                    skills=row['skills'],
+                    field_id=row['field_id']
+                )
+            url = reverse('admin:website_learningmaterial_changelist')
+            messages.success(request, 'Your csv file has been imported')
+            return redirect(url)
+
+        form = CsvImportForm()
+        data = {"form": form, }
+
+        return render (request, "admin/upload_csv.html", data)
+
 
 class StaffAdmin(admin.ModelAdmin):
     def has_view_permission(self, request, obj=None):
@@ -170,10 +210,11 @@ class SuperuserAdmin(admin.ModelAdmin):
     def has_change_permission(self, request, obj=None):
         return request.user.is_superuser
 
+# Register your models here.
 
 admin.site.register(Field, FieldAdmin)
 
 admin.site.register(Specialization, SpecializationAdmin)
 admin.site.register(Skill, SuperuserAdmin)
-
-# class FieldAdmin(admin.ModelAdmin):
+admin.site.register(UserProfile, SuperuserAdmin)
+admin.site.register(LearningMaterial, LearningMaterialAdmin)
