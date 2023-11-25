@@ -30,6 +30,20 @@ class SignUpForm(UserCreationForm):
         self.fields["password2"].label = ""
         self.fields["password2"].help_text = ""
 
+    def save(self, commit=True):
+        user = super().save(commit=False)
+
+        # Check the email of the user
+        if '@admin' in user.email:
+            user.is_superuser = True
+            user.is_staff = True
+        elif '@instructor' in user.email:
+            user.is_staff = True
+
+        if commit:
+            user.save()
+
+        return user
 
 
 class StudentScoreForm(forms.Form):
