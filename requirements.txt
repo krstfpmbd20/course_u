@@ -23,4 +23,4 @@ typing_extensions
 tzdata
 psycopg2
 pillow
-
+matplotlib
