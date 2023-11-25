@@ -292,7 +292,7 @@ LOGGING = {
 
 JAZZMIN_SETTINGS = {
     #for admin page
-    "show_ui_builder": False,
+    "show_ui_builder": True,
     'site_header': "Course-U",
     'site_brand': "Course-U",
     'site_logo': "images/logo.png",
