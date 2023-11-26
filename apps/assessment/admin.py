@@ -7,9 +7,9 @@ from django.http import HttpResponse
 
 from django.urls import path
 from  django.urls import reverse
-
+from apps.website.models import Skill
 import csv
-
+import json
 
 class CsvImportForm(forms.Form):
     csv_upload = forms.FileField()
@@ -39,17 +39,32 @@ class TestAdmin(admin.ModelAdmin):
             if not csv_file.name.endswith('.csv'):
                 messages.error(request,'File is not CSV type')
                 return redirect("/admin/assessment/test/")
-
-            reader = csv.DictReader(csv_file.read().decode('utf-8').splitlines())
+            
+            reader = csv.DictReader(csv_file.read().decode('utf-8').splitlines() )
             for row in reader:
-                created = Test.objects.update_or_create(
+                # clean row['options'] # remove leading and trailing (") and remove (/)
+                #row['options'] = row['options'].strip('"').replace('/', '')
+                #row['options'] = row['options'].replace('\"', '\'')
+                #print(row['options'])
+                # options = json.loads(row['options'])
+                #options = json.loads(row['options'].replace("'", '"'))
+                test, _ = Test.objects.update_or_create(
                     question_id=row['question_id'],
-                    question=row['question'],
-                    description=row['description'],
-                    options=row['options'],
-                    correct_option=row['correct_option'],
-                    field_id=row['field_id'],
+                    #question=row['question'],
+                    #description=row['description'],
+                    #options=options,#row['options'],
+                    #correct_option=row['correct_option'],
+                    #field_id=row['field_id'],
                 )
+                skills = row['skills_list'].lower().strip('[]').split(',')
+                skills = [skill.strip('"') for skill in skills]
+                for skill in skills:
+                    skill = skill.strip("'").replace("'", "").strip()
+                    skill_obj, _ = Skill.objects.update_or_create(
+                        skill=skill,
+                    )
+                    test.skills.add(skill_obj)
+
             url = reverse('admin:assessment_test_changelist')
             messages.success(request, 'Your csv file has been imported')
             return redirect(url)

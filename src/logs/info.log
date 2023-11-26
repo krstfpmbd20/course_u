@@ -2363,3 +2363,611 @@ INFO 2023-11-26 00:24:30,037 django.server basehttp basehttp.py 212 log_message 
 INFO 2023-11-26 00:24:41,366 django.server basehttp basehttp.py 212 log_message "GET /admin/website/field/ HTTP/1.1" 200 63142
 INFO 2023-11-26 00:24:43,353 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 INFO 2023-11-26 00:25:31,576 django.server basehttp basehttp.py 212 log_message "GET /admin/website/field/upload-csv/ HTTP/1.1" 200 34420
+INFO 2023-11-26 00:42:09,103 django.server basehttp basehttp.py 212 log_message "GET /start_test/ HTTP/1.1" 302 0
+INFO 2023-11-26 00:42:11,474 django.server basehttp basehttp.py 212 log_message "GET /create_new_question_set/1/ HTTP/1.1" 302 0
+INFO 2023-11-26 00:42:22,635 django.server basehttp basehttp.py 212 log_message "GET /continue_create_new_question_set/2 HTTP/1.1" 302 0
+INFO 2023-11-26 00:42:25,481 django.server basehttp basehttp.py 212 log_message "GET /question/1/ HTTP/1.1" 200 17841
+INFO 2023-11-26 00:42:25,513 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_page.css HTTP/1.1" 200 2369
+INFO 2023-11-26 00:42:25,532 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+WARNING 2023-11-26 00:42:26,516 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-11-26 00:43:36,702 django.server basehttp basehttp.py 212 log_message "GET /admin/ HTTP/1.1" 200 93199
+INFO 2023-11-26 00:43:36,746 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:36,751 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:36,761 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootswatch/minty/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:36,775 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:36,790 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/ui-builder.js HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:36,814 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:36,826 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:36,836 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:36,920 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:36,921 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:46,203 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92139
+INFO 2023-11-26 00:43:46,237 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:46,260 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:46,261 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 00:43:48,236 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 00:44:22,319 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/90/change/ HTTP/1.1" 200 64902
+INFO 2023-11-26 00:44:22,386 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_form.js HTTP/1.1" 304 0
+INFO 2023-11-26 00:44:24,295 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 00:46:11,173 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92139
+INFO 2023-11-26 00:47:08,498 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/1/change/ HTTP/1.1" 200 64650
+INFO 2023-11-26 00:47:10,712 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 00:47:37,349 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/1/change/ HTTP/1.1" 200 64904
+INFO 2023-11-26 00:47:39,425 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 00:47:54,926 django.server basehttp basehttp.py 212 log_message "GET /admin/website/skill/add/?_to_field=id&_popup=1 HTTP/1.1" 200 16546
+INFO 2023-11-26 00:47:56,875 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 00:48:04,502 django.server basehttp basehttp.py 212 log_message "POST /admin/website/skill/add/?_to_field=id&_popup=1 HTTP/1.1" 200 9426
+INFO 2023-11-26 00:48:04,555 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/popup_response.js HTTP/1.1" 200 1946
+INFO 2023-11-26 00:48:12,157 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/1/change/ HTTP/1.1" 302 0
+INFO 2023-11-26 00:48:15,428 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92749
+INFO 2023-11-26 00:48:17,408 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 00:48:24,488 django.server basehttp basehttp.py 212 log_message "GET /question/1/ HTTP/1.1" 200 17914
+INFO 2023-11-26 00:48:24,554 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 304 0
+INFO 2023-11-26 00:51:38,058 django.server basehttp basehttp.py 212 log_message "GET /question/1/ HTTP/1.1" 200 17914
+INFO 2023-11-26 00:51:38,083 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 304 0
+INFO 2023-11-26 00:51:38,083 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_page.css HTTP/1.1" 304 0
+INFO 2023-11-26 00:51:46,347 django.server basehttp basehttp.py 212 log_message "POST /submit_question/1/ HTTP/1.1" 200 17927
+INFO 2023-11-26 00:51:56,379 django.server basehttp basehttp.py 212 log_message "GET /test_overview/3 HTTP/1.1" 200 26375
+INFO 2023-11-26 00:51:56,397 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_overview.css HTTP/1.1" 200 2332
+INFO 2023-11-26 00:56:43,864 django.server basehttp basehttp.py 212 log_message "GET /question/87/ HTTP/1.1" 200 17924
+INFO 2023-11-26 00:56:43,905 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:04:16,400 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 01:04:19,623 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 01:04:37,224 django.server basehttp basehttp.py 212 log_message "POST /submit_question/87/ HTTP/1.1" 200 17885
+INFO 2023-11-26 01:04:37,264 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:04:37,264 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_page.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:04:48,427 django.server basehttp basehttp.py 212 log_message "POST /submit_question/36/ HTTP/1.1" 200 17872
+INFO 2023-11-26 01:04:55,102 django.server basehttp basehttp.py 212 log_message "POST /submit_question/15/ HTTP/1.1" 200 17884
+INFO 2023-11-26 01:05:05,562 django.server basehttp basehttp.py 212 log_message "POST /submit_question/41/ HTTP/1.1" 200 17864
+INFO 2023-11-26 01:05:37,988 django.server basehttp basehttp.py 212 log_message "POST /submit_question/47/ HTTP/1.1" 200 17909
+INFO 2023-11-26 01:05:44,732 django.server basehttp basehttp.py 212 log_message "POST /submit_question/84/ HTTP/1.1" 200 17878
+INFO 2023-11-26 01:05:51,590 django.server basehttp basehttp.py 212 log_message "POST /submit_question/26/ HTTP/1.1" 200 17873
+INFO 2023-11-26 01:05:57,670 django.server basehttp basehttp.py 212 log_message "POST /submit_question/70/ HTTP/1.1" 200 17860
+INFO 2023-11-26 01:06:20,761 django.server basehttp basehttp.py 212 log_message "POST /submit_question/17/ HTTP/1.1" 200 17902
+INFO 2023-11-26 01:07:03,635 django.server basehttp basehttp.py 212 log_message "POST /submit_question/52/ HTTP/1.1" 200 17884
+INFO 2023-11-26 01:07:08,426 django.server basehttp basehttp.py 212 log_message "POST /submit_question/72/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:07:15,919 django.server basehttp basehttp.py 212 log_message "GET /test_overview/3 HTTP/1.1" 200 26451
+INFO 2023-11-26 01:07:15,944 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_overview.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:07:25,874 django.server basehttp basehttp.py 212 log_message "GET /submit_test/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:07:32,839 django.server basehttp basehttp.py 212 log_message "GET /test_reults/3 HTTP/1.1" 200 7228607
+INFO 2023-11-26 01:07:32,884 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_result.css HTTP/1.1" 200 1930
+INFO 2023-11-26 01:07:43,522 django.server basehttp basehttp.py 212 log_message "GET /recommendersurvey/ HTTP/1.1" 302 0
+ERROR 2023-11-26 01:07:48,792 django.request log log.py 241 log_response Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 319, in recommender
+    field_name_2 = field_names[1]
+IndexError: list index out of range
+ERROR 2023-11-26 01:07:48,882 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 500 132936
+INFO 2023-11-26 01:07:58,207 django.server basehttp basehttp.py 212 log_message "GET /test_reults/3 HTTP/1.1" 200 7228418
+INFO 2023-11-26 01:08:04,306 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 43503
+INFO 2023-11-26 01:08:04,335 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:04,347 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-1.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:21,128 django.server basehttp basehttp.py 212 log_message "GET /admin/admin_tools_stats/cachedvalue/ HTTP/1.1" 200 61220
+INFO 2023-11-26 01:08:21,161 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:21,175 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:21,177 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootswatch/minty/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:21,183 django.server basehttp basehttp.py 212 log_message "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:21,190 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:21,204 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:21,208 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:21,212 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:21,293 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:21,301 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/ui-builder.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:21,306 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:21,314 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:23,182 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:08:23,296 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:23,297 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 01:08:36,866 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/userresponse/ HTTP/1.1" 200 62298
+INFO 2023-11-26 01:08:38,820 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:08:54,542 django.server basehttp basehttp.py 212 log_message "GET /admin/website/skill/ HTTP/1.1" 200 58490
+INFO 2023-11-26 01:08:56,551 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:09:10,707 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 22735)
+INFO 2023-11-26 01:09:12,096 django.server basehttp basehttp.py 212 log_message "GET /admin/recommender/userskill/ HTTP/1.1" 200 58580
+INFO 2023-11-26 01:09:14,169 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:09:46,247 django.server basehttp basehttp.py 212 log_message "POST /admin/recommender/userskill/ HTTP/1.1" 200 56232
+INFO 2023-11-26 01:09:58,347 django.server basehttp basehttp.py 212 log_message "POST /admin/recommender/userskill/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:10:01,781 django.server basehttp basehttp.py 212 log_message "GET /admin/recommender/userskill/ HTTP/1.1" 200 56777
+INFO 2023-11-26 01:10:03,999 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:10:14,931 django.server basehttp basehttp.py 212 log_message "GET /admin/website/skill/ HTTP/1.1" 200 58490
+INFO 2023-11-26 01:10:17,003 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:10:24,873 django.server basehttp basehttp.py 212 log_message "POST /admin/website/skill/ HTTP/1.1" 200 56331
+INFO 2023-11-26 01:10:37,802 django.server basehttp basehttp.py 212 log_message "POST /admin/website/skill/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:10:40,764 django.server basehttp basehttp.py 212 log_message "GET /admin/website/skill/ HTTP/1.1" 200 56715
+INFO 2023-11-26 01:10:42,929 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:10:54,010 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 22821)
+INFO 2023-11-26 01:10:56,852 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92133
+INFO 2023-11-26 01:10:58,837 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:11:07,357 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/1/change/ HTTP/1.1" 200 64630
+INFO 2023-11-26 01:11:07,441 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_form.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:11:09,491 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:11:15,840 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92139
+INFO 2023-11-26 01:11:30,404 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/ HTTP/1.1" 200 80760
+INFO 2023-11-26 01:11:58,910 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:12:02,074 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 56808
+INFO 2023-11-26 01:12:04,132 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:13:08,009 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/upload-csv/ HTTP/1.1" 200 34422
+INFO 2023-11-26 01:15:09,340 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/upload-csv/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:15:12,831 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92638
+INFO 2023-11-26 01:15:14,858 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:15:47,219 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/90/change/ HTTP/1.1" 200 64902
+INFO 2023-11-26 01:15:49,232 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:16:38,102 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/90/change/ HTTP/1.1" 200 65176
+INFO 2023-11-26 01:16:38,142 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:16:38,159 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:16:38,162 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootswatch/minty/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:16:38,179 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:16:38,181 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:16:38,186 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:16:38,204 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:16:38,218 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/ui-builder.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:16:38,227 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:16:38,229 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:16:40,135 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:16:47,943 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92139
+INFO 2023-11-26 01:16:47,975 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:16:49,924 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:16:57,144 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/86/change/ HTTP/1.1" 200 64855
+INFO 2023-11-26 01:16:59,152 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:17:28,734 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 01:17:32,320 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 01:17:41,609 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 01:17:46,111 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 01:18:00,828 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92139
+INFO 2023-11-26 01:18:02,969 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:18:03,417 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 01:18:03,669 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 01:18:26,858 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/ HTTP/1.1" 200 79262
+INFO 2023-11-26 01:18:52,990 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:18:56,177 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 56808
+INFO 2023-11-26 01:18:58,228 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:19:49,062 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/upload-csv/ HTTP/1.1" 200 34422
+INFO 2023-11-26 01:22:19,386 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 01:22:22,579 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 01:24:25,432 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/upload-csv/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:24:29,011 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92638
+INFO 2023-11-26 01:24:31,027 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:25:05,449 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/90/change/ HTTP/1.1" 200 64902
+INFO 2023-11-26 01:25:05,542 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_form.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:25:07,458 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:28:07,684 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 01:28:10,488 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 01:28:43,222 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 01:28:47,285 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 01:29:16,316 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92139
+INFO 2023-11-26 01:29:16,395 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:29:16,396 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:29:16,401 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootswatch/minty/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:29:16,415 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:29:16,443 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:29:16,473 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:29:16,475 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:29:16,584 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:29:16,586 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/ui-builder.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:29:16,614 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:29:16,646 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:29:18,793 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:29:32,637 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/ HTTP/1.1" 200 79262
+INFO 2023-11-26 01:30:09,752 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:30:12,925 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 56808
+INFO 2023-11-26 01:30:15,037 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:30:39,979 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 01:30:43,826 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 01:30:55,730 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/upload-csv/ HTTP/1.1" 200 34422
+INFO 2023-11-26 01:32:54,716 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/upload-csv/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:32:58,123 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92638
+INFO 2023-11-26 01:33:00,275 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:33:51,948 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/90/change/ HTTP/1.1" 200 64882
+INFO 2023-11-26 01:33:54,042 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:34:01,913 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18129
+INFO 2023-11-26 01:34:01,966 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:01,990 django.server basehttp basehttp.py 212 log_message "GET /static/images/boom.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:02,003 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:02,042 django.server basehttp basehttp.py 212 log_message "GET /static/images/character.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:02,106 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:02,127 django.server basehttp basehttp.py 212 log_message "GET /static/images/light.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:02,149 django.server basehttp basehttp.py 212 log_message "GET /static/images/result.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:06,142 django.server basehttp basehttp.py 212 log_message "GET /start_test/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:34:08,673 django.server basehttp basehttp.py 212 log_message "GET /create_new_question_set/3/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:34:10,732 django.server basehttp basehttp.py 212 log_message "GET /check_school_year/ HTTP/1.1" 200 17440
+INFO 2023-11-26 01:34:10,776 django.server basehttp basehttp.py 212 log_message "GET /static/css/check_school_year.css HTTP/1.1" 200 2674
+INFO 2023-11-26 01:34:14,442 django.server basehttp basehttp.py 212 log_message "GET /check_school_year_choice/yes/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:34:16,675 django.server basehttp basehttp.py 212 log_message "GET /check_school_year_status/completed/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:34:19,079 django.server basehttp basehttp.py 212 log_message "GET /select_year/1/ HTTP/1.1" 200 17524
+INFO 2023-11-26 01:34:19,111 django.server basehttp basehttp.py 212 log_message "GET /static/css/select_year_level.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:19,113 django.server basehttp basehttp.py 212 log_message "GET /static/images/html.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:19,129 django.server basehttp basehttp.py 212 log_message "GET /static/images/c.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:19,130 django.server basehttp basehttp.py 212 log_message "GET /static/images/php.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:19,139 django.server basehttp basehttp.py 212 log_message "GET /static/images/java.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:19,181 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:25,369 django.server basehttp basehttp.py 212 log_message "GET /enroll_student/1/3/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:34:28,469 django.server basehttp basehttp.py 212 log_message "GET /subjects_grade_input/ HTTP/1.1" 200 22750
+INFO 2023-11-26 01:34:28,503 django.server basehttp basehttp.py 212 log_message "GET /static/css/subject.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:34:56,058 django.server basehttp basehttp.py 212 log_message "POST /subjects_grade_input/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:35:03,409 django.server basehttp basehttp.py 212 log_message "GET /success_page/ HTTP/1.1" 200 16885
+INFO 2023-11-26 01:35:03,480 django.server basehttp basehttp.py 212 log_message "GET /static/css/success_page.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:35:03,509 django.server basehttp basehttp.py 212 log_message "GET /static/images/com.png HTTP/1.1" 304 0
+INFO 2023-11-26 01:36:58,632 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/ HTTP/1.1" 200 72699
+INFO 2023-11-26 01:37:00,675 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:49:46,406 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 01:49:49,556 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 01:50:34,009 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 01:50:36,282 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 01:53:58,680 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 01:54:01,551 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 01:54:36,069 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 23575)
+INFO 2023-11-26 01:54:36,434 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/curriculum/ HTTP/1.1" 200 78644
+INFO 2023-11-26 01:54:36,504 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:36,521 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:36,528 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:36,533 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:36,535 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:36,548 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:36,553 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootswatch/minty/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:36,561 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/ui-builder.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:36,606 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:36,658 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:36,696 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:38,667 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:54:38,766 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:38,766 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 01:54:55,535 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/ HTTP/1.1" 200 72780
+INFO 2023-11-26 01:54:57,765 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:55:09,219 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 23595)
+INFO 2023-11-26 01:55:36,622 django.server basehttp basehttp.py 212 log_message "POST /admin/acad/subject/ HTTP/1.1" 200 76559
+INFO 2023-11-26 01:57:30,532 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 23618)
+INFO 2023-11-26 01:57:31,111 django.server basehttp basehttp.py 212 log_message "POST /admin/acad/subject/ HTTP/1.1" 302 0
+INFO 2023-11-26 01:57:34,119 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/ HTTP/1.1" 200 56896
+INFO 2023-11-26 01:57:36,200 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 01:57:45,055 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/upload-csv/ HTTP/1.1" 200 34419
+ERROR 2023-11-26 01:58:25,552 django.request log log.py 241 log_response Internal Server Error: /admin/acad/subject/upload-csv/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py", line 52, in upload_csv
+    skills = row['skills'].split(',')
+KeyError: 'skills'
+ERROR 2023-11-26 01:58:25,615 django.server basehttp basehttp.py 212 log_message "POST /admin/acad/subject/upload-csv/ HTTP/1.1" 500 97849
+INFO 2023-11-26 01:59:36,491 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 01:59:39,026 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:00:29,279 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:00:32,551 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:01:09,940 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:01:12,015 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:01:19,942 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:01:22,147 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-11-26 02:01:43,086 django.request log log.py 241 log_response Internal Server Error: /admin/acad/subject/upload-csv/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py", line 53, in upload_csv
+    skill_list = json.loads(row['skill_list'])
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 2 (char 1)
+ERROR 2023-11-26 02:01:43,211 django.server basehttp basehttp.py 212 log_message "POST /admin/acad/subject/upload-csv/ HTTP/1.1" 500 109981
+INFO 2023-11-26 02:02:54,477 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:02:57,204 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-11-26 02:03:08,136 django.request log log.py 241 log_response Internal Server Error: /admin/acad/subject/upload-csv/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py", line 53, in upload_csv
+    skills = row['skills'].strip('[]').split(',')
+KeyError: 'skills'
+ERROR 2023-11-26 02:03:08,363 django.server basehttp basehttp.py 212 log_message "POST /admin/acad/subject/upload-csv/ HTTP/1.1" 500 97899
+INFO 2023-11-26 02:03:20,014 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:03:22,808 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-11-26 02:03:39,980 django.request log log.py 241 log_response Internal Server Error: /admin/acad/subject/upload-csv/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py", line 55, in upload_csv
+    skill_obj, _ = Skill.objects.update_or_create(
+NameError: name 'Skill' is not defined
+ERROR 2023-11-26 02:03:40,088 django.server basehttp basehttp.py 212 log_message "POST /admin/acad/subject/upload-csv/ HTTP/1.1" 500 98277
+INFO 2023-11-26 02:04:51,973 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:04:55,110 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:05:13,135 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:05:15,561 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:05:17,065 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:05:19,052 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:05:27,477 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:05:29,704 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:05:34,613 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:05:39,610 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:05:49,672 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:05:52,638 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-11-26 02:06:14,485 django.request log log.py 241 log_response Internal Server Error: /admin/acad/subject/upload-csv/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py", line 59, in upload_csv
+    skill_obj, _ = Skill.objects.update_or_create(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 949, in update_or_create
+    obj, created = self.select_for_update().get_or_create(defaults, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'skill_name' into field. Choices are: id, indicator, skill, specializationskills, subject, test, userskill
+ERROR 2023-11-26 02:06:14,620 django.server basehttp basehttp.py 212 log_message "POST /admin/acad/subject/upload-csv/ HTTP/1.1" 500 155000
+INFO 2023-11-26 02:07:04,948 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:07:07,344 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-11-26 02:08:02,080 django.request log log.py 241 log_response Internal Server Error: /admin/acad/subject/upload-csv/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py", line 62, in upload_csv
+    subject_skill, _ = SubjectSkill.objects.update_or_create(
+NameError: name 'SubjectSkill' is not defined
+ERROR 2023-11-26 02:08:02,253 django.server basehttp basehttp.py 212 log_message "POST /admin/acad/subject/upload-csv/ HTTP/1.1" 500 98621
+INFO 2023-11-26 02:09:20,972 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:09:24,067 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:10:09,923 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:10:12,497 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:14:59,372 django.server basehttp basehttp.py 212 log_message "POST /admin/acad/subject/upload-csv/ HTTP/1.1" 302 0
+INFO 2023-11-26 02:15:02,606 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/ HTTP/1.1" 200 73292
+INFO 2023-11-26 02:15:02,667 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:02,676 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:02,706 django.server basehttp basehttp.py 212 log_message "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:02,711 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:02,760 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootswatch/minty/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:02,807 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:02,816 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:02,820 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:02,820 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/ui-builder.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:02,821 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:02,847 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:02,854 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:04,986 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:15:05,072 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:05,073 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:15,854 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/43/change/ HTTP/1.1" 200 66581
+INFO 2023-11-26 02:15:15,950 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_form.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:15:17,874 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:15:48,088 django.server basehttp basehttp.py 212 log_message "GET /admin/website/skill/ HTTP/1.1" 200 91638
+INFO 2023-11-26 02:15:50,227 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:15:56,709 django.server basehttp basehttp.py 212 log_message "GET /admin/website/skill/101/change/ HTTP/1.1" 200 58011
+INFO 2023-11-26 02:15:58,800 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:16:18,074 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:16:20,694 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:16:31,841 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:16:38,163 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:16:50,680 django.server basehttp basehttp.py 212 log_message "GET /admin/website/skill/ HTTP/1.1" 200 91638
+INFO 2023-11-26 02:16:52,742 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:18:26,756 django.server basehttp basehttp.py 212 log_message "POST /admin/website/skill/ HTTP/1.1" 200 87975
+INFO 2023-11-26 02:18:58,673 django.server basehttp basehttp.py 212 log_message "POST /admin/website/skill/ HTTP/1.1" 302 0
+INFO 2023-11-26 02:19:01,817 django.server basehttp basehttp.py 212 log_message "GET /admin/website/skill/ HTTP/1.1" 200 56718
+INFO 2023-11-26 02:19:03,921 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:19:32,263 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/ HTTP/1.1" 200 72793
+INFO 2023-11-26 02:19:34,336 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:20:38,718 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/upload-csv/ HTTP/1.1" 200 34419
+INFO 2023-11-26 02:24:52,144 django.server basehttp basehttp.py 212 log_message "POST /admin/acad/subject/upload-csv/ HTTP/1.1" 302 0
+INFO 2023-11-26 02:24:55,340 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/ HTTP/1.1" 200 73292
+INFO 2023-11-26 02:24:57,556 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:25:58,615 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 24088)
+INFO 2023-11-26 02:25:58,622 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/34/change/ HTTP/1.1" 200 66303
+INFO 2023-11-26 02:26:00,640 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:26:54,430 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92139
+INFO 2023-11-26 02:26:56,530 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:29:12,814 django.server basehttp basehttp.py 212 log_message "GET /admin/website/skill/ HTTP/1.1" 200 92313
+INFO 2023-11-26 02:29:14,817 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:30:29,064 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:30:31,666 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:31:14,412 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:31:16,680 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:33:04,662 django.server basehttp basehttp.py 212 log_message "POST /admin/website/skill/ HTTP/1.1" 200 89117
+INFO 2023-11-26 02:33:04,729 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 02:33:04,732 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 02:33:04,742 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:33:04,751 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:33:04,759 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/ui-builder.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:33:04,779 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:33:04,831 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2023-11-26 02:33:04,859 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootswatch/minty/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 02:33:05,021 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 02:33:05,021 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 02:33:13,088 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:33:15,735 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:33:25,914 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 02:33:27,785 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:33:42,274 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 02:33:44,565 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:34:40,360 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 02:34:42,939 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:35:26,954 django.server basehttp basehttp.py 212 log_message "POST /admin/website/skill/ HTTP/1.1" 302 0
+INFO 2023-11-26 02:35:30,166 django.server basehttp basehttp.py 212 log_message "GET /admin/website/skill/ HTTP/1.1" 200 56718
+INFO 2023-11-26 02:35:30,231 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 02:35:30,343 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:35:30,345 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2023-11-26 02:35:32,171 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:38:43,206 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/ HTTP/1.1" 200 72699
+INFO 2023-11-26 02:38:45,203 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:38:58,933 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/upload-csv/ HTTP/1.1" 200 34419
+INFO 2023-11-26 02:39:38,889 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\acad\admin.py changed, reloading.
+INFO 2023-11-26 02:39:41,693 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:43:44,724 django.server basehttp basehttp.py 212 log_message "POST /admin/acad/subject/upload-csv/ HTTP/1.1" 302 0
+INFO 2023-11-26 02:43:48,257 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/subject/ HTTP/1.1" 200 73198
+INFO 2023-11-26 02:43:50,251 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:45:40,985 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92139
+INFO 2023-11-26 02:45:43,060 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 02:45:50,569 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/upload-csv/ HTTP/1.1" 200 34422
+ERROR 2023-11-26 02:46:15,181 django.request log log.py 241 log_response Internal Server Error: /admin/assessment/test/upload-csv/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py", line 60, in upload_csv
+    skill_obj, _ = Skill.objects.update_or_create(
+NameError: name 'Skill' is not defined
+ERROR 2023-11-26 02:46:15,249 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/upload-csv/ HTTP/1.1" 500 99278
+INFO 2023-11-26 02:46:38,394 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 02:46:40,672 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-11-26 02:47:00,574 django.request log log.py 241 log_response Internal Server Error: /admin/assessment/test/upload-csv/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py", line 47, in upload_csv
+    options = json.loads(row['options'])
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 7 (char 6)
+ERROR 2023-11-26 02:47:00,730 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/upload-csv/ HTTP/1.1" 500 112208
+INFO 2023-11-26 02:52:22,042 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 02:52:24,860 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-11-26 02:52:40,350 django.request log log.py 241 log_response Internal Server Error: /admin/assessment/test/upload-csv/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py", line 48, in upload_csv
+    options = json.loads(row['options'])
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 7 (char 6)
+ERROR 2023-11-26 02:52:40,475 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/upload-csv/ HTTP/1.1" 500 112183
+INFO 2023-11-26 02:56:02,891 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 02:56:05,309 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-11-26 02:56:20,686 django.request log log.py 241 log_response Internal Server Error: /admin/assessment/test/upload-csv/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py", line 49, in upload_csv
+    options = json.loads(row['options'])
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 2 (char 1)
+ERROR 2023-11-26 02:56:20,783 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/upload-csv/ HTTP/1.1" 500 110562
+INFO 2023-11-26 02:58:39,929 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 02:58:42,576 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 02:58:49,010 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 02:58:51,286 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-11-26 03:00:41,131 django.request log log.py 241 log_response Internal Server Error: /admin/assessment/test/upload-csv/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py", line 50, in upload_csv
+    options = json.loads(row['options'].replace("'", '"'))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 7 (char 6)
+ERROR 2023-11-26 03:00:41,275 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/upload-csv/ HTTP/1.1" 500 112382
+INFO 2023-11-26 03:01:35,176 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\assessment\admin.py changed, reloading.
+INFO 2023-11-26 03:01:38,333 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-26 03:12:56,147 django.server basehttp basehttp.py 212 log_message "POST /admin/assessment/test/upload-csv/ HTTP/1.1" 302 0
+INFO 2023-11-26 03:12:59,613 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92638
+INFO 2023-11-26 03:12:59,702 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 03:12:59,733 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 03:12:59,748 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 03:12:59,756 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 03:12:59,762 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2023-11-26 03:12:59,771 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/ui-builder.js HTTP/1.1" 304 0
+INFO 2023-11-26 03:12:59,863 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootswatch/minty/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 03:12:59,888 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2023-11-26 03:12:59,888 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2023-11-26 03:12:59,915 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2023-11-26 03:12:59,976 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2023-11-26 03:13:02,114 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 03:13:02,261 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 03:13:02,261 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2023-11-26 03:13:12,426 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/90/change/ HTTP/1.1" 200 83259
+INFO 2023-11-26 03:13:12,594 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_form.js HTTP/1.1" 304 0
+INFO 2023-11-26 03:13:14,516 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 03:13:33,364 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/ HTTP/1.1" 200 92139
+INFO 2023-11-26 03:13:35,432 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 03:13:44,834 django.server basehttp basehttp.py 212 log_message "GET /admin/assessment/test/60/change/ HTTP/1.1" 200 83127
+INFO 2023-11-26 03:13:46,999 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-11-26 03:13:57,749 django.server basehttp basehttp.py 212 log_message "GET /start_test/ HTTP/1.1" 302 0
+INFO 2023-11-26 03:14:00,345 django.server basehttp basehttp.py 212 log_message "GET /create_new_question_set/3/ HTTP/1.1" 302 0
+INFO 2023-11-26 03:14:10,626 django.server basehttp basehttp.py 212 log_message "GET /continue_create_new_question_set/4 HTTP/1.1" 302 0
+INFO 2023-11-26 03:14:13,341 django.server basehttp basehttp.py 212 log_message "GET /question/55/ HTTP/1.1" 200 18034
+INFO 2023-11-26 03:14:13,388 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 304 0
+INFO 2023-11-26 03:14:13,396 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 304 0
+INFO 2023-11-26 03:14:13,398 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_page.css HTTP/1.1" 304 0
+INFO 2023-11-26 03:14:21,312 django.server basehttp basehttp.py 212 log_message "POST /submit_question/55/ HTTP/1.1" 200 18041
+INFO 2023-11-26 03:14:28,552 django.server basehttp basehttp.py 212 log_message "POST /submit_question/85/ HTTP/1.1" 200 17944
+INFO 2023-11-26 03:14:34,999 django.server basehttp basehttp.py 212 log_message "POST /submit_question/17/ HTTP/1.1" 200 18052
+INFO 2023-11-26 03:14:41,272 django.server basehttp basehttp.py 212 log_message "POST /submit_question/72/ HTTP/1.1" 200 18062
+INFO 2023-11-26 03:14:49,959 django.server basehttp basehttp.py 212 log_message "POST /submit_question/63/ HTTP/1.1" 200 17925
+INFO 2023-11-26 03:14:57,713 django.server basehttp basehttp.py 212 log_message "POST /submit_question/10/ HTTP/1.1" 200 18089
+INFO 2023-11-26 03:15:05,266 django.server basehttp basehttp.py 212 log_message "POST /submit_question/81/ HTTP/1.1" 200 17937
+INFO 2023-11-26 03:15:12,154 django.server basehttp basehttp.py 212 log_message "POST /submit_question/13/ HTTP/1.1" 200 18018
+INFO 2023-11-26 03:15:18,783 django.server basehttp basehttp.py 212 log_message "POST /submit_question/42/ HTTP/1.1" 200 17930
+INFO 2023-11-26 03:15:26,343 django.server basehttp basehttp.py 212 log_message "POST /submit_question/31/ HTTP/1.1" 200 17949
+INFO 2023-11-26 03:15:31,669 django.server basehttp basehttp.py 212 log_message "POST /submit_question/4/ HTTP/1.1" 200 17931
+INFO 2023-11-26 03:15:38,049 django.server basehttp basehttp.py 212 log_message "POST /submit_question/30/ HTTP/1.1" 302 0
+INFO 2023-11-26 03:15:45,416 django.server basehttp basehttp.py 212 log_message "GET /test_overview/5 HTTP/1.1" 200 26432
+INFO 2023-11-26 03:15:45,444 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_overview.css HTTP/1.1" 304 0
+INFO 2023-11-26 03:16:27,445 django.server basehttp basehttp.py 212 log_message "GET /submit_test/ HTTP/1.1" 302 0
+INFO 2023-11-26 03:16:34,657 django.server basehttp basehttp.py 212 log_message "GET /test_reults/5 HTTP/1.1" 200 7229271
+INFO 2023-11-26 03:16:34,705 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_result.css HTTP/1.1" 304 0
+INFO 2023-11-26 03:16:44,444 django.server basehttp basehttp.py 212 log_message "GET /recommendersurvey/ HTTP/1.1" 302 0
+INFO 2023-11-26 03:17:14,572 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14456560
+INFO 2023-11-26 03:17:14,766 django.server basehttp basehttp.py 212 log_message "GET /static/css/recommender.css HTTP/1.1" 200 3379
+INFO 2023-11-26 03:17:24,430 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 44576
+INFO 2023-11-26 03:17:24,477 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 304 0
+INFO 2023-11-26 03:17:24,491 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-2.png HTTP/1.1" 304 0
+INFO 2023-11-26 03:17:24,513 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-1.png HTTP/1.1" 304 0

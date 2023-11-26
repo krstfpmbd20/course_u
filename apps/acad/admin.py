@@ -6,10 +6,12 @@ from django.contrib import messages
 from django.http import HttpResponse
 
 from django.urls import path
-from  django.urls import reverse
+from django.urls import reverse
 
 import csv
+import json
 
+from apps.website.models import Skill
 
 class CsvImportForm(forms.Form):
     csv_upload = forms.FileField()
@@ -43,11 +45,23 @@ class SubjectAdmin(admin.ModelAdmin):
 
             reader = csv.DictReader(csv_file.read().decode('utf-8').splitlines())
             for row in reader:
-                created = Subject.objects.update_or_create(
-                    id=row['id'],
-                    subject_name=row['subject_name'],
-                    description=row['description'],
-                )
+                # sample row: 1, introduction to programming, intro to prog, ['problem solving', 'programming', 'algorithms']
+                subject, _ = Subject.objects.update_or_create(
+                        id=row['id'],
+                        subject_name=row['subject_name'],
+                        description=row['description'],
+                    )
+                skills = row['skill_list'].lower().strip('[]').split(',')
+                skills = [skill.strip('"') for skill in skills]
+                for skill in skills:
+                    skill = skill.strip("'").replace("'", "").strip()
+                    skill_obj, _ = Skill.objects.update_or_create(
+                        skill=skill,
+                    )
+                    subject.skills.add(skill_obj)
+                    
+
+                
             url = reverse('admin:acad_subject_changelist')
             messages.success(request, 'Your csv file has been imported')
             return redirect(url)
