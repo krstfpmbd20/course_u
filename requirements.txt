@@ -24,3 +24,4 @@ tzdata
 psycopg2
 pillow
 matplotlib
+jazzmin
