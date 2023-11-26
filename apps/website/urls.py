@@ -41,6 +41,9 @@ urlpatterns = [
     path('paths/', views.paths, name = 'paths'),
     path('admin_report/', views.admin_report, name='admin_report'),
     path('admin_students',views.admin_students, name='admin_students'),
+    path('admin_report_view/', views.admin_report_view, name='admin_report_view'),
+    path('admin_report_pdf/', views.admin_report_pdf, name='admin_report_pdf'),
+    
     #for grade levl
    # path ('', views.grade_level, name='grade_level'),
 
