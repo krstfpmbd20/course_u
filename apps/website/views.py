@@ -27,7 +27,7 @@ import json
 import logging
 import plotly.express as px
 from apps.survey.models import Survey
-
+from .plotgenerator import *
 #logger = logging.getLogger(__name__)
 logger = logging.getLogger("django") # name of logger : django
 
@@ -136,37 +136,35 @@ def home_field(request, field_id=None):
 def admin_home(request):
     admin = True
 
-    # # Get a list of fields
-    # fields = Field.objects.all()
+    # Get a list of fields
+    fields = Field.objects.all()
 
-    # # Query to count tests for each field
-    # field_test_counts = Test.objects.values('field').annotate(test_count=Count('field'))
+    # Query to count tests for each field
+    field_test_counts = Test.objects.values('field').annotate(test_count=Count('field'))
 
-    # # Create a dictionary to store the field names and their corresponding test counts
-    # field_test_count_dict = {}
-    # for field_data in field_test_counts:
-    #     field_id = field_data['field']
-    #     test_count = field_data['test_count']
-    #     field_name = Field.objects.get(field=field_id).field_name  # Get the field name
-    #     field_test_count_dict[field_name] = test_count
+    # Create a dictionary to store the field names and their corresponding test counts
+    field_test_count_dict = {}
+    for field_data in field_test_counts:
+        field_id = field_data['field']
+        test_count = field_data['test_count']
+        field_name = Field.objects.get(field=field_id).field_name  # Get the field name
+        field_test_count_dict[field_name] = test_count
 
-    # # Get other counts
-    # auth_user = User.objects.all()
-    # JobPosting_count = JobPosting.objects.all().count()
-    # Specialization_count = Specialization.objects.all().count()
-    # QuestionSet_count = QuestionSet.objects.all().count()
+    # Get other counts
+    auth_user = User.objects.all()
+    JobPosting_count = JobPosting.objects.all().count()
+    Specialization_count = Specialization.objects.all().count()
+    QuestionSet_count = QuestionSet.objects.all().count()
 
-    # return render(request, 'admin_home.html', {
-    #     'admin': admin,
-    #     'field_test_count_dict': field_test_count_dict,
-    #     'auth_user': auth_user,
-    #     'JobPosting_count': JobPosting_count,
-    #     'Specialization_count': Specialization_count,
-    #     'QuestionSet_count': QuestionSet_count,
-    #     'fields': fields,  # Pass the list of fields
-    # })
-    all_users = User.objects.all()
-    return render(request, 'admin_home.html', {'all_users': all_users})
+    return render(request, 'admin_home.html', {
+        'admin': admin,
+        'field_test_count_dict': field_test_count_dict,
+        'auth_user': auth_user,
+        'JobPosting_count': JobPosting_count,
+        'Specialization_count': Specialization_count,
+        'QuestionSet_count': QuestionSet_count,
+        'fields': fields,  # Pass the list of fields
+    })
     
 
 @admin_only # only admin can access this page # if admin only, then no need to add @login_required it will be redundant
@@ -322,42 +320,206 @@ def specialization_page(request, item_id):
 
     # Render the specialization_page template with the item
     return render(request, 'specialization_page.html', {'specialization_item': specialization_item})
+def extract_relevant_data(survey_responses):
+    # Extract relevant fields from survey responses
+    extracted_data = []
+    for survey_response in survey_responses:
+        #student_name = survey_response.student.name
+        #job_title = survey_response.job_title
+        #satisfaction = survey_response.satisfaction
 
+        #1.	What was your academic specialization in Information Technology or Computer Science during your undergraduate studies?
+        course = survey_response.q1     # IT or CS
+        #2.	To what extent do you feel that your academic specialization aligns with your current job responsibilities?
+        alignment = survey_response.q2  #  Completely Aligned, Mostly Aligned, Somewhat Aligned, Not Aligned at All
+        #3.	How well did your academic specialization prepare you for the specific tasks and challenges you face in your current role?
+        preparation = survey_response.q3 # very well, well, neutral, poorly, not at all
+        #4.	Have you pursued any additional certifications or training after graduation to enhance your skills for your current job?
+        additional_sup = survey_response.q4 # 1 (yes) 0 (no)
+        #5.	In hindsight, do you think a different academic specialization might have better prepared you for your current career?
+        better_preparation = survey_response.q5 # yes no 
+        #6.	How satisfied are you with your current job in terms of alignment with your academic specialization and overall career growth?
+        satisfaction = survey_response.q6 # # very satisfied, satisfied, neutral, dissatisfied, very dissatisfied
 
-@admin_only
-def admin_report(request):
-    sets = QuestionSet.objects.all()
-    username = request.GET.get('username')
-    max_score = request.GET.get('max_score')
-    min_score = request.GET.get('min_score')
-
-    if username:
-        sets = sets.filter(user__username__icontains=username)
-    if max_score:
-        sets = sets.filter(score__lte=max_score)
-    if min_score:
-        sets = sets.filter(score__gte=min_score)
-
-    fig = px.bar(
-        x=[set.set_id for set in sets],
-        y=[set.score for set in sets],
-        text=[set.user.username for set in sets],
-        labels=dict(x="Set ID", y="Score", color="Set ID"),  
-        title="Student Score",
-    )
-
-    fig.update_layout(title={
-            'font_size': 22,
-            'xanchor': 'center',
-            'x': 0.5,
+        extracted_data.append({
+            #'student_name': student_name,
+            #'job_title': job_title,
+            #'satisfaction': satisfaction
+            'course': course,
+            'alignment': alignment,
+            'preparation': preparation,
+            'additional_sup': additional_sup,
+            'better_preparation': better_preparation,
+            'satisfaction': satisfaction
         })
-    
-    chart = fig.to_html()#full_html=False, include_plotlyjs=False
 
-    context = {'chart': chart, 'form': StudentScoreForm()}
-    return render(request, 'admin_report.html', context)
+    return extracted_data
+def analyze_preparation_by_course(extracted_data):
+    it_preparation_counts = {}
+    cs_preparation_counts = {}
+    for data_item in extracted_data:
+        course = data_item['course']
+        preparation_level = data_item['preparation']
+
+        if course == 'IT':
+            if preparation_level not in it_preparation_counts:
+                it_preparation_counts[preparation_level] = 0
+            it_preparation_counts[preparation_level] += 1
+
+        elif course == 'CS':
+            if preparation_level not in cs_preparation_counts:
+                cs_preparation_counts[preparation_level] = 0
+            cs_preparation_counts[preparation_level] += 1
+
+    preparation_levels_by_course = {
+        'IT': it_preparation_counts,
+        'CS': cs_preparation_counts
+    }
+
+    return preparation_levels_by_course
+
+def calculate_alignment_percentages(extracted_data):
+    alignment_counts = {}
+    for data_item in extracted_data:
+        alignment_level = data_item['alignment']
+        if alignment_level not in alignment_counts:
+            alignment_counts[alignment_level] = 0
+        alignment_counts[alignment_level] += 1
+
+    alignment_percentages = {}
+    for alignment_level, count in alignment_counts.items():
+        alignment_percentages[alignment_level] = round(count / len(extracted_data) * 100, 2)
+
+    return alignment_percentages
+def analyze_additional_certifications(extracted_data):
+    additional_certifications_counts = {}
+    for data_item in extracted_data:
+        additional_certifications = data_item['additional_sup']
+        if additional_certifications not in additional_certifications_counts:
+            additional_certifications_counts[additional_certifications] = 0
+        additional_certifications_counts[additional_certifications] += 1
+
+    additional_certifications_data = {
+        'yes': additional_certifications_counts[1],
+        'no': additional_certifications_counts[0]
+    }
+
+    return additional_certifications_data
+def analyze_better_preparation(extracted_data):
+    better_preparation_counts = {}
+    for data_item in extracted_data:
+        better_preparation = data_item['better_preparation']
+        if better_preparation not in better_preparation_counts:
+            better_preparation_counts[better_preparation] = 0
+        better_preparation_counts[better_preparation] += 1
+
+    better_preparation_data = {
+        'yes': better_preparation_counts['Yes'],
+        'no': better_preparation_counts['No'],
+        'not_sure': better_preparation_counts['Not Sure']
+    }
+
+    return better_preparation_data
+
+def analyze_overall_satisfaction(extracted_data):
+    satisfaction_counts = {}
+    for data_item in extracted_data:
+        satisfaction_level = data_item['satisfaction']
+        if satisfaction_level not in satisfaction_counts:
+            satisfaction_counts[satisfaction_level] = 0
+        satisfaction_counts[satisfaction_level] += 1
+
+    overall_satisfaction_percentages = {}
+    for satisfaction_level, count in satisfaction_counts.items():
+        percentage = round(count / len(extracted_data) * 100, 2)
+        overall_satisfaction_percentages[satisfaction_level] = percentage
+
+    return overall_satisfaction_percentages
+def analyze_data(extracted_data):
+    # Perform data analysis
+    alignment_percentages = calculate_alignment_percentages(extracted_data)
+    preparation_levels_by_course = analyze_preparation_by_course(extracted_data)
+    additional_certifications_data = analyze_additional_certifications(extracted_data)
+    better_preparation_data = analyze_better_preparation(extracted_data)
+    overall_satisfaction_percentages = analyze_overall_satisfaction(extracted_data)
+
+    # Prepare data for HTML template
+    alignment_data = {
+        'title': 'Alignment with Academic Specialization',
+        'labels': alignment_percentages.keys(),
+        'data': alignment_percentages.values()
+    }
+
+    preparation_data = {
+        'title': 'Preparation Levels by Course',
+        'courses': ['IT', 'CS'],
+        'preparation_levels': ['Very Well', 'Well', 'Neutral', 'Poorly', 'Not at All'],
+        'data': preparation_levels_by_course
+    }
+
+    additional_certifications = {
+        'title': 'Additional Certifications',
+        'labels': ['Yes', 'No'],
+        'data': additional_certifications_data
+    }
+
+    better_preparation = {
+        'title': 'Satisfaction with Better Preparation',
+        'labels': ['Yes', 'No', 'Not Sure'],
+        'data': better_preparation_data
+    }
+
+    overall_satisfaction = {
+        'title': 'Overall Satisfaction',
+        'labels': overall_satisfaction_percentages.keys(),
+        'data': overall_satisfaction_percentages.values()
+    }
+
+    # Return analyzed data for use in HTML template
+    return {
+        'alignment_data': alignment_data,
+        'preparation_data': preparation_data,
+        'additional_certifications': additional_certifications,
+        'better_preparation': better_preparation,
+        'overall_satisfaction': overall_satisfaction
+    }
+def process_survey_data(survey_responses):
+    # Extract relevant data from survey responses
+    # This may involve filtering, aggregating, or transforming data
+    extracted_data = extract_relevant_data(survey_responses)
+
+    # Calculate statistics or generate visualizations
+    # This may involve using data analysis libraries or charting tools
+    processed_data = analyze_data(extracted_data)
+
+    return processed_data
 
 
+
+def admin_report(request):
+    # Generate all necessary plots
+    gender_distribution_plot = generate_gender_distribution_plot()
+    civil_status_distribution_plot = generate_civil_status_distribution_plot()
+    academic_specialization_distribution_plot = generate_academic_specialization_distribution_plot()
+    alignment_with_job_responsibilities_plot = generate_alignment_with_job_responsibilities_plot()
+    satisfaction_levels_plot = generate_satisfaction_levels_plot()
+    certifications_training_percentage_plot = generate_certifications_training_percentage_plot()
+    different_specialization_percentage_plot = generate_different_specialization_percentage_plot()
+    overall_satisfaction_plot = generate_overall_satisfaction_plot()
+    job_fields_distribution_plot = generate_job_fields_distribution_plot()
+    user_engagement_plot = generate_user_engagement_plot()
+    return render(request, 'admin_report.html', {
+        'gender_distribution_plot': gender_distribution_plot,
+        'civil_status_distribution_plot': civil_status_distribution_plot,
+        'academic_specialization_distribution_plot': academic_specialization_distribution_plot,
+        'alignment_with_job_responsibilities_plot': alignment_with_job_responsibilities_plot,
+        'satisfaction_levels_plot': satisfaction_levels_plot,
+        'certifications_training_percentage_plot': certifications_training_percentage_plot,
+        'different_specialization_percentage_plot': different_specialization_percentage_plot,
+        'overall_satisfaction_plot': overall_satisfaction_plot,
+        'job_fields_distribution_plot': job_fields_distribution_plot,  
+        'user_engagement_plot': user_engagement_plot,
+    })
 def field_page(request, field_id=None):
 
     # Field object
