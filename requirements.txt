@@ -25,3 +25,4 @@ psycopg2
 pillow
 matplotlib
 django-jazzmin
+plotly_express
