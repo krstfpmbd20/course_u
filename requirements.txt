@@ -24,4 +24,4 @@ tzdata
 psycopg2
 pillow
 matplotlib
-django-jazzmin==2.6.0
+django-jazzmin
