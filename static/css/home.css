@@ -1,89 +1,354 @@
 /* Static CSS file or inline style */
 
-main{
+main {
   background-image: url('../../static/images/bg.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
+:root{
+  --blue: white;/*#Ffa07a replace with orange */
+  --white: #fff;
+  --highlight: /*#f5f5f5;*/rgb(228, 95, 65);
+  --black1: white;
+  --black2: #999;
+  --darkbg: #0D1117;
+  --body-color: var(--white);
+}
+
+
+.section {
+  padding: 10px;
+}
+
+.home {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.home-main {
+  /* widht 100% - 100px */
+  width: calc(100% - 200px);
+}
+
+.skill {
+  width: 200px;
+  margin: 10px;
+  padding-right: 30px;
+}
+
+.skill{
+  /* background-color: var(--darkbg);
+  color: #FFB072;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4); */
+  padding: 10px;
+}
+.skill-section {
+  margin-bottom: 3px;
+}
+.skill-section p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.skill-bar-container {
+  position: relative;
+  width: 100%;
+  height: 5px;
+}
+
+.skill-section h3 {
+  margin-top: 0px;
+  padding-left: 0px;
+}
+
+.skill-score {
+  margin: 20px 0;
+}
+
+.skill-score p {
+  margin-bottom: 3px;
+}
+.skill-bar-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: grey;
+  border-radius: 3px;
+}
+
+.skill-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background-color: #4CAF50;
+  border-radius: 3px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: rgb(128, 128, 128);
+}
+
+.outer {
+  padding: 0 5px;
+}
+
+.intro-section {
+  position: relative;
+  padding: 10px;
+  /* background-color: #FFA599; */
+  background-color: rgb(255, 192, 170);
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4);
+  margin: 10px;
+}
+
+.intro-section .inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.intro-section .user-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 10px;
+}
+
+.intro-section .user-section h4 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.intro-section .user-section p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.intro-section .user-section .btn {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  /* margin-left: 10px; */
+  margin-right: 10px;
+  /* background-color: #FFA599; */
+  background-color:  var(--highlight);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4);
+}
+
+.intro-section .character {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.intro-section .character img {
+  /* position: absolute;  */
+  /* width: 15%; */
+  /* height: 200px; */
+  /* width: 100px; */
+  /* border-radius: 50%; */
+  /* border: 2px solid white; */
+  margin-bottom: 10px;
+}
+
+.intro-section .character .boy {
+  position: absolute;
+  height: 280px;
+  top: -45px; 
+  right: 1%;
+}
+
+.intro-section .character .girl {
+  position: absolute;
+  height: 210px;
+  top: -30px; 
+  right: 20%;
+}
+
+
+
 .card-container {
   display: flex;
-  /* Use flexbox to create a horizontal layout */
-  /* gap: 20px; */
   overflow-x: auto;
   /* Allow horizontal scrolling if content overflows */
+  padding: 5px;
   padding-bottom: 20px;
   /* Add some padding at the bottom for better visibility */
 }
 
-.card {/*box for fields*/
-  border: 1px solid #ccc;
+/* Hide scrollbar for Chrome, Safari and Opera */
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.card-container {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.card-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px; /* Adjust as needed */
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 100%);
+}
+
+.card {
+  /*box for fields*/
+  /* border: 2px solid rgb(228, 95, 65); ; */
   padding: 10px;
-  color:black;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  width: 250px;
-  margin-left: 30px;;
-  /* Adjust the width as needed */
+  width: 300px;
+  margin-left: 30px;
   flex-shrink: 0;
   /* Prevent cards from shrinking to fit */
-  text-align: center;
-  margin-right: 10px;
+  /* text-align: center; */
+  /* margin-right: 10px; */
   transition: background-color 0.3s ease;
   /* margin-left: 50px; */
-  background-color: whitesmoke;
-  box-shadow: 0 4px 6px rgb(0,0,0,0.4);
-  border-radius: 20px;
-   
+  /* background-color: whitesmoke; */
+  background-color: #fffaf7;
+  /* color: rgb(228, 95, 65);  */
+  color: black;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4);
+  border-radius: 10px;
+
 }
-.card.specialization,
-.card.field{
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+
+.card.field {
   max-height: 50px;
+  max-width: 180px;
+  min-height: 50px;
+  min-width: 180px;
+  overflow: hidden;
+  /* background-color:rgb(228, 95, 65); */
+  color: white;
+  size: 10px;
+}
+
+.card.specialization {
+  height: 100px;
+  width: 220px;
+  min-height: 100px;
+  min-width: 220px;
+  max-height: 100px;
+  max-width: 220px;
   overflow: hidden;
 }
 
 
-.card:hover{
-  background-color: rgb(248, 128, 101);
-  color:black;
+
+.card.field {
+  /* background-color:rgb(228, 95, 65);  */
+  /* background-color: #FFA599;; */
+  /* color: white; */
+  size: 10px;
+  margin-left: 0;
+  margin-right: 15px;
 }
-.card img{
-  height:80px;
-  width:119px;
- padding-right: 20px;
- display:inline-block;
+
+.card img {
+  height: 80px;
+  width: 119px;
+  /* padding-right: 20px; */
+  display: inline-block;
+}
+
+.field_title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #d62b00;
 
 }
-.field_title
-{
-  font-size: 18px;
-  font-weight: bold;
-  color:black;
+.recommendedfield_first .card.field{
+  /* background-color: #FF6347;  */
+  background-color: #FFB072;
+  color: white; /* White text */
 }
-.recommended-label
-{
+
+.recommendedfield_second .card.field{
+  /* background-color: #ADFF2F; */
+  /* background-color: #FF8470; */
+  background-color: #F9FFA5;
+  color: white; /* White text */
+}
+
+.recommendedfield_third .card.field{
+  /* background-color: #1E90FF; */
+  /* background-color: #FFA599; */
+  background-color: #AABBFF;
+  color: white; /* White text */
+}
+/* color: #FFC6C2; */
+
+.recommended-label {
   /* Small font */
   font-size: 12px;
 }
-h3{
-  font-size: 30px;
-  color:black;
-  margin-left: 30px;
-}
-.recommended_first
-{
+
+.recommended_first {
   /* color gold */
-  color: #FFD700;
+  /* color: #ffff00; */
+  color: #000;
+  font-weight: bold;
 }
 
-.recommended_second
-{
+.recommended_second {
   /* color silver */
-  color: #C0C0C0;
+  /* color: gold; */
+  color: #000;
+  font-weight: bold;
 }
 
-.recommended_third
-{
+.recommended_third {
   /* color bronze */
-  color: #CD7F32;
+  /* color: #f0e68c; */
+  color: #000;
+  font-weight: bold;
 }
 
 .card h3 {
@@ -91,25 +356,57 @@ h3{
   font-size: 18px;
 }
 
-.card-selected{
-  border: 1px solid blue;
-  background-color: lightblue;
+.card-selected {
+  font-weight: 900 !important;
+  color: white !important;
+  background-color: #A9A9A9 !important;
+  border: 2px solid #A9A9A9 !important;
+  box-shadow: 0 0 10px #A9A9A9 !important;
 }
 
-.specialization_title{
+.specialization_title {
   font-size: 16px;
+  text-decoration: none;
+  margin-bottom: 8px;
+  /* color: var(--highlight); */
+  color: #d62b00;
 }
 
-.specialization_description{
+
+
+.specialization_description {
   /* dont extend out the card */
   overflow: hidden;
-  
+
+}
+
+a .card.specialization {
+  margin-left: 0;
+  margin-right: 12px;
+}
+
+.card.specialization p {
+  /* Small font */
+  font-size: 12px;
+  /* left align */
+  text-align: left;
+  /* dont extend out the card */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* show ... if text overflows */
+  /* white-space: nowrap; */
+  /* allow 3 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  /* color:rgb(228, 95, 65);  */
+  max-height: 60px;
 }
 
 /* remove a styles */
 a {
   text-decoration: none;
-  color: #000;
+  color: transparent;
 }
 
 a:hover {
@@ -120,6 +417,27 @@ a:hover {
 a:active {
   color: #000;
 }
-footer{
+
+.card-title {
+  color: #d62b00;
+}
+
+.card-text {
+  color: black;
+}
+
+
+.explore-section .card {
+  align-items: center;
+  text-align: center;
+}
+
+.explore-section .card h3 {
+  padding-left: 0px;
+}
+
+footer {
   display: none;
 }
+
+

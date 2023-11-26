@@ -8,6 +8,17 @@
 
 {% block content %}
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('{% static "images/bg.png" %}') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+    }
+
     .main_section{
         height:70vh;
         background-color:red;
@@ -91,19 +102,24 @@
     <div class="side_menu_section">
         <ul>
             <li>
-                <a href="/edit_profile/">Edit Profile</a>
-                
+                <a href="/edit_profile/">Edit Profile</a>             
             </li>
+
             <li>
-                <a href="/terms_and_conditions/">Terms And Conditions</a>
-                
+                <a href="/terms_and_conditions/">Terms And Conditions</a>               
             </li>
+
+
+            <li>
+                <a href="{% url 'survey' %}" class="profile__button">Tracer Survey Form</a>
+            </li>
+            
             <li>
                 <a href="/settings/">Settings</a>
             </li>
+
             <li>
                 <a href="/logout">Logout</a>
-                
             </li>
         </ul>
     </div>
