@@ -16,6 +16,18 @@
 {% block content %}
 
 {% if user.is_authenticated %}
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+      background: url('{% static "images/bg.png" %}') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100%;
+  }
+</style>
 
 <div class="home">
   <div class="home-main">
