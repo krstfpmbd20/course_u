@@ -15,13 +15,14 @@
     --black1: white;
     --black2: #999;
     --darkbg: #0D1117;
+    --body-color: var(--white);
 }
-
 
 
 body{
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: var(--body-color);
 }
 
 .container
@@ -77,7 +78,7 @@ body{
 
 .navigation ul li{
     position: inherit;
-    width: 200px;
+    width: 190px;
     list-style: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -90,7 +91,8 @@ body{
 .navigation ul li:hover,
 .navigation ul li.hovered
 {
-    background: var(--white);
+    /* background: var(--white); */
+    background-color: var(--body-color);
 }
 
 .navigation ul li:nth-child(1)
@@ -146,13 +148,13 @@ body{
 {
     content: '';
     position: absolute;
-    right: 8px;
+    right: -2px;
     top: -50px;
     width: 50px;
     height: 50px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: 35px 35px 0 8px var(--white);
+    box-shadow: 35px 35px 0 8px var(--body-color);
     pointer-events: none;
     /* background-color: red; */
 }
@@ -167,13 +169,13 @@ body{
 {
     content: '';
     position: absolute;
-    right: 8px;
+    right:-2px;
     bottom: -50px;
     width: 50px;
     height: 50px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: 35px -35px 0 8px var(--white);
+    box-shadow: 35px -35px 0 8px var(--body-color);
     pointer-events: none;
     /* color: rgb(255, 115, 90); */
 }

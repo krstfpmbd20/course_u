@@ -12,6 +12,7 @@ main {
   --black1: white;
   --black2: #999;
   --darkbg: #0D1117;
+  --body-color: var(--white);
 }
 
 
