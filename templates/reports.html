@@ -46,8 +46,9 @@
         </thead>
         <tbody>
             {% if surveys %}
-            {% for survey in surveys %}
             <button style="border-radius:4px;background-color:red;color:white;padding:6px;border:none;outline:none;cursor:pointer;">Generate Pdf</button>
+            {% for survey in surveys %}
+            
             <tr>
                 <td>{{ survey.id }}</td>
                 <td>{{ survey.user.username }}</td>
@@ -67,8 +68,8 @@
         </tbody>
     </table>  
 
-    {% endif %}
-
+   
+<!-- 
     <h3 style="padding:5px;">Number of Recommendations : {{ s_count}}</h3>
     <table>
         <thead>
@@ -104,10 +105,10 @@
             {% endif %}
             
         </tbody>
-    </table>  
+    </table>   -->
 
-    {% endif %}
+   
 </div>
-
+{% endif %}
 
 {% endblock content %}
