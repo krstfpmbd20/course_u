@@ -15,7 +15,7 @@ from django.contrib.auth import update_session_auth_hash
 #from website.utils import *
 from apps.website.forms import SignUpForm, StudentScoreForm
 from apps.website.models import Specialization, Field
-from apps.recommender.models import UserRecommendations
+from apps.recommender.models import UserRecommendations, UserSkill
 
 from apps.assessment.models import Test, QuestionSet
 from apps.jobs.models import JobPosting
@@ -68,10 +68,20 @@ def home(request):
     field_items = field_items.exclude(pk__in=recommended_field_ids)
 
 
+    user_skills = UserSkill.objects.filter(user=request.user)
+    # user_skills_list = [skill.skill.skill for skill in user_skills]
+    highest_skill_level = user_skills.order_by('-level').first()
+    # filter top 15 skills
+    user_skills = user_skills.order_by('-level')[:15]
+    # get multiplier for highest_skill_level that will not exceed 100
+    level_multiplier = 100 / highest_skill_level.level
+
     return render(request, 'home.html', {
         'specialization_items': specialization_items, 
         'field_items': recommended_fields + list(field_items),
-        'user_recommendations': user_recommendations
+        'user_recommendations': user_recommendations,
+        'user_skills': user_skills,
+        'level_multiplier': level_multiplier
         })
 
 
