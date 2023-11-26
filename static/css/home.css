@@ -425,11 +425,23 @@ a:active {
 .card-text {
   color: black;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch; /* This makes all children take up full height */
+}
 
+
+.explore-section .col {
+  width: 50%;
+}
 
 .explore-section .card {
   align-items: center;
   text-align: center;
+  width: auto;
+  margin: 10px;
 }
 
 .explore-section .card h3 {

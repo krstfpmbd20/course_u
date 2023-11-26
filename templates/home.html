@@ -111,7 +111,7 @@
           <div class="col">
             <a href="{% url 'recommendation_field' field_id=user_recommendations.field_1.field %}"
               class="card-link link-offset-2 link-underline link-underline-opacity-0">
-              <div class="card" style="width: 24rem;">
+              <div class="card" >
                 <img src="{% static 'images/com-1.png' %}" class="card-img-top" alt="..." style="position: relative;">
                 <div class="card-body" style="position: relative;"><br>
                   <h3 class="card-title">Your Track</h3>
@@ -125,7 +125,7 @@
           <div class="col">
             <a href="{% url 'job_list_with_field' field_id=user_recommendations.field_1.field %}"
               class="card-link link-offset-2 link-underline link-underline-opacity-0">
-              <div class="card" style="width: 24rem;">
+              <div class="card" >
                 <img src="{% static 'images/com-2.png' %}" class="card-img-top" alt="..." style="position: relative;">
                 <div class="card-body" style="position: relative;"><br>
                   <h3 class="card-title">Your Jobs</h3>
@@ -137,12 +137,11 @@
           {% else %}
           <div class="col">
             <a href="{% url 'test_home' %}" class="card-link link-offset-2 link-underline link-underline-opacity-0">
-              <div class="card" style="width: 24rem;">
+              <div class="card" >
                 <img src="{% static 'images/com-1.png' %}" class="card-img-top" alt="..." style="position: relative;">
                 <div class="card-body" style="position: relative;"><br>
                   <h3 class="card-title">Take a Test</h3>
-                  <p class="card-text">Click to continue to input your student information, performance and take a Test
-                    to make a Recommendation.</p>
+                  <p class="card-text">Click to continue to input your student information, performance and take a Test to make a Recommendation.</p>
                 </div>
               </div>
             </a>

@@ -2971,24 +2971,3 @@ INFO 2023-11-26 03:17:24,430 django.server basehttp basehttp.py 212 log_message 
 INFO 2023-11-26 03:17:24,477 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 304 0
 INFO 2023-11-26 03:17:24,491 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-2.png HTTP/1.1" 304 0
 INFO 2023-11-26 03:17:24,513 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-1.png HTTP/1.1" 304 0
-INFO 2023-11-26 21:58:38,185 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
-INFO 2023-11-26 22:01:04,285 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
-INFO 2023-11-26 22:01:36,279 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52788
-INFO 2023-11-26 22:01:36,637 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5640
-INFO 2023-11-26 22:01:36,806 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_boy.png HTTP/1.1" 200 309552
-INFO 2023-11-26 22:01:36,808 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 7608
-INFO 2023-11-26 22:01:37,324 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_girl.png HTTP/1.1" 200 368527
-INFO 2023-11-26 22:06:59,305 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52788
-INFO 2023-11-26 22:06:59,330 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 304 0
-INFO 2023-11-26 22:06:59,347 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 304 0
-INFO 2023-11-26 22:06:59,356 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_girl.png HTTP/1.1" 304 0
-INFO 2023-11-26 22:06:59,356 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_boy.png HTTP/1.1" 304 0
-INFO 2023-11-26 22:07:14,522 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52788
-INFO 2023-11-26 22:07:23,803 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52788
-INFO 2023-11-26 22:10:16,142 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 32399
-INFO 2023-11-26 22:10:16,363 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 304 0
-INFO 2023-11-26 22:10:56,954 django.server basehttp basehttp.py 212 log_message "GET /admin_report/ HTTP/1.1" 200 281989
-INFO 2023-11-26 22:10:57,111 django.server basehttp basehttp.py 212 log_message "GET /static/images/report-logo.png HTTP/1.1" 200 216778
-WARNING 2023-11-26 22:10:59,767 django.request log log.py 241 log_response Not Found: /favicon.ico
-WARNING 2023-11-26 22:10:59,769 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 26452
-INFO 2023-11-26 22:12:09,755 django.server basehttp basehttp.py 212 log_message "GET /admin_report/ HTTP/1.1" 200 281988
