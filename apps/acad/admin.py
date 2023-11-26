@@ -95,7 +95,7 @@ class CurriculumAdmin(admin.ModelAdmin):
             csv_file = request.FILES["csv_upload"]
             if not csv_file.name.endswith('.csv'):
                 messages.error(request,'File is not CSV type')
-                return redirect("/admin/curriculum/subject/")
+                return redirect("/admin/acad/curriculum/")
 
             reader = csv.DictReader(csv_file.read().decode('utf-8').splitlines())
             for row in reader:
@@ -105,7 +105,7 @@ class CurriculumAdmin(admin.ModelAdmin):
                     course_id=row['course_id'],
                     subject_id=row['subject_id'],
                 )
-            url = reverse('admin:acad_subject_changelist')
+            url = reverse('admin:acad_curriculum_changelist')
             messages.success(request, 'Your csv file has been imported')
             return redirect(url)
 

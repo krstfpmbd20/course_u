@@ -1,8 +1,21 @@
+
+:root{
+    --blue: white;/*#Ffa07a replace with orange */
+    --white: #fff;
+    --highlight: #fff;/*#f5f5f5;rgb(228, 95, 65);*/
+    --black1: white;
+    --black2: #999;
+    --darkbg: #0D1117;
+    --body-color: rgb(228, 95,65) !important;
+}
+
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: var(--body-color);
     color: #495057;
 }
 
