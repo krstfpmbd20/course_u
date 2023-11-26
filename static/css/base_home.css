@@ -32,6 +32,12 @@ body{
 }
 /* nav */
 
+ol, ul
+{
+    /* list-style: none; */
+    padding-left: 0px !important;
+}
+
 .navigation
 {
     position: fixed;

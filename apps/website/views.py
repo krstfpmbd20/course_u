@@ -67,14 +67,17 @@ def home(request):
     # Filter out the recommended fields from the field_items queryset
     field_items = field_items.exclude(pk__in=recommended_field_ids)
 
-
-    user_skills = UserSkill.objects.filter(user=request.user)
-    # user_skills_list = [skill.skill.skill for skill in user_skills]
-    highest_skill_level = user_skills.order_by('-level').first()
-    # filter top 15 skills
-    user_skills = user_skills.order_by('-level')[:15]
-    # get multiplier for highest_skill_level that will not exceed 100
-    level_multiplier = 100 / highest_skill_level.level
+    try:
+        user_skills = UserSkill.objects.filter(user=request.user)
+        # user_skills_list = [skill.skill.skill for skill in user_skills]
+        highest_skill_level = user_skills.order_by('-level').first()
+        # filter top 15 skills
+        user_skills = user_skills.order_by('-level')[:15]
+        # get multiplier for highest_skill_level that will not exceed 100
+        level_multiplier = 100 / highest_skill_level.level
+    except:
+        user_skills = None
+        level_multiplier = 1
 
     return render(request, 'home.html', {
         'specialization_items': specialization_items, 
