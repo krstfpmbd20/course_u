@@ -1457,3 +1457,5 @@ Traceback (most recent call last):
     obj, end = self.scan_once(s, idx)
 json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 7 (char 6)
 ERROR 2023-11-26 03:00:41,275 django.server Thread-1 18484 basehttp basehttp.py 212 django.server log_message 18728 "POST /admin/assessment/test/upload-csv/ HTTP/1.1" 500 112382
+WARNING 2023-11-26 22:10:59,767 django.request Thread-6 20432 log log.py 241 django.request log_response 22128 Not Found: /favicon.ico
+WARNING 2023-11-26 22:10:59,769 django.server Thread-6 20432 basehttp basehttp.py 212 django.server log_message 22128 "GET /favicon.ico HTTP/1.1" 404 26452
