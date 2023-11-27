@@ -80,6 +80,12 @@
     flex-direction: row;
 }
 
+.table-heading-btn {
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+}
+
 .details
 {
     position: relative;
