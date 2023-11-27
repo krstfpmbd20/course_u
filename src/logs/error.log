@@ -1,0 +1,603 @@
+ERROR 2023-11-27 02:06:19,275 django.request Thread-21 21832 log log.py 241 django.request log_response 23444 Internal Server Error: /admin_report/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 504, in admin_report
+    gender_distribution_plot = generate_gender_distribution_plot()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\plotgenerator.py", line 26, in generate_gender_distribution_plot
+    plt.close()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\matplotlib\pyplot.py", line 974, in close
+    _pylab_helpers.Gcf.destroy(manager)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\matplotlib\_pylab_helpers.py", line 66, in destroy
+    manager.destroy()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\matplotlib\backends\_backend_tk.py", line 569, in destroy
+    self._window_dpi.trace_remove('write', self._window_dpi_cbname)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\lib\tkinter\__init__.py", line 412, in trace_remove
+    self._tk.call('trace', 'remove', 'variable',
+RuntimeError: main thread is not in main loop
+ERROR 2023-11-27 02:06:19,355 django.server Thread-21 21832 basehttp basehttp.py 212 django.server log_message 23444 "GET /admin_report/ HTTP/1.1" 500 115695
+ERROR 2023-11-27 02:37:28,409 django.request Thread-1 1416 log log.py 241 django.request log_response 11528 Internal Server Error: /admin_report/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 516, in admin_report
+    generate_alignment_with_job_responsibilities_by_job_satisfaction_plot = generate_alignment_with_job_responsibilities_by_job_satisfaction_plot()
+UnboundLocalError: local variable 'generate_alignment_with_job_responsibilities_by_job_satisfaction_plot' referenced before assignment
+ERROR 2023-11-27 02:37:28,514 django.server Thread-1 1416 basehttp basehttp.py 212 django.server log_message 11528 "GET /admin_report/ HTTP/1.1" 500 96624
+ERROR 2023-11-27 02:38:53,222 django.request Thread-1 9928 log log.py 241 django.request log_response 21588 Internal Server Error: /admin_report/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 516, in admin_report
+    generate_alignment_with_job_responsibilities_by_job_satisfaction_plot = generate_alignment_with_job_responsibilities_by_job_satisfaction_plot()
+UnboundLocalError: local variable 'generate_alignment_with_job_responsibilities_by_job_satisfaction_plot' referenced before assignment
+ERROR 2023-11-27 02:38:53,619 django.server Thread-1 9928 basehttp basehttp.py 212 django.server log_message 21588 "GET /admin_report/ HTTP/1.1" 500 96624
+ERROR 2023-11-27 02:39:46,872 django.request Thread-1 23060 log log.py 241 django.request log_response 13792 Internal Server Error: /admin_report/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 516, in admin_report
+    generate_alignment_with_job_responsibilities_by_job_satisfaction_plot = generate_alignment_with_job_responsibilities_by_job_satisfaction_plot()
+UnboundLocalError: local variable 'generate_alignment_with_job_responsibilities_by_job_satisfaction_plot' referenced before assignment
+ERROR 2023-11-27 02:39:47,504 django.server Thread-1 23060 basehttp basehttp.py 212 django.server log_message 13792 "GET /admin_report/ HTTP/1.1" 500 96624
+ERROR 2023-11-27 02:40:09,074 django.request Thread-3 22140 log log.py 241 django.request log_response 13792 Internal Server Error: /admin_report/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 516, in admin_report
+    generate_alignment_with_job_responsibilities_by_job_satisfaction_plot = generate_alignment_with_job_responsibilities_by_job_satisfaction_plot()
+UnboundLocalError: local variable 'generate_alignment_with_job_responsibilities_by_job_satisfaction_plot' referenced before assignment
+ERROR 2023-11-27 02:40:09,139 django.server Thread-3 22140 basehttp basehttp.py 212 django.server log_message 13792 "GET /admin_report/ HTTP/1.1" 500 96623
+ERROR 2023-11-27 02:43:11,527 django.request Thread-1 21872 log log.py 241 django.request log_response 13724 Internal Server Error: /admin_report/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 516, in admin_report
+    generate_alignment_with_job_responsibilities_by_job_satisfaction_plot = generate_alignment_with_job_responsibilities_by_job_satisfaction_plot()
+UnboundLocalError: local variable 'generate_alignment_with_job_responsibilities_by_job_satisfaction_plot' referenced before assignment
+ERROR 2023-11-27 02:43:11,973 django.server Thread-1 21872 basehttp basehttp.py 212 django.server log_message 13724 "GET /admin_report/ HTTP/1.1" 500 96623
+WARNING 2023-11-27 03:12:38,334 django.server Thread-1 24140 basehttp basehttp.py 212 django.server log_message 18728 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 03:12:58,467 django.request Thread-3 19232 log log.py 241 django.request log_response 18728 Not Found: /favicon.ico
+WARNING 2023-11-27 03:12:58,469 django.server Thread-3 19232 basehttp basehttp.py 212 django.server log_message 18728 "GET /favicon.ico HTTP/1.1" 404 26523
+WARNING 2023-11-27 03:31:00,357 django.request Thread-1 20420 log log.py 241 django.request log_response 15900 Bad Request: /admin_report_pdf/
+WARNING 2023-11-27 03:31:00,360 django.server Thread-1 20420 basehttp basehttp.py 212 django.server log_message 15900 "GET /admin_report_pdf/ HTTP/1.1" 400 108897
+ERROR 2023-11-27 04:19:59,339 django.request Thread-1 22460 log log.py 241 django.request log_response 23844 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 570, in admin_report_view
+    alignment_and_satisfaction2 = chart_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\report_generator.py", line 51, in chart_alignment_and_satisfaction
+    academic_specializations = [entry['q1'] for entry in alignment_data]
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\report_generator.py", line 51, in <listcomp>
+    academic_specializations = [entry['q1'] for entry in alignment_data]
+KeyError: 'q1'
+ERROR 2023-11-27 04:20:36,014 django.request Thread-3 15876 log log.py 241 django.request log_response 23844 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 570, in admin_report_view
+    alignment_and_satisfaction2 = chart_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\report_generator.py", line 51, in chart_alignment_and_satisfaction
+    academic_specializations = [entry['q1'] for entry in alignment_data]
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\report_generator.py", line 51, in <listcomp>
+    academic_specializations = [entry['q1'] for entry in alignment_data]
+KeyError: 'q1'
+ERROR 2023-11-27 04:20:36,087 django.server Thread-3 15876 basehttp basehttp.py 212 django.server log_message 23844 "GET /admin_report_view/ HTTP/1.1" 500 111232
+ERROR 2023-11-27 04:22:31,398 django.request Thread-4 16540 log log.py 241 django.request log_response 13276 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 570, in admin_report_view
+    alignment_and_satisfaction2 = chart_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\report_generator.py", line 67, in chart_alignment_and_satisfaction
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1485, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1212, in process_args_into_dataframe
+    raise ValueError(
+ValueError: All arguments should have the same length. The length of column argument `df[wide_variable_0]` is 2, whereas the length of  previously-processed arguments ['x'] is 3
+ERROR 2023-11-27 04:22:31,485 django.server Thread-4 16540 basehttp basehttp.py 212 django.server log_message 13276 "GET /admin_report_view/ HTTP/1.1" 500 145614
+ERROR 2023-11-27 04:27:18,728 django.request Thread-6 22960 log log.py 241 django.request log_response 13276 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 570, in admin_report_view
+    alignment_and_satisfaction2 = chart_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\report_generator.py", line 67, in chart_alignment_and_satisfaction
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1485, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1212, in process_args_into_dataframe
+    raise ValueError(
+ValueError: All arguments should have the same length. The length of column argument `df[wide_variable_0]` is 2, whereas the length of  previously-processed arguments ['x'] is 7
+ERROR 2023-11-27 04:27:18,798 django.server Thread-6 22960 basehttp basehttp.py 212 django.server log_message 13276 "GET /admin_report_view/ HTTP/1.1" 500 147066
+ERROR 2023-11-27 04:28:25,979 django.request Thread-1 12464 log log.py 241 django.request log_response 20064 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 570, in admin_report_view
+    alignment_and_satisfaction2 = chart_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\report_generator.py", line 67, in chart_alignment_and_satisfaction
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1532, in build_dataframe
+    raise ValueError(
+ValueError: Plotly Express cannot process wide-form data with columns of different type.
+ERROR 2023-11-27 04:28:26,172 django.server Thread-1 12464 basehttp basehttp.py 212 django.server log_message 20064 "GET /admin_report_view/ HTTP/1.1" 500 137197
+ERROR 2023-11-27 04:30:47,400 django.request Thread-1 21380 log log.py 241 django.request log_response 9144 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 570, in admin_report_view
+    alignment_and_satisfaction2 = chart_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\report_generator.py", line 67, in chart_alignment_and_satisfaction
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1532, in build_dataframe
+    raise ValueError(
+ValueError: Plotly Express cannot process wide-form data with columns of different type.
+ERROR 2023-11-27 04:30:47,566 django.server Thread-1 21380 basehttp basehttp.py 212 django.server log_message 9144 "GET /admin_report_view/ HTTP/1.1" 500 137197
+ERROR 2023-11-27 04:31:05,451 django.request Thread-6 11528 log log.py 241 django.request log_response 9144 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 570, in admin_report_view
+    alignment_and_satisfaction2 = chart_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\report_generator.py", line 67, in chart_alignment_and_satisfaction
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1532, in build_dataframe
+    raise ValueError(
+ValueError: Plotly Express cannot process wide-form data with columns of different type.
+ERROR 2023-11-27 04:31:05,546 django.server Thread-6 11528 basehttp basehttp.py 212 django.server log_message 9144 "GET /admin_report_view/ HTTP/1.1" 500 137059
+ERROR 2023-11-27 04:37:20,482 django.request Thread-1 23532 log log.py 241 django.request log_response 21448 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 570, in admin_report_view
+    alignment_and_satisfaction2 = chart_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\report_generator.py", line 67, in chart_alignment_and_satisfaction
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1532, in build_dataframe
+    raise ValueError(
+ValueError: Plotly Express cannot process wide-form data with columns of different type.
+ERROR 2023-11-27 04:37:20,635 django.server Thread-1 23532 basehttp basehttp.py 212 django.server log_message 21448 "GET /admin_report_view/ HTTP/1.1" 500 136935
+WARNING 2023-11-27 12:11:11,788 django.server Thread-5 4760 basehttp basehttp.py 212 django.server log_message 2820 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 12:19:19,071 django.server Thread-8 9776 basehttp basehttp.py 212 django.server log_message 2820 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 12:21:32,657 django.server Thread-9 15424 basehttp basehttp.py 212 django.server log_message 2820 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 12:24:31,681 django.server Thread-11 21052 basehttp basehttp.py 212 django.server log_message 2820 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 12:31:53,618 django.server Thread-7 8816 basehttp basehttp.py 212 django.server log_message 2820 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 12:33:29,075 django.server Thread-12 8324 basehttp basehttp.py 212 django.server log_message 2820 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 12:34:27,714 django.server Thread-6 8604 basehttp basehttp.py 212 django.server log_message 2820 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 12:37:47,533 django.server Thread-13 23760 basehttp basehttp.py 212 django.server log_message 2820 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 12:41:55,056 django.server Thread-17 23300 basehttp basehttp.py 212 django.server log_message 2820 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 12:44:18,307 django.server Thread-10 18328 basehttp basehttp.py 212 django.server log_message 2820 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 12:54:50,277 django.request Thread-21 14308 log log.py 241 django.request log_response 2820 Not Found: /job_list/127/
+WARNING 2023-11-27 12:54:50,282 django.server Thread-21 14308 basehttp basehttp.py 212 django.server log_message 2820 "GET /job_list/127/ HTTP/1.1" 404 26722
+WARNING 2023-11-27 12:54:52,795 django.request Thread-18 16636 log log.py 241 django.request log_response 2820 Not Found: /favicon.ico
+WARNING 2023-11-27 12:54:52,797 django.server Thread-18 16636 basehttp basehttp.py 212 django.server log_message 2820 "GET /favicon.ico HTTP/1.1" 404 26714
+WARNING 2023-11-27 12:55:02,126 django.request Thread-14 22008 log log.py 241 django.request log_response 2820 Not Found: /job_list/137/
+WARNING 2023-11-27 12:55:02,127 django.server Thread-14 22008 basehttp basehttp.py 212 django.server log_message 2820 "GET /job_list/137/ HTTP/1.1" 404 26722
+WARNING 2023-11-27 12:59:02,723 django.server Thread-28 21464 basehttp basehttp.py 212 django.server log_message 2820 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 13:10:03,718 django.server Thread-12 19916 basehttp basehttp.py 212 django.server log_message 20828 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 13:12:56,903 django.server Thread-27 20780 basehttp basehttp.py 212 django.server log_message 20828 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 13:14:47,669 django.server Thread-44 10372 basehttp basehttp.py 212 django.server log_message 20828 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 14:01:48,533 django.request Thread-110 10384 log log.py 241 django.request log_response 20828 Not Found: /favicon.ico
+WARNING 2023-11-27 14:01:48,533 django.server Thread-110 10384 basehttp basehttp.py 212 django.server log_message 20828 "GET /favicon.ico HTTP/1.1" 404 26714
+WARNING 2023-11-27 22:19:43,233 django.request Thread-1 14084 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:19:43,234 django.server Thread-1 14084 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26333
+WARNING 2023-11-27 22:19:43,321 django.request Thread-1 14084 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:19:43,322 django.server Thread-1 14084 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26332
+WARNING 2023-11-27 22:19:44,885 django.request Thread-1 14084 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:19:44,886 django.server Thread-1 14084 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26333
+WARNING 2023-11-27 22:19:45,000 django.request Thread-1 14084 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:19:45,004 django.server Thread-1 14084 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26332
+WARNING 2023-11-27 22:19:47,824 django.server Thread-1 14084 basehttp basehttp.py 212 django.server log_message 3208 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 22:19:47,878 django.server Thread-3 7580 basehttp basehttp.py 212 django.server log_message 3208 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 22:20:12,597 django.request Thread-4 2308 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:20:12,597 django.server Thread-4 2308 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26334
+WARNING 2023-11-27 22:20:15,373 django.request Thread-4 2308 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:20:15,377 django.server Thread-4 2308 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26334
+WARNING 2023-11-27 22:20:17,800 django.request Thread-2 7776 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:20:17,800 django.server Thread-2 7776 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26334
+WARNING 2023-11-27 22:20:33,901 django.server Thread-6 9872 basehttp basehttp.py 212 django.server log_message 3208 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 22:20:33,943 django.server Thread-5 7568 basehttp basehttp.py 212 django.server log_message 3208 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+ERROR 2023-11-27 22:21:16,207 django.request Thread-2 7776 log log.py 241 django.request log_response 3208 Internal Server Error: /admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 171, in admin_home
+    return render(request, 'admin_home.html', {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'admin_report_view' not found. 'admin_report_view' is not a valid view function or pattern name.
+ERROR 2023-11-27 22:21:35,709 django.request Thread-4 2308 log log.py 241 django.request log_response 3208 Internal Server Error: /admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 171, in admin_home
+    return render(request, 'admin_home.html', {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'admin_report_view' not found. 'admin_report_view' is not a valid view function or pattern name.
+ERROR 2023-11-27 22:21:40,988 django.request Thread-7 11096 log log.py 241 django.request log_response 3208 Internal Server Error: /admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 171, in admin_home
+    return render(request, 'admin_home.html', {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'admin_report_view' not found. 'admin_report_view' is not a valid view function or pattern name.
+ERROR 2023-11-27 22:21:41,113 django.server Thread-7 11096 basehttp basehttp.py 212 django.server log_message 3208 "GET /admin_home/ HTTP/1.1" 500 253788
+WARNING 2023-11-27 22:21:44,897 django.request Thread-7 11096 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:21:44,897 django.server Thread-7 11096 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26334
+WARNING 2023-11-27 22:21:48,299 django.request Thread-7 11096 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:21:48,315 django.server Thread-7 11096 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26334
+WARNING 2023-11-27 22:21:56,050 django.request Thread-7 11096 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:21:56,066 django.server Thread-7 11096 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26334
+ERROR 2023-11-27 22:23:49,922 django.request Thread-7 11096 log log.py 241 django.request log_response 3208 Internal Server Error: /admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 171, in admin_home
+    return render(request, 'admin_home.html', {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+ERROR 2023-11-27 22:24:02,884 django.request Thread-8 6968 log log.py 241 django.request log_response 3208 Internal Server Error: /admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 171, in admin_home
+    return render(request, 'admin_home.html', {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+ERROR 2023-11-27 22:24:03,007 django.server Thread-8 6968 basehttp basehttp.py 212 django.server log_message 3208 "GET /admin_home/ HTTP/1.1" 500 253562
+WARNING 2023-11-27 22:24:06,939 django.request Thread-8 6968 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:24:06,939 django.server Thread-8 6968 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26334
+WARNING 2023-11-27 22:24:06,965 django.request Thread-9 9212 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:24:06,969 django.server Thread-9 9212 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26334
+WARNING 2023-11-27 22:24:11,333 django.request Thread-8 6968 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:24:11,333 django.server Thread-8 6968 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26334
+WARNING 2023-11-27 22:25:23,029 django.server Thread-9 9212 basehttp basehttp.py 212 django.server log_message 3208 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 22:25:23,091 django.server Thread-10 8704 basehttp basehttp.py 212 django.server log_message 3208 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 22:25:31,916 django.server Thread-11 13276 basehttp basehttp.py 212 django.server log_message 3208 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 22:25:32,034 django.server Thread-12 8448 basehttp basehttp.py 212 django.server log_message 3208 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 22:25:47,418 django.server Thread-13 12856 basehttp basehttp.py 212 django.server log_message 3208 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 22:25:47,460 django.server Thread-14 12816 basehttp basehttp.py 212 django.server log_message 3208 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-27 22:26:08,947 django.request Thread-15 13088 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:26:08,947 django.server Thread-15 13088 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26334
+WARNING 2023-11-27 22:26:11,423 django.request Thread-15 13088 log log.py 241 django.request log_response 3208 Not Found: /favicon.ico
+WARNING 2023-11-27 22:26:11,423 django.server Thread-15 13088 basehttp basehttp.py 212 django.server log_message 3208 "GET /favicon.ico HTTP/1.1" 404 26334
