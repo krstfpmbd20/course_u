@@ -138,7 +138,9 @@ a:hover {
 .button-continer {
   position: fixed;
   bottom:10px;
- 
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .get-started-button {
@@ -151,7 +153,8 @@ a:hover {
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
  
-  margin-left: 700px; 
+  /* margin-left: 50%; 
+  margin-right: 50%; */
   margin-top: 20px;
   margin-bottom: 10px;
   width: 100px;
@@ -159,6 +162,7 @@ a:hover {
   display: flex;
   text-align: center;
   justify-content: center;
+  position: relative;
   font-size: 23px;
   padding-bottom: 20px;
 
