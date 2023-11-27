@@ -15,7 +15,7 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-
+<!-- 
 <style>
     body {
         margin: 0;
@@ -27,24 +27,21 @@
         background-size: cover;
         height: 100%;
     }
-</style>
+</style> -->
     <!-- {% if admin %}
     <div>
         <p>You are on Dashboard Page, only accessible by Admins.</p>
     </div>
     {% endif %} -->
-    <div style="padding: 13px;background:#1a1a1a;text-align:right;">
-        <a href="/admin/website/field/add/" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: #ffffff; text-decoration: none; border-radius: 5px;">Add Field</a>
-        <a href="/admin/website/field/" style="display: inline-block; margin-left: 10px; padding: 10px 20px; background-color: #007BFF; color: #ffffff; text-decoration: none; border-radius: 5px;">View Field</a>
-        <a href="/admin/assessment/test/add/" style="display: inline-block; margin-left: 10px; padding: 10px 20px; background-color: #4CAF50; color: #ffffff; text-decoration: none; border-radius: 5px;">Add Test</a>
-        <a href="/admin/assessment/test/" style="display: inline-block; margin-left: 10px; padding: 10px 20px; background-color: #007BFF; color: #ffffff; text-decoration: none; border-radius: 5px;">View Test</a>
-    </div>
-    
 
     {% include 'status.html' %}
 
     <div>
-        <a href="{% url 'admin_report' %}" class="btn btn-primary">Admin Report</a>
+        <!-- <a href="{% url 'admin_report' %}" class="btn btn-primary">Admin Report</a> -->
+    </div>
+    <div>
+        <!-- <a href="{% url 'admin_report_view' %}" class="btn btn-primary">View Admin Report</a> -->
+        <a href="{% url 'admin_report_pdf' %}" class="btn btn-primary">Download Admin Report</a>
     </div>
     <!-- <div class="row">
         <div class="col">

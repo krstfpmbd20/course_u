@@ -34,6 +34,8 @@ from apps.website.models import Field
 
 def job_list(request, field_id=None, job_id=None):
     # get object of field_id
+    field_list = Field.objects.all()
+
     field = None
     if field_id:
         field = get_object_or_404(Field, field=field_id)
@@ -64,5 +66,5 @@ def job_list(request, field_id=None, job_id=None):
     selected_job.job_description = mark_safe(selected_job.job_description)
 
     return render(request, 'job/job_list.html', {
-        'job_postings': job_postings, 'selected_job': selected_job, 'field': field
+        'job_postings': job_postings, 'selected_job': selected_job, 'field': field, 'field_list': field_list
     })

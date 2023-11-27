@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -5,6 +7,86 @@ from io import BytesIO
 import base64
 from django.db.models import Count
 from apps.survey.models import Survey
+
+
+# Percentage of respondents who feel their academic specialization is completely aligned 
+# with their current job responsibilities, by level of job satisfaction:
+def generate_alignment_and_satisfaction():
+    # Generate data for how well users feel their academic specialization aligns with job responsibilities (replace this with your actual data)
+    alignment_data = Survey.objects.values('q2', 'q6').annotate(count=Count('q2'))
+
+    # Extract data for the horizontal bar chart
+    categories = [entry['q2'] for entry in alignment_data]
+    counts = [entry['count'] for entry in alignment_data]
+    job_satisfaction_levels = [entry['q6'] for entry in alignment_data]
+
+    # Create a horizontal bar chart
+    plt.barh(categories, counts, color='skyblue', label='Very Well')
+    plt.xlabel('Count')
+    plt.ylabel('Alignment Level')
+    plt.title('Alignment of Academic Specialization with Job Responsibilities, by Job Satisfaction')
+
+    # Add legend
+    plt.legend(title='Job Satisfaction', bbox_to_anchor=(1, 1), loc='upper left')
+
+    # Save the plot as an image in memory
+    image_stream = BytesIO()
+    plt.savefig(image_stream, format='png', bbox_inches='tight')
+    image_stream.seek(0)
+    plt.close()
+
+    # Encode the image to base64
+    image_base64 = base64.b64encode(image_stream.getvalue()).decode('utf-8')
+
+    return image_base64
+
+# Percentage of respondents who feel their academic specialization prepared 
+# them very well for their current role, by academic specialization:
+def generate_role_satisfaction_by_academic_specialization():
+    # Generate data for satisfaction levels with academic specialization preparation (replace this with your actual data)
+    satisfaction_data = Survey.objects.values('q3', 'q1').annotate(count=Count('q3'))
+
+    # Extract data for the stacked bar chart
+    categories = [entry['q3'] for entry in satisfaction_data]
+    counts = [entry['count'] for entry in satisfaction_data]
+    academic_specializations = [entry['q1'] for entry in satisfaction_data]
+
+    satisfaction_levels = ['Very Well', 'Well', 'Neutral', 'Poorly', 'Not at All']
+
+    # Create a stacked bar chart
+    plt.bar(categories, counts, color='skyblue', label='Very Well')
+    bottom = counts
+    for level in satisfaction_levels[1:]:
+        # Initialize level_counts with zeros
+        level_counts = [0 for _ in categories]
+
+        # Fill in the counts for the levels that exist in satisfaction_data
+        for entry in satisfaction_data:
+            if entry['q3'] == level:
+                index = categories.index(entry['q3'])
+                level_counts[index] = entry['count']
+
+        plt.bar(categories, level_counts, color='lightblue', bottom=bottom, label=level)
+        bottom = [b + l_count for b, l_count in zip(bottom, level_counts)]
+
+    plt.xlabel('Satisfaction Level')
+    plt.ylabel('Count')
+    plt.title('Satisfaction Levels with Academic Specialization Preparation, by Academic Specialization')
+
+    # Add legend
+    plt.legend(title='Satisfaction Level', bbox_to_anchor=(1, 1), loc='upper left')
+
+    # Save the plot as an image in memory
+    image_stream = BytesIO()
+    plt.savefig(image_stream, format='png', bbox_inches='tight')
+    image_stream.seek(0)
+    plt.close()
+
+    # Encode the image to base64
+    image_base64 = base64.b64encode(image_stream.getvalue()).decode('utf-8')
+
+    return image_base64
+
 
 def generate_gender_distribution_plot():
     
@@ -110,10 +192,26 @@ def generate_satisfaction_levels_plot():
     satisfaction_levels = ['Very Well', 'Well', 'Neutral', 'Poorly', 'Not at All']
 
     # Create a stacked bar chart
+    # plt.bar(categories, counts, color='skyblue', label='Very Well')
+    # bottom = counts
+    # for level in satisfaction_levels[1:]:
+    #     level_counts = [entry['count'] for entry in satisfaction_data if entry['q3'] == level]
+    #     plt.bar(categories, level_counts, color='lightblue', bottom=bottom, label=level)
+    #     bottom = [b + l_count for b, l_count in zip(bottom, level_counts)]
+
+    # Create a stacked bar chart
     plt.bar(categories, counts, color='skyblue', label='Very Well')
     bottom = counts
     for level in satisfaction_levels[1:]:
-        level_counts = [entry['count'] for entry in satisfaction_data if entry['q3'] == level]
+        # Initialize level_counts with zeros
+        level_counts = [0 for _ in categories]
+
+        # Fill in the counts for the levels that exist in satisfaction_data
+        for entry in satisfaction_data:
+            if entry['q3'] == level:
+                index = categories.index(entry['q3'])
+                level_counts[index] = entry['count']
+
         plt.bar(categories, level_counts, color='lightblue', bottom=bottom, label=level)
         bottom = [b + l_count for b, l_count in zip(bottom, level_counts)]
 
