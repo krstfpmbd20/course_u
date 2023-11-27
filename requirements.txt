@@ -26,3 +26,5 @@ pillow
 matplotlib
 django-jazzmin
 plotly_express
+reportlab
+xhtml2pdf
