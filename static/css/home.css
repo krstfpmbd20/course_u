@@ -6,13 +6,16 @@ main {
   background-repeat: no-repeat;
 }
 :root{
-  --blue: white;/*#Ffa07a replace with orange */
+  /* --blue: white;#Ffa07a replace with orange */
   --white: #fff;
   --highlight: /*#f5f5f5;*/rgb(228, 95, 65);
   --black1: white;
   --black2: #999;
   --darkbg: #0D1117;
-  --body-color: var(--white);
+  /* --body-color: var(--white); */
+  --body-color: #fffaf7;
+  --body-rgba: rgba(255, 250, 247, 1);
+  --card: var(--white); 
 }
 
 
@@ -33,8 +36,8 @@ main {
 
 .skill {
   width: 200px;
-  margin: 10px;
-  padding-right: 30px;
+  margin: 8px;
+  /* padding-right: 30px; */
 }
 
 .skill{
@@ -42,10 +45,16 @@ main {
   color: #FFB072;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4); */
-  padding: 10px;
+  /* padding: 10px; */
 }
 .skill-section {
   margin-bottom: 3px;
+  /* background-color:  rgb(255, 192, 170); */
+  background-color: var(--card);
+  color: var(--black2);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4);
+  padding: 10px;
 }
 .skill-section p {
   margin: 0;
@@ -63,6 +72,9 @@ main {
 .skill-section h3 {
   margin-top: 0px;
   padding-left: 0px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .skill-score {
@@ -71,6 +83,7 @@ main {
 
 .skill-score p {
   margin-bottom: 3px;
+  color: black;
 }
 .skill-bar-background {
   position: absolute;
@@ -78,7 +91,7 @@ main {
   left: 0;
   width: 100%;
   height: 5px;
-  background-color: grey;
+  background-color: rgb(235, 229, 229);
   border-radius: 3px;
 }
 
@@ -87,7 +100,7 @@ main {
   top: 0;
   left: 0;
   height: 5px;
-  background-color: #4CAF50;
+  background-color: var(--highlight);
   border-radius: 3px;
 }
 
@@ -195,6 +208,7 @@ h3 {
 
 .card-container {
   display: flex;
+  position: relative;
   overflow-x: auto;
   /* Allow horizontal scrolling if content overflows */
   padding: 5px;
@@ -216,18 +230,37 @@ h3 {
 }
 .card-container {
   display: flex;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
 }
 
-.card-container::after {
+/* .card-container::after {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
-  width: 50px; /* Adjust as needed */
+  width: 50px; 
   height: 100%;
-  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 100%);
+   background: linear-gradient(to right, rgba(255,255,255,0),  var(--body-color), 100%);    
+  #rgba(255,255,255,1)
+  background: linear-gradient(to right, rgba(255,255,255,0), var(--body-color) 100%);
+} */
+
+
+.card-container-wrapper {
+  position: relative;
+  overflow: hidden; 
+  display: flex;
+}
+
+.card-container-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px; 
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0), var(--body-color) 100%);
 }
 
 .card {
@@ -244,7 +277,8 @@ h3 {
   transition: background-color 0.3s ease;
   /* margin-left: 50px; */
   /* background-color: whitesmoke; */
-  background-color: #fffaf7;
+  /* background-color: #fffaf7; */
+  background-color: var(--card);
   /* color: rgb(228, 95, 65);  */
   color: black;
   box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4);
@@ -320,7 +354,7 @@ h3 {
 .recommendedfield_third .card.field{
   /* background-color: #1E90FF; */
   /* background-color: #FFA599; */
-  background-color: #AABBFF;
+  background-color: #FFC0CB;
   color: white; /* White text */
 }
 /* color: #FFC6C2; */
@@ -359,9 +393,13 @@ h3 {
 .card-selected {
   font-weight: 900 !important;
   color: white !important;
-  background-color: #A9A9A9 !important;
-  border: 2px solid #A9A9A9 !important;
-  box-shadow: 0 0 10px #A9A9A9 !important;
+  background-color: var(--highlight) !important;
+  /* border: 2px solid #A9A9A9 !important; */
+  /* box-shadow: 0 0 10px #A9A9A9 !important; */
+}
+
+.card-selected .field_title {
+  color: white !important;
 }
 
 .specialization_title {
