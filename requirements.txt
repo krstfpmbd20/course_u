@@ -11,6 +11,7 @@ packaging
 pandas
 plotly
 psycopg2-binary
+pyproject-toml
 python-dateutil
 pytz
 scikit-learn
