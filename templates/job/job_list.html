@@ -19,7 +19,15 @@
 
 <div class="container">
     {% if field != None %}
-    <h2>Jobs for {{ field.field_name }}</h2>
+    <div class="heading-section">
+    <h2 class="head">Jobs for {{ field.field_name }}</h2>
+    <select id="job-field-select" class="select-dropdown ">
+        <option value="">Select a field</option>
+        {% for field in field_list %}
+        <option value="{{field.field}}">{{field.field_name}}</option>
+        {% endfor %}
+      </select>
+    </div>
     {% endif %}
     <div class="job row">
         <div class="jobs col-md-2">
