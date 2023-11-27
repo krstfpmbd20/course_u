@@ -1,4 +1,14 @@
 
+:root {
+    --highlight: /*#f5f5f5;*/rgb(228, 95, 65);
+    --blue: var(--highlight);
+}
+
+.btn {
+    background-color: var(--highlight) !important;
+    border-color: var(--highlight) !important;
+    color: white !important;
+}
 
 
 /* Status */
@@ -14,7 +24,7 @@
    
 }
 
-.cardBox .card
+.cardBox .card1
 {
     position: relative;
     background: var(--white);
@@ -27,7 +37,7 @@
     
 }
 
-.cardBox .card .numbers
+.cardBox .card1 .numbers
 {
     position: relative;
     font-weight: 500;
@@ -35,32 +45,40 @@
     color: var(--blue);
 }
 
-.cardBox .card .cardName
+.cardBox .card1 .cardName
 {
     position: relative;
     font-size: 1.2em;
     color: var(--blue);
 }
 
-.cardBox .card .iconBx
+.cardBox .card1 .iconBx
 {
    font-size: 3.5rem;
    color: var(--black2);
 }
 
-.cardBox .card:hover
+.cardBox .card1:hover
 {
     background: var(--blue);
 }
 
-.cardBox .card:hover .numbers,
-.cardBox .card:hover .cardName,
-.cardBox .card:hover .iconBx
+.cardBox .card1:hover .numbers,
+.cardBox .card1:hover .cardName,
+.cardBox .card1:hover:hover .iconBx
 {
     color: var(--white);
 }
 
 /* tables */
+
+.table-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
 
 .details
 {
