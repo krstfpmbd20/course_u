@@ -44,28 +44,34 @@
 <hr>
 <div class="row">
 <div class="col-md-6 ">
-    <h5>Students</h5><a class="btn btn-primary" href="{% url 'admin_students' %}">View All Student</a><br><br>
+    <div class="table-heading">
+    <h5>Graduates</h5>
+    <a class="btn btn-primary" href="{% url 'admin_students' %}">View All Student</a>
+    </div>
     <div class="card card-body">
         <!-- <a class="btn bth-primary btn-sm btn-block" href="">Create</a> -->
         <table class="table table-sm">
             <thead>
                 <th>Username</th>
                 <th>Email</th>
-                <th>Active</th>
+                <!-- <th>Active</th> -->
             </thead>
             <tbody>
                 {% for user in auth_user %}
                 <tr>
                     <td><a href="#">{{ user.username}}</a></td>                  
                     <td>{{ user.email }}</td>                
-                    <td>{{ user.is_active}}</td>
+                    <!-- <td>{{ user.is_active}}</td> -->
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     </div> 
     <br><br>
-    <h5>Test</h5><a class="btn btn-primary" href="{% url 'admin_report' %}"> Assessment Report </a><br><br>
+    <h5>Assessment</h5>
+    <a class="btn btn-primary" href="{% url 'admin_report' %}"> Assessment Report </a>
+    <a href="/admin/assessment/test/add/" class="btn">Add Test</a>
+    <a href="/admin/assessment/test/" class="btn">View Test</a>
     <div class="card card-body">
         <!-- <a class="btn bth-primary btn-sm btn-block" href="">Create</a> -->
         <table class="table table-sm">
@@ -90,13 +96,15 @@
 <br><br>
 <div class="col-md-6">
     <h5>Field / Specialization </h5>
+    <a href="/admin/website/field/add/" class="btn">Add Field</a>
+    <a href="/admin/website/field/" class="btn">View Field</a>
     <div class="card card-body">
         <!-- <a class="btn bth-primary btn-sm btn-block" href="">Create</a> -->
         <table class="table table-sm">
             <thead>
                 <th> Name </th>
                 <th> View </th>
-            </thead>
+            </thead>    
             <tbody>
                 {% for item in fields %}
                 <tr>
