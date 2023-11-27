@@ -27,6 +27,7 @@ pillow
 matplotlib
 django-jazzmin
 plotly_express
+#pycairo==1.20
 reportlab
 xhtml2pdf
 
