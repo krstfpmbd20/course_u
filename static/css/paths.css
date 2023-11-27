@@ -47,7 +47,7 @@ p {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-
+  border: 3px solid rgb(228, 95, 65);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,9 +99,9 @@ a:hover {
   border-radius: 20px;
   margin-top: 20px;
   margin-bottom: 30px;
-  border: 1px solid #ccc;
+  border: 3px solid rgb(228, 95, 65);/*#ccc;*/
   padding: 10px;
-  
+  background-color:#ffffff;
 }
 
 .container2 {
@@ -135,33 +135,31 @@ a:hover {
 
 
 .button-continer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
+  position: fixed;
+  bottom:10px;
+ 
 }
 
 .get-started-button {
 
-  padding: 10px 20px;
+  padding: 5px 20px;
   background-color: rgb(228, 95, 65);
   color: white;
-  border-radius: 5px;
+  border-radius: 20px;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+ 
   /* margin-left: 700px; */
-
   margin-top: 20px;
-  margin-bottom: 20px;
-  
-  width: 200px;
-  height: 50px;
-
+  margin-bottom: 10px;
+  width: 100px;
+  height: 20px;
   display: flex;
   text-align: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 23px;
+  padding-bottom: 20px;
 
 }
 
