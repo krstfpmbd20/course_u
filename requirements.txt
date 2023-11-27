@@ -30,3 +30,6 @@ plotly_express
 reportlab
 xhtml2pdf
 pkg-config
+libcairo2-dev
+python3-dev
+pycairo
