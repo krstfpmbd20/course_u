@@ -2,7 +2,7 @@
 
 .content, .modal {
     /* max-width: 600px; */
-    min-width: 600px;
+    min-width: 600px; 
     padding: 20px;
     display: flex;
     align-items: center;
