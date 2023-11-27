@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+# from django.shortcuts import render
+# from django.http import HttpResponse
 from django.db.models import Count
 from apps.survey.models import Survey
 

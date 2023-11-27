@@ -23,15 +23,18 @@ from apps.jobs.models import JobPosting
 from utilities.decorators import unauthenticated_user, allowed_users, admin_only
 from .models import *
 from django.http import FileResponse
-from reportlab.pdfgen import canvas
+# from reportlab.pdfgen import canvas
 from django.template.loader import get_template
+
 from django.http import FileResponse
 from xhtml2pdf import pisa
 from io import BytesIO
+import datetime
+from .report_generator import *
 # Other Imports
-import json
+# import json
 import logging
-import plotly.express as px
+# import plotly.express as px
 from apps.survey.models import Survey
 from .plotgenerator import *
 #logger = logging.getLogger(__name__)
@@ -503,7 +506,7 @@ def process_survey_data(survey_responses):
 
     return processed_data
 
-import datetime
+
 
 def admin_report(request):
     # get current time
@@ -548,11 +551,6 @@ def admin_report(request):
         'user_engagement_plot': user_engagement_plot,
     })
 
-# from django.templatetags.static import static
-# from django.contrib.staticfiles.storage import staticfiles_storage
-# import os
-# # from django.conf import settings
-from .report_generator import *
 
 def admin_report_view(request):
      # get current time
