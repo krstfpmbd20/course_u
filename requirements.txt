@@ -26,9 +26,10 @@ pillow
 matplotlib
 django-jazzmin
 plotly_express
-reportlab
-pycairo
-rlPyCairo
-libcairo2-dev
-pkg-config
-python3-dev
+#reportlab
+#xhtml2pdf
+#pycairo
+#rlPyCairo
+#libcairo2-dev
+#pkg-config
+#python3-dev
