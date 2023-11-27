@@ -29,3 +29,6 @@ plotly_express
 reportlab
 pycairo
 rlPyCairo
+libcairo2-dev
+pkg-config
+python3-dev
