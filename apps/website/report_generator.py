@@ -89,3 +89,4 @@ def chart_alignment_and_satisfaction():
     # Return the plotly figure as HTML
     return fig.to_html(full_html=False)
 
+
