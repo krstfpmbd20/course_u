@@ -29,9 +29,3 @@ django-jazzmin
 plotly_express
 reportlab
 xhtml2pdf
-#pycairo
-#rlPyCairo
-#libcairo2-dev
-pkg-config
-cairo
-#python3-dev
