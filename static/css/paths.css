@@ -3,6 +3,7 @@ body {
   line-height: 1.6;
   margin: 20px;
   color: #333;
+  justify-content: center;
   /* background-color: lightcyan; */
 }
 
@@ -150,7 +151,7 @@ a:hover {
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
  
-  /* margin-left: 700px; */
+  margin-left: 700px; 
   margin-top: 20px;
   margin-bottom: 10px;
   width: 100px;
