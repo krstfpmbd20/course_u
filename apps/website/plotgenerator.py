@@ -12,33 +12,36 @@ from apps.survey.models import Survey
 # Percentage of respondents who feel their academic specialization is completely aligned 
 # with their current job responsibilities, by level of job satisfaction:
 def generate_alignment_and_satisfaction():
-    # Generate data for how well users feel their academic specialization aligns with job responsibilities (replace this with your actual data)
-    alignment_data = Survey.objects.values('q2', 'q6').annotate(count=Count('q2'))
+    try:
+        # Generate data for how well users feel their academic specialization aligns with job responsibilities (replace this with your actual data)
+        alignment_data = Survey.objects.values('q2', 'q6').annotate(count=Count('q2'))
 
-    # Extract data for the horizontal bar chart
-    categories = [entry['q2'] for entry in alignment_data]
-    counts = [entry['count'] for entry in alignment_data]
-    job_satisfaction_levels = [entry['q6'] for entry in alignment_data]
+        # Extract data for the horizontal bar chart
+        categories = [entry['q2'] for entry in alignment_data]
+        counts = [entry['count'] for entry in alignment_data]
+        job_satisfaction_levels = [entry['q6'] for entry in alignment_data]
 
-    # Create a horizontal bar chart
-    plt.barh(categories, counts, color='skyblue', label='Very Well')
-    plt.xlabel('Count')
-    plt.ylabel('Alignment Level')
-    plt.title('Alignment of Academic Specialization with Job Responsibilities, by Job Satisfaction')
+        # Create a horizontal bar chart
+        plt.barh(categories, counts, color='skyblue', label='Very Well')
+        plt.xlabel('Count')
+        plt.ylabel('Alignment Level')
+        plt.title('Alignment of Academic Specialization with Job Responsibilities, by Job Satisfaction')
 
-    # Add legend
-    plt.legend(title='Job Satisfaction', bbox_to_anchor=(1, 1), loc='upper left')
+        # Add legend
+        plt.legend(title='Job Satisfaction', bbox_to_anchor=(1, 1), loc='upper left')
 
-    # Save the plot as an image in memory
-    image_stream = BytesIO()
-    plt.savefig(image_stream, format='png', bbox_inches='tight')
-    image_stream.seek(0)
-    plt.close()
+        # Save the plot as an image in memory
+        image_stream = BytesIO()
+        plt.savefig(image_stream, format='png', bbox_inches='tight')
+        image_stream.seek(0)
+        plt.close()
 
-    # Encode the image to base64
-    image_base64 = base64.b64encode(image_stream.getvalue()).decode('utf-8')
+        # Encode the image to base64
+        image_base64 = base64.b64encode(image_stream.getvalue()).decode('utf-8')
 
-    return image_base64
+        return image_base64
+    except:
+        return None
 
 # Percentage of respondents who feel their academic specialization prepared 
 # them very well for their current role, by academic specialization:
@@ -277,61 +280,67 @@ def generate_different_specialization_percentage_plot():
     image_base64 = base64.b64encode(image_stream.getvalue()).decode('utf-8')
     return image_base64
 def generate_overall_satisfaction_plot():
-    # Generate data for overall satisfaction levels with current jobs (replace this with your actual data)
-    satisfaction_data = Survey.objects.values('q6').annotate(count=Count('q6'))
+    try:
+        # Generate data for overall satisfaction levels with current jobs (replace this with your actual data)
+        satisfaction_data = Survey.objects.values('q6').annotate(count=Count('q6'))
 
-    # Extract data for the bar chart
-    categories = [entry['q6'] for entry in satisfaction_data]
-    counts = [entry['count'] for entry in satisfaction_data]
+        # Extract data for the bar chart
+        categories = [entry['q6'] for entry in satisfaction_data]
+        counts = [entry['count'] for entry in satisfaction_data]
 
-    # Create a bar chart
-    plt.bar(categories, counts, color='lightblue')
-    plt.xlabel('Satisfaction Level')
-    plt.ylabel('Count')
-    plt.title('Overall Satisfaction Levels with Current Jobs')
+        # Create a bar chart
+        plt.bar(categories, counts, color='lightblue')
+        plt.xlabel('Satisfaction Level')
+        plt.ylabel('Count')
+        plt.title('Overall Satisfaction Levels with Current Jobs')
 
-    # Save the plot as an image in memory
-    image_stream = BytesIO()
-    plt.savefig(image_stream, format='png', bbox_inches='tight')
-    image_stream.seek(0)
-    plt.close()
+        # Save the plot as an image in memory
+        image_stream = BytesIO()
+        plt.savefig(image_stream, format='png', bbox_inches='tight')
+        image_stream.seek(0)
+        plt.close()
 
-    # Encode the image to base64
-    image_base64 = base64.b64encode(image_stream.getvalue()).decode('utf-8')
-    return image_base64
+        # Encode the image to base64
+        image_base64 = base64.b64encode(image_stream.getvalue()).decode('utf-8')
+        return image_base64
+    except:
+            return None
 
 def generate_job_fields_distribution_plot():
-    # Generate data for the distribution of users across different job fields (replace this with your actual data)
-    job_fields_data = Survey.objects.values('q7', 'q8').annotate(count=Count('q7'))
+    try:
+        # Generate data for the distribution of users across different job fields (replace this with your actual data)
+        job_fields_data = Survey.objects.values('q7', 'q8').annotate(count=Count('q7'))
 
-    # Extract data for the grouped bar chart
-    categories = list(set(entry['q7'] for entry in job_fields_data))
-    job_fields = list(set(entry['q8'] for entry in job_fields_data))
-    counts = {category: [entry['count'] for entry in job_fields_data if entry['q7'] == category] for category in categories}
+        # Extract data for the grouped bar chart
+        categories = list(set(entry['q7'] for entry in job_fields_data))
+        job_fields = list(set(entry['q8'] for entry in job_fields_data))
+        counts = {category: [entry['count'] for entry in job_fields_data if entry['q7'] == category] for category in categories}
 
-    # Create a grouped bar chart
-    bar_width = 0.35
-    fig, ax = plt.subplots()
-    for i, (category, count_list) in enumerate(counts.items()):
-        positions = [x + i * bar_width for x in range(len(job_fields))]
-        ax.bar(positions, count_list, bar_width, label=category)
+        # Create a grouped bar chart
+        bar_width = 0.35
+        fig, ax = plt.subplots()
+        for i, (category, count_list) in enumerate(counts.items()):
+            positions = [x + i * bar_width for x in range(len(job_fields))]
+            ax.bar(positions, count_list, bar_width, label=category)
 
-    ax.set_xlabel('Job Fields')
-    ax.set_ylabel('Count')
-    ax.set_title('Distribution of Users Across Different Job Fields')
-    ax.set_xticks([x + bar_width for x in range(len(job_fields))])
-    ax.set_xticklabels(job_fields)
-    ax.legend()
+        ax.set_xlabel('Job Fields')
+        ax.set_ylabel('Count')
+        ax.set_title('Distribution of Users Across Different Job Fields')
+        ax.set_xticks([x + bar_width for x in range(len(job_fields))])
+        ax.set_xticklabels(job_fields)
+        ax.legend()
 
-    # Save the plot as an image in memory
-    image_stream = BytesIO()
-    plt.savefig(image_stream, format='png', bbox_inches='tight')
-    image_stream.seek(0)
-    plt.close()
+        # Save the plot as an image in memory
+        image_stream = BytesIO()
+        plt.savefig(image_stream, format='png', bbox_inches='tight')
+        image_stream.seek(0)
+        plt.close()
 
-    # Encode the image to base64
-    image_base64 = base64.b64encode(image_stream.getvalue()).decode('utf-8')
-    return image_base64
+        # Encode the image to base64
+        image_base64 = base64.b64encode(image_stream.getvalue()).decode('utf-8')
+        return image_base64
+    except:
+        return None
 
 def generate_user_engagement_plot():
     # Generate data for the number of surveys completed by each user (replace this with your actual data)
