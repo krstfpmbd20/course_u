@@ -1,1 +1,415 @@
 
+INFO 2023-11-29 15:47:48,596 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-11-29 15:48:23,621 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 40735)
+INFO 2023-11-29 15:48:33,036 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 9439
+INFO 2023-11-29 15:48:33,072 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing.css HTTP/1.1" 304 0
+WARNING 2023-11-29 15:48:33,410 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2023-11-29 15:48:33,413 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 26333
+WARNING 2023-11-29 15:48:33,516 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2023-11-29 15:48:33,519 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 26332
+INFO 2023-11-29 15:48:34,825 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 302 0
+INFO 2023-11-29 15:48:35,202 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52970
+INFO 2023-11-29 15:48:35,263 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 304 0
+INFO 2023-11-29 15:48:35,267 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 304 0
+INFO 2023-11-29 15:48:35,284 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 304 0
+INFO 2023-11-29 15:48:35,285 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_girl.png HTTP/1.1" 304 0
+INFO 2023-11-29 15:48:35,293 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_boy.png HTTP/1.1" 304 0
+INFO 2023-11-29 15:48:35,306 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-1.png HTTP/1.1" 304 0
+INFO 2023-11-29 15:48:35,311 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-2.png HTTP/1.1" 304 0
+INFO 2023-11-29 15:48:35,354 django.server basehttp basehttp.py 212 log_message "GET /static/js/specialization_filter.js HTTP/1.1" 304 0
+INFO 2023-11-29 15:48:35,786 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 304 0
+WARNING 2023-11-29 15:48:36,801 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-29 15:48:36,881 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-11-29 15:48:41,095 django.server basehttp basehttp.py 212 log_message "GET /recommendersurvey/ HTTP/1.1" 302 0
+INFO 2023-11-29 15:48:47,619 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14494041
+INFO 2023-11-29 15:48:47,644 django.server basehttp basehttp.py 212 log_message "GET /static/css/recommender.css HTTP/1.1" 304 0
+WARNING 2023-11-29 15:48:49,960 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-29 15:48:50,032 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-11-29 15:55:31,480 django.server basehttp basehttp.py 212 log_message "GET /paths/ HTTP/1.1" 200 14166
+INFO 2023-11-29 15:55:31,513 django.server basehttp basehttp.py 212 log_message "GET /static/css/paths.css HTTP/1.1" 304 0
+INFO 2023-11-29 15:55:31,945 django.server basehttp basehttp.py 212 log_message "GET /static/images/user.png HTTP/1.1" 304 0
+INFO 2023-11-29 15:55:32,612 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 40787)
+WARNING 2023-11-29 15:55:32,627 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2023-11-29 15:55:32,627 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 26333
+WARNING 2023-11-29 15:55:32,719 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2023-11-29 15:55:32,719 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 26332
+INFO 2023-11-29 16:39:11,833 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14494042
+INFO 2023-11-29 17:28:56,014 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52970
+WARNING 2023-11-29 17:28:57,198 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-29 17:28:57,361 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-11-29 18:43:42,977 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52970
+WARNING 2023-11-29 18:43:43,568 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-29 18:43:43,649 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-11-29 18:43:48,925 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18464
+INFO 2023-11-29 18:43:48,963 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 304 0
+INFO 2023-11-29 18:43:48,980 django.server basehttp basehttp.py 212 log_message "GET /static/images/light.png HTTP/1.1" 304 0
+INFO 2023-11-29 18:43:48,989 django.server basehttp basehttp.py 212 log_message "GET /static/images/result.png HTTP/1.1" 304 0
+INFO 2023-11-29 18:43:48,990 django.server basehttp basehttp.py 212 log_message "GET /static/images/boom.png HTTP/1.1" 304 0
+INFO 2023-11-29 18:43:49,000 django.server basehttp basehttp.py 212 log_message "GET /static/images/character.png HTTP/1.1" 304 0
+WARNING 2023-11-29 18:43:49,061 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-29 18:43:49,276 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+ERROR 2023-11-29 18:43:52,798 django.request log log.py 241 log_response Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+TypeError: 'User' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\fields\related_descriptors.py", line 473, in __get__
+    rel_obj = self.related.get_cached_value(instance)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'userprofile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'courseu_db.website_userprofile' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 257, in user_profile
+    return render(request, 'user/user_profile.html', context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    match = condition.eval(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 877, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\fields\related_descriptors.py", line 481, in __get__
+    rel_obj = self.get_queryset(instance=instance).get(**filter_args)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 252, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 177, in _record
+    return method(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'courseu_db.website_userprofile' doesn't exist")
+ERROR 2023-11-29 18:43:52,899 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 500 365149
+WARNING 2023-11-29 18:43:53,871 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2023-11-29 18:43:53,872 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 26332
+WARNING 2023-11-29 18:43:53,979 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2023-11-29 18:43:53,981 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 26332
+WARNING 2023-11-29 18:43:54,834 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-11-29 18:46:03,705 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 29188
+INFO 2023-11-29 18:46:03,753 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+WARNING 2023-11-29 18:46:03,883 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-11-29 18:46:45,192 django.server basehttp basehttp.py 212 log_message "GET /recommendersurvey/ HTTP/1.1" 302 0
+INFO 2023-11-29 18:46:49,415 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14494041
+WARNING 2023-11-29 18:46:51,488 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-29 18:46:51,555 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-11-29 18:47:11,227 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52970
+WARNING 2023-11-29 18:47:11,622 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-29 18:47:11,727 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-11-29 18:47:40,452 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18462
+WARNING 2023-11-29 18:47:40,610 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-11-29 18:47:42,338 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52970
+WARNING 2023-11-29 18:47:42,682 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-29 18:47:42,766 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-11-29 19:13:27,392 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52970
+WARNING 2023-11-29 19:13:28,627 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-11-29 19:13:28,723 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-12-13 11:17:54,902 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-13 11:18:39,271 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 9439
+INFO 2023-12-13 11:18:39,363 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing.css HTTP/1.1" 200 1109
+INFO 2023-12-13 11:18:39,382 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-13 11:18:39,480 django.server basehttp basehttp.py 212 log_message "GET /static/images/landing2.png HTTP/1.1" 200 1935293
+INFO 2023-12-13 11:18:39,564 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-13 11:18:39,638 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-13 11:18:39,751 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2023-12-13 11:18:40,019 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2023-12-13 11:18:40,022 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 26333
+INFO 2023-12-13 11:18:49,911 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 10814
+INFO 2023-12-13 11:18:49,953 django.server basehttp basehttp.py 212 log_message "GET /static/css/login_user.css HTTP/1.1" 200 1283
+INFO 2023-12-13 11:18:50,311 django.server basehttp basehttp.py 212 log_message "GET /static/images/log.jpg HTTP/1.1" 200 43888
+WARNING 2023-12-13 11:18:50,382 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-12-13 11:19:13,673 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 11:19:13,847 django.server basehttp basehttp.py 212 log_message "GET /paths/ HTTP/1.1" 200 14163
+INFO 2023-12-13 11:19:13,870 django.server basehttp basehttp.py 212 log_message "GET /static/images/user.png HTTP/1.1" 200 47171
+INFO 2023-12-13 11:19:13,888 django.server basehttp basehttp.py 212 log_message "GET /static/css/paths.css HTTP/1.1" 200 3044
+INFO 2023-12-13 11:19:16,348 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52881
+INFO 2023-12-13 11:19:16,379 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-13 11:19:16,395 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_boy.png HTTP/1.1" 200 309552
+INFO 2023-12-13 11:19:16,403 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-1.png HTTP/1.1" 200 73195
+INFO 2023-12-13 11:19:16,409 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-2.png HTTP/1.1" 200 38335
+INFO 2023-12-13 11:19:16,414 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 8767
+INFO 2023-12-13 11:19:16,445 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-13 11:19:16,470 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_girl.png HTTP/1.1" 200 368527
+INFO 2023-12-13 11:19:16,501 django.server basehttp basehttp.py 212 log_message "GET /static/js/specialization_filter.js HTTP/1.1" 200 1412
+INFO 2023-12-13 11:19:16,597 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 200 33747
+INFO 2023-12-13 11:19:22,194 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18232
+INFO 2023-12-13 11:19:22,213 django.server basehttp basehttp.py 212 log_message "GET /static/images/light.png HTTP/1.1" 200 93173
+INFO 2023-12-13 11:19:22,249 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2240
+INFO 2023-12-13 11:19:22,285 django.server basehttp basehttp.py 212 log_message "GET /static/images/boom.png HTTP/1.1" 200 201714
+INFO 2023-12-13 11:19:22,291 django.server basehttp basehttp.py 212 log_message "GET /static/images/character.png HTTP/1.1" 200 749040
+INFO 2023-12-13 11:19:22,355 django.server basehttp basehttp.py 212 log_message "GET /static/images/result.png HTTP/1.1" 200 576860
+INFO 2023-12-13 11:19:23,287 django.server basehttp basehttp.py 212 log_message "GET /recommendersurvey/ HTTP/1.1" 200 23389
+INFO 2023-12-13 11:19:23,335 django.server basehttp basehttp.py 212 log_message "GET /static/css/recommender_survey.css HTTP/1.1" 200 2289
+INFO 2023-12-13 11:19:26,034 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52687
+ERROR 2023-12-13 11:19:29,028 django.request log log.py 241 log_response Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+TypeError: 'User' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\fields\related_descriptors.py", line 473, in __get__
+    rel_obj = self.related.get_cached_value(instance)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'userprofile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'courseu_db.website_userprofile' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 257, in user_profile
+    return render(request, 'user/user_profile.html', context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    match = condition.eval(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 877, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\fields\related_descriptors.py", line 481, in __get__
+    rel_obj = self.get_queryset(instance=instance).get(**filter_args)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 252, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 177, in _record
+    return method(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'courseu_db.website_userprofile' doesn't exist")
+INFO 2023-12-13 11:19:29,177 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 63414)
+INFO 2023-12-13 11:19:29,252 django.server basehttp basehttp.py 212 log_message "GET /logout/ HTTP/1.1" 302 0
+INFO 2023-12-13 11:19:29,306 django.server basehttp basehttp.py 212 log_message "GET /logout/success/ HTTP/1.1" 200 9608
+INFO 2023-12-13 11:19:29,347 django.server basehttp basehttp.py 212 log_message "GET /static/css/logout_success.css HTTP/1.1" 200 959
+INFO 2023-12-13 11:19:30,151 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 10814
+INFO 2023-12-13 11:19:35,439 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 11:19:35,473 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-13 11:19:46,759 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 11:19:46,824 django.server basehttp basehttp.py 212 log_message "GET /paths/ HTTP/1.1" 200 14162
+INFO 2023-12-13 11:19:49,263 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 53148
+INFO 2023-12-13 11:19:52,235 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 29188
+INFO 2023-12-13 11:19:52,288 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4034
+INFO 2023-12-13 11:19:57,246 django.server basehttp basehttp.py 212 log_message "GET /admin_report/ HTTP/1.1" 200 219946
+INFO 2023-12-13 11:19:57,270 django.server basehttp basehttp.py 212 log_message "GET /static/images/report-logo.png HTTP/1.1" 200 216778
+INFO 2023-12-13 11:20:57,825 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\course_u\settings.py changed, reloading.
+INFO 2023-12-13 11:21:01,369 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-13 11:21:16,117 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\course_u\settings.py changed, reloading.
+INFO 2023-12-13 11:21:18,757 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-13 11:21:37,493 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\course_u\settings.py changed, reloading.
+INFO 2023-12-13 11:21:41,469 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
