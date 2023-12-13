@@ -19,8 +19,11 @@ class Command(BaseCommand):
             # 'auth_permission', 'django_admin_log','auth_user', 
             # 'django_content_type', 'django_migrations', 'django_session', 
 
-            'jobs_jobposting','website_specializationskills', 'recommender_userrecommendations', 'website_learningmaterial',
-            'website_specialization', 'website_field','website_userprofile', 'website_skill', 
+            'jobs_jobposting',
+            'website_learningmaterial',
+            'website_specializationskills','website_specialization', 'survey_survey', 'recommender_survey_survey', 'recommender_userrecommendations',
+            'website_field', 'website_skill', 
+            #'website_userprofile',
             ]
 
         table_skill = [
