@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'apps.jobs',
     'apps.personality',
     'apps.website',
-    'grades',
+    #'grades',
     'apps.survey',
     'apps.recommender_survey',
 ]
