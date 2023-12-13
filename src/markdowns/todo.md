@@ -1,5 +1,16 @@
 # TODO
 
+# Highest Priority
+Revision Matrix
+- [ ]: Recommender Result Graphs
+- [ ]: Roadmap View (recommendation record)
+- [ ]: Report Update
+    - [ ]: By year, scatter plot of recommendation score, with regression line
+    - [ ]:
+
+
+- [ ]: user_recommendation score should record all scores, which means that this should have its own model, (fields: user_recommendation_id, field_id, field_score)
+
 
 
 ## High Priority

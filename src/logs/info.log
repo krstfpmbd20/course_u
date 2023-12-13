@@ -413,3 +413,235 @@ INFO 2023-12-13 11:21:16,117 django.utils.autoreload autoreload autoreload.py 26
 INFO 2023-12-13 11:21:18,757 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
 INFO 2023-12-13 11:21:37,493 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\course_u\settings.py changed, reloading.
 INFO 2023-12-13 11:21:41,469 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-13 11:24:06,602 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 29189
+INFO 2023-12-13 11:24:14,546 django.server basehttp basehttp.py 212 log_message "GET /admin/ HTTP/1.1" 200 57527
+INFO 2023-12-13 11:24:14,614 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 59344
+INFO 2023-12-13 11:24:14,649 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2023-12-13 11:24:14,669 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2023-12-13 11:24:14,755 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2023-12-13 11:24:14,757 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2023-12-13 11:24:14,850 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2023-12-13 11:24:14,860 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2023-12-13 11:24:14,873 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2023-12-13 11:24:15,057 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78196
+INFO 2023-12-13 11:24:15,068 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13276
+INFO 2023-12-13 11:24:29,306 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/curriculum/ HTTP/1.1" 200 53168
+INFO 2023-12-13 11:24:29,424 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-12-13 11:24:29,439 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2023-12-13 11:24:29,457 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2023-12-13 11:24:29,460 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-12-13 11:24:29,464 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2023-12-13 11:24:29,590 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-12-13 11:24:29,610 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2023-12-13 11:24:29,618 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2023-12-13 11:24:29,654 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2023-12-13 11:24:29,698 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-12-13 11:24:29,724 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+ERROR 2023-12-13 11:24:34,147 django.request log log.py 241 log_response Internal Server Error: /admin/survey/survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'survey_survey.user_id' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 252, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 177, in _record
+    return method(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'survey_survey.user_id' in 'field list'")
+ERROR 2023-12-13 11:24:34,249 django.server basehttp basehttp.py 212 log_message "GET /admin/survey/survey/ HTTP/1.1" 500 232660
+INFO 2023-12-13 11:24:36,889 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/curriculum/ HTTP/1.1" 200 53166
+ERROR 2023-12-13 11:24:38,553 django.request log log.py 241 log_response Internal Server Error: /admin/survey/survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'survey_survey.user_id' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 252, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 177, in _record
+    return method(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'survey_survey.user_id' in 'field list'")
+ERROR 2023-12-13 11:24:38,658 django.server basehttp basehttp.py 212 log_message "GET /admin/survey/survey/ HTTP/1.1" 500 232659
+INFO 2023-12-13 11:24:41,537 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/curriculum/ HTTP/1.1" 200 53166
+INFO 2023-12-13 11:30:37,413 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-13 19:23:12,832 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-13 19:25:01,260 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 9439
+INFO 2023-12-13 19:25:01,286 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing.css HTTP/1.1" 200 1109
+INFO 2023-12-13 19:25:01,305 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-13 19:25:01,364 django.server basehttp basehttp.py 212 log_message "GET /static/images/landing2.png HTTP/1.1" 200 1935293
+INFO 2023-12-13 19:25:01,367 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-13 19:25:01,382 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-13 19:25:02,657 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-13 19:25:15,271 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 10814
+INFO 2023-12-13 19:25:15,287 django.server basehttp basehttp.py 212 log_message "GET /static/css/login_user.css HTTP/1.1" 200 1283
+INFO 2023-12-13 19:25:15,835 django.server basehttp basehttp.py 212 log_message "GET /static/images/log.jpg HTTP/1.1" 200 43888
+INFO 2023-12-13 19:25:23,978 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:25:24,023 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-13 19:25:33,546 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:25:33,617 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-13 19:25:44,194 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:25:44,252 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-13 19:25:52,199 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:25:52,252 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-13 19:26:14,368 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:26:14,437 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-13 19:26:23,157 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:26:23,259 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-13 19:26:34,288 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:26:34,345 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-13 19:26:40,194 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:26:40,261 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-13 19:27:28,576 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:27:28,638 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-13 19:28:09,428 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:28:09,484 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-13 19:28:17,561 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:28:17,615 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-13 19:29:15,037 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-13 19:30:10,556 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:30:10,677 django.server basehttp basehttp.py 212 log_message "GET /paths/ HTTP/1.1" 200 14163
+INFO 2023-12-13 19:30:10,704 django.server basehttp basehttp.py 212 log_message "GET /static/css/paths.css HTTP/1.1" 200 3044
+INFO 2023-12-13 19:30:10,772 django.server basehttp basehttp.py 212 log_message "GET /static/images/user.png HTTP/1.1" 200 47171
+INFO 2023-12-13 19:30:13,892 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 19644
+INFO 2023-12-13 19:30:13,913 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-13 19:30:13,939 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 8767
+INFO 2023-12-13 19:30:13,986 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-13 19:30:14,003 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_boy.png HTTP/1.1" 200 309552
+INFO 2023-12-13 19:30:14,018 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-1.png HTTP/1.1" 200 73195
+INFO 2023-12-13 19:30:14,025 django.server basehttp basehttp.py 212 log_message "GET /static/js/specialization_filter.js HTTP/1.1" 200 1412
+INFO 2023-12-13 19:30:14,042 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_girl.png HTTP/1.1" 200 368527
+INFO 2023-12-13 19:30:14,139 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 200 33747
+INFO 2023-12-13 19:30:21,867 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 23547
+INFO 2023-12-13 19:30:21,886 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4034
+INFO 2023-12-13 19:30:27,123 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 19450
+INFO 2023-12-13 19:30:28,497 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 23545
+INFO 2023-12-13 19:30:30,523 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 19449
+INFO 2023-12-13 19:30:31,587 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18464
+INFO 2023-12-13 19:30:31,605 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2240
+INFO 2023-12-13 19:30:31,619 django.server basehttp basehttp.py 212 log_message "GET /static/images/result.png HTTP/1.1" 200 576860
+INFO 2023-12-13 19:30:31,629 django.server basehttp basehttp.py 212 log_message "GET /static/images/light.png HTTP/1.1" 200 93173
+INFO 2023-12-13 19:30:31,657 django.server basehttp basehttp.py 212 log_message "GET /static/images/character.png HTTP/1.1" 200 749040
+INFO 2023-12-13 19:30:31,667 django.server basehttp basehttp.py 212 log_message "GET /static/images/boom.png HTTP/1.1" 200 201714
+INFO 2023-12-13 19:30:32,565 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 19450
+INFO 2023-12-13 19:30:33,749 django.server basehttp basehttp.py 212 log_message "GET /recommendersurvey/ HTTP/1.1" 302 0
+INFO 2023-12-13 19:30:34,018 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 16951
+INFO 2023-12-13 19:30:34,040 django.server basehttp basehttp.py 212 log_message "GET /static/css/recommender_failed.css HTTP/1.1" 200 797
+INFO 2023-12-13 19:30:36,104 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 200 19869
+INFO 2023-12-13 19:30:36,125 django.server basehttp basehttp.py 212 log_message "GET /static/css/user_profile.css HTTP/1.1" 200 71
+INFO 2023-12-13 19:30:39,823 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 19451
+INFO 2023-12-13 19:30:41,850 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18463
+INFO 2023-12-13 19:36:31,805 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
