@@ -458,3 +458,98 @@ Traceback (most recent call last):
     _mysql.connection.query(self, query)
 django.db.utils.OperationalError: (1054, "Unknown column 'survey_survey.user_id' in 'field list'")
 ERROR 2023-12-13 11:24:38,658 django.server Thread-4 4720 basehttp basehttp.py 212 django.server log_message 10632 "GET /admin/survey/survey/ HTTP/1.1" 500 232659
+WARNING 2023-12-14 19:17:03,747 django.request Thread-4 9020 log log.py 241 django.request log_response 5944 Not Found: /favicon.ico
+WARNING 2023-12-14 19:17:03,749 django.server Thread-4 9020 basehttp basehttp.py 212 django.server log_message 5944 "GET /favicon.ico HTTP/1.1" 404 26154
+WARNING 2023-12-14 19:17:09,578 django.server Thread-4 9020 basehttp basehttp.py 212 django.server log_message 5944 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2023-12-14 19:17:31,983 django.server Thread-5 16980 basehttp basehttp.py 212 django.server log_message 5944 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 19:20:02,423 django.server Thread-2 9296 basehttp basehttp.py 212 django.server log_message 5944 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 19:36:47,200 django.server Thread-8 15248 basehttp basehttp.py 212 django.server log_message 5956 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 19:39:00,754 django.server Thread-12 16840 basehttp basehttp.py 212 django.server log_message 5956 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 19:41:36,122 django.server Thread-5 4880 basehttp basehttp.py 212 django.server log_message 2520 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 19:43:27,793 django.server Thread-2 3276 basehttp basehttp.py 212 django.server log_message 12944 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 19:44:06,662 django.server Thread-2 3164 basehttp basehttp.py 212 django.server log_message 812 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 19:44:10,435 django.server Thread-4 11076 basehttp basehttp.py 212 django.server log_message 812 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 19:44:41,222 django.server Thread-6 14372 basehttp basehttp.py 212 django.server log_message 812 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:00:03,811 django.server Thread-2 16420 basehttp basehttp.py 212 django.server log_message 2928 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:02:19,621 django.server Thread-2 3492 basehttp basehttp.py 212 django.server log_message 4048 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:02:25,716 django.server Thread-3 2564 basehttp basehttp.py 212 django.server log_message 4048 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:03:56,954 django.server Thread-3 14644 basehttp basehttp.py 212 django.server log_message 14620 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:04:00,646 django.server Thread-2 11624 basehttp basehttp.py 212 django.server log_message 14620 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:04:03,693 django.server Thread-4 4556 basehttp basehttp.py 212 django.server log_message 14620 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:06:11,941 django.server Thread-3 4576 basehttp basehttp.py 212 django.server log_message 14300 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:17:12,142 django.server Thread-4 15216 basehttp basehttp.py 212 django.server log_message 14828 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:22:32,461 django.server Thread-1 3740 basehttp basehttp.py 212 django.server log_message 3748 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:23:36,653 django.server Thread-5 17220 basehttp basehttp.py 212 django.server log_message 3748 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:23:39,136 django.server Thread-6 11624 basehttp basehttp.py 212 django.server log_message 3748 "GET /static/css/survey.css HTTP/1.1" 404 1902
+ERROR 2023-12-14 20:27:49,300 django.request Thread-1 12716 log log.py 241 django.request log_response 14136 Internal Server Error: /survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 11, in survey
+    form = SurveyForm()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 68, in __init__
+    field_choices = self.fields['specialization'].choices
+AttributeError: 'CharField' object has no attribute 'choices'
+ERROR 2023-12-14 20:27:49,418 django.server Thread-1 12716 basehttp basehttp.py 212 django.server log_message 14136 "GET /survey/ HTTP/1.1" 500 97285
+ERROR 2023-12-14 20:30:33,767 django.request Thread-1 7952 log log.py 241 django.request log_response 11748 Internal Server Error: /survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 11, in survey
+    form = SurveyForm()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 68, in __init__
+    field_choices = [(field.id, field.field_name) for field in Field.objects.all()]
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 68, in <listcomp>
+    field_choices = [(field.id, field.field_name) for field in Field.objects.all()]
+AttributeError: 'Field' object has no attribute 'id'
+ERROR 2023-12-14 20:30:33,877 django.server Thread-1 7952 basehttp basehttp.py 212 django.server log_message 11748 "GET /survey/ HTTP/1.1" 500 101484
+ERROR 2023-12-14 20:30:37,881 django.request Thread-2 7404 log log.py 241 django.request log_response 11748 Internal Server Error: /survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 11, in survey
+    form = SurveyForm()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 68, in __init__
+    field_choices = [(field.id, field.field_name) for field in Field.objects.all()]
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 68, in <listcomp>
+    field_choices = [(field.id, field.field_name) for field in Field.objects.all()]
+AttributeError: 'Field' object has no attribute 'id'
+ERROR 2023-12-14 20:30:37,998 django.server Thread-2 7404 basehttp basehttp.py 212 django.server log_message 11748 "GET /survey/ HTTP/1.1" 500 101484
+WARNING 2023-12-14 20:31:13,299 django.server Thread-5 16208 basehttp basehttp.py 212 django.server log_message 13688 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:31:15,170 django.server Thread-3 9972 basehttp basehttp.py 212 django.server log_message 13688 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:32:02,666 django.server Thread-1 14600 basehttp basehttp.py 212 django.server log_message 7064 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:41:40,253 django.server Thread-5 8240 basehttp basehttp.py 212 django.server log_message 9256 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:41:43,485 django.server Thread-3 2308 basehttp basehttp.py 212 django.server log_message 9256 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:41:44,733 django.server Thread-2 9596 basehttp basehttp.py 212 django.server log_message 9256 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:41:45,664 django.server Thread-1 14792 basehttp basehttp.py 212 django.server log_message 9256 "GET /static/css/survey.css HTTP/1.1" 404 1902
+WARNING 2023-12-14 20:42:39,327 django.server Thread-4 10196 basehttp basehttp.py 212 django.server log_message 2016 "GET /static/css/survey.css HTTP/1.1" 404 1902
+ERROR 2023-12-15 00:44:23,820 django.request Thread-1 4668 log log.py 241 django.request log_response 17056 Internal Server Error: /survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 11, in survey
+    form = SurveyForm()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 80, in __init__
+    self.fields['additional_feedback'].required = False
+KeyError: 'additional_feedback'
+ERROR 2023-12-15 00:44:24,339 django.server Thread-1 4668 basehttp basehttp.py 212 django.server log_message 17056 "GET /survey/ HTTP/1.1" 500 97068
+ERROR 2023-12-15 00:46:20,926 django.request Thread-2 2068 log log.py 241 django.request log_response 8600 Internal Server Error: /survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 11, in survey
+    form = SurveyForm()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 80, in __init__
+    self.fields['additional_feedback'].required = False
+KeyError: 'additional_feedback'
+ERROR 2023-12-15 00:46:21,095 django.server Thread-2 2068 basehttp basehttp.py 212 django.server log_message 8600 "GET /survey/ HTTP/1.1" 500 97068

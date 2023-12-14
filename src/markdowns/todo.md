@@ -11,6 +11,7 @@ Revision Matrix
 
 - [ ]: user_recommendation score should record all scores, which means that this should have its own model, (fields: user_recommendation_id, field_id, field_score)
 
+- [ ]: send verfication email
 
 
 ## High Priority

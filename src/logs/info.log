@@ -692,3 +692,836 @@ INFO 2023-12-13 20:31:26,827 django.server basehttp basehttp.py 212 log_message 
 INFO 2023-12-13 20:31:26,829 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_girl.png HTTP/1.1" 200 368527
 INFO 2023-12-13 20:31:27,063 django.server basehttp basehttp.py 212 log_message "GET /static/js/specialization_filter.js HTTP/1.1" 200 1412
 INFO 2023-12-13 20:31:48,873 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 200 19870
+INFO 2023-12-14 01:01:26,616 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 01:01:36,080 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 01:20:57,364 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 01:21:00,866 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 01:22:08,548 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 01:22:11,729 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 01:22:23,029 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 01:22:28,081 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 01:22:56,852 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 01:23:00,556 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 01:23:12,122 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 01:23:16,812 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 01:24:00,529 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 01:24:05,182 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 01:26:05,234 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 01:26:11,629 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 02:11:19,213 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 02:11:30,916 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:13:07,018 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:17:03,260 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 9439
+INFO 2023-12-14 19:17:03,307 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing.css HTTP/1.1" 200 1109
+INFO 2023-12-14 19:17:03,355 django.server basehttp basehttp.py 212 log_message "GET /static/images/landing2.png HTTP/1.1" 200 1935293
+INFO 2023-12-14 19:17:03,413 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:17:03,414 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 19:17:03,425 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:17:03,510 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2023-12-14 19:17:03,747 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2023-12-14 19:17:03,749 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 26154
+INFO 2023-12-14 19:17:08,920 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 10814
+INFO 2023-12-14 19:17:08,961 django.server basehttp basehttp.py 212 log_message "GET /static/css/login_user.css HTTP/1.1" 200 1283
+INFO 2023-12-14 19:17:09,442 django.server basehttp basehttp.py 212 log_message "GET /static/images/log.jpg HTTP/1.1" 200 43888
+WARNING 2023-12-14 19:17:09,578 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2023-12-14 19:17:20,024 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-14 19:17:20,177 django.server basehttp basehttp.py 212 log_message "GET /paths/ HTTP/1.1" 200 14163
+INFO 2023-12-14 19:17:20,209 django.server basehttp basehttp.py 212 log_message "GET /static/images/user.png HTTP/1.1" 200 47171
+INFO 2023-12-14 19:17:20,234 django.server basehttp basehttp.py 212 log_message "GET /static/css/paths.css HTTP/1.1" 200 3044
+INFO 2023-12-14 19:17:23,834 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 48133
+INFO 2023-12-14 19:17:23,861 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 19:17:23,878 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_boy.png HTTP/1.1" 200 309552
+INFO 2023-12-14 19:17:23,886 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-1.png HTTP/1.1" 200 73195
+INFO 2023-12-14 19:17:23,940 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 19:17:23,943 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 8767
+INFO 2023-12-14 19:17:23,958 django.server basehttp basehttp.py 212 log_message "GET /static/js/specialization_filter.js HTTP/1.1" 200 1412
+INFO 2023-12-14 19:17:23,978 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_girl.png HTTP/1.1" 200 368527
+INFO 2023-12-14 19:17:24,028 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 200 33747
+INFO 2023-12-14 19:17:26,733 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 200 19869
+INFO 2023-12-14 19:17:26,770 django.server basehttp basehttp.py 212 log_message "GET /static/css/user_profile.css HTTP/1.1" 200 71
+INFO 2023-12-14 19:17:31,940 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32849
+WARNING 2023-12-14 19:17:31,983 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 19:18:04,553 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 47939
+INFO 2023-12-14 19:18:06,817 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 26486
+INFO 2023-12-14 19:18:06,862 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4034
+INFO 2023-12-14 19:18:10,301 django.server basehttp basehttp.py 212 log_message "GET /admin_students HTTP/1.1" 302 0
+INFO 2023-12-14 19:18:10,400 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 47938
+INFO 2023-12-14 19:18:13,748 django.server basehttp basehttp.py 212 log_message "GET /admin/website/field/add/ HTTP/1.1" 200 33118
+INFO 2023-12-14 19:18:13,810 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2023-12-14 19:18:13,843 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2023-12-14 19:18:13,870 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 59344
+INFO 2023-12-14 19:18:13,972 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2023-12-14 19:18:13,980 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-12-14 19:18:14,049 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2023-12-14 19:18:14,058 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2023-12-14 19:18:14,067 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2023-12-14 19:18:14,114 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2023-12-14 19:18:14,170 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-12-14 19:18:14,186 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2023-12-14 19:18:14,194 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-12-14 19:18:14,227 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2023-12-14 19:18:14,227 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-12-14 19:18:14,252 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-12-14 19:18:14,300 django.server basehttp basehttp.py 212 log_message "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2023-12-14 19:18:14,457 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_form.js HTTP/1.1" 200 6052
+INFO 2023-12-14 19:18:14,536 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2023-12-14 19:18:14,538 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2023-12-14 19:18:14,568 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13276
+INFO 2023-12-14 19:18:14,580 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2023-12-14 19:18:14,595 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78196
+INFO 2023-12-14 19:18:14,649 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2023-12-14 19:18:16,759 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/course/ HTTP/1.1" 200 32731
+INFO 2023-12-14 19:18:16,830 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2023-12-14 19:18:16,889 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-12-14 19:18:18,721 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/curriculum/ HTTP/1.1" 200 52552
+INFO 2023-12-14 19:18:18,828 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-12-14 19:18:22,994 django.server basehttp basehttp.py 212 log_message "GET /admin/website/field/ HTTP/1.1" 200 37051
+INFO 2023-12-14 19:18:23,117 django.server basehttp basehttp.py 212 log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-12-14 19:18:26,560 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/curriculum/ HTTP/1.1" 200 52551
+INFO 2023-12-14 19:18:29,250 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/course/ HTTP/1.1" 200 32731
+INFO 2023-12-14 19:18:31,282 django.server basehttp basehttp.py 212 log_message "GET /admin/ HTTP/1.1" 200 55291
+INFO 2023-12-14 19:18:37,538 django.server basehttp basehttp.py 212 log_message "GET /admin/acad/course/ HTTP/1.1" 200 32732
+INFO 2023-12-14 19:18:38,690 django.server basehttp basehttp.py 212 log_message "GET /admin/website/field/add/ HTTP/1.1" 200 33118
+INFO 2023-12-14 19:19:57,028 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18463
+INFO 2023-12-14 19:19:57,058 django.server basehttp basehttp.py 212 log_message "GET /static/images/light.png HTTP/1.1" 200 93173
+INFO 2023-12-14 19:19:57,093 django.server basehttp basehttp.py 212 log_message "GET /static/images/boom.png HTTP/1.1" 200 201714
+INFO 2023-12-14 19:19:57,134 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2240
+INFO 2023-12-14 19:19:57,157 django.server basehttp basehttp.py 212 log_message "GET /static/images/character.png HTTP/1.1" 200 749040
+INFO 2023-12-14 19:19:57,169 django.server basehttp basehttp.py 212 log_message "GET /static/images/result.png HTTP/1.1" 200 576860
+INFO 2023-12-14 19:19:59,307 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 26486
+INFO 2023-12-14 19:20:00,868 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 200 19869
+INFO 2023-12-14 19:20:02,384 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32849
+WARNING 2023-12-14 19:20:02,423 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 19:20:11,227 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\admin.py changed, reloading.
+INFO 2023-12-14 19:20:16,899 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:22:00,285 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 19:22:02,688 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:22:21,861 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 19:22:25,254 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:22:28,932 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 19:22:31,168 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:22:38,237 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 19:22:43,581 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:22:59,816 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 19:23:05,383 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:25:15,397 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:25:19,143 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:25:28,823 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:25:30,870 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:25:48,766 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:25:51,616 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:25:56,612 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:25:59,346 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:26:06,473 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:26:08,929 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:26:29,310 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:26:33,126 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:28:39,517 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:28:42,451 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:29:16,163 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:29:19,019 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:29:46,829 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:29:49,484 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:30:55,982 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:30:59,331 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:31:16,614 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:31:18,947 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:31:50,103 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:31:53,511 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:32:02,627 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:32:05,383 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:32:23,653 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:32:27,921 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:32:46,426 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 19:32:49,504 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:33:57,267 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:34:00,207 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:35:11,150 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33607
+INFO 2023-12-14 19:35:19,312 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33606
+INFO 2023-12-14 19:35:23,017 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33606
+INFO 2023-12-14 19:35:23,032 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 19:35:23,040 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:35:23,057 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 19:35:23,064 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 19:35:23,314 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:35:23,317 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 19:35:37,029 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33607
+INFO 2023-12-14 19:36:06,549 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33606
+INFO 2023-12-14 19:36:06,571 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 19:36:06,572 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 19:36:06,576 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 19:36:06,663 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:36:07,024 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:36:07,071 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 19:36:15,078 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33606
+INFO 2023-12-14 19:36:15,097 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 19:36:15,099 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 19:36:15,105 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 19:36:15,109 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:36:15,444 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:36:15,474 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 19:36:18,202 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33606
+INFO 2023-12-14 19:36:18,218 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 19:36:18,221 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 19:36:18,230 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 19:36:18,235 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:36:18,752 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:36:18,767 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 19:36:38,562 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33615
+INFO 2023-12-14 19:36:38,571 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 19:36:38,575 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:36:38,576 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 19:36:38,618 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 19:36:39,025 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:36:39,027 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 19:36:46,366 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33597
+INFO 2023-12-14 19:36:46,657 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 19:36:46,688 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 19:36:46,938 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+WARNING 2023-12-14 19:36:47,200 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 19:36:47,254 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:36:47,354 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:36:47,520 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 19:39:00,663 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33597
+INFO 2023-12-14 19:39:00,680 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 19:39:00,693 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:39:00,712 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+WARNING 2023-12-14 19:39:00,754 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 19:39:00,773 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 19:39:02,313 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:39:02,327 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 19:41:20,269 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:41:24,284 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:41:33,713 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 200 19874
+INFO 2023-12-14 19:41:33,770 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 22989)
+INFO 2023-12-14 19:41:33,774 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 19:41:33,811 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 19:41:33,829 django.server basehttp basehttp.py 212 log_message "GET /static/css/user_profile.css HTTP/1.1" 200 71
+INFO 2023-12-14 19:41:33,833 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 19:41:33,843 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:41:33,896 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 200 33747
+INFO 2023-12-14 19:41:34,272 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:41:34,282 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 19:41:36,063 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32849
+INFO 2023-12-14 19:41:36,086 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 19:41:36,101 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 19:41:36,116 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+WARNING 2023-12-14 19:41:36,122 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 19:41:36,128 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:41:36,479 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:41:36,536 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 19:43:11,707 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:43:21,307 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:43:27,756 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32836
+INFO 2023-12-14 19:43:27,773 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+WARNING 2023-12-14 19:43:27,793 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 19:43:27,801 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:43:27,810 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 19:43:27,892 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 19:43:28,863 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:43:28,903 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 19:43:54,930 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:43:59,052 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:44:06,612 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32808
+INFO 2023-12-14 19:44:06,647 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+WARNING 2023-12-14 19:44:06,662 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 19:44:06,671 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 19:44:06,682 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 19:44:06,686 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:44:07,364 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:44:07,377 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 19:44:10,393 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32807
+INFO 2023-12-14 19:44:10,417 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+WARNING 2023-12-14 19:44:10,435 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 19:44:10,449 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 19:44:10,462 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 19:44:10,508 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 19:44:10,812 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 19:44:10,845 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2023-12-14 19:44:41,222 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 19:58:13,207 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:58:16,092 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 19:58:34,425 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 19:58:40,533 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:00:03,614 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32808
+INFO 2023-12-14 20:00:03,639 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:00:03,654 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:00:03,810 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:00:03,829 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+WARNING 2023-12-14 20:00:03,811 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:00:04,848 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:00:04,867 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:01:57,426 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:02:00,125 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:02:06,193 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:02:09,457 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:02:19,547 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32807
+INFO 2023-12-14 20:02:19,565 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:02:19,583 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+WARNING 2023-12-14 20:02:19,621 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:02:19,636 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:02:19,658 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:02:20,092 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:02:20,097 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:02:23,811 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 200 19870
+INFO 2023-12-14 20:02:23,839 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:02:23,843 django.server basehttp basehttp.py 212 log_message "GET /static/css/user_profile.css HTTP/1.1" 200 71
+INFO 2023-12-14 20:02:23,847 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:02:23,853 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:02:23,907 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:02:23,921 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 200 33747
+INFO 2023-12-14 20:02:24,194 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:02:24,389 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2023-12-14 20:02:25,716 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:03:38,598 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:03:40,727 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:03:47,757 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:03:49,767 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:03:56,760 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32808
+INFO 2023-12-14 20:03:56,787 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:03:56,797 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:03:56,809 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:03:56,901 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+WARNING 2023-12-14 20:03:56,954 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:03:58,022 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:03:58,035 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2023-12-14 20:04:00,646 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:04:03,651 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32807
+INFO 2023-12-14 20:04:03,666 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+WARNING 2023-12-14 20:04:03,693 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:04:03,711 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:04:03,699 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:04:03,738 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:04:04,050 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:04:04,090 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:05:53,530 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:05:55,875 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:06:11,783 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33378
+INFO 2023-12-14 20:06:11,801 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:06:11,814 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:06:11,906 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:06:11,925 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+WARNING 2023-12-14 20:06:11,941 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:06:12,309 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:06:12,357 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:13:35,160 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:13:38,327 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:15:33,567 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:15:36,495 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:15:43,951 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:15:46,629 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:16:43,588 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:16:45,976 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:16:58,783 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:17:01,103 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:17:09,606 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 24857)
+INFO 2023-12-14 20:17:09,611 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 200 19870
+INFO 2023-12-14 20:17:09,633 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:17:09,645 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:17:09,693 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:17:09,701 django.server basehttp basehttp.py 212 log_message "GET /static/css/user_profile.css HTTP/1.1" 200 71
+INFO 2023-12-14 20:17:09,720 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:17:09,864 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 200 33747
+INFO 2023-12-14 20:17:10,665 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:17:10,683 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:17:12,097 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32807
+INFO 2023-12-14 20:17:12,125 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:17:12,137 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+WARNING 2023-12-14 20:17:12,142 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:17:12,151 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:17:12,160 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:17:12,517 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:17:12,552 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:17:27,152 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:17:30,501 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:18:23,805 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:18:26,489 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:18:51,320 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:18:53,813 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:19:01,041 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:19:03,973 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:22:17,804 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:22:20,694 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:22:26,314 django.server basehttp basehttp.py 212 log_message "GET /settings/ HTTP/1.1" 200 17845
+INFO 2023-12-14 20:22:26,336 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:22:26,341 django.server basehttp basehttp.py 212 log_message "GET /static/css/user_profile.css HTTP/1.1" 200 71
+INFO 2023-12-14 20:22:26,396 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:22:26,446 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:22:26,454 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:22:29,048 django.server basehttp basehttp.py 212 log_message "GET /settings/ HTTP/1.1" 200 17843
+INFO 2023-12-14 20:22:29,064 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:22:29,073 django.server basehttp basehttp.py 212 log_message "GET /static/css/user_profile.css HTTP/1.1" 200 71
+INFO 2023-12-14 20:22:29,082 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:22:29,084 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:22:29,092 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:22:29,387 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:22:29,399 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:22:32,403 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33583
+INFO 2023-12-14 20:22:32,428 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:22:32,438 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:22:32,459 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+WARNING 2023-12-14 20:22:32,461 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:22:32,674 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:22:33,005 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:22:33,005 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:23:36,602 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33583
+INFO 2023-12-14 20:23:36,652 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:23:36,652 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+WARNING 2023-12-14 20:23:36,653 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:23:36,667 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:23:36,769 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:23:37,189 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:23:37,218 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2023-12-14 20:23:39,136 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:24:58,334 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:25:01,047 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:26:42,172 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:26:45,136 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:27:30,320 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:27:33,427 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:27:40,886 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:27:43,391 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-14 20:27:49,300 django.request log log.py 241 log_response Internal Server Error: /survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 11, in survey
+    form = SurveyForm()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 68, in __init__
+    field_choices = self.fields['specialization'].choices
+AttributeError: 'CharField' object has no attribute 'choices'
+ERROR 2023-12-14 20:27:49,418 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 500 97285
+INFO 2023-12-14 20:27:49,443 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:27:49,448 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:27:49,674 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:27:49,834 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:28:03,824 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:28:07,250 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:29:51,963 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:29:55,227 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:30:23,272 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:30:25,595 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-14 20:30:33,767 django.request log log.py 241 log_response Internal Server Error: /survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 11, in survey
+    form = SurveyForm()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 68, in __init__
+    field_choices = [(field.id, field.field_name) for field in Field.objects.all()]
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 68, in <listcomp>
+    field_choices = [(field.id, field.field_name) for field in Field.objects.all()]
+AttributeError: 'Field' object has no attribute 'id'
+ERROR 2023-12-14 20:30:33,877 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 500 101484
+INFO 2023-12-14 20:30:33,914 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:30:33,955 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:30:33,985 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:30:34,479 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+ERROR 2023-12-14 20:30:37,881 django.request log log.py 241 log_response Internal Server Error: /survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 11, in survey
+    form = SurveyForm()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 68, in __init__
+    field_choices = [(field.id, field.field_name) for field in Field.objects.all()]
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 68, in <listcomp>
+    field_choices = [(field.id, field.field_name) for field in Field.objects.all()]
+AttributeError: 'Field' object has no attribute 'id'
+ERROR 2023-12-14 20:30:37,998 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 500 101484
+INFO 2023-12-14 20:30:38,032 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:30:38,042 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:30:38,183 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:30:38,357 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:30:57,429 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:31:02,068 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:31:13,006 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32807
+INFO 2023-12-14 20:31:13,038 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:31:13,197 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:31:13,237 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:31:13,268 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+WARNING 2023-12-14 20:31:13,299 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:31:15,111 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32807
+INFO 2023-12-14 20:31:15,133 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:31:15,143 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:31:15,150 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+WARNING 2023-12-14 20:31:15,170 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:31:15,380 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:31:15,654 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:31:15,696 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:31:19,930 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:31:23,621 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:32:02,572 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 32808
+INFO 2023-12-14 20:32:02,613 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+WARNING 2023-12-14 20:32:02,666 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:32:02,811 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:32:02,821 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:32:03,278 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:32:03,323 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:32:03,718 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:33:24,527 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:33:28,190 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:33:50,649 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:33:55,497 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:34:58,520 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:36:51,274 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:39:04,285 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:41:13,934 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:41:37,390 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 200 19871
+INFO 2023-12-14 20:41:37,411 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:41:37,508 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:41:37,525 django.server basehttp basehttp.py 212 log_message "GET /static/css/user_profile.css HTTP/1.1" 200 71
+INFO 2023-12-14 20:41:37,739 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:41:37,806 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:41:37,821 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 200 33747
+INFO 2023-12-14 20:41:38,505 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:41:38,512 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:41:40,192 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33583
+INFO 2023-12-14 20:41:40,226 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:41:40,253 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+WARNING 2023-12-14 20:41:40,253 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:41:40,254 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:41:40,309 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:41:40,721 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:41:40,727 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:41:43,407 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33583
+INFO 2023-12-14 20:41:43,463 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+WARNING 2023-12-14 20:41:43,485 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:41:43,488 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:41:43,502 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:41:43,574 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:41:43,852 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:41:43,932 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:41:44,686 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33583
+INFO 2023-12-14 20:41:44,711 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:41:44,727 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:41:44,730 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+WARNING 2023-12-14 20:41:44,733 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:41:44,819 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:41:45,107 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:41:45,131 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:41:45,621 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33583
+INFO 2023-12-14 20:41:45,653 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:41:45,656 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+WARNING 2023-12-14 20:41:45,664 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:41:45,812 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:41:45,885 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:41:46,187 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:41:46,190 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:42:26,374 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:42:29,653 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:42:39,148 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33636
+INFO 2023-12-14 20:42:39,166 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:42:39,192 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:42:39,196 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:42:39,246 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+WARNING 2023-12-14 20:42:39,327 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 404 1902
+INFO 2023-12-14 20:42:39,726 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:42:39,727 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:42:59,840 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-14 20:43:03,977 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 20:46:53,186 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33644
+INFO 2023-12-14 20:46:53,205 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:46:53,218 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:46:53,305 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:46:53,353 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 200 2403
+INFO 2023-12-14 20:46:53,357 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:46:54,282 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:46:54,295 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 20:47:43,704 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33643
+INFO 2023-12-14 20:47:43,722 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 20:47:43,727 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 20:47:43,731 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 20:47:43,748 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 20:47:43,806 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 200 2652
+INFO 2023-12-14 20:47:44,256 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 20:47:44,267 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 23:30:44,645 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33643
+INFO 2023-12-14 23:30:44,770 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 23:30:44,792 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 200 2736
+INFO 2023-12-14 23:30:45,149 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 23:30:45,351 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 23:30:45,427 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 23:30:45,732 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 23:30:45,748 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 23:31:09,449 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33643
+INFO 2023-12-14 23:31:09,467 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 23:31:09,481 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 23:31:09,518 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 23:31:09,647 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 200 2737
+INFO 2023-12-14 23:31:09,684 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 23:31:09,938 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 23:31:09,984 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 23:31:22,464 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33643
+INFO 2023-12-14 23:31:22,481 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 23:31:22,504 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 23:31:22,516 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 23:31:22,590 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 200 2737
+INFO 2023-12-14 23:31:22,624 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 23:31:22,946 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 23:31:22,951 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 23:31:39,760 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33643
+INFO 2023-12-14 23:31:39,781 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-14 23:31:39,792 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-14 23:31:39,823 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-14 23:31:39,841 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-14 23:31:39,914 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 200 2749
+INFO 2023-12-14 23:31:40,275 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-14 23:31:40,303 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-14 23:33:35,114 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 23:33:37,987 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 23:33:53,153 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 23:33:55,554 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 23:34:10,738 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 23:34:13,126 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 23:34:31,769 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 23:34:34,096 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 23:34:52,417 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 23:34:54,586 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 23:52:02,930 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 23:52:06,043 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 23:53:35,136 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 23:53:37,961 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 23:54:06,999 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 23:54:09,657 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-14 23:54:32,917 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-14 23:54:36,486 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:08:16,978 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-15 00:08:19,610 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:08:31,025 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33644
+INFO 2023-12-15 00:08:31,047 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 304 0
+INFO 2023-12-15 00:08:50,881 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 47940
+INFO 2023-12-15 00:08:51,817 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18463
+INFO 2023-12-15 00:08:52,961 django.server basehttp basehttp.py 212 log_message "GET /select_course/ HTTP/1.1" 200 16831
+INFO 2023-12-15 00:08:52,995 django.server basehttp basehttp.py 212 log_message "GET /static/css/course.css HTTP/1.1" 200 2635
+INFO 2023-12-15 00:08:53,987 django.server basehttp basehttp.py 212 log_message "GET /select_year/1/ HTTP/1.1" 200 17330
+INFO 2023-12-15 00:08:54,018 django.server basehttp basehttp.py 212 log_message "GET /static/images/java.png HTTP/1.1" 200 99723
+INFO 2023-12-15 00:08:54,027 django.server basehttp basehttp.py 212 log_message "GET /static/images/html.png HTTP/1.1" 200 95256
+INFO 2023-12-15 00:08:54,042 django.server basehttp basehttp.py 212 log_message "GET /static/css/select_year_level.css HTTP/1.1" 200 1138
+INFO 2023-12-15 00:08:54,051 django.server basehttp basehttp.py 212 log_message "GET /static/images/c.png HTTP/1.1" 200 96213
+INFO 2023-12-15 00:08:54,055 django.server basehttp basehttp.py 212 log_message "GET /static/images/php.png HTTP/1.1" 200 97644
+INFO 2023-12-15 00:08:54,944 django.server basehttp basehttp.py 212 log_message "GET /enroll_student/1/0/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:08:55,025 django.server basehttp basehttp.py 212 log_message "GET /subjects_grade_input/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:08:55,122 django.server basehttp basehttp.py 212 log_message "GET /success_page/ HTTP/1.1" 200 16920
+INFO 2023-12-15 00:08:55,144 django.server basehttp basehttp.py 212 log_message "GET /static/images/com.png HTTP/1.1" 200 173117
+INFO 2023-12-15 00:08:55,165 django.server basehttp basehttp.py 212 log_message "GET /static/css/success_page.css HTTP/1.1" 200 1394
+INFO 2023-12-15 00:08:56,614 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18462
+INFO 2023-12-15 00:08:57,533 django.server basehttp basehttp.py 212 log_message "GET /select_course/ HTTP/1.1" 200 16831
+INFO 2023-12-15 00:08:58,446 django.server basehttp basehttp.py 212 log_message "GET /select_year/1/ HTTP/1.1" 200 17330
+INFO 2023-12-15 00:08:59,392 django.server basehttp basehttp.py 212 log_message "GET /enroll_student/1/0/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:08:59,466 django.server basehttp basehttp.py 212 log_message "GET /subjects_grade_input/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:08:59,548 django.server basehttp basehttp.py 212 log_message "GET /success_page/ HTTP/1.1" 200 16920
+INFO 2023-12-15 00:09:01,181 django.server basehttp basehttp.py 212 log_message "GET /start_test/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:01,266 django.server basehttp basehttp.py 212 log_message "GET /create_new_question_set/1/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:01,869 django.server basehttp basehttp.py 212 log_message "GET /continue_create_new_question_set/2 HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:02,011 django.server basehttp basehttp.py 212 log_message "GET /question/31/ HTTP/1.1" 200 17940
+INFO 2023-12-15 00:09:02,057 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_page.css HTTP/1.1" 200 2369
+INFO 2023-12-15 00:09:04,126 django.server basehttp basehttp.py 212 log_message "POST /submit_question/31/ HTTP/1.1" 200 17933
+INFO 2023-12-15 00:09:05,727 django.server basehttp basehttp.py 212 log_message "POST /submit_question/1/ HTTP/1.1" 200 18056
+INFO 2023-12-15 00:09:06,944 django.server basehttp basehttp.py 212 log_message "POST /submit_question/41/ HTTP/1.1" 200 18085
+INFO 2023-12-15 00:09:08,806 django.server basehttp basehttp.py 212 log_message "POST /submit_question/50/ HTTP/1.1" 200 17920
+INFO 2023-12-15 00:09:10,630 django.server basehttp basehttp.py 212 log_message "POST /submit_question/14/ HTTP/1.1" 200 18055
+INFO 2023-12-15 00:09:11,998 django.server basehttp basehttp.py 212 log_message "POST /submit_question/51/ HTTP/1.1" 200 18113
+INFO 2023-12-15 00:09:13,272 django.server basehttp basehttp.py 212 log_message "POST /submit_question/65/ HTTP/1.1" 200 18089
+INFO 2023-12-15 00:09:15,076 django.server basehttp basehttp.py 212 log_message "POST /submit_question/70/ HTTP/1.1" 200 18103
+INFO 2023-12-15 00:09:16,789 django.server basehttp basehttp.py 212 log_message "POST /submit_question/81/ HTTP/1.1" 200 18088
+INFO 2023-12-15 00:09:19,112 django.server basehttp basehttp.py 212 log_message "POST /submit_question/89/ HTTP/1.1" 200 18068
+INFO 2023-12-15 00:09:22,860 django.server basehttp basehttp.py 212 log_message "POST /submit_question/74/ HTTP/1.1" 200 17946
+INFO 2023-12-15 00:09:24,832 django.server basehttp basehttp.py 212 log_message "POST /submit_question/30/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:25,121 django.server basehttp basehttp.py 212 log_message "GET /test_overview/3 HTTP/1.1" 200 26349
+INFO 2023-12-15 00:09:25,149 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_overview.css HTTP/1.1" 200 2332
+INFO 2023-12-15 00:09:27,376 django.server basehttp basehttp.py 212 log_message "GET /question/14/ HTTP/1.1" 200 17922
+INFO 2023-12-15 00:09:28,543 django.server basehttp basehttp.py 212 log_message "GET /prev_test/14/3/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:28,629 django.server basehttp basehttp.py 212 log_message "GET /question/50/ HTTP/1.1" 200 18087
+INFO 2023-12-15 00:09:29,323 django.server basehttp basehttp.py 212 log_message "GET /next_test/50/3/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:29,394 django.server basehttp basehttp.py 212 log_message "GET /question/14/ HTTP/1.1" 200 17922
+INFO 2023-12-15 00:09:30,274 django.server basehttp basehttp.py 212 log_message "GET /next_test/14/3/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:30,354 django.server basehttp basehttp.py 212 log_message "GET /question/51/ HTTP/1.1" 200 18057
+INFO 2023-12-15 00:09:31,305 django.server basehttp basehttp.py 212 log_message "GET /prev_test/51/3/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:31,383 django.server basehttp basehttp.py 212 log_message "GET /question/14/ HTTP/1.1" 200 17922
+INFO 2023-12-15 00:09:31,812 django.server basehttp basehttp.py 212 log_message "GET /prev_test/14/3/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:31,884 django.server basehttp basehttp.py 212 log_message "GET /question/50/ HTTP/1.1" 200 18087
+INFO 2023-12-15 00:09:32,385 django.server basehttp basehttp.py 212 log_message "GET /prev_test/50/3/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:32,522 django.server basehttp basehttp.py 212 log_message "GET /question/41/ HTTP/1.1" 200 18060
+INFO 2023-12-15 00:09:33,418 django.server basehttp basehttp.py 212 log_message "GET /prev_test/41/3/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:33,511 django.server basehttp basehttp.py 212 log_message "GET /question/1/ HTTP/1.1" 200 17934
+INFO 2023-12-15 00:09:34,112 django.server basehttp basehttp.py 212 log_message "GET /next_test/1/3/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:34,186 django.server basehttp basehttp.py 212 log_message "GET /question/41/ HTTP/1.1" 200 18059
+INFO 2023-12-15 00:09:35,412 django.server basehttp basehttp.py 212 log_message "GET /test_overview/3 HTTP/1.1" 200 26175
+INFO 2023-12-15 00:09:44,424 django.server basehttp basehttp.py 212 log_message "GET /submit_test/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:09:48,073 django.server basehttp basehttp.py 212 log_message "GET /test_reults/3 HTTP/1.1" 200 7229035
+INFO 2023-12-15 00:09:48,144 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_result.css HTTP/1.1" 200 1930
+INFO 2023-12-15 00:10:23,939 django.server basehttp basehttp.py 212 log_message "GET /recommendersurvey/ HTTP/1.1" 302 0
+INFO 2023-12-15 00:10:26,878 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14448768
+INFO 2023-12-15 00:10:26,945 django.server basehttp basehttp.py 212 log_message "GET /static/css/recommender.css HTTP/1.1" 200 3379
+INFO 2023-12-15 00:10:47,080 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 200 19869
+INFO 2023-12-15 00:10:48,843 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33643
+INFO 2023-12-15 00:13:04,137 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-15 00:13:06,608 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:13:20,320 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-15 00:13:22,871 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:13:39,323 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 304 0
+INFO 2023-12-15 00:16:30,233 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-15 00:16:33,634 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:17:23,237 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-15 00:17:25,801 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:18:26,690 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-15 00:18:29,230 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:18:41,376 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-15 00:18:44,913 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:19:30,065 django.server basehttp basehttp.py 212 log_message "GET /settings/ HTTP/1.1" 200 17845
+INFO 2023-12-15 00:19:30,129 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-15 00:19:30,138 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-15 00:19:30,145 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 00:19:30,190 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 00:19:30,223 django.server basehttp basehttp.py 212 log_message "GET /static/css/user_profile.css HTTP/1.1" 200 71
+INFO 2023-12-15 00:19:33,856 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33661
+INFO 2023-12-15 00:19:33,916 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-15 00:19:33,929 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 200 2749
+INFO 2023-12-15 00:19:34,040 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 00:19:34,043 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-15 00:19:34,064 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 00:19:34,394 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-15 00:19:34,611 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-15 00:31:14,015 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-15 00:31:34,259 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:31:56,223 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33662
+INFO 2023-12-15 00:31:56,262 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-15 00:31:56,266 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 200 2749
+INFO 2023-12-15 00:31:56,390 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 00:31:56,872 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-15 00:31:57,176 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 00:31:57,628 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-15 00:31:57,693 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-15 00:32:01,521 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 200 19870
+INFO 2023-12-15 00:32:01,581 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-15 00:32:01,583 django.server basehttp basehttp.py 212 log_message "GET /static/css/user_profile.css HTTP/1.1" 200 71
+INFO 2023-12-15 00:32:01,593 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 00:32:01,649 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-15 00:32:02,230 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 200 33747
+INFO 2023-12-15 00:32:02,516 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 00:32:02,526 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-15 00:32:02,843 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-15 00:32:08,626 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-15 00:32:17,456 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:32:39,345 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33663
+INFO 2023-12-15 00:32:40,081 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-15 00:32:40,321 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 00:32:40,661 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-15 00:32:40,896 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 00:32:41,174 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 200 2749
+INFO 2023-12-15 00:32:41,559 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-15 00:32:41,639 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-15 00:37:42,325 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33661
+INFO 2023-12-15 00:37:42,354 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-15 00:37:42,970 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 00:37:43,427 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-15 00:37:43,619 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 00:37:44,003 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 200 2749
+INFO 2023-12-15 00:37:44,315 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-15 00:37:44,365 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-15 00:37:55,993 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 200 2749
+INFO 2023-12-15 00:37:55,994 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-15 00:37:56,058 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 00:37:56,064 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 00:37:56,180 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33661
+INFO 2023-12-15 00:37:56,798 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-15 00:37:57,345 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-15 00:37:57,498 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-15 00:38:51,202 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:40:09,483 django.server basehttp basehttp.py 212 log_message "GET /recommendersurvey/ HTTP/1.1" 200 23622
+INFO 2023-12-15 00:40:09,755 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-15 00:40:09,795 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-15 00:40:10,247 django.server basehttp basehttp.py 212 log_message "GET /static/css/recommender_survey.css HTTP/1.1" 200 2289
+INFO 2023-12-15 00:40:10,288 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 00:40:10,474 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 00:40:10,887 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-15 00:40:11,080 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-15 00:40:18,834 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 200 19870
+INFO 2023-12-15 00:40:18,856 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-15 00:40:18,857 django.server basehttp basehttp.py 212 log_message "GET /static/css/user_profile.css HTTP/1.1" 200 71
+INFO 2023-12-15 00:40:18,877 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 00:40:18,884 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 00:40:19,255 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-15 00:40:19,413 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-15 00:40:19,464 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 200 33747
+INFO 2023-12-15 00:40:19,581 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-15 00:40:21,497 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 33662
+INFO 2023-12-15 00:40:21,681 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-15 00:40:21,688 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 200 2749
+INFO 2023-12-15 00:40:21,698 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-15 00:40:21,727 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 00:40:21,896 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 00:40:22,697 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-15 00:40:22,737 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-15 00:43:14,953 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-15 00:43:17,356 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:43:53,796 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-15 00:43:57,687 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-15 00:44:23,820 django.request log log.py 241 log_response Internal Server Error: /survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 11, in survey
+    form = SurveyForm()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 80, in __init__
+    self.fields['additional_feedback'].required = False
+KeyError: 'additional_feedback'
+ERROR 2023-12-15 00:44:24,339 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 500 97068
+INFO 2023-12-15 00:44:24,831 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 00:44:25,138 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 00:44:25,556 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-15 00:44:25,578 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-15 00:45:09,405 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-15 00:46:20,926 django.request log log.py 241 log_response Internal Server Error: /survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 11, in survey
+    form = SurveyForm()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py", line 80, in __init__
+    self.fields['additional_feedback'].required = False
+KeyError: 'additional_feedback'
+ERROR 2023-12-15 00:46:21,095 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 500 97068
+INFO 2023-12-15 00:46:21,156 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 00:46:21,198 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 00:46:21,202 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-15 00:46:21,364 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-15 00:46:52,034 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-15 00:46:55,096 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:47:02,203 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-15 00:47:05,407 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:47:27,678 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-15 00:47:31,665 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 00:47:40,895 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\models.py changed, reloading.
+INFO 2023-12-15 00:47:43,939 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 03:15:41,631 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 03:16:09,733 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18465
+INFO 2023-12-15 03:16:11,948 django.server basehttp basehttp.py 212 log_message "GET /profile/ HTTP/1.1" 200 19871
+INFO 2023-12-15 03:16:14,806 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 37484
+INFO 2023-12-15 03:16:14,902 django.server basehttp basehttp.py 212 log_message "GET /static/css/survey.css HTTP/1.1" 304 0
+INFO 2023-12-15 03:16:42,191 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\forms.py changed, reloading.
+INFO 2023-12-15 03:16:58,557 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 03:17:56,605 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 38342
+INFO 2023-12-15 03:18:09,189 django.server basehttp basehttp.py 212 log_message "GET /survey/ HTTP/1.1" 200 38341
+INFO 2023-12-15 03:19:57,126 django.server basehttp basehttp.py 212 log_message "POST /survey/ HTTP/1.1" 302 0
+INFO 2023-12-15 03:19:57,235 django.server basehttp basehttp.py 212 log_message "GET /recommender_thank_you/ HTTP/1.1" 200 16746
+INFO 2023-12-15 03:19:57,298 django.server basehttp basehttp.py 212 log_message "GET /static/css/thankyou.css HTTP/1.1" 200 599
+INFO 2023-12-15 03:20:05,365 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14448763
+INFO 2023-12-15 03:20:46,913 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52950
+INFO 2023-12-15 03:20:46,974 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-2.png HTTP/1.1" 200 38335
+INFO 2023-12-15 03:20:48,768 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 26486
+INFO 2023-12-15 03:20:50,538 django.server basehttp basehttp.py 212 log_message "GET /admin_report/ HTTP/1.1" 200 43714
+INFO 2023-12-15 03:20:50,568 django.server basehttp basehttp.py 212 log_message "GET /static/images/report-logo.png HTTP/1.1" 200 216778
+INFO 2023-12-15 03:54:21,740 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender_survey\models.py changed, reloading.
+INFO 2023-12-15 03:54:25,487 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
