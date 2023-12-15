@@ -123,7 +123,6 @@ def recommender(request):
 
     # Filter the specialization data frame columns by the user's skills. except the first and second columns
     normalized_field_skills_filtered = normalized_field_skills[['field_id'] + intersection_columns]
-    # remove rows with all 0
     normalized_field_skills_filtered = normalized_field_skills_filtered[(normalized_field_skills_filtered[intersection_columns] != 0).any(axis=1)]
 
 
@@ -132,19 +131,12 @@ def recommender(request):
     top_3_indices = cosine_similarities.argsort(axis=1)[:, -3:]
     top_3_field = normalized_field_skills_filtered.iloc[:, 0].values[top_3_indices]
     all_fields = normalized_field_skills_filtered.iloc[:, 0].values
-    #print('top_3_field: ', top_3_field)
-
-    #print('all_fields: ', all_fields)
-
-    # get unique field_id
+ 
     field_ids = normalized_field_skills_filtered['field_id'].unique()
-    #print('field_ids: ', field_ids)
     # Create a dictionary to store the field names and the sum of the cosine similarity scores
     fields_score = {}
     for field_id in all_fields:
-        # filter specialization_sparse_filtered by field_id
         normalized_field_skills_filtered_by_field = normalized_field_skills_filtered[normalized_field_skills_filtered['field_id'] == field_id]
-        # Calculate the sum of the cosine similarity scores for each skill in each field.
         fields_score[field_id] = normalized_field_skills_filtered_by_field.iloc[:, 1:].sum(axis=1).sum()
     
     # get field names
@@ -168,9 +160,6 @@ def recommender(request):
     user_skills_field = []
     field_id_list = []
     for skill in intersection_columns:
-        # Assuming normalized_user_skills_df has a column for each field and a row for each skill
-        #field = normalized_field_skills_filtered[skill].idxmax()
-        # Assuming field_id is a column in normalized_field_skills_filtered
         field_id = normalized_field_skills_filtered.loc[normalized_field_skills_filtered[skill].idxmax(), 'field_id']
         field_id_list.append(field_id)
         field = Field.objects.get(field=field_id).field_name
@@ -183,48 +172,65 @@ def recommender(request):
         'field': user_skills_field,
         'field_id': field_id_list,
     })
+    pivot_df = user_skills_df.pivot(index='skill', columns='field', values='level').fillna(0)
 
 
-    # Create a bar plot using Plotly Express
-    #fig = px.bar(user_skills_df, title='User Skills Levels', labels={'index': 'Skills', 'value': 'Skill Level'})
-    
-    # Create a dictionary where the keys are the elements in all_fields and the values are their indices
-    order_dict = {field_id: index for index, field_id in enumerate(all_fields)}
-
-    #print('fields_score:', fields_score)
-    # Create a new column 'order' in user_skills_df that represents the index of each field_id in all_fields
     user_skills_df['fields_score'] = user_skills_df['field_id'].map(fields_score)
-
-    # Sort user_skills_df by the 'order' column
     user_skills_df = user_skills_df.sort_values('fields_score', ascending=False)
-
-    #print('user_skills_df: ', user_skills_df)
-
-    # Drop the 'order' column as it's no longer needed
     user_skills_df = user_skills_df.drop('fields_score', axis=1)
+    # print('user_skills_df: ', user_skills_df)
+
+    # fig = px.bar(
+    #     x=user_skills_df['level'],
+    #     y=user_skills_df['skill'],
+    #     color=user_skills_df['field'],
+    #     #facet_col=user_skills_df['field'],
+    #     # title='User Skills Levels',
+    #     orientation='h',
+    #     labels={'index': 'Level', 'value': 'Skill'},
+    #     #color_continuous_scale=px.colors.sequential.Plasma,
+    #     #height=(len(user_skills_df['skill']) * 5 + 200),#*len(user_skills_df['skill']) + 400,
+    # )
+    # New version as of Revision
+    # fig = px.bar(
+    #     pivot_df, 
+    #     barmode='stack',
+    #     orientation='h',
+    #     labels={'index': 'Field', 'value': 'Count'},
+    # )
+   
+    # fig = px.bar(
+    #     x=field_data,
+    #     y=pivot_df.index.tolist(),
+    #     orientation='h',
+    #     labels={'x': 'Count', 'y': 'Field'},
+    #     color_discrete_sequence=list(field_dict.values()),
+    # )
 
     fig = px.bar(
-        x=user_skills_df['level'],
-        y=user_skills_df['skill'],
-        color=user_skills_df['field'],
-        #facet_col=user_skills_df['field'],
-        # title='User Skills Levels',
+        user_skills_df,
+        x='level',
+        y='field',
+        barmode ='stack',
+        hover_data=['skill'],
         orientation='h',
-        labels={'index': 'Level', 'value': 'Skill'},
-        #color_continuous_scale=px.colors.sequential.Plasma,
-        #height=(len(user_skills_df['skill']) * 5 + 200),#*len(user_skills_df['skill']) + 400,
+        labels={'level': 'Count', 'field': 'Field'},
+        #color_discrete_sequence=list(field_dict.values()),
+        color='field',
     )
-    
+
     # x and y title
-    fig.update_xaxes(title_text='Skill Level')
-    fig.update_yaxes(title_text='Skill Name')
+    #fig.update_xaxes(title_text='Skill Level')
+    #fig.update_yaxes(title_text='Skill Name')
+    fig.update_xaxes(title_text='Count')
+    fig.update_yaxes(title_text='Field')
 
     skill_plot = pio.to_html(fig, full_html=False)
 
 
     # Create a DataFrame with Field_ID, Field_Name, and Score
     fields_df = pd.DataFrame(list(zip(field_ids, fields_name, fields_score.values())), columns=['Field_ID', 'Field_Name', 'Score'])
-
+    print('fields_df: ', fields_df)
     # Create a pie chart using Plotly Express
     fig = px.pie(fields_df, values='Score', names='Field_Name',
                  #title='Top Field Recommendation Score'
@@ -259,16 +265,28 @@ def recommender(request):
     # remove field_order
     normalized_copy = normalized_copy.drop('field_order', axis=1)
 
-
+    print('normalized_copy: ', normalized_copy)
     # plotting using plotly express
+    # stacked_skills = px.bar(
+    #     normalized_copy, 
+    #     x='level', 
+    #     y='skill', 
+    #     color='field_name', 
+    #     # title='Skills Levels',
+    #     orientation='h',
+    #     labels={'level': 'Relevance Score', 'field_name': 'Field Name'},
+    #     color_continuous_scale=px.colors.sequential.Plasma,
+    #     height=500,
+    #     width=800,
+    # )
     stacked_skills = px.bar(
         normalized_copy, 
         x='level', 
-        y='skill', 
+        y='field_name', 
         color='field_name', 
         # title='Skills Levels',
         orientation='h',
-        labels={'level': 'Relevance Score', 'field_name': 'Field Name'},
+        labels={'level': 'Relevance Score',  'skill': 'Skill'}, #'field_name': 'Field Name',
         color_continuous_scale=px.colors.sequential.Plasma,
         height=500,
         width=800,
@@ -293,12 +311,6 @@ def recommender(request):
 
     # convert to html
     radar_skills = pio.to_html(radar_skills, full_html=False)
-
-
-
-
-
-
 
 
     # Sort the fields by the sum of the cosine similarity scores, in descending order.
