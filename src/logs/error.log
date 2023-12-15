@@ -1424,3 +1424,253 @@ Traceback (most recent call last):
     raise TemplateDoesNotExist(template_name, chain=chain)
 django.template.exceptions.TemplateDoesNotExist: dashboard/admin_jobopstings.html
 ERROR 2023-12-15 21:49:54,101 django.server Thread-1 13552 basehttp basehttp.py 212 django.server log_message 10800 "GET /admin_jobpostings HTTP/1.1" 500 112957
+ERROR 2023-12-15 23:35:34,800 django.request Thread-2 13756 log log.py 241 django.request log_response 12048 Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'adaptability in development'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 203, in recommender
+    field_data.append(pivot_df[field].tolist())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 'adaptability in development'
+ERROR 2023-12-15 23:35:36,051 django.server Thread-2 13756 basehttp basehttp.py 212 django.server log_message 12048 "GET /recommender/ HTTP/1.1" 500 226321
+ERROR 2023-12-15 23:35:45,348 django.request Thread-4 16468 log log.py 241 django.request log_response 12048 Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'adaptability in development'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 203, in recommender
+    field_data.append(pivot_df[field].tolist())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 'adaptability in development'
+ERROR 2023-12-15 23:35:46,501 django.server Thread-4 16468 basehttp basehttp.py 212 django.server log_message 12048 "GET /recommender/ HTTP/1.1" 500 226193
+ERROR 2023-12-15 23:37:15,534 django.request Thread-1 13968 log log.py 241 django.request log_response 11504 Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 63
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 203, in recommender
+    field_data.append(user_skills_df[field].tolist())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 63
+ERROR 2023-12-15 23:37:17,095 django.server Thread-1 13968 basehttp basehttp.py 212 django.server log_message 11504 "GET /recommender/ HTTP/1.1" 500 224491
+ERROR 2023-12-15 23:37:22,877 django.request Thread-1 13968 log log.py 241 django.request log_response 11504 Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 63
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 203, in recommender
+    field_data.append(user_skills_df[field].tolist())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 63
+ERROR 2023-12-15 23:37:23,768 django.server Thread-1 13968 basehttp basehttp.py 212 django.server log_message 11504 "GET /recommender/ HTTP/1.1" 500 224491
+ERROR 2023-12-16 00:52:05,750 django.request Thread-2 364 log log.py 241 django.request log_response 11504 Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 63
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 203, in recommender
+    field_data.append(user_skills_df[field].tolist())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 63
+ERROR 2023-12-16 00:52:07,131 django.server Thread-2 364 basehttp basehttp.py 212 django.server log_message 11504 "GET /recommender/ HTTP/1.1" 500 224491
+ERROR 2023-12-16 00:54:01,123 django.request Thread-1 6976 log log.py 241 django.request log_response 9308 Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 206, in recommender
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1485, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1250, in process_args_into_dataframe
+    raise ValueError(
+ValueError: All arguments should have the same length. The length of argument `wide_variable_0` is 4, whereas the length of  previously-processed arguments ['y'] is 101
+ERROR 2023-12-16 00:54:02,129 django.server Thread-1 6976 basehttp basehttp.py 212 django.server log_message 9308 "GET /recommender/ HTTP/1.1" 500 203344
+ERROR 2023-12-16 00:57:08,434 django.request Thread-1 4240 log log.py 241 django.request log_response 16644 Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 206, in recommender
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1485, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1250, in process_args_into_dataframe
+    raise ValueError(
+ValueError: All arguments should have the same length. The length of argument `wide_variable_0` is 4, whereas the length of  previously-processed arguments ['y'] is 101
+ERROR 2023-12-16 00:57:09,450 django.server Thread-1 4240 basehttp basehttp.py 212 django.server log_message 16644 "GET /recommender/ HTTP/1.1" 500 203364
+ERROR 2023-12-16 01:04:21,642 django.request Thread-1 9184 log log.py 241 django.request log_response 1392 Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 210, in recommender
+    fig = px.bar(
+TypeError: bar() got an unexpected keyword argument 'bardmode'
+ERROR 2023-12-16 01:04:23,505 django.server Thread-1 9184 basehttp basehttp.py 212 django.server log_message 1392 "GET /recommender/ HTTP/1.1" 500 128129
+ERROR 2023-12-16 01:04:50,770 django.request Thread-1 6156 log log.py 241 django.request log_response 12972 Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 210, in recommender
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2165, in make_figure
+    m.updater(trace, m.val_map[val])  # covers most cases
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 240, in <lambda>
+    updater=lambda trace, v: trace.update(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\basedatatypes.py", line 5141, in update
+    BaseFigure._perform_update(self, dict1, overwrite=overwrite)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\basedatatypes.py", line 3921, in _perform_update
+    BaseFigure._perform_update(plotly_obj[key], val)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\basedatatypes.py", line 3942, in _perform_update
+    plotly_obj[key] = val
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\basedatatypes.py", line 4876, in __setitem__
+    self._set_prop(prop, value)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\basedatatypes.py", line 5220, in _set_prop
+    raise err
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\basedatatypes.py", line 5215, in _set_prop
+    val = validator.validate_coerce(val)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\_plotly_utils\basevalidators.py", line 1374, in validate_coerce
+    self.raise_invalid_val(v)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\_plotly_utils\basevalidators.py", line 287, in raise_invalid_val
+    raise ValueError(
+ValueError: 
+    Invalid value of type 'builtins.str' received for the 'color' property of bar.marker
+        Received value: 'Software Development'
+
+    The 'color' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+      - A number that will be interpreted as a color
+        according to bar.marker.colorscale
+      - A list or array of any of the above
+ERROR 2023-12-16 01:04:52,029 django.server Thread-1 6156 basehttp basehttp.py 212 django.server log_message 12972 "GET /recommender/ HTTP/1.1" 500 210542

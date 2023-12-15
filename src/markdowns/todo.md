@@ -2,7 +2,7 @@
 
 # Highest Priority
 Revision Matrix
-- [ ]: Recommender Result Graphs (Stacked bar grap)
+- [X]: Recommender Result Graphs (Stacked bar grap)
 - [ ]: Roadmap View (recommendation record view)
 - [ ]: Report Update
     - [ ]: By year, scatter plot of recommendation score, with regression line
@@ -11,7 +11,7 @@ Revision Matrix
 
 - [ ]: user_recommendation score should record all scores, which means that this should have its own model, (fields: user_recommendation_id, field_id, field_score)
 
-- [ ]: send verfication email
+- [ ]: send verfication email - @krtsfpmd
 
 
 ## High Priority

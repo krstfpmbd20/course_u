@@ -3709,3 +3709,422 @@ INFO 2023-12-15 21:52:34,412 django.utils.autoreload autoreload autoreload.py 26
 INFO 2023-12-15 21:52:48,829 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
 INFO 2023-12-15 21:53:12,698 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py changed, reloading.
 INFO 2023-12-15 21:53:23,210 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 21:58:48,467 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 679877
+INFO 2023-12-15 21:58:48,835 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-15 21:59:06,881 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 679878
+INFO 2023-12-15 22:00:03,338 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 192075
+INFO 2023-12-15 22:00:38,374 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 192066
+INFO 2023-12-15 22:01:10,053 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 192163
+INFO 2023-12-15 22:01:25,069 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 192068
+INFO 2023-12-15 22:01:37,493 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 192077
+INFO 2023-12-15 22:02:09,179 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 192705
+INFO 2023-12-15 22:02:54,322 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185559
+INFO 2023-12-15 22:03:39,386 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 23184
+INFO 2023-12-15 22:03:41,399 django.server basehttp basehttp.py 212 log_message "GET /admin_LM HTTP/1.1" 200 19395
+INFO 2023-12-15 22:06:09,289 django.server basehttp basehttp.py 212 log_message "GET /admin_LM HTTP/1.1" 200 384218
+INFO 2023-12-15 22:06:48,462 django.server basehttp basehttp.py 212 log_message "GET /admin_LM HTTP/1.1" 200 179605
+INFO 2023-12-15 22:07:09,630 django.server basehttp basehttp.py 212 log_message "GET /admin_LM HTTP/1.1" 200 181361
+INFO 2023-12-15 22:07:09,784 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-15 22:07:30,165 django.server basehttp basehttp.py 212 log_message "GET /admin_LM HTTP/1.1" 200 181357
+INFO 2023-12-15 22:08:02,999 django.server basehttp basehttp.py 212 log_message "GET /admin_LM HTTP/1.1" 200 181378
+INFO 2023-12-15 22:08:13,333 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 23186
+INFO 2023-12-15 22:08:15,363 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 51056)
+INFO 2023-12-15 22:08:15,783 django.server basehttp basehttp.py 212 log_message "GET /admin_students HTTP/1.1" 200 20625
+INFO 2023-12-15 22:08:18,017 django.server basehttp basehttp.py 212 log_message "GET /admin_test HTTP/1.1" 200 20358
+INFO 2023-12-15 22:08:19,981 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27400
+INFO 2023-12-15 22:10:37,189 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27459
+INFO 2023-12-15 22:10:55,228 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27467
+INFO 2023-12-15 22:11:11,291 django.server basehttp basehttp.py 212 log_message "GET /admin_report/ HTTP/1.1" 200 41351
+INFO 2023-12-15 22:11:50,980 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 23184
+INFO 2023-12-15 22:11:54,065 django.server basehttp basehttp.py 212 log_message "GET /admin_students HTTP/1.1" 200 20624
+INFO 2023-12-15 22:11:55,828 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 23184
+INFO 2023-12-15 22:12:02,012 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 23184
+INFO 2023-12-15 23:16:20,262 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:16:23,571 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 23:17:04,780 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:17:08,429 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 23:17:17,085 django.server basehttp basehttp.py 212 log_message "GET /recommendersurvey/ HTTP/1.1" 302 0
+INFO 2023-12-15 23:17:33,933 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14491068
+INFO 2023-12-15 23:17:52,548 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14491067
+INFO 2023-12-15 23:18:29,997 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14491067
+INFO 2023-12-15 23:18:47,970 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:18:50,596 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 23:19:41,884 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14491087
+INFO 2023-12-15 23:22:06,904 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:22:10,110 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 23:22:24,665 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:22:28,446 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 23:22:48,510 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14491074
+INFO 2023-12-15 23:22:58,998 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52921
+INFO 2023-12-15 23:23:00,890 django.server basehttp basehttp.py 212 log_message "GET /recommendersurvey/ HTTP/1.1" 302 0
+INFO 2023-12-15 23:23:05,048 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14491073
+INFO 2023-12-15 23:26:03,510 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:26:07,157 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 23:26:14,470 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18465
+INFO 2023-12-15 23:26:14,550 django.server basehttp basehttp.py 212 log_message "GET /static/images/boom.png HTTP/1.1" 200 201714
+INFO 2023-12-15 23:26:14,570 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2240
+INFO 2023-12-15 23:26:14,595 django.server basehttp basehttp.py 212 log_message "GET /static/images/light.png HTTP/1.1" 200 93173
+INFO 2023-12-15 23:26:14,607 django.server basehttp basehttp.py 212 log_message "GET /static/images/result.png HTTP/1.1" 200 576860
+INFO 2023-12-15 23:26:14,685 django.server basehttp basehttp.py 212 log_message "GET /static/images/character.png HTTP/1.1" 200 749040
+INFO 2023-12-15 23:26:16,965 django.server basehttp basehttp.py 212 log_message "GET /recommendersurvey/ HTTP/1.1" 302 0
+INFO 2023-12-15 23:26:29,385 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14491050
+INFO 2023-12-15 23:27:00,859 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:27:05,987 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 23:28:34,192 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:28:37,130 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 23:29:08,047 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:29:10,989 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 23:29:32,459 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:29:36,242 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 23:34:17,256 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:34:21,664 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 23:34:32,749 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:34:35,794 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-15 23:34:52,798 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14491045
+INFO 2023-12-15 23:35:13,280 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:35:16,956 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-15 23:35:34,800 django.request log log.py 241 log_response Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'adaptability in development'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 203, in recommender
+    field_data.append(pivot_df[field].tolist())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 'adaptability in development'
+ERROR 2023-12-15 23:35:36,051 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 500 226321
+INFO 2023-12-15 23:35:36,165 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-15 23:35:36,341 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-15 23:35:36,346 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-15 23:35:36,558 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+ERROR 2023-12-15 23:35:45,348 django.request log log.py 241 log_response Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'adaptability in development'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 203, in recommender
+    field_data.append(pivot_df[field].tolist())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 'adaptability in development'
+ERROR 2023-12-15 23:35:46,501 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 500 226193
+INFO 2023-12-15 23:37:05,894 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-15 23:37:08,138 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-15 23:37:15,534 django.request log log.py 241 log_response Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 63
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 203, in recommender
+    field_data.append(user_skills_df[field].tolist())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 63
+ERROR 2023-12-15 23:37:17,095 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 500 224491
+ERROR 2023-12-15 23:37:22,877 django.request log log.py 241 log_response Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 63
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 203, in recommender
+    field_data.append(user_skills_df[field].tolist())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 63
+ERROR 2023-12-15 23:37:23,768 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 500 224491
+ERROR 2023-12-16 00:52:05,750 django.request log log.py 241 log_response Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 63
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 203, in recommender
+    field_data.append(user_skills_df[field].tolist())
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\indexes\base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 63
+ERROR 2023-12-16 00:52:07,131 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 500 224491
+INFO 2023-12-16 00:53:38,560 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 00:53:41,249 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-16 00:54:01,123 django.request log log.py 241 log_response Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 206, in recommender
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1485, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1250, in process_args_into_dataframe
+    raise ValueError(
+ValueError: All arguments should have the same length. The length of argument `wide_variable_0` is 4, whereas the length of  previously-processed arguments ['y'] is 101
+ERROR 2023-12-16 00:54:02,129 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 500 203344
+INFO 2023-12-16 00:56:54,262 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 00:56:56,846 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-16 00:57:08,434 django.request log log.py 241 log_response Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 206, in recommender
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1485, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1250, in process_args_into_dataframe
+    raise ValueError(
+ValueError: All arguments should have the same length. The length of argument `wide_variable_0` is 4, whereas the length of  previously-processed arguments ['y'] is 101
+ERROR 2023-12-16 00:57:09,450 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 500 203364
+INFO 2023-12-16 01:00:22,952 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:00:25,583 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:01:51,665 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:01:54,451 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:03:11,804 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:03:16,686 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:03:48,875 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:03:52,641 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:04:10,149 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:04:13,083 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-16 01:04:21,642 django.request log log.py 241 log_response Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 210, in recommender
+    fig = px.bar(
+TypeError: bar() got an unexpected keyword argument 'bardmode'
+ERROR 2023-12-16 01:04:23,505 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 500 128129
+INFO 2023-12-16 01:04:39,314 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:04:44,073 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-16 01:04:50,770 django.request log log.py 241 log_response Internal Server Error: /recommender/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py", line 210, in recommender
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2165, in make_figure
+    m.updater(trace, m.val_map[val])  # covers most cases
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 240, in <lambda>
+    updater=lambda trace, v: trace.update(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\basedatatypes.py", line 5141, in update
+    BaseFigure._perform_update(self, dict1, overwrite=overwrite)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\basedatatypes.py", line 3921, in _perform_update
+    BaseFigure._perform_update(plotly_obj[key], val)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\basedatatypes.py", line 3942, in _perform_update
+    plotly_obj[key] = val
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\basedatatypes.py", line 4876, in __setitem__
+    self._set_prop(prop, value)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\basedatatypes.py", line 5220, in _set_prop
+    raise err
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\basedatatypes.py", line 5215, in _set_prop
+    val = validator.validate_coerce(val)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\_plotly_utils\basevalidators.py", line 1374, in validate_coerce
+    self.raise_invalid_val(v)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\_plotly_utils\basevalidators.py", line 287, in raise_invalid_val
+    raise ValueError(
+ValueError: 
+    Invalid value of type 'builtins.str' received for the 'color' property of bar.marker
+        Received value: 'Software Development'
+
+    The 'color' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+      - A number that will be interpreted as a color
+        according to bar.marker.colorscale
+      - A list or array of any of the above
+ERROR 2023-12-16 01:04:52,029 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 500 210542
+INFO 2023-12-16 01:05:01,021 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:05:05,008 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:05:16,589 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14479862
+INFO 2023-12-16 01:05:35,969 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:05:39,681 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:05:56,513 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14482253
+INFO 2023-12-16 01:08:27,318 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:08:29,589 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:08:41,672 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:08:46,270 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:15:49,074 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:15:56,567 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:24:09,679 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:24:12,696 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:25:02,164 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:25:05,500 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:25:23,261 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:25:27,003 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:25:48,781 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14482275
+INFO 2023-12-16 01:25:54,868 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:25:58,986 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:26:12,809 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:26:17,843 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:26:42,560 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:26:45,640 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:27:07,220 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14484484
+INFO 2023-12-16 01:27:07,699 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 01:27:07,818 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 01:27:07,938 django.server basehttp basehttp.py 212 log_message "GET /static/css/recommender.css HTTP/1.1" 200 3379
+INFO 2023-12-16 01:27:12,111 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 01:27:12,114 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 01:27:12,286 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 01:27:12,408 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 01:27:29,073 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:27:31,779 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:28:21,160 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:28:25,577 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:33:43,686 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:33:45,827 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:33:55,682 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:34:00,528 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:34:15,726 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14484497
+INFO 2023-12-16 01:34:15,742 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 01:34:16,280 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 01:34:16,334 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 01:34:16,365 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 01:34:16,409 django.server basehttp basehttp.py 212 log_message "GET /static/css/recommender.css HTTP/1.1" 200 3379
+INFO 2023-12-16 01:34:20,656 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 01:34:20,761 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 01:35:09,280 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\recommender\views.py changed, reloading.
+INFO 2023-12-16 01:35:11,883 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 01:35:20,834 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18465
+INFO 2023-12-16 01:35:20,906 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 01:35:20,991 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 01:35:21,203 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2240
+INFO 2023-12-16 01:35:21,244 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 200 33747
+INFO 2023-12-16 01:35:21,253 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 01:35:21,275 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 01:35:21,278 django.server basehttp basehttp.py 212 log_message "GET /static/images/light.png HTTP/1.1" 200 93173
+INFO 2023-12-16 01:35:21,297 django.server basehttp basehttp.py 212 log_message "GET /static/images/boom.png HTTP/1.1" 200 201714
+INFO 2023-12-16 01:35:21,443 django.server basehttp basehttp.py 212 log_message "GET /static/images/character.png HTTP/1.1" 200 749040
+INFO 2023-12-16 01:35:21,453 django.server basehttp basehttp.py 212 log_message "GET /static/images/result.png HTTP/1.1" 200 576860
+INFO 2023-12-16 01:35:21,833 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 01:35:21,844 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 01:35:23,403 django.server basehttp basehttp.py 212 log_message "GET /recommendersurvey/ HTTP/1.1" 302 0
+INFO 2023-12-16 01:35:31,728 django.server basehttp basehttp.py 212 log_message "GET /recommender/ HTTP/1.1" 200 14484494
+INFO 2023-12-16 01:35:31,794 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 01:35:31,797 django.server basehttp basehttp.py 212 log_message "GET /static/css/recommender.css HTTP/1.1" 200 3379
+INFO 2023-12-16 01:35:31,798 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 01:35:35,626 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 01:35:35,626 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 01:35:35,671 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 01:35:35,838 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
