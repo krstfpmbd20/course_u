@@ -19,6 +19,7 @@ from apps.recommender.models import UserRecommendations, UserSkill
 
 from apps.assessment.models import Test, QuestionSet
 from apps.jobs.models import JobPosting
+from apps.survey.models import Survey
 
 from utilities.decorators import unauthenticated_user, allowed_users, admin_only
 from .models import *
@@ -144,6 +145,15 @@ def home_field(request, field_id=None):
         'user_recommendations': user_recommendations  # Pass the user recommendations to the template
     })
 
+
+def status_counts():
+    JobPosting_count = JobPosting.objects.all().count()
+    Specialization_count = Specialization.objects.all().count()
+    QuestionSet_count = QuestionSet.objects.all().count()
+    Student_count = User.objects.all().count()
+    Survey_count = Survey.objects.all().count()
+    return JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count
+
 #@admin_only # only admin can access this page # if admin only, then no need to add @login_required it will be redundant
 def admin_home(request):
     admin = True
@@ -164,25 +174,76 @@ def admin_home(request):
 
     # Get other counts
     auth_user = User.objects.all()
-    JobPosting_count = JobPosting.objects.all().count()
-    Specialization_count = Specialization.objects.all().count()
-    QuestionSet_count = QuestionSet.objects.all().count()
-
-    return render(request, 'admin_home.html', {
+    # JobPosting_count = JobPosting.objects.all().count()
+    # Specialization_count = Specialization.objects.all().count()
+    # QuestionSet_count = QuestionSet.objects.all().count()
+    # Student_count = User.objects.all().count()
+    # Survey_count = Survey.objects.all().count()
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    return render(request, 'dashboard/admin_home.html', {
         'admin': admin,
         'field_test_count_dict': field_test_count_dict,
         'auth_user': auth_user,
         'JobPosting_count': JobPosting_count,
         'Specialization_count': Specialization_count,
         'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
         'fields': fields,  # Pass the list of fields
     })
     
 
-@admin_only # only admin can access this page # if admin only, then no need to add @login_required it will be redundant
+#@admin_only # only admin can access this page # if admin only, then no need to add @login_required it will be redundant
 def admin_students(request):
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
     auth_user = User.objects.all()
-    return render(request, 'admin_students.html', {'auth_user': auth_user})
+    return render(request, 'dashboard/admin_students.html', {
+        'auth_user': auth_user,
+        'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
+        })
+
+def admin_test(request):
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    questionset = QuestionSet.objects.all()
+    return render(request, 'dashboard/admin_test.html', {
+        'questionset': questionset,
+        'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
+        })
+
+def admin_tracer(request):
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    survey = Survey.objects.all()
+    return render(request, 'dashboard/admin_tracer.html', {
+        'survey': survey, 
+        'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
+        })
+
+def admin_jobpostings(request):
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    jobpostings = JobPosting.objects.all()
+    return render(request, 'dashboard/admin_tracer.html', {
+        'jobpostings': jobpostings, 
+        'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
+        })
+
+
+def admin_LM(request):
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    learningmaterial = LearningMaterial.objects.all()
+    return render(request, 'dashboard/admin_tracer.html', {
+        'learningmaterial': learningmaterial, 
+        'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
+        })
 
 
 @unauthenticated_user # instead of adding if user.is_authenticated, use this decorator
@@ -361,7 +422,7 @@ def admin_report(request):
     job_fields_distribution_plot = generate_job_fields_distribution_plot()
     user_engagement_plot = generate_user_engagement_plot()
 
-    return render(request, 'admin_report.html', {
+    return render(request, 'dashboard/admin_report.html', {
         'current_time': current_time,
         'name': name,
         'alignment_and_satisfaction': alignment_and_satisfaction,

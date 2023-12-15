@@ -1,0 +1,114 @@
+{% extends 'base_user.html' %}
+
+{% block title %}Reports-Section{% endblock %}
+
+{% block head_extra %}
+{% load static %}
+<!-- Additional stylesheets or scripts specific to this page -->
+<link rel="stylesheet" href="{% static 'css/admin_home.css' %}">
+{% endblock head_extra %}
+
+
+{% block content %}
+<style>
+    table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+{% if user.is_authenticated %}
+<div style="padding:8px;">
+    <h3 style="padding:5px;">Number of survey : {{ s_count}}</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User</th>
+                <th>Academic Specialization</th>
+                <th>Alignment with Job Responsibilities</th>
+                <th>Preparation for Current Role</th>
+                <th>Additional Certifications</th>
+                <th>Different Academic Specialization</th>
+                <th>Job Satisfaction</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if surveys %}
+            <button style="border-radius:4px;background-color:red;color:white;padding:6px;border:none;outline:none;cursor:pointer;">Generate Pdf</button>
+            {% for survey in surveys %}
+            
+            <tr>
+                <td>{{ survey.id }}</td>
+                <td>{{ survey.user.username }}</td>
+                <td>{{ survey.q1 }}</td>
+                <td>{{ survey.q2 }}</td>
+                <td>{{ survey.q3 }}</td>
+                <td>{{ survey.q4 }}</td>
+                <td>{{ survey.q5 }}</td>
+                <td>{{ survey.q6 }}</td>
+            </tr>
+            
+            {% endfor %}
+            {% else %}
+            <h4 style="color:red;text-align:center;">No Survey Taken yet</h4>
+            {% endif %}
+            
+        </tbody>
+    </table>  
+
+   
+<!-- 
+    <h3 style="padding:5px;">Number of Recommendations : {{ s_count}}</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User</th>
+                <th>Academic Specialization</th>
+                <th>Alignment with Job Responsibilities</th>
+                <th>Preparation for Current Role</th>
+                <th>Additional Certifications</th>
+                <th>Different Academic Specialization</th>
+                <th>Job Satisfaction</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if surveys %}
+            {% for survey in surveys %}
+            <button style="border-radius:4px;background-color:red;color:white;padding:6px;border:none;outline:none;cursor:pointer;">Generate Pdf</button>
+            <tr>
+                <td>{{ survey.id }}</td>
+                <td>{{ survey.user.username }}</td>
+                <td>{{ survey.q1 }}</td>
+                <td>{{ survey.q2 }}</td>
+                <td>{{ survey.q3 }}</td>
+                <td>{{ survey.q4 }}</td>
+                <td>{{ survey.q5 }}</td>
+                <td>{{ survey.q6 }}</td>
+            </tr>
+            
+            {% endfor %}
+            {% else %}
+            <h4 style="color:red;text-align:center;">No Survey Taken yet</h4>
+            {% endif %}
+            
+        </tbody>
+    </table>   -->
+
+   
+</div>
+{% endif %}
+
+{% endblock content %}

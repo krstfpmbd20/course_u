@@ -1,0 +1,62 @@
+{% extends 'base_user.html' %}
+
+{% block title %}Admin - Students{% endblock %}
+
+{% load static %}
+{% block head_extra %}
+<!-- Additional stylesheets or scripts specific to thiss page -->
+
+<link rel="stylesheet" href="{% static 'css/admin_home.css' %}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+{% endblock head_extra %}
+
+
+{% block content %}
+<p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Tracer</a></p>
+{% include 'dashboard/status.html' %}
+ <a href="{% url 'admin_report' %}" class="btn btn-primary">Admin Report</a>
+<div class="container">
+    <div>
+        <!-- <a href="{% url 'admin_home' %}" class="btn btn-primary">< Back</a> -->
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="table-heading">
+                <h5>Students</h5>
+            </div>
+            <div class="card card-body">
+                <table class="table table-sm">
+                    <thead>
+                        <!-- <th>ID</th> -->
+                        <th>Username</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Staff</th>
+                        <th>Active</th>
+                        <!-- <th>Date Joined</th> -->
+                    </thead>
+                    <tbody>
+                        {% for user in auth_user %}
+                        <tr>
+                            <!-- <td>{{ user.id}}</td> -->
+                            <td><a href="#">{{ user.username}}</a></td>
+                            <td>{{ user.first_name }} {{ user.last_name }}</td>
+                            <td>{{ user.email }}</td>
+                            <td> {% if user.is_staff %} check {% else %} X {% endif %}</td>
+                            <td>{{ user.is_active}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div><br><br>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}

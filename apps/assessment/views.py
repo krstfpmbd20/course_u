@@ -849,7 +849,7 @@ def create_test(request):
             return HttpResponse('Your test has not been created!')
     
     context = {'form' : form}
-    return render(request, 'test/create_test.html', context)
+    return render(request, 'dashboard/create_test.html', context)
 
 
 
