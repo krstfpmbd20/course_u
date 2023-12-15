@@ -17,39 +17,49 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-<p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Student</a></p>
+<p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Job Posts</a></p>
 {% include 'dashboard/status.html' %}
 <div class="container">
-    <div>
-        <!-- <a href="{% url 'admin_home' %}" class="btn btn-primary">< Back</a> -->
-    </div>
-    <br>
+
     <div class="row">
-        <div class="col-md-6 ">
+        <div class="col-md">
             <div class="table-heading">
-                <h5>Students</h5>
+                <h5>Job Posts</h5>
+                <a href="{% url 'admin_home' %}" class="btn btn-primary">Scrape New job Posts</a>
             </div>
             <div class="card card-body">
-                <a class="btn bth-primary btn-sm btn-block" href="">Create</a>
+                <!-- <a class="btn bth-primary btn-sm btn-block" href="">Create</a> -->
                 <table class="table table-sm">
                     <thead>
-                        <!-- <th>ID</th> -->
-                        <th>Username</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Staff</th>
-                        <th>Active</th>
-                        <!-- <th>Date Joined</th> -->
+                        <th>Link</th>
+                        <!-- <th>Keyword</th> -->
+                        <th>Field</th>
+                        <th>Job Title</th>
+                        <th>Company</th>
+                        <!-- <th>Company Link</th> -->
+                        <th>Date Posted</th>
+                        <th>Location</th>
+                        <th>Employment Type</th>
+                        <th>Job Function</th>
+                        <th>Industries</th>
+                        <th>Seniority Level</th>
+                        <!-- <th>Job Description</th> -->
                     </thead>
                     <tbody>
-                        {% for user in auth_user %}
+                        {% for data in jobpostings %}
                         <tr>
-                            <!-- <td>{{ user.id}}</td> -->
-                            <td><a href="#">{{ user.username}}</a></td>
-                            <td>{{ user.first_name }} {{ user.last_name }}</td>
-                            <td>{{ user.email }}</td>
-                            <td> {% if user.is_staff %} check {% else %} X {% endif %}</td>
-                            <td>{{ user.is_active}}</td>
+                            <td><a href="{{ data.link }}">link</a></td>
+                            <!-- <td> data.keyword </td> -->
+                            <td>{{ data.field }}</td>
+                            <td>{{ data.job_title }}</td>
+                            <td><a href="{{ data.company_link }}">{{ data.company_name }}</a></td>
+                            <td>{{ data.date_posted }}</td>
+                            <td>{{ data.location }}</td>
+                            <td>{{ data.employment_type }}</td>
+                            <td>{{ data.job_function }}</td>
+                            <td>{{ data.industries }}</td>
+                            <td>{{ data.seniority_level }}</td>
+                            <!-- <td> data.job_description </td> -->
                         </tr>
                         {% endfor %}
                     </tbody>

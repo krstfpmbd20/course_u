@@ -19,32 +19,31 @@
     <div>
         <!-- <a href="{% url 'admin_home' %}" class="btn btn-primary">< Back</a> -->
     </div>
-    <br>
+
     <div class="row">
         <div class="col-md-6 ">
             <div class="table-heading">
-                <h5>Students</h5>
+                <h5>Test Results</h5>
             </div>
             <div class="card card-body">
                 <table class="table table-sm">
                     <thead>
-                        <!-- <th>ID</th> -->
                         <th>Username</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Staff</th>
-                        <th>Active</th>
-                        <!-- <th>Date Joined</th> -->
+                        <th>Term Year Taken</th>
+                        <th>Score</th>
+                        <th>Status</th>
                     </thead>
                     <tbody>
-                        {% for user in auth_user %}
+                        {% for data in questionset %}
                         <tr>
-                            <!-- <td>{{ user.id}}</td> -->
-                            <td><a href="#">{{ user.username}}</a></td>
-                            <td>{{ user.first_name }} {{ user.last_name }}</td>
-                            <td>{{ user.email }}</td>
-                            <td> {% if user.is_staff %} check {% else %} X {% endif %}</td>
-                            <td>{{ user.is_active}}</td>
+                            <td><a href="#">{{ data.username}}</a></td>
+                            <td>{{data.year}}</td>
+                            <td>{{data.score}}/{{data.n_questions}}</td>
+                            <td>{% if data.is_completed == 1%} True
+                                {% else %} False {% endif %}
+                            </td>
+                            
+                            
                         </tr>
                         {% endfor %}
                     </tbody>

@@ -17,6 +17,7 @@ from apps.website.forms import SignUpForm, StudentScoreForm
 from apps.website.models import Specialization, Field
 from apps.recommender.models import UserRecommendations, UserSkill
 
+from apps.acad.models import StudentProfile
 from apps.assessment.models import Test, QuestionSet
 from apps.jobs.models import JobPosting
 from apps.survey.models import Survey
@@ -196,9 +197,20 @@ def admin_home(request):
 #@admin_only # only admin can access this page # if admin only, then no need to add @login_required it will be redundant
 def admin_students(request):
     JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
-    auth_user = User.objects.all()
+    
+    # join by user_id and id
+    students = User.objects.raw('''
+    SELECT auth_user.*, acad_studentprofile.*, acad_course.course_name as course_name 
+    FROM auth_user 
+    INNER JOIN acad_studentprofile ON auth_user.id = acad_studentprofile.user_id
+    INNER JOIN acad_course ON acad_studentprofile.enrolled_courses_id = acad_course.id
+    ''')
+
+    # print firs students all fields
+    #print("students: ", students[0].__dict__)
+    
     return render(request, 'dashboard/admin_students.html', {
-        'auth_user': auth_user,
+        'students': students,
         'QuestionSet_count': QuestionSet_count,
         'Student_count': Student_count,
         'Survey_count': Survey_count,
@@ -206,7 +218,19 @@ def admin_students(request):
 
 def admin_test(request):
     JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    
     questionset = QuestionSet.objects.all()
+    # auth_user and questionset join by user_id and id
+    questionset = User.objects.raw('''
+    SELECT auth_user.*, assessment_questionset.*
+    FROM auth_user
+    INNER JOIN assessment_questionset ON auth_user.id = assessment_questionset.user_id
+    ''')
+    
+
+    # disply field names
+    print("questionset: ", questionset[0].__dict__)
+    
     return render(request, 'dashboard/admin_test.html', {
         'questionset': questionset,
         'QuestionSet_count': QuestionSet_count,
@@ -217,6 +241,8 @@ def admin_test(request):
 def admin_tracer(request):
     JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
     survey = Survey.objects.all()
+
+
     return render(request, 'dashboard/admin_tracer.html', {
         'survey': survey, 
         'QuestionSet_count': QuestionSet_count,
@@ -227,7 +253,7 @@ def admin_tracer(request):
 def admin_jobpostings(request):
     JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
     jobpostings = JobPosting.objects.all()
-    return render(request, 'dashboard/admin_tracer.html', {
+    return render(request, 'dashboard/admin_jobpostings.html', {
         'jobpostings': jobpostings, 
         'QuestionSet_count': QuestionSet_count,
         'Student_count': Student_count,
@@ -238,7 +264,7 @@ def admin_jobpostings(request):
 def admin_LM(request):
     JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
     learningmaterial = LearningMaterial.objects.all()
-    return render(request, 'dashboard/admin_tracer.html', {
+    return render(request, 'dashboard/admin_LM.html', {
         'learningmaterial': learningmaterial, 
         'QuestionSet_count': QuestionSet_count,
         'Student_count': Student_count,

@@ -1,6 +1,6 @@
 {% extends 'base_user.html' %}
 
-{% block title %}Admin - Students{% endblock %}
+{% block title %}Admin - Learning Materials{% endblock %}
 
 {% load static %}
 {% block head_extra %}
@@ -21,33 +21,37 @@
     <div>
         <!-- <a href="{% url 'admin_home' %}" class="btn btn-primary">< Back</a> -->
     </div>
-    <br>
     <div class="row">
-        <div class="col-md-6 ">
+        <div class="col-md">
             <div class="table-heading">
-                <h5>Students</h5>
+                <h5>Learning Materials</h5>
             </div>
             <div class="card card-body">
                 <a class="btn bth-primary btn-sm btn-block" href="">Create</a>
                 <table class="table table-sm">
                     <thead>
-                        <!-- <th>ID</th> -->
-                        <th>Username</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Staff</th>
-                        <th>Active</th>
-                        <!-- <th>Date Joined</th> -->
+                        <th>Material ID</th>
+                        <th>Title</th>
+                        <th>University</th>
+                        <th>Level</th>
+                        <th>Rating</th>
+                        <th>URL</th>
+                        <!-- <th>Description</th> -->
+                        <!-- <th>Skills</th> -->
+                        <th>Field</th>
                     </thead>
                     <tbody>
-                        {% for user in auth_user %}
+                        {% for data in learningmaterial %}
                         <tr>
-                            <!-- <td>{{ user.id}}</td> -->
-                            <td><a href="#">{{ user.username}}</a></td>
-                            <td>{{ user.first_name }} {{ user.last_name }}</td>
-                            <td>{{ user.email }}</td>
-                            <td> {% if user.is_staff %} check {% else %} X {% endif %}</td>
-                            <td>{{ user.is_active}}</td>
+                            <td>{{ data.material_id }}</td>
+                            <td>{{ data.title }}</td>
+                            <td>{{ data.university }}</td>
+                            <td>{{ data.level }}</td>
+                            <td>{{ data.rating }}</td>
+                            <td><a href="{{ data.url }}">URL</a></td>
+                            <!-- <td>data.description </td> -->
+                            <!-- <td>{{ data.skills }}</td> -->
+                            <td>{{ data.field }}</td>
                         </tr>
                         {% endfor %}
                     </tbody>

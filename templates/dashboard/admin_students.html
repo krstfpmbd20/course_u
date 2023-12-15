@@ -22,33 +22,39 @@
     <div>
         <!-- <a href="{% url 'admin_home' %}" class="btn btn-primary">< Back</a> -->
     </div>
-    <br>
     <div class="row">
-        <div class="col-md-6 ">
+        <div class="col-md ">
             <div class="table-heading">
                 <h5>Students</h5>
+                <a class="btn bth-primary btn-sm btn-block" href="">Create</a>
             </div>
             <div class="card card-body">
-                <a class="btn bth-primary btn-sm btn-block" href="">Create</a>
                 <table class="table table-sm">
                     <thead>
                         <!-- <th>ID</th> -->
                         <th>Username</th>
-                        <th>Name</th>
+                        <!-- <th>Name</th> -->
+                        <th>First Name</th>
+                        <th>Last Name</th>
                         <th>Email</th>
-                        <th>Staff</th>
+                        <!-- <th>Staff</th> -->
                         <th>Active</th>
                         <!-- <th>Date Joined</th> -->
+                        <th>Course</th>
+                        <th>Year</th>
                     </thead>
                     <tbody>
-                        {% for user in auth_user %}
+                        {% for user in students %}
                         <tr>
                             <!-- <td>{{ user.id}}</td> -->
                             <td><a href="#">{{ user.username}}</a></td>
-                            <td>{{ user.first_name }} {{ user.last_name }}</td>
+                            <td>{{ user.first_name }}</td> 
+                            <td>{{ user.last_name }}</td>
                             <td>{{ user.email }}</td>
-                            <td> {% if user.is_staff %} check {% else %} X {% endif %}</td>
+                            <!-- <td> {% if user.is_staff %} check {% else %} X {% endif %}</td> -->
                             <td>{{ user.is_active}}</td>
+                            <td>{{user.course_name}}</td>
+                            <td>{{ user.current_year }}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
