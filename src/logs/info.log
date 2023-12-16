@@ -6531,3 +6531,5 @@ TypeError: a bytes-like object is required, not 'str'
 ERROR 2023-12-16 23:57:59,770 django.server basehttp basehttp.py 212 log_message "GET /admin_report_pdf/ HTTP/1.1" 500 203103
 INFO 2023-12-16 23:59:04,664 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py changed, reloading.
 INFO 2023-12-16 23:59:41,259 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-17 00:00:34,203 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 29193
+INFO 2023-12-17 00:01:39,601 django.server basehttp basehttp.py 212 log_message "GET /admin_report_pdf/ HTTP/1.1" 200 72363
