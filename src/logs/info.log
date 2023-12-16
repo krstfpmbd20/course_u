@@ -4238,3 +4238,1077 @@ INFO 2023-12-16 13:22:10,511 django.server basehttp basehttp.py 212 log_message 
 INFO 2023-12-16 13:22:14,953 django.server basehttp basehttp.py 212 log_message "GET /admin_LM HTTP/1.1" 200 181376
 INFO 2023-12-16 13:22:43,167 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py changed, reloading.
 INFO 2023-12-16 13:22:45,413 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 13:23:05,067 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24365
+INFO 2023-12-16 13:23:05,074 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 26791)
+INFO 2023-12-16 13:23:05,081 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:23:05,235 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4046
+INFO 2023-12-16 13:23:05,239 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:23:05,521 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:23:05,527 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:23:05,621 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:23:05,640 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:27:22,318 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24362
+INFO 2023-12-16 13:28:27,379 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24359
+INFO 2023-12-16 13:30:03,652 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:30:09,562 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:30:45,980 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:30:46,149 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:30:46,456 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:30:46,532 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4148
+INFO 2023-12-16 13:30:46,754 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:30:47,082 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:30:47,110 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:30:47,204 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:30:55,879 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24375
+INFO 2023-12-16 13:30:55,902 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:30:55,906 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:30:55,915 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:30:55,920 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:30:56,140 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4148
+INFO 2023-12-16 13:30:56,405 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:30:56,405 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:31:04,602 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:31:04,628 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:31:04,628 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:31:04,637 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:31:04,645 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:31:04,757 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4148
+INFO 2023-12-16 13:31:04,882 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:31:04,952 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:31:15,085 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:31:15,116 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:31:15,118 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:31:15,118 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:31:15,135 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:31:15,255 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4148
+INFO 2023-12-16 13:31:15,302 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:31:15,391 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:31:32,328 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:31:32,348 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4148
+INFO 2023-12-16 13:31:41,592 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4148
+INFO 2023-12-16 13:32:21,073 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:32:21,095 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:32:21,098 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:32:21,099 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:32:21,111 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:32:21,212 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4154
+INFO 2023-12-16 13:32:21,400 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:32:21,441 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:32:46,910 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24375
+INFO 2023-12-16 13:32:46,946 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:32:46,958 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4172
+INFO 2023-12-16 13:32:47,038 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:32:47,057 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:32:47,058 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:32:47,641 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:32:47,669 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:33:44,928 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:33:44,944 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:33:44,953 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:33:44,952 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:33:44,958 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:33:45,091 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4216
+INFO 2023-12-16 13:33:45,261 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:33:45,373 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:34:05,988 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:34:06,007 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:34:06,013 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:34:06,017 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:34:06,023 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:34:06,024 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4219
+INFO 2023-12-16 13:34:06,843 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:34:06,856 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:34:29,095 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:34:29,118 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:34:29,123 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:34:29,127 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:34:29,128 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:34:29,266 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4219
+INFO 2023-12-16 13:34:29,462 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:34:29,581 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:34:58,437 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24375
+INFO 2023-12-16 13:34:58,473 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:34:58,475 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:34:58,481 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:34:58,481 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:34:58,563 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4230
+INFO 2023-12-16 13:34:58,816 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:34:58,824 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:36:15,141 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:36:15,171 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:36:15,173 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:36:15,174 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:36:15,190 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:36:15,213 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4294
+INFO 2023-12-16 13:36:15,337 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:36:15,339 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:36:29,389 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:36:29,423 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:36:29,438 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:36:29,440 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:36:29,443 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:36:29,535 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4298
+INFO 2023-12-16 13:36:29,670 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:36:29,722 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:36:35,918 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:36:35,950 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:36:35,954 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:36:35,955 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:36:35,968 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:36:36,064 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4334
+INFO 2023-12-16 13:36:36,442 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:36:36,469 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:37:31,055 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:37:31,086 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:37:31,090 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:37:31,094 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:37:31,094 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:37:31,328 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4340
+INFO 2023-12-16 13:37:31,978 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:37:31,999 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:38:06,276 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24376
+INFO 2023-12-16 13:38:06,293 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:38:06,306 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:38:06,335 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:38:06,462 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4340
+INFO 2023-12-16 13:38:06,667 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:38:06,673 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:38:06,680 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:38:52,364 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24377
+INFO 2023-12-16 13:38:52,394 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:38:52,401 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4358
+INFO 2023-12-16 13:38:52,404 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:38:52,414 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:38:52,426 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:38:52,981 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:38:53,119 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:38:59,639 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24377
+INFO 2023-12-16 13:38:59,673 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:38:59,674 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:38:59,786 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4370
+INFO 2023-12-16 13:38:59,809 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:38:59,928 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:39:00,713 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:39:00,895 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:39:42,329 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24378
+INFO 2023-12-16 13:39:42,351 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:39:42,352 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:39:42,362 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:39:42,464 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:39:42,502 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4402
+INFO 2023-12-16 13:39:42,643 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:39:42,664 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:39:59,689 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24376
+INFO 2023-12-16 13:39:59,718 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:39:59,719 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:39:59,722 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:39:59,729 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:39:59,862 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4441
+INFO 2023-12-16 13:40:00,151 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:40:00,153 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:40:27,208 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24376
+INFO 2023-12-16 13:40:27,238 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:40:27,240 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:40:27,246 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:40:27,264 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:40:27,383 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4471
+INFO 2023-12-16 13:40:27,720 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:40:27,720 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:40:41,542 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24376
+INFO 2023-12-16 13:40:41,580 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4515
+INFO 2023-12-16 13:40:41,582 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:40:41,585 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:40:41,586 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:40:41,586 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:40:42,416 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:40:42,425 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:40:45,417 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24377
+INFO 2023-12-16 13:40:45,446 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:40:45,448 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:40:45,450 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4515
+INFO 2023-12-16 13:40:45,450 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:40:45,496 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:40:46,025 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:40:46,131 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:41:03,325 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24376
+INFO 2023-12-16 13:41:03,351 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:41:03,364 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:41:03,374 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:41:03,383 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:41:03,491 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4525
+INFO 2023-12-16 13:41:03,629 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:41:03,710 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:41:09,409 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24376
+INFO 2023-12-16 13:41:09,425 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:41:09,438 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:41:09,432 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:41:09,443 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:41:09,550 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4503
+INFO 2023-12-16 13:41:09,820 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:41:09,821 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:42:00,713 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24376
+INFO 2023-12-16 13:42:00,737 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:42:00,774 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:42:00,894 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4558
+INFO 2023-12-16 13:42:01,043 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:42:01,144 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:42:01,610 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:42:01,616 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:42:15,495 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 13:43:06,916 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:43:06,972 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:43:07,149 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4558
+INFO 2023-12-16 13:43:07,247 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:43:07,526 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:43:07,544 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:43:07,750 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:43:08,296 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:43:21,296 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:43:21,317 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:43:21,328 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:43:21,335 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:43:21,341 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:43:21,566 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4583
+INFO 2023-12-16 13:43:21,816 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:43:21,901 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:43:32,807 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24375
+INFO 2023-12-16 13:43:32,825 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:43:32,829 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:43:32,833 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:43:32,916 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:43:32,926 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4583
+INFO 2023-12-16 13:43:33,149 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:43:33,197 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:45:55,171 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:45:55,190 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:45:55,205 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:45:55,202 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:45:55,199 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:45:55,326 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4633
+INFO 2023-12-16 13:45:56,039 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:45:56,052 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:47:39,097 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24375
+INFO 2023-12-16 13:47:39,133 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:47:39,134 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:47:39,134 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4639
+INFO 2023-12-16 13:47:39,232 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:47:39,392 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:47:39,621 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:47:39,695 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:48:08,449 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24375
+INFO 2023-12-16 13:48:08,513 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:48:08,631 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:48:08,679 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:48:08,717 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4639
+INFO 2023-12-16 13:48:08,980 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:48:09,032 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:48:09,527 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:49:15,073 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24375
+INFO 2023-12-16 13:49:15,090 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:49:15,101 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:49:15,169 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:49:15,269 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4645
+INFO 2023-12-16 13:49:15,427 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:49:16,164 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:49:16,165 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:51:56,693 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:51:56,721 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:51:56,927 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:51:57,256 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4759
+INFO 2023-12-16 13:51:57,296 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:51:57,382 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:51:57,390 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:51:57,527 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:52:25,863 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24375
+INFO 2023-12-16 13:52:26,023 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:52:26,148 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:52:26,178 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4759
+INFO 2023-12-16 13:52:26,307 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:52:26,377 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:52:26,826 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:52:26,855 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:53:57,679 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24371
+INFO 2023-12-16 13:53:57,799 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:53:58,116 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4759
+INFO 2023-12-16 13:53:58,204 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:53:58,516 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:53:58,537 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:53:58,707 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:53:59,019 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:54:00,389 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 27982)
+INFO 2023-12-16 13:54:00,396 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 27983)
+INFO 2023-12-16 13:54:00,565 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 27974)
+INFO 2023-12-16 13:54:00,620 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 27981)
+INFO 2023-12-16 13:54:00,622 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 27984)
+INFO 2023-12-16 13:54:00,652 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24375
+INFO 2023-12-16 13:54:00,670 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:54:00,680 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:54:00,971 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:54:01,171 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4759
+INFO 2023-12-16 13:54:01,318 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:54:01,420 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:54:01,432 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:54:43,359 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24374
+INFO 2023-12-16 13:54:43,473 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:54:43,503 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:54:43,551 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4806
+INFO 2023-12-16 13:54:43,623 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:54:43,707 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:54:43,721 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:54:43,779 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:54:51,382 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 13:55:41,287 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24371
+INFO 2023-12-16 13:55:41,303 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:55:41,309 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:55:41,310 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4806
+INFO 2023-12-16 13:55:41,321 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:55:41,338 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:55:41,825 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:55:41,835 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:56:07,215 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 13:56:07,259 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:56:07,280 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:56:07,281 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:56:07,291 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:56:07,496 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4798
+INFO 2023-12-16 13:56:07,809 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:56:07,926 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:56:32,130 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24371
+INFO 2023-12-16 13:56:32,161 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:56:32,176 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:56:32,180 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:56:32,187 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4806
+INFO 2023-12-16 13:56:32,242 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:56:32,648 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:56:32,681 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:58:11,713 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24371
+INFO 2023-12-16 13:58:11,736 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:58:11,741 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:58:11,753 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:58:11,764 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:58:11,980 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4828
+INFO 2023-12-16 13:58:12,001 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 13:58:12,017 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:58:19,112 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 13:58:19,149 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4806
+INFO 2023-12-16 13:58:19,149 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 13:58:19,150 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 13:58:19,152 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 13:58:19,244 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 13:58:19,778 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 13:58:19,811 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:00:26,364 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24371
+INFO 2023-12-16 14:00:26,382 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:00:26,387 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:00:26,394 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:00:26,398 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:00:26,400 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4943
+INFO 2023-12-16 14:00:27,201 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:00:27,212 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:01:03,333 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24371
+INFO 2023-12-16 14:01:03,363 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:01:03,365 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:01:03,370 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:01:03,380 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:01:03,638 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4968
+INFO 2023-12-16 14:01:03,873 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:01:03,931 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:01:27,272 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:01:45,199 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24371
+INFO 2023-12-16 14:01:45,226 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:01:45,227 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 4984
+INFO 2023-12-16 14:01:45,228 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:01:45,229 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:01:45,244 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:01:45,601 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:01:45,602 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:01:58,278 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 14:01:58,299 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:01:58,310 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:01:58,314 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:01:58,323 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:01:58,444 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:01:58,597 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:01:58,651 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:02:07,760 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 14:02:07,781 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:02:07,789 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:02:07,795 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:02:07,797 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:02:07,797 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:02:08,052 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:02:08,096 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:02:12,456 django.server basehttp basehttp.py 212 log_message "GET /admin_LM HTTP/1.1" 200 181374
+INFO 2023-12-16 14:02:12,493 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:02:12,496 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:02:12,499 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:02:12,506 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:02:12,511 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:02:13,367 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:02:13,468 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:02:15,660 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:02:18,862 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 28023)
+INFO 2023-12-16 14:02:19,728 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 28021)
+INFO 2023-12-16 14:02:19,956 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185535
+INFO 2023-12-16 14:02:19,981 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:02:19,988 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:02:19,992 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:02:20,065 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:02:20,217 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:02:20,659 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:02:20,782 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:02:37,148 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24371
+INFO 2023-12-16 14:02:37,175 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:02:37,198 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:02:37,188 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:02:37,193 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:02:37,187 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:02:37,391 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:02:37,437 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:02:59,501 django.server basehttp basehttp.py 212 log_message "GET /admin_LM HTTP/1.1" 200 181374
+INFO 2023-12-16 14:02:59,760 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:02:59,762 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:02:59,763 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:02:59,764 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:02:59,764 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:03:00,520 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:03:00,723 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:03:02,367 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:03:04,202 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185556
+INFO 2023-12-16 14:03:04,235 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:03:04,239 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:03:04,243 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:03:04,246 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:03:04,250 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:03:06,879 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:03:06,887 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:03:27,253 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185556
+INFO 2023-12-16 14:03:27,298 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:03:27,308 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:03:27,313 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:03:27,322 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:03:27,347 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:03:28,182 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:03:28,448 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:03:32,557 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185631
+INFO 2023-12-16 14:03:32,588 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:03:32,589 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:03:32,590 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:03:32,727 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:03:32,594 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:03:32,594 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:03:32,752 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:03:36,417 django.server basehttp basehttp.py 212 log_message "GET /admin_students HTTP/1.1" 200 20621
+INFO 2023-12-16 14:03:36,450 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:03:36,458 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:03:36,458 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:03:36,463 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:03:36,468 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:03:36,586 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:03:36,719 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:04:02,325 django.server basehttp basehttp.py 212 log_message "GET /admin_students HTTP/1.1" 200 20696
+INFO 2023-12-16 14:04:02,369 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:04:02,370 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:04:02,371 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:04:02,371 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:04:02,437 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:04:02,815 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:04:02,919 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:04:04,616 django.server basehttp basehttp.py 212 log_message "GET /admin_test HTTP/1.1" 200 20355
+INFO 2023-12-16 14:04:04,642 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:04:04,647 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:04:04,661 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:04:04,665 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:04:04,701 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:04:04,943 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:04:04,968 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:04:06,986 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27462
+INFO 2023-12-16 14:04:07,010 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:04:07,015 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:04:07,020 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:04:07,026 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:04:07,031 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:04:07,292 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:04:07,386 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:04:31,575 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27537
+INFO 2023-12-16 14:04:31,602 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:04:31,604 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5010
+INFO 2023-12-16 14:04:31,605 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:04:31,608 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:04:31,609 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:04:32,006 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:04:32,254 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:04:38,992 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24371
+INFO 2023-12-16 14:36:21,336 django.server basehttp basehttp.py 212 log_message "GET /admin_students HTTP/1.1" 200 20695
+INFO 2023-12-16 14:36:21,353 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:36:22,907 django.server basehttp basehttp.py 212 log_message "GET /admin_test HTTP/1.1" 200 20355
+INFO 2023-12-16 14:36:24,203 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27537
+INFO 2023-12-16 14:36:25,758 django.server basehttp basehttp.py 212 log_message "GET /admin_test HTTP/1.1" 200 20354
+INFO 2023-12-16 14:36:28,559 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27536
+INFO 2023-12-16 14:39:11,030 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27551
+INFO 2023-12-16 14:39:33,191 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27551
+INFO 2023-12-16 14:39:38,570 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27551
+INFO 2023-12-16 14:39:38,647 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:39:38,716 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:39:38,721 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5215
+INFO 2023-12-16 14:39:38,771 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:39:38,796 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:39:38,969 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:39:38,983 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:39:52,675 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 14:39:52,694 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5215
+INFO 2023-12-16 14:39:54,462 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185629
+INFO 2023-12-16 14:39:54,480 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:40:18,116 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185644
+INFO 2023-12-16 14:40:18,136 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:42:07,525 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185658
+INFO 2023-12-16 14:42:07,547 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:42:29,344 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:43:59,497 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185659
+INFO 2023-12-16 14:43:59,537 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:43:59,547 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5215
+INFO 2023-12-16 14:43:59,558 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:43:59,566 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:43:59,597 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:44:00,616 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:44:00,731 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:46:16,414 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185658
+INFO 2023-12-16 14:46:16,458 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:46:16,502 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:46:16,502 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:46:16,505 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5258
+INFO 2023-12-16 14:46:16,518 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:46:17,570 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:46:17,692 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:46:21,751 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 28658)
+INFO 2023-12-16 14:46:22,531 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 28657)
+INFO 2023-12-16 14:46:22,843 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185659
+INFO 2023-12-16 14:46:22,889 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5258
+INFO 2023-12-16 14:46:22,891 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:46:23,027 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:46:23,271 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:46:23,767 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:46:24,281 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:46:24,425 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:47:10,840 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185659
+INFO 2023-12-16 14:47:10,874 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:47:10,875 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:47:10,880 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:47:10,942 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:47:11,029 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5328
+INFO 2023-12-16 14:47:12,730 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:47:12,823 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:47:28,406 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 28971)
+INFO 2023-12-16 14:47:31,241 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 28659)
+INFO 2023-12-16 14:47:31,540 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 28972)
+INFO 2023-12-16 14:47:34,311 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29038)
+INFO 2023-12-16 14:47:40,066 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29036)
+INFO 2023-12-16 14:47:42,841 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29039)
+INFO 2023-12-16 14:47:42,943 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 28660)
+INFO 2023-12-16 14:47:42,950 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29051)
+INFO 2023-12-16 14:47:43,039 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29046)
+INFO 2023-12-16 14:47:43,055 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29040)
+INFO 2023-12-16 14:47:43,063 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29043)
+INFO 2023-12-16 14:47:43,092 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 28585)
+INFO 2023-12-16 14:47:43,207 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29048)
+INFO 2023-12-16 14:47:43,211 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29045)
+INFO 2023-12-16 14:47:43,339 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29058)
+INFO 2023-12-16 14:47:43,423 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29050)
+INFO 2023-12-16 14:47:43,448 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29035)
+INFO 2023-12-16 14:47:43,522 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29054)
+INFO 2023-12-16 14:47:43,630 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29047)
+INFO 2023-12-16 14:47:43,677 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29042)
+INFO 2023-12-16 14:47:43,859 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29053)
+INFO 2023-12-16 14:47:43,965 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29059)
+INFO 2023-12-16 14:47:44,077 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29065)
+INFO 2023-12-16 14:47:44,111 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29072)
+INFO 2023-12-16 14:47:44,134 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29061)
+INFO 2023-12-16 14:47:44,182 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29070)
+INFO 2023-12-16 14:47:44,208 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29064)
+INFO 2023-12-16 14:47:44,224 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185641
+INFO 2023-12-16 14:47:44,266 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:47:44,274 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5328
+INFO 2023-12-16 14:47:44,275 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:47:44,275 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:47:44,276 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:47:45,175 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:47:45,257 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:48:28,297 django.server basehttp basehttp.py 212 log_message "GET /admin_test HTTP/1.1" 200 20355
+INFO 2023-12-16 14:48:28,321 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:48:28,329 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5328
+INFO 2023-12-16 14:48:28,331 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:48:28,337 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:48:28,419 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:48:30,037 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:48:30,072 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:48:31,809 django.server basehttp basehttp.py 212 log_message "GET /admin_students HTTP/1.1" 200 20696
+INFO 2023-12-16 14:48:31,830 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:48:31,833 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5328
+INFO 2023-12-16 14:48:31,841 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:48:31,842 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:48:31,859 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:48:32,190 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:48:32,265 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:48:33,394 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27551
+INFO 2023-12-16 14:48:33,423 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:48:33,426 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:48:33,428 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:48:33,428 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5328
+INFO 2023-12-16 14:48:33,432 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:48:33,886 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:48:33,934 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:48:35,507 django.server basehttp basehttp.py 212 log_message "GET /admin_students HTTP/1.1" 200 20696
+INFO 2023-12-16 14:48:35,536 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:48:35,537 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:48:35,541 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5328
+INFO 2023-12-16 14:48:35,543 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:48:35,552 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:48:35,918 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:48:36,011 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:48:37,066 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27551
+INFO 2023-12-16 14:48:37,094 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:48:37,100 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5328
+INFO 2023-12-16 14:48:37,104 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:48:37,108 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:48:37,111 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:48:37,619 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:48:37,730 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:48:41,560 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 14:48:41,582 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:48:41,593 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:48:41,602 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5328
+INFO 2023-12-16 14:48:41,607 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:48:41,615 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:48:42,012 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:48:42,119 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:48:44,737 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185658
+INFO 2023-12-16 14:48:44,772 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5328
+INFO 2023-12-16 14:48:44,774 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:48:44,777 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:48:44,784 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:48:44,784 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:48:45,679 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:48:45,749 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:49:25,711 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185659
+INFO 2023-12-16 14:49:25,751 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:49:25,770 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:49:25,949 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:49:26,003 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:49:26,586 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5339
+INFO 2023-12-16 14:49:26,954 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:49:27,231 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:50:25,410 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29253)
+INFO 2023-12-16 14:50:25,648 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29255)
+INFO 2023-12-16 14:50:27,183 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29256)
+INFO 2023-12-16 14:50:27,235 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29262)
+INFO 2023-12-16 14:50:27,621 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29260)
+INFO 2023-12-16 14:50:28,127 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185662
+INFO 2023-12-16 14:50:28,134 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29265)
+INFO 2023-12-16 14:50:28,166 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:50:28,167 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29264)
+INFO 2023-12-16 14:50:28,190 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29259)
+INFO 2023-12-16 14:50:28,217 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5339
+INFO 2023-12-16 14:50:28,426 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:50:28,432 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:50:29,304 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:50:30,294 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:50:30,311 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:50:36,499 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185658
+INFO 2023-12-16 14:50:36,532 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:50:36,553 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:50:36,559 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:50:36,709 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5350
+INFO 2023-12-16 14:50:36,723 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:50:37,511 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:50:37,717 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:50:39,523 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:50:40,390 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:51:20,943 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185657
+INFO 2023-12-16 14:51:20,976 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:51:20,986 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:51:20,995 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:51:21,000 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5350
+INFO 2023-12-16 14:51:21,111 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:51:21,859 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:51:21,860 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:51:42,720 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185658
+INFO 2023-12-16 14:51:42,758 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:51:42,793 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:51:42,831 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:51:42,888 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5361
+INFO 2023-12-16 14:51:42,890 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:51:43,326 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:51:43,409 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:51:51,697 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185659
+INFO 2023-12-16 14:51:51,725 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:51:51,752 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:51:51,792 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:51:51,855 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5372
+INFO 2023-12-16 14:51:51,864 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:51:52,520 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:51:52,708 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:52:14,597 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185659
+INFO 2023-12-16 14:52:14,625 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:52:14,641 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:52:14,766 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:52:14,829 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:52:14,950 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5378
+INFO 2023-12-16 14:52:15,968 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:52:16,093 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:52:17,501 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185659
+INFO 2023-12-16 14:52:17,528 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:52:17,531 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5378
+INFO 2023-12-16 14:52:17,550 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:52:17,617 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:52:17,666 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:52:21,134 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:52:21,246 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:52:23,328 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185659
+INFO 2023-12-16 14:52:23,355 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:52:23,356 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5372
+INFO 2023-12-16 14:52:23,361 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:52:24,089 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:52:24,097 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:52:24,983 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:52:24,984 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:52:48,260 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185658
+INFO 2023-12-16 14:52:48,307 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:52:48,348 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:52:48,400 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:52:48,401 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5372
+INFO 2023-12-16 14:52:48,427 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:52:49,104 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:52:49,258 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:53:06,797 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185658
+INFO 2023-12-16 14:53:06,825 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:53:06,831 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:53:06,847 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:53:06,970 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:53:06,982 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5372
+INFO 2023-12-16 14:53:07,885 django.server basehttp basehttp.py 212 log_message "GET /admin_students HTTP/1.1" 200 20696
+INFO 2023-12-16 14:53:07,923 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:53:07,930 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5372
+INFO 2023-12-16 14:53:07,932 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:53:07,936 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:53:07,980 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:53:08,218 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:53:08,264 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:53:09,771 django.server basehttp basehttp.py 212 log_message "GET /admin_test HTTP/1.1" 200 20355
+INFO 2023-12-16 14:53:09,795 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:53:09,802 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5372
+INFO 2023-12-16 14:53:09,807 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:53:09,817 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:53:09,829 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:53:10,263 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:53:10,274 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:53:11,030 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27551
+INFO 2023-12-16 14:53:11,060 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:53:11,063 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5372
+INFO 2023-12-16 14:53:11,078 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:53:11,169 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:53:11,251 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:53:11,582 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:53:11,665 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:53:13,166 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 14:53:13,199 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:53:13,205 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:53:13,205 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5372
+INFO 2023-12-16 14:53:13,273 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:53:13,277 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:53:13,685 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:53:13,854 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:53:17,133 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 29494)
+INFO 2023-12-16 14:53:17,939 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185659
+INFO 2023-12-16 14:53:17,977 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:53:18,000 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:53:18,049 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:53:18,165 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:53:18,171 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5372
+INFO 2023-12-16 14:53:18,709 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:53:19,141 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:53:20,242 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:53:22,212 django.server basehttp basehttp.py 212 log_message "GET /admin_LM HTTP/1.1" 200 181374
+INFO 2023-12-16 14:53:22,246 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 14:53:22,255 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5372
+INFO 2023-12-16 14:53:22,257 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 14:53:22,258 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 14:53:22,275 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 14:53:22,779 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 14:53:23,267 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 14:54:05,765 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 14:54:05,787 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:54:31,275 django.server basehttp basehttp.py 212 log_message "GET /admin_jobpostings HTTP/1.1" 200 185657
+INFO 2023-12-16 14:54:31,293 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 14:54:32,991 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 14:54:38,005 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 14:54:38,969 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 14:54:39,989 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 14:54:40,007 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 15:42:42,619 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 15:42:42,646 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-16 15:42:44,618 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 52921
+INFO 2023-12-16 15:44:14,386 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24372
+INFO 2023-12-16 15:44:14,416 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 15:44:14,501 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 15:44:14,604 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 15:44:14,754 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 15:44:14,915 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5372
+INFO 2023-12-16 15:44:15,785 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 15:44:15,898 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 15:44:20,501 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27551
+INFO 2023-12-16 15:45:27,500 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27709
+INFO 2023-12-16 15:45:29,999 django.server basehttp basehttp.py 212 log_message "GET /admin_report/ HTTP/1.1" 200 41348
+INFO 2023-12-16 15:45:30,018 django.server basehttp basehttp.py 212 log_message "GET /static/images/report-logo.png HTTP/1.1" 200 216778
+INFO 2023-12-16 15:45:32,424 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27709
+INFO 2023-12-16 15:45:33,991 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27709
+INFO 2023-12-16 15:45:55,115 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\urls.py changed, reloading.
+INFO 2023-12-16 15:45:58,807 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:49:49,834 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\urls.py changed, reloading.
+INFO 2023-12-16 15:49:54,174 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:50:02,465 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\urls.py changed, reloading.
+INFO 2023-12-16 15:50:05,799 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:50:12,205 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\urls.py changed, reloading.
+INFO 2023-12-16 15:50:16,480 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:50:22,805 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\urls.py changed, reloading.
+INFO 2023-12-16 15:50:25,684 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:50:30,258 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\urls.py changed, reloading.
+INFO 2023-12-16 15:50:33,645 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:50:48,304 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\urls.py changed, reloading.
+INFO 2023-12-16 15:50:51,225 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:51:18,945 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\urls.py changed, reloading.
+INFO 2023-12-16 15:51:23,089 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:51:42,871 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\urls.py changed, reloading.
+INFO 2023-12-16 15:51:45,149 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:51:57,268 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py changed, reloading.
+INFO 2023-12-16 15:52:00,464 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:52:34,662 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py changed, reloading.
+INFO 2023-12-16 15:52:38,040 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:53:04,554 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py changed, reloading.
+INFO 2023-12-16 15:53:08,035 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:53:42,672 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py changed, reloading.
+INFO 2023-12-16 15:53:46,279 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:56:05,625 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:56:59,963 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:58:06,833 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py changed, reloading.
+INFO 2023-12-16 15:58:10,101 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:58:22,282 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\urls.py changed, reloading.
+INFO 2023-12-16 15:58:25,088 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:58:45,502 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\urls.py changed, reloading.
+INFO 2023-12-16 15:58:50,717 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 15:59:11,801 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\urls.py changed, reloading.
+INFO 2023-12-16 15:59:15,170 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-16 16:00:04,385 django.request log log.py 241 log_response Internal Server Error: /admin_tracer
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 251, in admin_tracer
+    return render(request, 'dashboard/admin_tracer.html', {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'admin_view' not found. 'admin_view' is not a valid view function or pattern name.
+ERROR 2023-12-16 16:00:04,573 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 500 218275
+INFO 2023-12-16 16:00:26,877 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27746
+INFO 2023-12-16 16:00:26,941 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+ERROR 2023-12-16 16:00:33,172 django.request log log.py 241 log_response Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2161, in add_fields
+    join_info = self.setup_joins(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1823, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 86, in admin_report_view
+    alignment_and_satisfaction = plotly_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\report_generator.py", line 10, in plotly_alignment_and_satisfaction
+    alignment_data = Survey.objects.values('q2', 'q6').annotate(count=Count('q2'))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2194, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
+ERROR 2023-12-16 16:00:33,326 django.server basehttp basehttp.py 212 log_message "GET /admin_report_view/ HTTP/1.1" 500 142509
+ERROR 2023-12-16 16:00:37,228 django.request log log.py 241 log_response Internal Server Error: /admin_report_pdf/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 126, in admin_report_pdf
+    template = get_template('admin_report.html')
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: admin_report.html
+ERROR 2023-12-16 16:00:37,303 django.server basehttp basehttp.py 212 log_message "GET /admin_report_pdf/ HTTP/1.1" 500 107496
+INFO 2023-12-16 16:00:47,643 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\urls.py changed, reloading.
+INFO 2023-12-16 16:00:51,321 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 16:01:05,895 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py changed, reloading.
+INFO 2023-12-16 16:01:10,370 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 16:01:21,450 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py changed, reloading.
+INFO 2023-12-16 16:01:23,564 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 16:01:34,923 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py changed, reloading.
+INFO 2023-12-16 16:01:41,312 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-16 16:02:09,130 django.request log log.py 241 log_response Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2161, in add_fields
+    join_info = self.setup_joins(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1823, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 86, in admin_report_view
+    alignment_and_satisfaction = plotly_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\report_generator.py", line 10, in plotly_alignment_and_satisfaction
+    alignment_data = Survey.objects.values('q2', 'q6').annotate(count=Count('q2'))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2194, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
+ERROR 2023-12-16 16:02:09,300 django.server basehttp basehttp.py 212 log_message "GET /admin_report_view/ HTTP/1.1" 500 142519
+INFO 2023-12-16 16:02:12,348 django.server basehttp basehttp.py 212 log_message "GET /admin_report_pdf/ HTTP/1.1" 200 4650
+ERROR 2023-12-16 16:02:23,216 django.request log log.py 241 log_response Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2161, in add_fields
+    join_info = self.setup_joins(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1823, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 86, in admin_report_view
+    alignment_and_satisfaction = plotly_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\report_generator.py", line 10, in plotly_alignment_and_satisfaction
+    alignment_data = Survey.objects.values('q2', 'q6').annotate(count=Count('q2'))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2194, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
+ERROR 2023-12-16 16:02:23,289 django.server basehttp basehttp.py 212 log_message "GET /admin_report_view/ HTTP/1.1" 500 142519
+INFO 2023-12-16 16:08:45,972 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py changed, reloading.
+INFO 2023-12-16 16:08:49,176 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 16:09:37,214 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 9439
+INFO 2023-12-16 16:09:37,269 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing.css HTTP/1.1" 200 1109
+INFO 2023-12-16 16:09:37,309 django.server basehttp basehttp.py 212 log_message "GET /static/images/landing2.png HTTP/1.1" 200 1935293
+INFO 2023-12-16 16:09:37,327 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-12-16 16:09:37,390 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-12-16 16:09:37,394 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-12-16 16:09:37,417 django.server basehttp basehttp.py 212 log_message "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-12-16 16:09:42,594 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 10814
+INFO 2023-12-16 16:09:42,629 django.server basehttp basehttp.py 212 log_message "GET /static/css/login_user.css HTTP/1.1" 200 1283
+INFO 2023-12-16 16:09:43,041 django.server basehttp basehttp.py 212 log_message "GET /static/images/log.jpg HTTP/1.1" 200 43888
+INFO 2023-12-16 16:09:49,073 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-16 16:09:49,187 django.server basehttp basehttp.py 212 log_message "GET /paths/ HTTP/1.1" 200 14162
+INFO 2023-12-16 16:09:49,231 django.server basehttp basehttp.py 212 log_message "GET /static/css/paths.css HTTP/1.1" 200 3044
+INFO 2023-12-16 16:09:49,232 django.server basehttp basehttp.py 212 log_message "GET /static/images/user.png HTTP/1.1" 200 47171
+INFO 2023-12-16 16:09:51,610 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 53114
+INFO 2023-12-16 16:09:51,629 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 5720
+INFO 2023-12-16 16:09:51,669 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 8767
+INFO 2023-12-16 16:09:51,671 django.server basehttp basehttp.py 212 log_message "GET /static/images/no-profile-pic.png HTTP/1.1" 200 36073
+INFO 2023-12-16 16:09:51,694 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_girl.png HTTP/1.1" 200 368527
+INFO 2023-12-16 16:09:51,713 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-1.png HTTP/1.1" 200 73195
+INFO 2023-12-16 16:09:51,725 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-2.png HTTP/1.1" 200 38335
+INFO 2023-12-16 16:09:51,741 django.server basehttp basehttp.py 212 log_message "GET /static/images/character_intro_boy.png HTTP/1.1" 200 309552
+INFO 2023-12-16 16:09:51,799 django.server basehttp basehttp.py 212 log_message "GET /static/images/bg.png HTTP/1.1" 200 33747
+INFO 2023-12-16 16:09:51,825 django.server basehttp basehttp.py 212 log_message "GET /static/js/specialization_filter.js HTTP/1.1" 200 1412
+INFO 2023-12-16 16:10:03,553 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24215
+INFO 2023-12-16 16:10:03,570 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 5372
+INFO 2023-12-16 16:11:30,151 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 200 27746
+INFO 2023-12-16 16:11:46,490 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py changed, reloading.
+INFO 2023-12-16 16:11:50,698 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 16:12:11,990 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py changed, reloading.
+INFO 2023-12-16 16:12:20,241 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-16 16:13:10,156 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py changed, reloading.
+INFO 2023-12-16 16:13:15,070 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader

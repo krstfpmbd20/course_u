@@ -40,24 +40,26 @@ urlpatterns = [
     path('', views.landing_page, name='landing_page'),
     path('paths/', views.paths, name = 'paths'),
 
-    # fo admin dashboard
-    path('admin_report/', views.admin_report, name='admin_report'),
+    # for admin dashboard
     path('admin_students',views.admin_students, name='admin_students'),
     path('admin_test', views.admin_test, name='admin_test'),
     path('admin_tracer', views.admin_tracer, name='admin_tracer'),
     path('admin_jobpostings', views.admin_jobpostings, name='admin_jobpostings'),
     path('admin_LM', views.admin_LM, name='admin_LM'),
+
+    # path('admin_report/', views.admin_report, name='admin_report'),
     # path('admin_report_view/', views.admin_report_view, name='admin_report_view'),
     # path('admin_report_pdf/', views.admin_report_pdf, name='admin_report_pdf'),
+    # path("reports/<int:id>/", views.reports, name="reports"),
+    
     
     #for grade levl
-   # path ('', views.grade_level, name='grade_level'),
+    # path ('', views.grade_level, name='grade_level'),
 
 
    #########################################Work By Engr Umair####################################
    path("upload_profile_pic/",views.upload_profile_pic, name="uploadprofilepic"),
    path("remove_profile_picture/", views.remove_profile_picture, name="removeprofilepicture"),
-   path("reports/<int:id>/", views.reports, name="reports"),
 
 ]
 

@@ -1677,3 +1677,172 @@ ERROR 2023-12-16 01:04:52,029 django.server Thread-1 6156 basehttp basehttp.py 2
 WARNING 2023-12-16 12:14:30,193 django.request Thread-3 17276 log log.py 241 django.request log_response 14920 Not Found: /favicon.ico
 WARNING 2023-12-16 12:14:30,193 django.server Thread-3 17276 basehttp basehttp.py 212 django.server log_message 14920 "GET /favicon.ico HTTP/1.1" 404 26884
 WARNING 2023-12-16 12:14:36,911 django.server Thread-3 17276 basehttp basehttp.py 212 django.server log_message 14920 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+ERROR 2023-12-16 16:00:04,385 django.request Thread-1 3116 log log.py 241 django.request log_response 6048 Internal Server Error: /admin_tracer
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 251, in admin_tracer
+    return render(request, 'dashboard/admin_tracer.html', {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'admin_view' not found. 'admin_view' is not a valid view function or pattern name.
+ERROR 2023-12-16 16:00:04,573 django.server Thread-1 3116 basehttp basehttp.py 212 django.server log_message 6048 "GET /admin_tracer HTTP/1.1" 500 218275
+ERROR 2023-12-16 16:00:33,172 django.request Thread-1 3116 log log.py 241 django.request log_response 6048 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2161, in add_fields
+    join_info = self.setup_joins(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1823, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 86, in admin_report_view
+    alignment_and_satisfaction = plotly_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\report_generator.py", line 10, in plotly_alignment_and_satisfaction
+    alignment_data = Survey.objects.values('q2', 'q6').annotate(count=Count('q2'))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2194, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
+ERROR 2023-12-16 16:00:33,326 django.server Thread-1 3116 basehttp basehttp.py 212 django.server log_message 6048 "GET /admin_report_view/ HTTP/1.1" 500 142509
+ERROR 2023-12-16 16:00:37,228 django.request Thread-1 3116 log log.py 241 django.request log_response 6048 Internal Server Error: /admin_report_pdf/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 126, in admin_report_pdf
+    template = get_template('admin_report.html')
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: admin_report.html
+ERROR 2023-12-16 16:00:37,303 django.server Thread-1 3116 basehttp basehttp.py 212 django.server log_message 6048 "GET /admin_report_pdf/ HTTP/1.1" 500 107496
+ERROR 2023-12-16 16:02:09,130 django.request Thread-1 10936 log log.py 241 django.request log_response 9896 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2161, in add_fields
+    join_info = self.setup_joins(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1823, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 86, in admin_report_view
+    alignment_and_satisfaction = plotly_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\report_generator.py", line 10, in plotly_alignment_and_satisfaction
+    alignment_data = Survey.objects.values('q2', 'q6').annotate(count=Count('q2'))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2194, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
+ERROR 2023-12-16 16:02:09,300 django.server Thread-1 10936 basehttp basehttp.py 212 django.server log_message 9896 "GET /admin_report_view/ HTTP/1.1" 500 142519
+ERROR 2023-12-16 16:02:23,216 django.request Thread-1 10936 log log.py 241 django.request log_response 9896 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2161, in add_fields
+    join_info = self.setup_joins(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1823, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 86, in admin_report_view
+    alignment_and_satisfaction = plotly_alignment_and_satisfaction()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\report_generator.py", line 10, in plotly_alignment_and_satisfaction
+    alignment_data = Survey.objects.values('q2', 'q6').annotate(count=Count('q2'))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\query.py", line 2194, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
+ERROR 2023-12-16 16:02:23,289 django.server Thread-1 10936 basehttp basehttp.py 212 django.server log_message 9896 "GET /admin_report_view/ HTTP/1.1" 500 142519
