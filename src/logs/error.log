@@ -1846,3 +1846,318 @@ Traceback (most recent call last):
     raise FieldError(
 django.core.exceptions.FieldError: Cannot resolve keyword 'q2' into field. Choices are: academic_course, academic_course_id, accessed_job_postings, additional_feedback, confidence_rating, current_job_title, employed, explored_learning_materials, id, job_alignment, job_misalignment_reason, job_satisfaction, material_satisfaction, material_skill_gain, more_specialized_postings, posting_career_influence, posting_job_understanding, received_recommendation, recommendation_influence, recommendation_influence_reason, recommendation_system_improvements, specialization, study_preparation, system_information_helpfulness, timestamp, user, user_id
 ERROR 2023-12-16 16:02:23,289 django.server Thread-1 10936 basehttp basehttp.py 212 django.server log_message 9896 "GET /admin_report_view/ HTTP/1.1" 500 142519
+ERROR 2023-12-16 16:38:50,146 django.request Thread-1 8792 log log.py 241 django.request log_response 3752 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 67, in admin_report_view
+    html_fig_confidence_rating = general_report()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 26, in general_report
+    fig_confidence_rating = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1485, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1210, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'x' is not the name of a column in 'data_frame'. Expected one of [0] but received: confidence_rating
+ERROR 2023-12-16 16:38:50,433 django.server Thread-1 8792 basehttp basehttp.py 212 django.server log_message 3752 "GET /admin_report_view/ HTTP/1.1" 500 135266
+WARNING 2023-12-16 16:38:51,168 django.request Thread-1 8792 log log.py 241 django.request log_response 3752 Not Found: /favicon.ico
+WARNING 2023-12-16 16:38:51,170 django.server Thread-1 8792 basehttp basehttp.py 212 django.server log_message 3752 "GET /favicon.ico HTTP/1.1" 404 27078
+WARNING 2023-12-16 16:39:01,997 django.server Thread-1 8792 basehttp basehttp.py 212 django.server log_message 3752 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+ERROR 2023-12-16 16:52:04,697 django.request Thread-1 7436 log log.py 241 django.request log_response 14308 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 67, in admin_report_view
+    html_fig_confidence_rating = general_report()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 62, in general_report
+    fig_confidence_rating = fig_confidence_rating(survey)
+UnboundLocalError: local variable 'fig_confidence_rating' referenced before assignment
+ERROR 2023-12-16 16:52:04,864 django.server Thread-1 7436 basehttp basehttp.py 212 django.server log_message 14308 "GET /admin_report_view/ HTTP/1.1" 500 98543
+ERROR 2023-12-16 16:52:36,276 django.request Thread-1 9656 log log.py 241 django.request log_response 2832 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 67, in admin_report_view
+    html_fig_confidence_rating = general_report()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 60, in general_report
+    fig_confidence_rating = fig_confidence_rating(survey)
+UnboundLocalError: local variable 'fig_confidence_rating' referenced before assignment
+ERROR 2023-12-16 16:52:36,409 django.server Thread-1 9656 basehttp basehttp.py 212 django.server log_message 2832 "GET /admin_report_view/ HTTP/1.1" 500 98544
+ERROR 2023-12-16 16:53:05,353 django.request Thread-1 1392 log log.py 241 django.request log_response 9920 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 68, in admin_report_view
+    html_fig_confidence_rating = general_report()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 60, in general_report
+    fig_confidence_rating = fig_confidence_rating(survey)
+UnboundLocalError: local variable 'fig_confidence_rating' referenced before assignment
+ERROR 2023-12-16 16:53:05,472 django.server Thread-1 1392 basehttp basehttp.py 212 django.server log_message 9920 "GET /admin_report_view/ HTTP/1.1" 500 98543
+ERROR 2023-12-16 16:53:51,885 django.request Thread-1 16964 log log.py 241 django.request log_response 7904 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 68, in admin_report_view
+    html_fig_confidence_rating, html_fig_recommendation_influence = general_report()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 60, in general_report
+    fig_confidence_rating = fig_confidence_rating(survey)
+UnboundLocalError: local variable 'fig_confidence_rating' referenced before assignment
+ERROR 2023-12-16 16:53:52,057 django.server Thread-1 16964 basehttp basehttp.py 212 django.server log_message 7904 "GET /admin_report_view/ HTTP/1.1" 500 98614
+ERROR 2023-12-16 16:55:51,246 django.request Thread-1 6280 log log.py 241 django.request log_response 14604 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 68, in admin_report_view
+    html_fig_confidence_rating, html_fig_recommendation_influence = general_report()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 61, in general_report
+    recommendation_influence = fig_recommendation_influence(survey)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 43, in fig_recommendation_influence
+    fig = px.bar(
+TypeError: bar() got an unexpected keyword argument 'mode'
+ERROR 2023-12-16 16:55:51,366 django.server Thread-1 6280 basehttp basehttp.py 212 django.server log_message 14604 "GET /admin_report_view/ HTTP/1.1" 500 107206
+ERROR 2023-12-16 16:56:37,617 django.request Thread-1 6280 log log.py 241 django.request log_response 14604 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 68, in admin_report_view
+    html_fig_confidence_rating, html_fig_recommendation_influence = general_report()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 61, in general_report
+    recommendation_influence = fig_recommendation_influence(survey)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 43, in fig_recommendation_influence
+    fig = px.bar(
+TypeError: bar() got an unexpected keyword argument 'mode'
+ERROR 2023-12-16 16:56:37,666 django.server Thread-1 6280 basehttp basehttp.py 212 django.server log_message 14604 "GET /admin_report_view/ HTTP/1.1" 500 107206
+ERROR 2023-12-16 17:05:58,031 django.request Thread-1 16296 log log.py 241 django.request log_response 8860 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 68, in admin_report_view
+    html_fig_confidence_rating, html_fig_recommendation_influence = general_report()
+ValueError: too many values to unpack (expected 2)
+ERROR 2023-12-16 17:05:58,502 django.server Thread-1 16296 basehttp basehttp.py 212 django.server log_message 8860 "GET /admin_report_view/ HTTP/1.1" 500 93909
+ERROR 2023-12-16 17:49:25,103 django.request Thread-1 10204 log log.py 241 django.request log_response 8488 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 86, in admin_report_view
+    'job_alignment_across_cohorts': html_fig_job_alignment_across_cohorts(tracer_dataframe()),
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 182, in html_fig_job_alignment_across_cohorts
+    fig = fig_job_alignment_across_cohorts(df)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 172, in fig_job_alignment_across_cohorts
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1485, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1210, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'x' is not the name of a column in 'data_frame'. Expected one of ['id', 'user_id', 'academic_course_id', 'specialization', 'employed', 'current_job_title', 'received_recommendation', 'confidence_rating', 'recommendation_influence', 'recommendation_influence_reason', 'system_information_helpfulness', 'recommendation_system_improvements', 'job_alignment', 'job_misalignment_reason', 'job_satisfaction', 'study_preparation', 'explored_learning_materials', 'material_satisfaction', 'material_skill_gain', 'accessed_job_postings', 'posting_job_understanding', 'posting_career_influence', 'more_specialized_postings', 'additional_feedback'] but received: timestamp
+ERROR 2023-12-16 17:49:25,428 django.server Thread-1 10204 basehttp basehttp.py 212 django.server log_message 8488 "GET /admin_report_view/ HTTP/1.1" 500 146692
+ERROR 2023-12-16 17:51:31,210 django.request Thread-1 8936 log log.py 241 django.request log_response 15288 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 86, in admin_report_view
+    'job_alignment_across_cohorts': html_fig_job_alignment_across_cohorts(tracer_dataframe()),
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 183, in html_fig_job_alignment_across_cohorts
+    fig = fig_job_alignment_across_cohorts(df)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 173, in fig_job_alignment_across_cohorts
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1485, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1210, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'x' is not the name of a column in 'data_frame'. Expected one of ['id', 'user_id', 'academic_course_id', 'specialization', 'employed', 'current_job_title', 'received_recommendation', 'confidence_rating', 'recommendation_influence', 'recommendation_influence_reason', 'system_information_helpfulness', 'recommendation_system_improvements', 'job_alignment', 'job_misalignment_reason', 'job_satisfaction', 'study_preparation', 'explored_learning_materials', 'material_satisfaction', 'material_skill_gain', 'accessed_job_postings', 'posting_job_understanding', 'posting_career_influence', 'more_specialized_postings', 'additional_feedback'] but received: timestamp
+ERROR 2023-12-16 17:51:31,445 django.server Thread-1 8936 basehttp basehttp.py 212 django.server log_message 15288 "GET /admin_report_view/ HTTP/1.1" 500 146537
+ERROR 2023-12-16 17:54:46,792 django.request Thread-1 13424 log log.py 241 django.request log_response 2016 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 86, in admin_report_view
+    #'job_alignment_across_cohorts': html_fig_job_alignment_across_cohorts(tracer_dataframe()),
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 157, in html_fig_job_alignment_across_cohorts
+    fig = fig_job_alignment_across_cohorts(df)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 147, in fig_job_alignment_across_cohorts
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1485, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1210, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'x' is not the name of a column in 'data_frame'. Expected one of ['id', 'user_id', 'academic_course_id', 'specialization', 'employed', 'current_job_title', 'received_recommendation', 'confidence_rating', 'recommendation_influence', 'recommendation_influence_reason', 'system_information_helpfulness', 'recommendation_system_improvements', 'job_alignment', 'job_misalignment_reason', 'job_satisfaction', 'study_preparation', 'explored_learning_materials', 'material_satisfaction', 'material_skill_gain', 'accessed_job_postings', 'posting_job_understanding', 'posting_career_influence', 'more_specialized_postings', 'additional_feedback'] but received: timestamp
+ERROR 2023-12-16 17:54:47,055 django.server Thread-1 13424 basehttp basehttp.py 212 django.server log_message 2016 "GET /admin_report_view/ HTTP/1.1" 500 146767
+ERROR 2023-12-16 17:58:49,109 django.request Thread-1 15544 log log.py 241 django.request log_response 13816 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 86, in admin_report_view
+    'job_alignment_across_cohorts': html_fig_job_alignment_across_cohorts(tracer_dataframe()),
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 157, in html_fig_job_alignment_across_cohorts
+    def html_fig_job_alignment_across_cohorts(df):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 147, in fig_job_alignment_across_cohorts
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1485, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1210, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'x' is not the name of a column in 'data_frame'. Expected one of ['id', 'user_id', 'academic_course_id', 'specialization', 'employed', 'current_job_title', 'received_recommendation', 'confidence_rating', 'recommendation_influence', 'recommendation_influence_reason', 'system_information_helpfulness', 'recommendation_system_improvements', 'job_alignment', 'job_misalignment_reason', 'job_satisfaction', 'study_preparation', 'explored_learning_materials', 'material_satisfaction', 'material_skill_gain', 'accessed_job_postings', 'posting_job_understanding', 'posting_career_influence', 'more_specialized_postings', 'additional_feedback'] but received: timestamp
+ERROR 2023-12-16 17:58:50,020 django.server Thread-1 15544 basehttp basehttp.py 212 django.server log_message 13816 "GET /admin_report_view/ HTTP/1.1" 500 146831
+ERROR 2023-12-16 18:05:58,885 django.request Thread-2 14136 log log.py 241 django.request log_response 15752 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 86, in admin_report_view
+    'job_alignment_across_cohorts': html_fig_job_alignment_across_cohorts(tracer_dataframe()),
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 158, in html_fig_job_alignment_across_cohorts
+    fig = fig_job_alignment_across_cohorts(df)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 147, in fig_job_alignment_across_cohorts
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2076, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1485, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 1210, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'x' is not the name of a column in 'data_frame'. Expected one of ['id', 'user_id', 'academic_course_id', 'specialization', 'employed', 'current_job_title', 'received_recommendation', 'confidence_rating', 'recommendation_influence', 'recommendation_influence_reason', 'system_information_helpfulness', 'recommendation_system_improvements', 'job_alignment', 'job_misalignment_reason', 'job_satisfaction', 'study_preparation', 'explored_learning_materials', 'material_satisfaction', 'material_skill_gain', 'accessed_job_postings', 'posting_job_understanding', 'posting_career_influence', 'more_specialized_postings', 'additional_feedback'] but received: timestamp
+ERROR 2023-12-16 18:05:59,031 django.server Thread-2 14136 basehttp basehttp.py 212 django.server log_message 15752 "GET /admin_report_view/ HTTP/1.1" 500 144266
+ERROR 2023-12-16 18:32:54,448 django.request Thread-1 7268 log log.py 241 django.request log_response 6976 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 75, in admin_report_view
+    'confidence_rating':  html_fig_confidence_rating(tracer_dataframe()),
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 45, in html_fig_confidence_rating
+    fig = fig_confidence_rating(df)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 35, in fig_confidence_rating
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2089, in make_figure
+    groups, orders = get_groups_and_orders(args, grouper)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2064, in get_groups_and_orders
+    groups = {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2065, in <dictcomp>
+    sf: grouped.get_group(s if len(s) > 1 else s[0])
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\groupby\groupby.py", line 800, in get_group
+    raise KeyError(name)
+KeyError: 'Not confident'
+ERROR 2023-12-16 18:32:54,627 django.server Thread-1 7268 basehttp basehttp.py 212 django.server log_message 6976 "GET /admin_report_view/ HTTP/1.1" 500 145868
+ERROR 2023-12-16 18:34:00,313 django.request Thread-1 4104 log log.py 241 django.request log_response 15228 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 75, in admin_report_view
+    'confidence_rating':  html_fig_confidence_rating(tracer_dataframe()),
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 47, in html_fig_confidence_rating
+    fig = fig_confidence_rating(df)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 37, in fig_confidence_rating
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2089, in make_figure
+    groups, orders = get_groups_and_orders(args, grouper)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2064, in get_groups_and_orders
+    groups = {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2065, in <dictcomp>
+    sf: grouped.get_group(s if len(s) > 1 else s[0])
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\groupby\groupby.py", line 800, in get_group
+    raise KeyError(name)
+KeyError: 'Not confident'
+ERROR 2023-12-16 18:34:00,436 django.server Thread-1 4104 basehttp basehttp.py 212 django.server log_message 15228 "GET /admin_report_view/ HTTP/1.1" 500 145752
+ERROR 2023-12-16 18:34:23,833 django.request Thread-1 4104 log log.py 241 django.request log_response 15228 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 75, in admin_report_view
+    'confidence_rating':  html_fig_confidence_rating(tracer_dataframe()),
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 47, in html_fig_confidence_rating
+    fig = fig_confidence_rating(df)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 37, in fig_confidence_rating
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2089, in make_figure
+    groups, orders = get_groups_and_orders(args, grouper)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2064, in get_groups_and_orders
+    groups = {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2065, in <dictcomp>
+    sf: grouped.get_group(s if len(s) > 1 else s[0])
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\groupby\groupby.py", line 800, in get_group
+    raise KeyError(name)
+KeyError: 'Not confident'
+ERROR 2023-12-16 18:34:23,900 django.server Thread-1 4104 basehttp basehttp.py 212 django.server log_message 15228 "GET /admin_report_view/ HTTP/1.1" 500 146830
+ERROR 2023-12-16 18:35:33,425 django.request Thread-1 3648 log log.py 241 django.request log_response 1052 Internal Server Error: /admin_report_view/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\views.py", line 75, in admin_report_view
+    'confidence_rating':  html_fig_confidence_rating(tracer_dataframe()),
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 49, in html_fig_confidence_rating
+    fig = fig_confidence_rating(df)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\survey\tracer_report.py", line 39, in fig_confidence_rating
+    fig = px.bar(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_chart_types.py", line 373, in bar
+    return make_figure(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2089, in make_figure
+    groups, orders = get_groups_and_orders(args, grouper)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2064, in get_groups_and_orders
+    groups = {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\plotly\express\_core.py", line 2065, in <dictcomp>
+    sf: grouped.get_group(s if len(s) > 1 else s[0])
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\pandas\core\groupby\groupby.py", line 800, in get_group
+    raise KeyError(name)
+KeyError: 'Not confident'
+ERROR 2023-12-16 18:35:33,617 django.server Thread-1 3648 basehttp basehttp.py 212 django.server log_message 1052 "GET /admin_report_view/ HTTP/1.1" 500 146954

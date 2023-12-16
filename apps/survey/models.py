@@ -127,7 +127,7 @@ class Survey(models.Model):
         verbose_name='User',
         default = 1
     )
-
+ 
     academic_course = models.ForeignKey(
         Course,
         on_delete=models.CASCADE,
@@ -331,3 +331,4 @@ class Survey(models.Model):
 
     class Meta:
         ordering = ['-timestamp']
+
