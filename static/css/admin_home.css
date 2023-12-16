@@ -10,6 +10,9 @@
     color: white !important;
 }
 
+a {
+    text-decoration: none !important;
+}
 
 /* Status */
 
@@ -20,8 +23,45 @@
     /* padding: 20px; */
     display: grid;
     grid-template-columns: repeat(3,1fr); /* replace with number of box per row */
-    grid-gap: 30px;
+    /* grid-gap: 30px; */
    
+}
+
+.col-md-6
+{
+    box-sizing: border-box;
+}
+
+.cardBox-others
+{
+    margin-top: 20px !important;   
+    /* width: 100%  !important; */
+     /* replace PaddingValue with the padding of the parent div */
+    width: calc(100% - 2 ) !important;
+    align-items: center !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    /* position: relative !important; */
+    justify-content: space-between !important;
+    grid-template-columns: repeat(2,1fr) !important;
+    gap: 20px !important;
+}
+.cardBox-others > * {
+    flex: 1 0 200px; /* adjust 200px to change the minimum item width */
+}
+
+.cardBox-others .card1
+{
+    max-height: 150px !important;
+    min-height: 150px !important;
+    
+}
+
+.cardBox-others .col-md
+{
+    /* padding-left: 0px !important;
+    padding-right: 0px !important; */
+    width: max-content;
 }
 
 .cardBox .card1
@@ -74,16 +114,33 @@
 
 .table-heading {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between !important;
+    align-items: center !important;
     /* margin-bottom: 20px; */
     flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;
+}
+.table-wrapper {
+    /* width: 100%; adjust this value as needed */
+    max-height: 500px; /* adjust this value as needed */
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    display: block;
 }
 
 .table-heading-btn {
     display: flex;
     align-items: end;
     flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+    /* align to end */
+    margin-left: auto !important;
+    margin-right: 0 !important;
 }
 
 .details

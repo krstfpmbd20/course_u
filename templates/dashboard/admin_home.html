@@ -37,7 +37,7 @@
 {% include 'dashboard/status.html' %}
 
 <div>
-    
+
     <!-- <a href="/admin/"  class="btn btn-primary">Admin Dashboard</a> -->
 </div>
 <div>
@@ -61,40 +61,67 @@
         <div class="table-heading">
             <h5>Courses</h5>
             <div class="table-heading-btn">
-                <a class="btn btn-primary" href="{% url 'admin_students' %}">View Corriculum </a>
+                <!-- <a class="btn btn-primary" href="{% url 'admin_students' %}">View Corriculum </a> -->
             </div>
         </div>
-        <div class="card card-body">
+        <div class="card card-body ">
             <!-- <a class="btn bth-primary btn-sm btn-block" href="">Create</a> -->
             <table class="table table-sm">
                 <thead>
-                    <th>Username</th>
-                    <th>Email</th>
-                    <!-- <th>Active</th> -->
+                    <th>Course Name</th>
+                    <th>Terms</th>
                     <th>Subjects</th>
                 </thead>
                 <tbody>
-                    {% for user in auth_user %}
+                    {% for data in courses %}
                     <tr>
-                        <td><a href="#">{{ user.username}}</a></td>
-                        <td>{{ user.email }}</td>
-                        <!-- <td>{{ user.is_active}}</td> -->
+                        <td>{{data.course_name}}</td>
+                        <td>{{data.number_of_years}}</td>
                         <td><a href="" class="btn">View</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
             </table>
         </div>
-        <div>
-            <div class="card">
+        <div class=" cardBox cardBox-others">
+            <!-- <div class="card">
                 <a href="{% url 'admin_jobpostings' %}">Job Postings</a>
             </div>
             <div class="card">
                 <a href="{% url 'admin_LM' %}">Learning Materials</a>
             </div>
+            <div class="row cardBox"> -->
+
+            <div class="col-md">
+                <a href="{% url 'admin_jobpostings' %}" class="status-btn">
+                    <div class="card1 text-center text-white mb-3" id="">
+                        <div class="card-body">
+                            <div class="card-title numbers" style="color: #000;"> {{ JobPosting_count }} </div>
+                            <div class="card-title cardName" style="color: black;"> Job Posts </div>
+                        </div>
+                        <div class="iconBx">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md">
+                <a href="{% url 'admin_LM' %}" class="status-btn">
+                    <div class="card1 text-center text-white mb-3" id="">
+                        <div class="card-body">
+                            <div class="card-title numbers" style="color: #000;"> {{ LearningMaterial_count }} </div>
+                            <div class="card-title cardName" style="color: black;"> Learning Materials </div>
+                        </div>
+                        <div class="iconBx">
+                            <ion-icon name="library-outline"></ion-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
-    <br><br>
+    <!-- </div> -->
+    <!-- <br><br> -->
     <div class="col-md-6">
         <div class="table-heading">
             <h5>Field</h5>

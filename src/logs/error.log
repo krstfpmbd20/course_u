@@ -1674,3 +1674,6 @@ ValueError:
         according to bar.marker.colorscale
       - A list or array of any of the above
 ERROR 2023-12-16 01:04:52,029 django.server Thread-1 6156 basehttp basehttp.py 212 django.server log_message 12972 "GET /recommender/ HTTP/1.1" 500 210542
+WARNING 2023-12-16 12:14:30,193 django.request Thread-3 17276 log log.py 241 django.request log_response 14920 Not Found: /favicon.ico
+WARNING 2023-12-16 12:14:30,193 django.server Thread-3 17276 basehttp basehttp.py 212 django.server log_message 14920 "GET /favicon.ico HTTP/1.1" 404 26884
+WARNING 2023-12-16 12:14:36,911 django.server Thread-3 17276 basehttp basehttp.py 212 django.server log_message 14920 "GET /static/images/favicon.png HTTP/1.1" 404 1914

@@ -25,9 +25,11 @@
         <div class="col-md">
             <div class="table-heading">
                 <h5>Job Posts</h5>
-                <a href="{% url 'admin_home' %}" class="btn btn-primary">Scrape New job Posts</a>
+                <div class="table-heading-btn table-wrapper">
+                    <a href="{% url 'admin_home' %}" class="btn btn-primary">Scrape New job Posts</a>
+                </div>
             </div>
-            <div class="card card-body">
+            <div class="card card-body table-wrapper">
                 <!-- <a class="btn bth-primary btn-sm btn-block" href="">Create</a> -->
                 <table class="table table-sm">
                     <thead>

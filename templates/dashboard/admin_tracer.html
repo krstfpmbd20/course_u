@@ -26,10 +26,12 @@
         <div class="col-md">
             <div class="table-heading">
                 <h5>Tracer</h5>
-                <a href="{% url 'admin_report' %}" class="btn btn-primary">Admin Report</a>
+                <div class="table-heading-btn">
+                    <a href="{% url 'admin_report' %}" class="btn btn-primary">Admin Report</a>
+                </div>
             </div>
             <div class="card card-body">
-                <table class="table table-sm">
+                <table class="table table-sm table-wrapper">
                     <thead>
                         <!-- <th>ID</th> -->
                         <th>Username</th>

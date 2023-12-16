@@ -14,10 +14,10 @@ from django.contrib.auth import update_session_auth_hash
 
 #from website.utils import *
 from apps.website.forms import SignUpForm, StudentScoreForm
-from apps.website.models import Specialization, Field
+from apps.website.models import Specialization, Field, LearningMaterial
 from apps.recommender.models import UserRecommendations, UserSkill
 
-from apps.acad.models import StudentProfile
+from apps.acad.models import StudentProfile, Course
 from apps.assessment.models import Test, QuestionSet
 from apps.jobs.models import JobPosting
 from apps.survey.models import Survey
@@ -173,6 +173,8 @@ def admin_home(request):
         field_name = Field.objects.get(field=field_id).field_name  # Get the field name
         field_test_count_dict[field_name] = test_count
 
+    courses = Course.objects.all()
+
     # Get other counts
     auth_user = User.objects.all()
     # JobPosting_count = JobPosting.objects.all().count()
@@ -180,11 +182,14 @@ def admin_home(request):
     # QuestionSet_count = QuestionSet.objects.all().count()
     # Student_count = User.objects.all().count()
     # Survey_count = Survey.objects.all().count()
+    LearningMaterial_count = LearningMaterial.objects.all().count()
     JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
     return render(request, 'dashboard/admin_home.html', {
         'admin': admin,
         'field_test_count_dict': field_test_count_dict,
         'auth_user': auth_user,
+        'courses': courses,
+        'LearningMaterial_count': LearningMaterial_count,
         'JobPosting_count': JobPosting_count,
         'Specialization_count': Specialization_count,
         'QuestionSet_count': QuestionSet_count,
