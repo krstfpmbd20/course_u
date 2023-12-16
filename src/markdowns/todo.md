@@ -4,7 +4,7 @@
 Revision Matrix
 - [X]: Recommender Result Graphs (Stacked bar grap)
 - [ ]: Roadmap View (recommendation record view)
-- [ ]: Report Update
+- [X]: Report Update
     - [ ]: By year, scatter plot of recommendation score, with regression line
     - [ ]: 
 

@@ -41,15 +41,31 @@ def admin_report(request):
         name = request.user.username
     
 
-    # Generate all necessary plots
-    #html_fig_confidence_rating, html_fig_recommendation_influence = general_report()
 
     return render(request, 'dashboard/admin_report.html', {
         'current_time': current_time,
         'name': name,
+
         # PLOTS
-        #'html_fig_confidence_rating': html_fig_confidence_rating,
-        #'html_fig_recommendation_influence': html_fig_recommendation_influence,
+        # Recommendation Impact
+        'confidence_rating':  to_img(fig_confidence_rating(tracer_dataframe())),
+        'recommendation_influence': to_img(fig_recommendation_influence(tracer_dataframe())),
+        # word cloud
+        
+        # Job Alignment and Satisfaction
+        'alignment_and_satisfaction': to_img(fig_alignment_and_satisfaction(tracer_dataframe())),
+        'job_alignment': to_img(fig_job_alignment(tracer_dataframe())),
+        # 'job_alignment_bubble': html_fig_job_alignment_bubble(tracer_dataframe()),
+        
+        # Time-Series Analysis  
+        # bar
+        'job_alignment_across_cohorts': to_img(fig_job_alignment_across_cohorts(tracer_dataframe())),
+        'job_alignment_time_series' : to_img(fig_job_alignment_time_series(tracer_dataframe())),
+        # line
+        # over_year
+        'confidence_rating_time_series' : to_img(fig_confidence_rating_time_series(tracer_dataframe())),
+        
+        
     })
 
 
@@ -70,6 +86,7 @@ def admin_report_view(request):
         'current_time': current_time,
         'name': name,
         
+
         # PLOTS
         # Recommendation Impact
         'confidence_rating':  html_fig_confidence_rating(tracer_dataframe()),
@@ -117,7 +134,28 @@ def admin_report_pdf(request):
         'current_time': current_time,
         'name': name,
         # 'base64_logo': base64_logo,
+
         # PLOTS
+        # Recommendation Impact
+        'confidence_rating':  bytes(to_img(fig_confidence_rating(tracer_dataframe()))),
+        'recommendation_influence': to_img(fig_recommendation_influence(tracer_dataframe())),
+        # word cloud
+        
+        # Job Alignment and Satisfaction
+        'alignment_and_satisfaction': to_img(fig_alignment_and_satisfaction(tracer_dataframe())),
+        'job_alignment': to_img(fig_job_alignment(tracer_dataframe())),
+        # 'job_alignment_bubble': html_fig_job_alignment_bubble(tracer_dataframe()),
+        
+        # Time-Series Analysis  
+        # bar
+        'job_alignment_across_cohorts': to_img(fig_job_alignment_across_cohorts(tracer_dataframe())),
+        'job_alignment_time_series' : to_img(fig_job_alignment_time_series(tracer_dataframe())),
+        # line
+        # over_year
+        'confidence_rating_time_series' : to_img(fig_confidence_rating_time_series(tracer_dataframe())),
+        
+        
+        
     }
     html = template.render(context)
 

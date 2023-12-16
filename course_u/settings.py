@@ -74,6 +74,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'apps.website.context_processors.profile_picture',
+                #'django.template.loaders.app_directories.Loader',
+                #'django.template.loaders.filesystem.Loader',
                 #'website.context_processors.context_question_sets',
             ],
         },

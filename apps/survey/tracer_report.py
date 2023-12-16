@@ -6,6 +6,10 @@ from apps.survey.models import Survey
 import pandas as pd
 import numpy as np
 
+import plotly.io as py
+
+from io import BytesIO
+
 
 def tracer_dataframe():
     #survey = Survey.objects.all()
@@ -18,10 +22,26 @@ def to_html(fig):
 def to_html_div(fig):
     return fig.to_html(full_html=False, include_plotlyjs='cdn')
 
+# def to_img(fig):
+#     return fig.to_image(format="png")
+
+# def to_img(fig):
+#     # Save the plot as an image in memory
+#     image_stream = BytesIO()
+#     plt.savefig(image_stream, format='png', bbox_inches='tight')
+#     image_stream.seek(0)
+#     plt.close()
+
+#     # Encode the image to base64
+#     image_base64 = base64.b64encode(image_stream.getvalue()).decode('utf-8')
+#     return image_base64
+
 def to_img(fig):
-    return fig.to_image(format="png")
-
-
+    #img_bytes = py.to_image(fig, format="png")
+    image_buffer = BytesIO()
+    fig.write_image(image_buffer, format="png")
+    img_bytes = image_buffer.getvalue()
+    return img_bytes
 
 # -   **Bar Chart**: 
 # Compare the percentage of graduates who felt confident about the recommended
@@ -32,10 +52,10 @@ def fig_confidence_rating(df):
     confidence_rating = "Not confident at all", "Somewhat confident", "Moderately confident", "Very confident"
     df['confidence_rating'] = pd.Categorical(df['confidence_rating'], categories=confidence_rating, ordered=True)
     df = df.sort_values('confidence_rating')
-    print('fig_confidence_rating:', df)
-    print("columns:", df.columns)
+    #print('fig_confidence_rating:', df)
+    #print("columns:", df.columns)
     # unique values of confidence_rating
-    print("unique values of confidence_rating:", df['confidence_rating'].unique())
+    #print("unique values of confidence_rating:", df['confidence_rating'].unique())
     fig = px.bar(
         df,
         x="confidence_rating",
@@ -71,6 +91,8 @@ def html_fig_recommendation_influence(df):
     fig = fig_recommendation_influence(df)
     return to_html(fig)
 
+
+
 # -   **Word Cloud**: Analyze open-ended responses about why or why not the recommended 
 # specialization influenced graduates' decisions. This can reveal common themes and motivations.
 def fig_word_cloud(df):
@@ -94,6 +116,7 @@ def fig_alignment_and_satisfaction(df):
 def html_fig_alignment_and_satisfaction(df):
     fig = fig_alignment_and_satisfaction(df)
     return to_html(fig)
+
 
 #  -   **Pie Chart**: Show the distribution of graduates across different job alignment categories.
 def fig_job_alignment(df):

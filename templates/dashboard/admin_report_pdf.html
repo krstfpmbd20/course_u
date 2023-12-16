@@ -1,112 +1,114 @@
-
 <!DOCTYPE html>
+{% load b64encode %}
 {% load static %}
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Webpage Title</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Webpage Title</title>
+        <style>
+                body {
+                        font-family: Arial, sans-serif;
+                        margin: 20px;
+                }
 
-        #header {
-            text-align: center;
+                #header {
+                        text-align: center;
 
-        }
+                }
 
-        #logo {
-            max-width: 100px; /* Adjust the size as needed */
-            max-height: 100px; /* Adjust the size as needed */
-        }
+                #logo {
+                        max-width: 100px;
+                        /* Adjust the size as needed */
+                        max-height: 100px;
+                        /* Adjust the size as needed */
+                }
 
-        #title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 10px;
-            color: darkred;
-        }
+                #title {
+                        font-size: 24px;
+                        font-weight: bold;
+                        margin-top: 10px;
+                        color: darkred;
+                }
 
-        #subtitle {
-            font-size: 18px;
-            margin-top: 5px;
-        }
+                #subtitle {
+                        font-size: 18px;
+                        margin-top: 5px;
+                }
 
-        #system-name {
-            font-size: 24px;
-            margin-top: 5px;
-        }
+                #system-name {
+                        font-size: 24px;
+                        margin-top: 5px;
+                }
 
-        #user-info {
-            font-size: 16px;
-            margin-top: 5px;
-        }
-    </style>
+                #user-info {
+                        font-size: 16px;
+                        margin-top: 5px;
+                }
+        </style>
 </head>
+
 <body>
-        
-    <div id="header">
-        <!-- <img src="{% static 'images/report-logo.png' %}" alt="Logo" id="logo"> -->
-        <img src="data:image/png;base64,{{base64_logo}}" alt="Logo" id="logo">
-        <div id="title">Polytechnic University of the Philippines</div>
-        <div id="subtitle">College of Computer and Information Science</div>
-        <div id="system-name">Course University: An ontology based recommendation system</div><br>
-        <div id="user-info">Date: {{current_time}} | User: {{name}}</div>
-    </div>
-        <div style="padding:20px;">
-                <div style="text-align:center;">
-                        <h3>Alignment with Job Responsibilities by Job Satisfaction</h3>
-                        <img src="data:image/png;base64,{{ alignment_and_satisfaction }}" alt="Alignment with Job Responsibilities by Job Satisfaction">
-                </div>
-                <div style="text-align:center;">
-                        <h3>Preparation for Current Role by Academic Specialization</h3>
-                        <img src="data:image/png;base64,{{ role_satisfaction_by_academic_specialization }}" alt="Preparation for Current Role by Academic Specialization">
-                </div>
-                <div style="text-align:center;">
-                        <h3>Distribution of academic specializations (Pie Chart)</h3>
-                        <img src="data:image/png;base64,{{ academic_specialization_distribution_plot }}" alt="Academic Specialization Distribution">
-                </div>
-                <div style="text-align:center;">
-                        <h3>How well users feel their academic specialization aligns with job responsibilities (Horizontal Bar Chart)</h3>
-                        <img src="data:image/png;base64,{{ alignment_with_job_responsibilities_plot }}" alt="Alignment with Job Responsibilities">
-                </div>
-                <div style="text-align:center;">
-                        <h3>Satisfaction Levels with Academic Specialization Preparation (Stacked Bar Chart)</h3>
-                        <img src="data:image/png;base64,{{ satisfaction_levels_plot }}" alt="Satisfaction Levels">
-                </div>
-                <div style="text-align:center;">
-                        <h3>Percentage of Users Who Pursued Additional Certifications or Training (Pie Chart)</h3>
-                        <img src="data:image/png;base64,{{ certifications_training_percentage_plot }}" alt="Certifications and Training Percentage">
-                </div>
-                <div style="text-align:center;">
-                        <h3>Percentage of Users Who Think a Different Academic Specialization Might Have Better Prepared Them</h3>
-                        <img src="data:image/png;base64,{{ different_specialization_percentage_plot }}" alt="Civil Status Distribution">
-                </div>
-                <div style="text-align:center;">
-                        <h3>Overall Satisfaction Levels with Current Jobs</h3>
-                        <img src="data:image/png;base64,{{ overall_satisfaction_plot }}" alt="Civil Status Distribution">
-                </div>
-                <div style="text-align:center;">
-                        <h3>Distribution of Users Across Different Job Fields</h3>
-                        <img src="data:image/png;base64,{{ job_fields_distribution_plot }}" alt="Civil Status Distribution">
-                </div>
-                <!-- <div style="text-align:center;">
-                        <h3>User Engagement: Number of Surveys Completed by Each User</h3>
-                        <img src="data:image/png;base64,{{ user_engagement_plot }}" alt="Civil Status Distribution">
-                </div>
-                <div style="text-align:center;">
-                        <h3>Distribution of users by gender</h3>
-                        <img src="data:image/png;base64,{{ gender_distribution_plot }}" alt="Gender Distribution">
-                </div>
-                <div style="text-align:center;">
-                        <h3>Distribution of users by civil status</h3>
-                        <img src="data:image/png;base64,{{ civil_status_distribution_plot }}" alt="Civil Status Distribution">
-                </div> -->
-      
+
+        <div id="header">
+                <!-- <img src="{% static 'images/report-logo.png' %}" alt="Logo" id="logo"> -->
+                <img src="data:image/png;base64,{{base64_logo}}" alt="Logo" id="logo">
+                <div id="title">Polytechnic University of the Philippines</div>
+                <div id="subtitle">College of Computer and Information Science</div>
+                <div id="system-name">Course University: An ontology based recommendation system</div><br>
+                <div id="user-info">Date: {{current_time}} | User: {{name}}</div>
         </div>
-        
+        <div style="padding:20px;">
+                <div>
+                        <h2>Recommendation Impact</h2>
+                        <div style="text-align:center;">
+                                <h3>Recommendation Impact</h3>
+                                <img src="data:image/png;base64,{{ confidence_rating|b64encode }}"
+                                        alt="Recommendation Impact">
+                        </div>
+                        <div style="text-align:center;">
+                                <h3>Recommendation Influence</h3>
+                                <img src="data:image/png;base64,{{ recommendation_influence|b64encode }}"
+                                        alt="Recommendation Influence">
+                        </div>
+                </div>
+
+                <div>
+                        <h2>Job Alignment and Satisfaction</h2>
+                        <div style="text-align:center;">
+                                <h3>Job Alignment and Overall Career Satisfaction Relationship</h3>
+                                <img src="data:image/png;base64,{{ alignment_and_satisfaction|b64encode }}"
+                                        alt="Job Alignment and Satisfaction">
+                        </div>
+                        <div style="text-align:center;">
+                                <h3>Job Alignment</h3>
+                                <img src="data:image/png;base64,{{ job_alignment|b64encode }}"
+                                        alt="Job Alignment and Satisfaction">
+                        </div>
+                </div>
+                <div>
+                        <h2>Time-Series Analysis</h2>
+                        <div style="text-align:center;">
+                                <h3>Job Alignmen Across Cohorts</h3>
+                                <img src="data:image/png;base64,{{ job_alignment_across_cohorts|b64encode }}"
+                                        alt="Job Alignment and Satisfaction">
+                        </div>
+                        <div style="text-align:center;">
+                                <h3>Job Alignment Time Series</h3>
+                                <img src="data:image/png;base64,{{ job_alignment_time_series|b64encode }}"
+                                        alt="Job Alignment and Satisfaction">
+                        </div>
+                        <div style="text-align:center;">
+                                <h3>Confidence Rating Time Series</h3>
+                                <img src="data:image/png;base64,{{ confidence_rating_time_series|b64encode }}"
+                                        alt="Job Alignment and Satisfaction">
+                        </div>
+                </div>
+
+        </div>
+
 
 </body>
+
 </html>
