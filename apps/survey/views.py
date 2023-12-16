@@ -40,34 +40,12 @@ def admin_report(request):
     
 
     # Generate all necessary plots
-    alignment_and_satisfaction = generate_alignment_and_satisfaction()
-    role_satisfaction_by_academic_specialization = generate_role_satisfaction_by_academic_specialization()
-    gender_distribution_plot = generate_gender_distribution_plot()
-    civil_status_distribution_plot = generate_civil_status_distribution_plot()
-    academic_specialization_distribution_plot = generate_academic_specialization_distribution_plot()
-    alignment_with_job_responsibilities_plot = generate_alignment_with_job_responsibilities_plot()
-    satisfaction_levels_plot = generate_satisfaction_levels_plot()
-    certifications_training_percentage_plot = generate_certifications_training_percentage_plot()
-    different_specialization_percentage_plot = generate_different_specialization_percentage_plot()
-    overall_satisfaction_plot = generate_overall_satisfaction_plot()
-    job_fields_distribution_plot = generate_job_fields_distribution_plot()
-    user_engagement_plot = generate_user_engagement_plot()
+    
 
     return render(request, 'dashboard/admin_report.html', {
         'current_time': current_time,
         'name': name,
-        'alignment_and_satisfaction': alignment_and_satisfaction,
-        'role_satisfaction_by_academic_specialization': role_satisfaction_by_academic_specialization,
-        'gender_distribution_plot': gender_distribution_plot,
-        'civil_status_distribution_plot': civil_status_distribution_plot,
-        'academic_specialization_distribution_plot': academic_specialization_distribution_plot,
-        'alignment_with_job_responsibilities_plot': alignment_with_job_responsibilities_plot,
-        'satisfaction_levels_plot': satisfaction_levels_plot,
-        'certifications_training_percentage_plot': certifications_training_percentage_plot,
-        'different_specialization_percentage_plot': different_specialization_percentage_plot,
-        'overall_satisfaction_plot': overall_satisfaction_plot,
-        'job_fields_distribution_plot': job_fields_distribution_plot,  
-        'user_engagement_plot': user_engagement_plot,
+        # PLOTS
     })
 
 
@@ -83,15 +61,12 @@ def admin_report_view(request):
         name = request.user.username
 
     # Generate all necessary plots
-    alignment_and_satisfaction = plotly_alignment_and_satisfaction()
-    alignment_and_satisfaction2 = chart_alignment_and_satisfaction()
+    
 
     return render(request, 'dashboard/admin_report_view.html', {
         'current_time': current_time,
         'name': name,
-        'alignment_and_satisfaction': alignment_and_satisfaction,
-        'alignment_and_satisfaction2': alignment_and_satisfaction2,
-        #'role_satisfaction_by_academic_specialization': role_satisfaction_by_academic_specialization,
+        # PLOTS
     })
 
 
@@ -111,35 +86,14 @@ def admin_report_pdf(request):
     #     base64_logo = base64.b64encode(image_file.read()).decode('utf-8')
 
      # Generate all necessary plots
-    alignment_and_satisfaction = generate_alignment_and_satisfaction()
-    role_satisfaction_by_academic_specialization = generate_role_satisfaction_by_academic_specialization()
-    gender_distribution_plot = generate_gender_distribution_plot()
-    civil_status_distribution_plot = generate_civil_status_distribution_plot()
-    academic_specialization_distribution_plot = generate_academic_specialization_distribution_plot()
-    alignment_with_job_responsibilities_plot = generate_alignment_with_job_responsibilities_plot()
-    satisfaction_levels_plot = generate_satisfaction_levels_plot()
-    certifications_training_percentage_plot = generate_certifications_training_percentage_plot()
-    different_specialization_percentage_plot = generate_different_specialization_percentage_plot()
-    overall_satisfaction_plot = generate_overall_satisfaction_plot()
-    job_fields_distribution_plot = generate_job_fields_distribution_plot()
-    user_engagement_plot = generate_user_engagement_plot()
+
+
     template = get_template('dashboard/admin_report.html')
     context = {
         'current_time': current_time,
         'name': name,
         # 'base64_logo': base64_logo,
-        'alignment_and_satisfaction': alignment_and_satisfaction,
-        'role_satisfaction_by_academic_specialization': role_satisfaction_by_academic_specialization,
-        'gender_distribution_plot': gender_distribution_plot,
-        'civil_status_distribution_plot': civil_status_distribution_plot,
-        'academic_specialization_distribution_plot': academic_specialization_distribution_plot,
-        'alignment_with_job_responsibilities_plot': alignment_with_job_responsibilities_plot,
-        'satisfaction_levels_plot': satisfaction_levels_plot,
-        'certifications_training_percentage_plot': certifications_training_percentage_plot,
-        'different_specialization_percentage_plot': different_specialization_percentage_plot,
-        'overall_satisfaction_plot': overall_satisfaction_plot,
-        'job_fields_distribution_plot': job_fields_distribution_plot,     
-        'user_engagement_plot': user_engagement_plot,
+        # PLOTS
     }
     html = template.render(context)
 
