@@ -76,8 +76,8 @@ class SurveyForm(forms.ModelForm):
         self.fields['specialization'].required = True
         self.fields['employed'].required = True
         self.fields['received_recommendation'].required = True
-        self.fields['explored_learning_materials'].required = True
-        self.fields['accessed_job_postings'].required = True
+        #self.fields['explored_learning_materials'].required = True
+        #self.fields['accessed_job_postings'].required = True
         self.fields['additional_feedback'].required = False
         
         
