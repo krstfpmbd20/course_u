@@ -644,7 +644,7 @@ def field_page(request, field_id=None):
     # get specialization items with field_id
     specialization_items = Specialization.objects.filter(field=field_id)
 
-    print("Field page,  SPecialization items: ", specialization_items)
+    #print("Field page,  SPecialization items: ", specialization_items)
 
     # Get Test objects with field_id
     test_items = Test.objects.filter(field=field_id)
