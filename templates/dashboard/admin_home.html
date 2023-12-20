@@ -73,7 +73,7 @@
                     <tr>
                         <td>{{data.course_name}}</td>
                         <td>{{data.number_of_years}}</td>
-                        <td><a href="" class="btn">View</a></td>
+                        <td><a href="{% url 'admin_course' %}?course_id={{data.id}}" class="btn">View</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>

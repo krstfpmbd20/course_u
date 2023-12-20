@@ -41,6 +41,9 @@ urlpatterns = [
     path('paths/', views.paths, name = 'paths'),
 
     # for admin dashboard
+    path('admin_course/', views.admin_course, name='admin_course'),
+    path('admin_course/<int:course_id>/', views.admin_course, name='admin_course'),
+    path('admin_course/<int:course_id>/<int:term>/', views.admin_course, name='admin_course'),
     path('admin_students',views.admin_students, name='admin_students'),
     path('admin_test', views.admin_test, name='admin_test'),
     path('admin_tracer', views.admin_tracer, name='admin_tracer'),

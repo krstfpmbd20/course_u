@@ -17,7 +17,7 @@ from apps.website.forms import SignUpForm, StudentScoreForm
 from apps.website.models import Specialization, Field, LearningMaterial
 from apps.recommender.models import UserRecommendations, UserSkill
 
-from apps.acad.models import StudentProfile, Course
+from apps.acad.models import StudentProfile, Course, Subject
 from apps.assessment.models import Test, QuestionSet
 from apps.jobs.models import JobPosting
 from apps.survey.models import Survey
@@ -198,6 +198,215 @@ def admin_home(request):
         'fields': fields,  # Pass the list of fields
     })
     
+
+# def admin_course(request, course_id=None, term=None):
+#     JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+#     course_list = Course.objects.all()
+#     current_course = None
+
+#     if course_id is None:
+#         # Get a list of courses
+#         courses = Course.objects.all()
+#         course_name = "All Courses"
+#         return render(request, 'dashboard/admin_course.html', {
+#             'courses': courses,
+#             'course_name': course_name,
+#             'QuestionSet_count': QuestionSet_count,
+#             'Student_count': Student_count,
+#             'Survey_count': Survey_count,
+#         })
+#     current_course = Course.objects.get(id=course_id)
+#     course_term = Course.objects.get(id=course_id).number_of_years
+#     # make course_term a list from 1 to course_term
+#     course_term_list = list(range(1, course_term+1))
+
+
+#     if term is None: 
+#         course_subjects = User.objects.raw('''
+#         SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+#         FROM acad_course
+#         INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#         INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#         WHERE acad_course.id = %s''', [course_id])
+#     else:
+#         course_subjects = User.objects.raw('''
+#         SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+#         FROM acad_course
+#         INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#         INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#         WHERE acad_course.id = %s AND acad_curriculum.term = %s''', [course_id, term])
+    
+#     return render(request, 'dashboard/admin_course.html', {
+#         'course_list': course_list, # for dropdown menu
+#         'course_subjects': course_subjects,
+#         'current_course': current_course,
+#         'course_term_list': course_term_list,
+#         'QuestionSet_count': QuestionSet_count,
+#         'Student_count': Student_count,
+#         'Survey_count': Survey_count,
+#     })
+def admin_course(request):
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    course_list = Course.objects.all()
+    current_course = None
+    current_term = None
+    course_id = request.GET.get('course_id')
+    term = request.GET.get('term')
+
+
+    if course_id:
+        current_course = Course.objects.get(id=course_id)
+        course_term = Course.objects.get(id=course_id).number_of_years
+        course_term_list = list(range(1, course_term+1))
+
+        if term:
+            if term == 'all':
+                current_term = "all"
+                course_subjects = User.objects.raw('''
+                SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+                FROM acad_course
+                INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+                INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+                WHERE acad_course.id = %s''', [course_id])
+            else:
+                current_term = int(term)
+                course_subjects = User.objects.raw('''
+                SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+                FROM acad_course
+                INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+                INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+                WHERE acad_course.id = %s AND acad_curriculum.year = %s''', [course_id, term])
+        else:
+            course_subjects = User.objects.raw('''
+            SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+            FROM acad_course
+            INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+            INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+            WHERE acad_course.id = %s''', [course_id])
+    else:
+        course_subjects = None
+        course_term_list = None
+
+    return render(request, 'dashboard/admin_course.html', {
+        'course_list': course_list, # for dropdown menu
+        'course_subjects': course_subjects,
+        'current_course': current_course,
+        'current_term': current_term,
+        'course_term_list': course_term_list,
+        'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
+    })
+# def admin_course(request):
+#     JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+#     course_list = Course.objects.all()
+#     current_course = None
+#     course_id = request.GET.get('course_id')
+#     term = request.GET.get('term')
+
+#     if course_id:
+#         current_course = Course.objects.get(id=course_id)
+#         course_term = Course.objects.get(id=course_id).number_of_years
+#         course_term_list = list(range(1, course_term+1))
+
+#         # if term:
+#         #     if term == 'all':
+#         #         current_term = "all"
+#         #         course_subjects = User.objects.raw('''
+#         #         SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+#         #         FROM acad_course
+#         #         INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#         #         INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#         #         WHERE acad_course.id = %s''', [course_id])
+#         #     else:     
+#         #         current_term = int(term)
+#         #         course_subjects = User.objects.raw('''
+#         #         SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+#         #         FROM acad_course
+#         #         INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#         #         INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#         #         WHERE acad_course.id = %s AND acad_curriculum.year = %s''', [course_id, term])
+#         # else:
+#         #     current_term = None
+#         #     course_subjects = User.objects.raw('''
+#         #     SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+#         #     FROM acad_course
+#         #     INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#         #     INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#         #     WHERE acad_course.id = %s''', [course_id])
+#         if term:
+#             if term == 'all':
+#                 current_term = "all"
+#                 course_subjects = Subject.objects.raw('''
+#                 SELECT acad_subject.id, acad_subject.subject_name, GROUP_CONCAT(website_skill.skill) as skills
+#                 FROM acad_course
+#                 INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#                 INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#                 LEFT JOIN acad_subject_skills ON acad_subject.id = acad_subject_skills.subject_id
+#                 LEFT JOIN website_skill ON acad_subject_skills.skill_id = website_skill.id
+#                 WHERE acad_course.id = %s
+#                 GROUP BY acad_subject.id''', [course_id])
+#             else:     
+#                 current_term = int(term)
+#                 # course_subjects = User.objects.raw('''
+#                 # SELECT acad_course.*, acad_curriculum.*, acad_subject.*, GROUP_CONCAT(website_skill.skill) as skills
+#                 # FROM acad_course
+#                 # INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#                 # INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#                 # LEFT JOIN acad_subject_skills ON acad_subject.id = acad_subject_skills.subject_id
+#                 # LEFT JOIN website_skill ON acad_subject_skills.skill_id = website_skill.id
+#                 # WHERE acad_course.id = %s AND acad_curriculum.year = %s
+#                 # GROUP BY acad_subject.id''', [course_id, term])
+#                 course_subjects = Subject.objects.raw('''
+#                 SELECT acad_subject.id, acad_subject.subject_name, GROUP_CONCAT(website_skill.skill) as skills
+#                 FROM acad_course
+#                 INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#                 INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#                 LEFT JOIN acad_subject_skills ON acad_subject.id = acad_subject_skills.subject_id
+#                 LEFT JOIN website_skill ON acad_subject_skills.skill_id = website_skill.id
+#                 WHERE acad_course.id = %s AND acad_curriculum.year = %s
+#                 GROUP BY acad_subject.id, acad_subject.name''', [course_id, term])
+#         else:
+#             current_term = None
+#             course_subjects = Subject.objects.raw('''
+#             SELECT acad_subject.id, acad_subject.subject_name, GROUP_CONCAT(website_skill.skill) as skills
+#             FROM acad_course
+#             INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#             INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#             LEFT JOIN acad_subject_skills ON acad_subject.id = acad_subject_skills.subject_id
+#             LEFT JOIN website_skill ON acad_subject_skills.skill_id = website_skill.id
+#             WHERE acad_course.id = %s
+#             GROUP BY acad_subject.id''', [course_id])
+#     else:
+#         course_subjects = None
+#         course_term_list = None
+#     # for subject in course_subjects:
+#     #     subject.skills = subject.skills.split(',')
+#     course_subjects_list = []
+#     for subject in course_subjects:
+#         subject_dict = {
+#             'id': subject.id,
+#             'subject_name': subject.subject_name,
+#             'skills': subject.skills.split(',') if subject.skills else []
+#         }
+#         course_subjects_list.append(subject_dict)
+#     # if course_subjects:  # make sure the RawQuerySet is not empty
+#     #     first_subject = course_subjects[0]
+#     #     column_names = [field.name for field in first_subject._meta.fields]
+#     #     print(column_names)
+
+#     print("current_course: ", current_course)
+#     print("current_term: ", current_term)
+#     return render(request, 'dashboard/admin_course.html', {
+#         'course_list': course_list, # for dropdown menu
+#         'course_subjects': course_subjects_list,
+#         'current_course': current_course,
+#         'current_term': current_term,
+#         'course_term_list': course_term_list,
+#         'QuestionSet_count': QuestionSet_count,
+#         'Student_count': Student_count,
+#         'Survey_count': Survey_count,
+#     })
 
 #@admin_only # only admin can access this page # if admin only, then no need to add @login_required it will be redundant
 def admin_students(request):

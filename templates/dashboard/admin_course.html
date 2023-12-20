@@ -1,0 +1,97 @@
+{% extends 'base_user.html' %}
+
+{% block title %}Admin - Course{% endblock %}
+
+{% load static %}
+{% block head_extra %}
+<!-- Additional stylesheets or scripts specific to thiss page -->
+
+<link rel="stylesheet" href="{% static 'css/admin_home.css' %}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+{% endblock head_extra %}
+
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Student</a></p>
+{% include 'dashboard/status.html' %}
+<div class="container">
+    <div>
+        <!-- <a href="{% url 'admin_home' %}" class="btn btn-primary">< Back</a> -->
+    </div>
+    <div class="row">
+        <div class="col-md ">
+            <div class="table-heading">
+                <h5>{{current_course.course_name}}'s Subjects</h5>
+                <div class="table-heading-btn">
+                    <form method="get" action="{% url 'admin_course' %}" id="filterForm">
+                        <!-- course select -->
+                        <div class="select-container">
+                            <select class="select-filter" name="course_id" id="courseSelect" onchange="document.getElementById('filterForm').submit();">
+                                <option value="">Select Course</option>
+                                {% for course in course_list %}
+                                    <option value="{{course.id}}" {% if course.id == current_course.id %}selected{% endif %}>{{course.course_name}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <!-- select -->
+                        <div class="select-container">
+                            <select class="select-filter" name="term" id="termSelect" onchange="document.getElementById('filterForm').submit();">
+                                <option value="">Select Term</option>
+                                {% if current_course %}
+                                    {% for i in course_term_list %}
+                                        <option value="{{i}}" {% if i == current_term %}selected{% endif %}>Term {{i}}</option>
+                                    {% endfor %}
+                                    <!-- all term -->
+                                    <option value="all" {% if current_term == 'all' %}selected{% endif %}>All Term</option>
+                                {% endif %}
+                            </select>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="card card-body">
+                <table class="table table-sm">
+                    <thead>
+                        <th>Term</th>
+                        <th>Subject</th>
+                        <th>Description</th>
+                        <th>Skills</th>
+                        <th>Update</th>
+                    </thead>
+                    <tbody>
+                        {% for data in course_subjects %}
+                        <tr>
+                            <td>{{data.year}}</td>
+                            <td>{{ data.subject_name }}</td>
+                            <!-- <td> {% if user.is_staff %} check {% else %} X {% endif %}</td> -->
+                            <td>{{data.description}}</td>
+                            <td class="skill-cell">
+                                Skills
+                                <div class="skill-tooltip">
+                                    {% for skill in data.skills.all %}
+                                        <p>{{ skill }}</p>
+                                    {% endfor %}
+                                </div>
+                            </td>
+                            <td><a href="#" class="btn">Update</a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <a class="btn bth-primary btn-sm btn-block" href="">Add Subject</a>
+            </div><br><br>
+        </div>
+    </div>
+</div>
+{% else %}
+
+{% endif %}
+
+
+
+{% endblock content %}
