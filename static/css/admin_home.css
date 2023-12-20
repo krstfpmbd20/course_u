@@ -6,7 +6,26 @@
 
 html, body {
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.main {
+    width:calc(100% - 200px) !important;
+    box-sizing: border-box !important;
+}
+
+.content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100% !important;
+}
+
+.data-section {
+    width: 100% !important;
+    box-sizing: border-box;
 }
 
 .btn {
@@ -73,7 +92,7 @@ a {
 {
     position: relative;
     background: var(--white);
-    padding: 20px;
+    padding: 10px;
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
@@ -135,6 +154,8 @@ a {
 table {
     width: 100%;
     display: block;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 table td {
@@ -200,6 +221,10 @@ table td {
     color: var(--white);
     border-radius: 6px;
 
+}
+
+.card-body {
+    max-height: 500px !important;
 }
 
 .details table
