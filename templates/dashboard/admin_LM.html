@@ -15,7 +15,13 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-<p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Student</a></p>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'admin_home' %}">Dasboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Learning Materials</li>
+    </ol>
+</nav>
+<!-- <p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Student</a></p> -->
 {% include 'dashboard/status.html' %}
 <div class="container">
     <div>

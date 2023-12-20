@@ -4,6 +4,11 @@
     --blue: var(--highlight);
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 .btn {
     background-color: var(--highlight) !important;
     border-color: var(--highlight) !important;

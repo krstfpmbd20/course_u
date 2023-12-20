@@ -17,7 +17,13 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-<p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Job Posts</a></p>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'admin_home' %}">Dasboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Job Posts</li>
+    </ol>
+</nav>
+<!-- <p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Job Posts</a></p> -->
 {% include 'dashboard/status.html' %}
 <div class="container">
 

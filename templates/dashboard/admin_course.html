@@ -16,7 +16,15 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-<p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Student</a></p>
+<!-- <p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Student</a></p> -->
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'admin_home' %}">Dasboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Course</li>
+    </ol>
+</nav>
+
 {% include 'dashboard/status.html' %}
 <div class="container">
     <div>
@@ -30,23 +38,30 @@
                     <form method="get" action="{% url 'admin_course' %}" id="filterForm">
                         <!-- course select -->
                         <div class="select-container">
-                            <select class="select-filter" name="course_id" id="courseSelect" onchange="document.getElementById('filterForm').submit();">
+                            <select class="select-filter" name="course_id" id="courseSelect"
+                                onchange="document.getElementById('filterForm').submit();">
                                 <option value="">Select Course</option>
                                 {% for course in course_list %}
-                                    <option value="{{course.id}}" {% if course.id == current_course.id %}selected{% endif %}>{{course.course_name}}</option>
+                                <option value="{{course.id}}" {% if course.id == current_course.id %}selected{% endif %}>
+                                    {{course.course_name}}</option>
                                 {% endfor %}
                             </select>
                         </div>
                         <!-- select -->
                         <div class="select-container">
-                            <select class="select-filter" name="term" id="termSelect" onchange="document.getElementById('filterForm').submit();">
+                            <select class="select-filter" name="term" id="termSelect"
+                                onchange="document.getElementById('filterForm').submit();">
                                 <option value="">Select Term</option>
-                                {% if current_course %}
+                                {% if current_term %}
                                     {% for i in course_term_list %}
-                                        <option value="{{i}}" {% if i == current_term %}selected{% endif %}>Term {{i}}</option>
+                                    <option value="{{i}}" {% if i == current_term %}selected{% endif %}>Term {{i}}</option>
                                     {% endfor %}
                                     <!-- all term -->
                                     <option value="all" {% if current_term == 'all' %}selected{% endif %}>All Term</option>
+                                {% else %}
+                                    {% for i in course_term_list %}
+                                    <option value="{{i}}">Term {{i}}</option>
+                                    {% endfor %}
                                 {% endif %}
                             </select>
                         </div>
@@ -74,7 +89,7 @@
                                 Skills
                                 <div class="skill-tooltip">
                                     {% for skill in data.skills.all %}
-                                        <p>{{ skill }}</p>
+                                    <p>{{ skill }}</p>
                                     {% endfor %}
                                 </div>
                             </td>
