@@ -21,9 +21,6 @@ import plotly.express as px
 import plotly.io as pio
 
 def load_csv(request):
-    # Assuming your CSV file is in the same folder as your views
-    #csv_file_name = 'specialization_sparse.csv'
-    #csv_file_name = 'normalized_field_skills.csv'
     csv_file_name = 'field_skills_tfidf.csv'
     csv_file_path = os.path.join(os.path.dirname(__file__), csv_file_name)
 
@@ -32,8 +29,7 @@ def load_csv(request):
         specialization_sparse = pd.read_csv(csv_file_path)
 
         # Process the DataFrame as needed (e.g., save to the database, perform operations)
-        # ...
-        #print("specialization_sparse: ", specialization_sparse)
+
         return specialization_sparse
     except Exception as e:
         #print("Error processing file: {}".format(e))
@@ -55,7 +51,6 @@ def recommender(request):
     user_skills_list = [skill.skill.skill for skill in user_skills]
     user_skills_list = list(set(user_skills_list))
     user_skills_list = list(user_skills_list)
-    
 
     normalized_field_skills = load_csv(request)
 
@@ -64,9 +59,6 @@ def recommender(request):
     normalized_field_skills_columns = normalized_field_skills.columns
     # convert to list
     normalized_field_skills_columns = list(normalized_field_skills_columns)
-    #print('normalized_user_skills_df_columns: ', normalized_user_skills_df_columns)
-    #print('normalized_field_skills_columns len: ', normalized_field_skills_columns)
-    # get the intersection of the two dataframes
     #intersection_columns = normalized_user_skills_df_columns.intersection(normalized_field_skills_columns)
     intersection_columns = set(normalized_user_skills_df_columns).intersection(set(normalized_field_skills_columns))
 
@@ -78,20 +70,7 @@ def recommender(request):
 
     if len(intersection_columns) == 0:
         return render(request, 'recommender/recommender_failed.html')
-        return HttpResponse('You have few skills to generate Recommendations. Please add take the assessments and grade inputs. <a href="test_home/">Test Home</a>')
-        return render(request, 'recommender/recommender.html', {
-            'top_3_field_recommendations': None,
-            'field_name_1': None,
-            'field_name_2': None,
-            'field_name_3': None,
-            'skill_plot': None,
-            'field_plot': None,
-            'stacked_skills': None,
-            'radar_skills': None,
-            'field_1': None,
-            'field_2': None,
-            'field_3': None,
-        })
+
 
     # get level of each skill
     user_skills_level = []
@@ -100,26 +79,12 @@ def recommender(request):
         user_skills_level.append(userskill_level)
 
 
-    user_skills_dict = dict(zip(intersection_columns, user_skills_level))
-    
+    user_skills_dict = dict(zip(intersection_columns, user_skills_level))   
     user_skills_df = pd.DataFrame.from_dict(user_skills_dict, orient='index').T
-
-        
-    # use minmaxscaler
-    #scaler = MinMaxScaler()
-    #normalized_user_skills_df = pd.DataFrame(scaler.fit_transform(user_skills_df), columns=user_skills_df.columns, index=user_skills_df.index)
 
     # use tfidf
     tfidf = TfidfTransformer()
     normalized_user_skills_df = pd.DataFrame(tfidf.fit_transform(user_skills_df).toarray(), columns=user_skills_df.columns, index=user_skills_df.index)
-
-    # fill the missing values with 0
-    #user_skills_df = user_skills_df.fillna(0) - not used
-
-    # Normalize the user's skills. by getting the sum of the user skills and dividing each skill by the sum. if skill = 0, then = 0
-    #skill_sum = user_skills_df.sum(axis=1)
-    #normalized_user_skills_df = user_skills_df.div(skill_sum, axis=0)
-
 
     # Filter the specialization data frame columns by the user's skills. except the first and second columns
     normalized_field_skills_filtered = normalized_field_skills[['field_id'] + intersection_columns]
@@ -165,47 +130,19 @@ def recommender(request):
         field = Field.objects.get(field=field_id).field_name
         user_skills_field.append(field)
     
-    # Create a DataFrame
     user_skills_df = pd.DataFrame({
         'skill': intersection_columns,
         'level': user_skills_level,
         'field': user_skills_field,
         'field_id': field_id_list,
     })
-    pivot_df = user_skills_df.pivot(index='skill', columns='field', values='level').fillna(0)
+    #pivot_df = user_skills_df.pivot(index='skill', columns='field', values='level').fillna(0)
 
 
     user_skills_df['fields_score'] = user_skills_df['field_id'].map(fields_score)
     user_skills_df = user_skills_df.sort_values('fields_score', ascending=False)
     user_skills_df = user_skills_df.drop('fields_score', axis=1)
-    # print('user_skills_df: ', user_skills_df)
 
-    # fig = px.bar(
-    #     x=user_skills_df['level'],
-    #     y=user_skills_df['skill'],
-    #     color=user_skills_df['field'],
-    #     #facet_col=user_skills_df['field'],
-    #     # title='User Skills Levels',
-    #     orientation='h',
-    #     labels={'index': 'Level', 'value': 'Skill'},
-    #     #color_continuous_scale=px.colors.sequential.Plasma,
-    #     #height=(len(user_skills_df['skill']) * 5 + 200),#*len(user_skills_df['skill']) + 400,
-    # )
-    # New version as of Revision
-    # fig = px.bar(
-    #     pivot_df, 
-    #     barmode='stack',
-    #     orientation='h',
-    #     labels={'index': 'Field', 'value': 'Count'},
-    # )
-   
-    # fig = px.bar(
-    #     x=field_data,
-    #     y=pivot_df.index.tolist(),
-    #     orientation='h',
-    #     labels={'x': 'Count', 'y': 'Field'},
-    #     color_discrete_sequence=list(field_dict.values()),
-    # )
 
     fig = px.bar(
         user_skills_df,
@@ -224,9 +161,7 @@ def recommender(request):
     #fig.update_yaxes(title_text='Skill Name')
     fig.update_xaxes(title_text='Count')
     fig.update_yaxes(title_text='Field')
-
     skill_plot = pio.to_html(fig, full_html=False)
-
 
     # Create a DataFrame with Field_ID, Field_Name, and Score
     fields_df = pd.DataFrame(list(zip(field_ids, fields_name, fields_score.values())), columns=['Field_ID', 'Field_Name', 'Score'])
@@ -241,23 +176,14 @@ def recommender(request):
 
     # remove white background
     fig.update_layout(plot_bgcolor='rgba(0,0,0,0)')
-
     # Convert the figure to HTML
     field_plot = pio.to_html(fig, full_html=False)
-    
-    
     # make a copy of normamlied_field
     normalized_copy = normalized_field_skills_filtered.copy()
-
     # label field id of normalized_field_skills_filtered with field_dict
     normalized_copy['field_name'] = normalized_copy['field_id'].map(field_dict)
-
-    #print('normalized_field_skills_filtered: ', normalized_copy)
-
     # melt normalized_field_skills_filtered
     normalized_copy = normalized_copy.melt(id_vars=['field_id', 'field_name'], var_name='skill', value_name='level')
-    #rint('normalized_field_skills_filtered: ', normalized_copy)
-
     # use fields_score mapping for field_id into field_order
     normalized_copy['field_order'] = normalized_copy['field_id'].map(fields_score)
     # sort by field_order
@@ -266,19 +192,7 @@ def recommender(request):
     normalized_copy = normalized_copy.drop('field_order', axis=1)
 
     print('normalized_copy: ', normalized_copy)
-    # plotting using plotly express
-    # stacked_skills = px.bar(
-    #     normalized_copy, 
-    #     x='level', 
-    #     y='skill', 
-    #     color='field_name', 
-    #     # title='Skills Levels',
-    #     orientation='h',
-    #     labels={'level': 'Relevance Score', 'field_name': 'Field Name'},
-    #     color_continuous_scale=px.colors.sequential.Plasma,
-    #     height=500,
-    #     width=800,
-    # )
+
     stacked_skills = px.bar(
         normalized_copy, 
         x='level', 
@@ -308,19 +222,11 @@ def recommender(request):
         height=500,
         width=800,
     )
-
-    # convert to html
     radar_skills = pio.to_html(radar_skills, full_html=False)
-
 
     # Sort the fields by the sum of the cosine similarity scores, in descending order.
     top_3_fields = sorted(fields_score, key=fields_score.get, reverse=True)[:3]
-    # top fields score
     top_3_fields_score = [fields_score[field_id] for field_id in top_3_fields]
-    #print('top_3_fields: ', top_3_fields)
-    #print('top_3_fields_score: ', top_3_fields_score)
-    # Get the field names for the top 3 fields.
-    
 
     field_names = []
     for field_id in top_3_fields:
