@@ -202,3 +202,81 @@ div.result {
     font-weight: 600;
     margin-bottom: 10px;
 }   
+
+
+
+
+/* roadmap */
+
+.roadmap-section {
+    display: flex;
+    align-items: center;
+}
+
+.roadmap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Add this line */
+    width: 80%;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.roadmap-content {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    width: 80%;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background-color: #ddd;
+    top: 27.5px; /* Adjust this value to position the line correctly */
+    z-index: -1; /* Add this line */
+}
+
+.step {
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: relative; /* Add this line */
+    z-index: 1; /* Add this line */
+}
+
+.step span {
+    position: absolute;
+    top: 30px; /* Adjust this value to position the label correctly */
+    left: -10px; /* Adjust this value to position the label correctly */
+    width: 40px; /* Adjust this value to fit the label */
+    text-align: center; /* Add this line */
+}
+
+.step.active {
+    background-color: #4CAF50;
+}
+
+.step {
+    /* ... existing styles ... */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the step */
+}
+
+.step:hover::after {
+    content: attr(data-tooltip); /* Use the data-step attribute as the content of the tooltip */
+    position: absolute;
+    top: 30px; /* Position the tooltip above the step */
+    left: 50%;
+    transform: translateX(-50%); /* Center the tooltip */
+    background-color: #333;
+    color: #fff;
+    max-width: 200px;
+    /* make content be one new line if */
+    padding: 5px;
+    border-radius: 5px;
+    /* white-space: nowrap; Prevent the tooltip from wrapping to the next line */
+}

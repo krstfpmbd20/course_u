@@ -1,0 +1,65 @@
+{% extends 'base_user.html' %}
+
+
+
+{% block title %}Recommender{% endblock %}
+
+{% load static %}
+{% block head_extra %}
+<link rel="stylesheet" href="{% static 'css/recommender.css' %}">
+{% endblock head_extra %}
+
+{% block content %}
+
+<div class="roadmap">
+    <div class="line"></div> <!-- Add this line -->
+    <div class="step {{step_1|yesno:'active,'}}" data-step="1" data-tooltip="
+    >Assessment
+    >Recommendation
+    "><span>Step 1</span></div>
+    <div class="step {{step_2|yesno:'active,'}}" data-step="2" data-tooltip="
+    >Grade Input
+    >Assessment
+    >Recommendation Survey
+    >Recommendation
+    "><span>Step 2</span></div>
+    <div class="step {{step_3|yesno:'active,'}}" data-step="3" data-tooltip="
+    >Grade Input
+    >Assessment
+    >Recommendation Survey
+    >Recommendation
+    "><span>Step 3</span></div>
+    <div class="step {{step_4|yesno:'active,'}}" data-step="4" data-tooltip="
+    >Grade Input
+    >Assessment
+    >Recommendation Survey
+    >Recommendation
+    "><span>Step 4</span></div>
+    <div class="step {{step_5|yesno:'active,'}}" data-step="5" data-tooltip="
+    >Grade Input
+    >Assessment
+    >Recommendation Survey
+    >Recommendation
+    "><span>Step 5</span></div>
+</div>
+<div class="roadmap">
+    <div class="step">
+        <h5>Step 1</h5>
+    </div>
+    <div class="step">
+        <h5>Step 1</h5>
+    </div>
+    <div class="step">
+        <h5>Step 1</h5>
+    </div>
+    <div class="step">
+        <h5>Step 1</h5>
+    </div>
+    <div class="step">
+        <h5>Step 1</h5>
+    </div>
+
+</div>
+
+
+{% endblock %}
