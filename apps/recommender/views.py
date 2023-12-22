@@ -340,6 +340,8 @@ def recommender(request):
 #     })
 
 def roadmap(request):
+
+
     # Roadmap
     user_reco_steps = [UserRecommendations.objects.filter(user=request.user, current_year=i) for i in range(5)]
     user_reco_steps_status = [step.exists() for step in user_reco_steps]
@@ -348,16 +350,18 @@ def roadmap(request):
     # check if it has recommender_survey model survey has user_reco_step_n ID
     user_survey_s_status = []
     for step in user_reco_steps:
-        print(step)
+        #print(step)
         try:
             status = RecommenderSurvey.objects.filter(recommendation_id=step.first().recommendation_id).exists()
         except AttributeError:
             status = False
-        print(status)
+        #print(status)
         user_survey_s_status.append(status)
 
     # get studentprofile
     student_profile = StudentProfile.objects.get(user=request.user)
+    student_profile_exists = StudentProfile.objects.filter(user=request.user).exists()
+    print("student_profile_exists",student_profile_exists)
     # get course
     course = Course.objects.get(id=student_profile.enrolled_courses_id)
     course_name = course.course_name
@@ -372,7 +376,7 @@ def roadmap(request):
             status = StudentGrades.objects.filter(student_id=student_profile.id, subject_id=first_subject.id).exists()
         except AttributeError:
             status = False
-        print("user grade status {}: {}", year, status)
+        #print("user grade status {}: {}", year, status)
         user_grade_status.append(status)
         
     step_1_status =  user_reco_steps_status[0] and user_test_status[0]
@@ -383,6 +387,7 @@ def roadmap(request):
 
 
     return render(request, 'recommender/roadmap.html', {
+        'student_profile_exists': student_profile_exists,
         "course_name": course_name,
 
         # Roadmap
