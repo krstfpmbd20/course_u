@@ -240,6 +240,11 @@ div.result {
     z-index: -1; /* Add this line */
 }
 
+.roadmap.second .step {
+    width: 20px;
+    height: 20px;
+}
+
 .step {
     width: 20px;
     height: 20px;
@@ -428,4 +433,31 @@ div.result {
 
 .step-card .milestone-status.active {
     background-color: #4CAF50;
+}
+
+
+/* will display only when hovered */
+.step-card.hidden {
+    /* ... existing styles ... */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    transform: translate(-65.5px, 9px);
+    /* left border */
+    border-left: 2px solid #ddd;
+}
+
+.step-card:hover {
+    opacity: 1;
+}
+
+
+.step-card.hidden .milestone-status {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    left: -6%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ddd;
 }
