@@ -16,6 +16,12 @@
 </div>
 <div class="roadmap">
     <div class="line"></div>
+    <div class="progress-line
+        {{step_2_status|yesno:'progress_1,'}}
+        {{step_3_status|yesno:'progress_2,'}}
+        {{step_4_status|yesno:'progress_3,'}}
+        {{step_5_status|yesno:'progress_4,'}}
+    "></div>
     <div class="step {{step_1_status|yesno:'active,'}}" data-step="1" data-tooltip="
     >Assessment
     >Recommendation
@@ -48,6 +54,13 @@
 <br><br><br><br><br>
 <div class="roadmap second">
     <div class="line"></div>
+    <div class="progress-line
+        {{step_2_status|yesno:'progress_1,'}}
+        {{step_3_status|yesno:'progress_2,'}}
+        {{step_4_status|yesno:'progress_3,'}}
+        {{step_5_status|yesno:'progress_4,'}}
+    "></div>
+    
     <div class="step {{step_1_status|yesno:'active,'}}" data-step="1">
         <span>Step 1</span>
         <div class="step-card hidden">
@@ -121,12 +134,13 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="roadmap-step">
     <div class="roadmap-line"></div>
+    
     <div class="step-card">
         <div class="step-status {{step_1_status|yesno:'active,'}}" data-step="1" data-tooltip=""></div>
         <h4>Step 1</h4>
         <h5>Pre-Assessment</h5>
         <ul>
-            <a href=""><li><span class="milestone-status {{student_profile_exists|yesno:'active,'}}"></span>Student Record</li></a></a>
+            <a href=""><li><span class="milestone-status {{student_profile_exists|yesno:'active,'}}"></span>Student Record</li></a>
             <a href=""><li><span class="milestone-status {{test_1_status|yesno:'active,'}}"></span>Assessment</li></a>
             <a href=""><li class=" {{step_1_status|yesno:'active,'}}">
                 <span class="milestone-status {{reco_1_status|yesno:'active,'}}"></span>Recommendation</li></a>

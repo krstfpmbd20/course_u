@@ -240,6 +240,31 @@ div.result {
     z-index: -1; /* Add this line */
 }
 
+
+.progress-line {
+    position: absolute; 
+    height: 5%;
+    background-color: rgb(228, 95, 65);
+    top: 27.5px;
+    z-index: -1; /* Add this line */
+}
+
+.progress_1 {
+    width: 25%;
+}
+
+.progress_2 {
+    width: 50%;
+}
+
+.progress_3 {
+    width: 75%;
+}
+
+.progress_4 {
+    width: 100%;
+}
+
 .roadmap.second .step {
     width: 20px;
     height: 20px;
@@ -263,7 +288,7 @@ div.result {
 }
 
 .step.active {
-    background-color: #4CAF50;
+    background-color: rgb(228, 95, 65);
 }
 
 .step {
@@ -388,9 +413,10 @@ div.result {
     margin-bottom: 10px;
     font-size: 12px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     position: relative;
+    margin-left: 10px;
 }
 
 .step-card a {
@@ -414,11 +440,11 @@ div.result {
 }
 
 .step-status.active {
-    background-color: #4CAF50;
+    background-color: rgb(228, 95, 65);
 }
 
 .step-card li.active {
-    color: #4CAF50;
+    color:rgb(228, 95, 65);
 }
 
 .step-card .milestone-status {
@@ -435,21 +461,26 @@ div.result {
 }
 
 .step-card .milestone-status.active {
-    background-color: #4CAF50;
+    background-color: rgb(228, 95, 65);
 }
 
 
 /* will display only when hovered */
 .step-card.hidden {
     /* ... existing styles ... */
+    display: flex;
+    align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    position: absolute;
+    /* position: absolute; */
     transform: translate(-65.5px, 9px);
     /* left border */
     border-left: 2px solid #ddd;
 }
-
+.step-card.hidden ul li {
+    display: flex;
+    align-items: center;
+}
 .step-card:hover {
     opacity: 1;
 }
@@ -458,9 +489,12 @@ div.result {
 .step-card.hidden .milestone-status {
     width: 15px;
     height: 15px;
-    position: absolute;
-    top: 50%;
-    left: -6%;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* top: 50%;
+    left: -6%; */
+    /* top: 30px;
+    left: -10px */
+    /* transform: translate(-50%, -50%); */
     border: 2px solid #ddd;
+    margin-right: 15px;
 }
