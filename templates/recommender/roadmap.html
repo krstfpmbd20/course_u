@@ -10,53 +10,98 @@
 {% endblock head_extra %}
 
 {% block content %}
-
+<div class="roadmap-heading">
+    <h1>Your Recommendation Roadmap Progress</h1>
+    <h3>{{course_name}} (S.Y. 20XX - 20XX)</h3>
+</div>
 <div class="roadmap">
-    <div class="line"></div> <!-- Add this line -->
-    <div class="step {{step_1|yesno:'active,'}}" data-step="1" data-tooltip="
+    <div class="line"></div>
+    <div class="step {{step_1_status|yesno:'active,'}}" data-step="1" data-tooltip="
     >Assessment
     >Recommendation
     "><span>Step 1</span></div>
-    <div class="step {{step_2|yesno:'active,'}}" data-step="2" data-tooltip="
+    <div class="step {{step_2_status|yesno:'active,'}}" data-step="2" data-tooltip="
     >Grade Input
     >Assessment
     >Recommendation Survey
     >Recommendation
     "><span>Step 2</span></div>
-    <div class="step {{step_3|yesno:'active,'}}" data-step="3" data-tooltip="
+    <div class="step {{step_3_status|yesno:'active,'}}" data-step="3" data-tooltip="
     >Grade Input
     >Assessment
     >Recommendation Survey
     >Recommendation
     "><span>Step 3</span></div>
-    <div class="step {{step_4|yesno:'active,'}}" data-step="4" data-tooltip="
+    <div class="step {{step_4_status|yesno:'active,'}}" data-step="4" data-tooltip="
     >Grade Input
     >Assessment
     >Recommendation Survey
     >Recommendation
     "><span>Step 4</span></div>
-    <div class="step {{step_5|yesno:'active,'}}" data-step="5" data-tooltip="
+    <div class="step {{step_5_status|yesno:'active,'}}" data-step="5" data-tooltip="
     >Grade Input
     >Assessment
     >Recommendation Survey
     >Recommendation
     "><span>Step 5</span></div>
-</div>
-<div class="roadmap">
-    <div class="step">
-        <h5>Step 1</h5>
+</div> 
+<br><br><br><br><br>
+
+<div class="roadmap-step">
+    <div class="roadmap-line"></div>
+    <div class="step-card">
+        <div class="step-status {{step_1_status|yesno:'active,'}}" data-step="1" data-tooltip=""></div>
+        <h4>Step 1</h4>
+        <h5>Pre-Assessment</h5>
+        <ul>
+            <li><span class="milestone-status {{test_1_status|yesno:'active,'}}"></span>Assessment</li>
+            <li class=" {{step_1_status|yesno:'active,'}}">
+                <span class="milestone-status {{reco_1_status|yesno:'active,'}}"></span>Recommendation</li>
+        </ul>
     </div>
-    <div class="step">
-        <h5>Step 1</h5>
+    <div class="step-card">
+        <div class="step-status {{step_2_status|yesno:'active,'}}" data-step="1" data-tooltip=""></div>
+        <h4>Step 2</h4>
+        <h5>1st Year</h5>
+        <ul>
+            <li><span class="milestone-status {{grade_2_status|yesno:'active,'}}"></span>Grade Input</li>
+            <li><span class="milestone-status {{test_2_status|yesno:'active,'}}"></span>Assessment</li>
+            <li><span class="milestone-status {{survey_s_1_status|yesno:'active,'}}"></span>Recommendation Survey</li>
+            <li><span class="milestone-status {{reco_2_status|yesno:'active,'}}"></span>Recommendation</li>
+        </ul>
     </div>
-    <div class="step">
-        <h5>Step 1</h5>
+    <div class="step-card">
+        <div class="step-status {{step_3_status|yesno:'active,'}}" data-step="1" data-tooltip=""></div>
+        <h4>Step 3</h4>
+        <h5>2nd Year</h5>
+        <ul>
+            <li><span class="milestone-status {{grade_3_status|yesno:'active,'}}"></span>Grade Input</li>
+            <li><span class="milestone-status {{test_3_status|yesno:'active,'}}"></span>Assessment</li>
+            <li><span class="milestone-status {{survey_s_2_status|yesno:'active,'}}"></span>Recommendation Survey</li>
+            <li><span class="milestone-status {{reco_3_status|yesno:'active,'}}"></span>Recommendation</li>
+        </ul>
     </div>
-    <div class="step">
-        <h5>Step 1</h5>
+    <div class="step-card">
+        <div class="step-status {{step_4_status|yesno:'active,'}}" data-step="1" data-tooltip=""></div>
+        <h4>Step 4</h4>
+        <h5>3rd Year</h5>
+        <ul>
+            <li><span class="milestone-status {{grade_4_status|yesno:'active,'}}"></span>Grade Input</li>
+            <li><span class="milestone-status {{test_4_status|yesno:'active,'}}"></span>Assessment</li>
+            <li><span class="milestone-status {{survey_s_3_status|yesno:'active,'}}"></span>Recommendation Survey</li>
+            <li><span class="milestone-status {{reco_4_status|yesno:'active,'}}"></span>Recommendation</li>
+        </ul>
     </div>
-    <div class="step">
-        <h5>Step 1</h5>
+    <div class="step-card">
+        <div class="step-status {{step_5_status|yesno:'active,'}}" data-step="1" data-tooltip=""></div>
+        <h4>Step 5</h4>
+        <h5>4th Year</h5>
+        <ul>
+            <li><span class="milestone-status {{grade_5_status|yesno:'active,'}}"></span>Grade Input</li>
+            <li><span class="milestone-status {{test_5_status|yesno:'active,'}}"></span>Assessment</li>
+            <li><span class="milestone-status {{survey_s_4_status|yesno:'active,'}}"></span>Recommendation Survey</li>
+            <li><span class="milestone-status {{reco_5_status|yesno:'active,'}}"></span>Recommendation</li>
+        </ul>
     </div>
 
 </div>

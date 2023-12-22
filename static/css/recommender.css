@@ -280,3 +280,152 @@ div.result {
     border-radius: 5px;
     /* white-space: nowrap; Prevent the tooltip from wrapping to the next line */
 }
+
+.roadmap-heading {
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: centers;
+}
+
+.roadmap-heading h1, .roadmap-heading h3 {
+    
+}
+
+
+.roadmap-step {
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: repeat(5,  1fr); /* Adjust the 200px to your desired minimum width */
+    gap: 3px; /* Adjust the gap as needed */
+    align-items: stretch;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+
+.roadmap-line {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 3px;
+    background-color: #ddd;
+    top: 50%; /* Adjust this value to position the line correctly */
+    z-index: -1 !important; 
+    
+}
+
+.step-card {
+    /* background-color: #fff; */
+    border-radius: 5px;
+    display: block;
+    
+    position: relative;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+    border: 1px solid #ddd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 7px;
+    padding-top: 20px;
+    margin: auto;
+    /* margin-bottom: 50px; */
+    max-width: 900px;
+    /* wrap text */
+    word-wrap: break-word;
+    /* gap: 5px; */
+    /* width: auto; */
+    /* height: auto; */
+    min-width: 150px;
+    min-height: 200px;
+    
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1 !important;
+}
+
+.step-card h4, .step-card ul, .step-card h5 {
+    flex: 1;
+}
+
+.step-card h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    /* align middle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-card h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* align middle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font weight */
+    font-weight: 400;
+    color: grey;
+}
+
+.step-card li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.step-status {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #ddd;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.step-status.active {
+    background-color: #4CAF50;
+}
+
+.step-card li.active {
+    color: #4CAF50;
+}
+
+.step-card .milestone-status {
+    content: "";
+    /* position: absolute; */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* background-color: #4CAF50; */
+    background-color: #ddd;
+    color: #fff;
+    z-index: 1;
+    margin-right: 3px;
+}
+
+.step-card .milestone-status.active {
+    background-color: #4CAF50;
+}
