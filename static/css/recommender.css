@@ -393,7 +393,10 @@ div.result {
     position: relative;
 }
 
-
+.step-card a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .step-status {
     width: 30px;
