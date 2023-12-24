@@ -1,0 +1,41 @@
+{% extends 'base_user.html' %}
+{% block title %}Student Information{% endblock %}
+
+{% load static %}
+{% block head_extra %}
+<link rel="stylesheet" href="{% static 'css/course.css' %}">
+{% endblock head_extra %}
+
+
+
+{% block content %}
+
+<h2>Student Information</h2>
+
+<div class="course-section">
+    <div class="character-section">
+    </div>
+    <div class="selection-section">
+        <h2 id="course">{{course}}</h2>
+        <h4 id="year-level">{{year_level}}</h4>
+        <div class="grades">
+            <div class="grade-year">
+                <p>1st year:</p><a href="{% url 'student_grades' year=1 %}" class="btn btn-primary btn-sml">View Grades</a>
+            </div>
+            <div class="grade-year">
+                <p>2nd year:</p><a href="{% url 'student_grades' year=2 %}" class="btn btn-primary btn-sml">View Grades</a>
+            </div>
+            <div class="grade-year">
+                <p>3rd year:</p><a href="{% url 'student_grades' year=3 %}" class="btn btn-primary btn-sml">View Grades</a>
+            </div>
+            <div class="grade-year">
+                <p>4th year:</p><a href="{% url 'student_grades' year=4 %}" class="btn btn-primary btn-sml">View Grades</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="button-container">
+    <a href="{% url 'test_home' %}" class="" id="go-back">Go Back</a>
+</div>
+
+{% endblock content %}
