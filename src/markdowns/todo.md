@@ -20,6 +20,9 @@ Revision Matrix
 - [ ] : add student profile status (enroleed [default], graduated, dropped out)
     - [ ]: on dashboard, student page add button on updating status (admin only)
 
+- [X]: on "your information" if student has existing record, direct to student info instead
+- [X]: add student information and student grade view
+- [ ]: on start test, check if student is valid to take test
 
 - [ ]: user_recommendation score should record all scores, which means that this should have its own model, (fields: user_recommendation_id, field_id, field_score)
 
@@ -42,6 +45,7 @@ Revision Matrix
 - [ ]: base_user.html when user is not logged, sign-in icon button is bugged
 - [ ]: specialization page, add card design
 - [ ]: path.html, fix design
+= [ ]: change other buttons to breadcrumbs (on student_info, student_grade, etc)
 
 
 ## High Priority
