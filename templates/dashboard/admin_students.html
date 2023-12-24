@@ -52,12 +52,13 @@
                         <th>Course</th>
                         <th>Year</th>
                         <th>Status</th>
+                        <th>Student Profile</th>
                     </thead>
                     <tbody>
                         {% for user in students %}
                         <tr>
                             <!-- <td>{{ user.id}}</td> -->
-                            <td><a href="#">{{ user.username}}</a></td>
+                            <td><a href="admin/auth/user/{{user.id}}/change/">{{ user.username}}</a></td>
                             <td>{{ user.first_name }}</td> 
                             <td>{{ user.last_name }}</td>
                             <td>{{ user.email }}</td>
@@ -66,6 +67,7 @@
                             <td>{{user.course_name}}</td>
                             <td>{{ user.current_year }}</td>
                             <td>{{user.status}}</td>
+                            <td><a href="admin/acad/studentprofile/{{user.id}}/change/">Update</a></td>
                         </tr>
                         {% endfor %}
                     </tbody>
