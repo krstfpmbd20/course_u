@@ -158,12 +158,18 @@ table {
     overflow-y: auto;
 }
 
+table th {
+    /* text-align: center; */
+    /* vertical-align: middle; */
+}
+
 table td {
     width: 1%;
     white-space: nowrap;
     max-width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
+    
 }
 .table-heading-btn {
     display: flex;
