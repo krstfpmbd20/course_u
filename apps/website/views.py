@@ -24,6 +24,7 @@ from apps.survey.models import Survey
 
 from utilities.decorators import unauthenticated_user, allowed_users, admin_only
 from .models import *
+from django.db.models import F
 # from django.http import FileResponse
 # from reportlab.pdfgen import canvas
 
@@ -430,6 +431,75 @@ def admin_students(request):
         'Survey_count': Survey_count,
         })
 
+
+def is_student_graduated(student_id):
+    # check if student is graduated
+    # if student is graduated, return true
+    # else return false
+    # get student's current year
+    student = StudentProfile.objects.get(user_id=student_id)
+    current_year = student.current_year
+    # get student's course
+    course = Course.objects.get(id=student.enrolled_courses_id)
+    number_of_years = course.number_of_years
+    # check if current_year > number_of_years
+    if current_year > number_of_years:
+        return True
+    else:
+        return False
+    
+def student_status_update(student_id):
+    # check if student is graduated
+    # if student is graduated, update studentprofile.status to 'graduated'
+    # else update studentprofile.status to 'enrolled'
+    # get student's current year
+    student = StudentProfile.objects.get(user_id=student_id)
+    current_year = student.current_year
+    # get student's course
+    course = Course.objects.get(id=student.enrolled_courses_id)
+    number_of_years = course.number_of_years
+    # check if current_year > number_of_years
+    if student.status != 'dropped out':
+        if current_year > number_of_years:
+            student.status = 'graduated'
+        else:
+            student.status = 'enrolled'
+    student.save()
+    return student.status
+
+def update_students_status(request):
+    # update all studentprofile.status
+    students = StudentProfile.objects.all()
+    for student in students:
+        student_status_update(student.user_id)
+    messages.success(request, 'All students status have been updated')
+    return None
+    
+
+def update_student_current_year(request):
+    #StudentProfile.objects.all().update(current_year=F('current_year')+1)
+    students = StudentProfile.objects.all()
+    for student in students:
+        if student.status != 'dropped out' and student.status != 'graduated':
+            if not is_student_graduated(student.user_id):
+                student.current_year = student.current_year + 1
+            else:
+                student.status = "graduated"
+            student.save()
+    messages.success(request, 'All students current year have been updated')
+    return None
+        
+
+def admin_end_term(request):
+    # update all studentprofile.current_year + 1
+    update_student_current_year(request)
+    # update all studentprofile.status
+    update_students_status(request)
+    #messages.success(request, 'All students have been promoted to the next year')
+    return redirect('admin_students')
+
+
+
 def admin_test(request):
     JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
     
@@ -632,7 +702,7 @@ def specialization_page(request, item_id):
     specialization_item = get_object_or_404(Specialization, pk=item_id)
 
     # Render the specialization_page template with the item
-    return render(request, 'specialization_page.html', {'specialization_item': specialization_item})
+    return render(request, 'dashboard/specialization_page.html', {'specialization_item': specialization_item})
 
 
 
