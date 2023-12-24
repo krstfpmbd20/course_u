@@ -45,6 +45,7 @@ urlpatterns = [
     path('admin_course/<int:course_id>/', views.admin_course, name='admin_course'),
     path('admin_course/<int:course_id>/<int:term>/', views.admin_course, name='admin_course'),
     path('admin_students',views.admin_students, name='admin_students'),
+    path('admin_end_term/', views.admin_end_term, name='admin_end_term'),
     path('admin_test', views.admin_test, name='admin_test'),
     path('admin_tracer', views.admin_tracer, name='admin_tracer'),
     path('admin_jobpostings', views.admin_jobpostings, name='admin_jobpostings'),
