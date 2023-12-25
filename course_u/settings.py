@@ -22,16 +22,13 @@ SECRET_KEY = 'django-insecure-h_s31sn!wtc)#5sf1^c%*nvy)dp3t*5ja)n+g6*(0nw-wge(s=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
                 #[]
-# ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+
 
 # Application definition
 
 INSTALLED_APPS = [
     'jazzmin',
-    #'django_light',
-    #'admin_tools_stats',
-    #'django_nvd3',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,15 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
     'management_commands',
-
-    #apps
     'apps.acad',
     'apps.assessment',
     'apps.recommender',
     'apps.jobs',
     'apps.personality',
     'apps.website',
-    'grades',
+    #'grades',
     'apps.survey',
     'apps.recommender_survey',
 ]
@@ -79,6 +74,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'apps.website.context_processors.profile_picture',
+                #'django.template.loaders.app_directories.Loader',
+                #'django.template.loaders.filesystem.Loader',
                 #'website.context_processors.context_question_sets',
             ],
         },
@@ -88,7 +85,7 @@ TEMPLATES = [
 INTERNAL_IPS= [
     '127.0.0.1',
 ]
-CSRF_TRUSTED_ORIGINS = ["https://courseu-production-d2b3.up.railway.app"]
+
 WSGI_APPLICATION = 'course_u.wsgi.application'
 
 
@@ -97,14 +94,14 @@ WSGI_APPLICATION = 'course_u.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "railway",
-        'USER': "postgres",
-        'PASSWORD': "A3Bf-Bc*3aAa6fb621*A6E14-dCEB4f1",
-        'HOST': "viaduct.proxy.rlwy.net",
-        'PORT': "29888",
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'courseu_db',
+        'USER': 'root',
+        'PASSWORD': 'sql2023',#'sql2023',sawadeeKA456', #'022002'
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
-}
+} 
 
 
 # Password validation
@@ -282,7 +279,7 @@ LOGGING = {
     "handlers" : HANDLERS, 
     "loggers" : LOGGERS[0], #[0] name of the logger
     # "incremental" : True,
-    # "filters" : {},
+    # "filters" : {},s
 }
 
 # LOGGING_CONFIG = None
@@ -290,63 +287,4 @@ LOGGING = {
 # import logging.config
 
 # logging.config.dictConfig(LOGGING)
-
-JAZZMIN_SETTINGS = {
-    #for admin page
-    "show_ui_builder": True,
-    'site_header': "Course-U",
-    'site_brand': "Course-U",
-    'site_logo': "images/logo.png",
-    "site_icon": "images/logo.png",
-    'copyright': "courseu-production-d2b3.up.railway.app",
-    "search_model": ["auth.User", "auth.Group"],
-    "navigation_expanded": False,
-    "changeform_format": "collapsible",
-    #"default_icon_parents": "fas fa-chevron-circle-right",
-    #"default_icon_children": "fas fa-circle",
-    "icons": {
-    "auth": "fas fa-users-cog",
-    "auth.user": "fas fa-user",
-    "users.User": "fas fa-user",
-    "auth.Group": "fas fa-users",
-    "admin.LogEntry": "fas fa-file",
-    },
-
-    #for admin login
-    'login_logo': "images/boy.png",
-    "welcome_sign": "Welcome to the Course-U Administrator",
-}
-
-JAZZMIN_UI_TWEAKS = {
-    "navbar_small_text": False,
-    "footer_small_text": False,
-    "body_small_text": False,
-    "brand_small_text": False,
-    "brand_colour": "navbar-orange",
-    "accent": "accent-orange",
-    "navbar": "navbar-orange navbar-light",
-    "no_navbar_border": True,
-    "navbar_fixed": False,
-    "layout_boxed": False,
-    "footer_fixed": False,
-    "sidebar_fixed": True,
-    "sidebar": "sidebar-light-orange",
-    "sidebar_nav_small_text": False,
-    "sidebar_disable_expand": False,
-    "sidebar_nav_child_indent": True,
-    "sidebar_nav_compact_style": False,
-    "sidebar_nav_legacy_style": False,
-    "sidebar_nav_flat_style": False,
-    "theme": "minty",
-    "dark_mode_theme": None,
-    "button_classes": {
-        "primary": "btn-primary",
-        "secondary": "btn-secondary",
-        "info": "btn-info",
-        "warning": "btn-warning",
-        "danger": "btn-danger",
-        "success": "btn-success"
-    },
-    "actions_sticky_top": True
-}
 

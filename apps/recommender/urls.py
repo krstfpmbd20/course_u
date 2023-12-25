@@ -7,6 +7,7 @@ urlpatterns = [
     path('specialization/<int:field_id>/', views.recommendation_specialization, name='recommendation_specialization'),
     path('course/<int:field_id>/', views.recommendation_course, name='recommendation_course'),
 
+    path('roadmap/', views.roadmap, name='roadmap'),
     # path('recommendation/jobs/<int:field_id>/', views.recommendation_jobs, name='recommendation_jobs'),
     # path('recommendation/jobs/<int:field_id>/<int:job_id>/', views.recommendation_jobs, name='recommendation_jobs_with_details')
 

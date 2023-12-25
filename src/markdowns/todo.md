@@ -1,5 +1,54 @@
 # TODO
 
+# Highest Priority
+Revision Matrix
+- [X]: Recommender Result Graphs (Stacked bar grap)
+- [ ]: Roadmap View (recommendation record view)
+    - in progress
+    - waiting for further desing revisions by -@dec
+- [X]: Report Update
+    - [ ]: By year, scatter plot of recommendation score, with regression line
+    - [ ]: 
+- [X]: user should only have one chance on adding their course and year term level
+    - [ ]: additional, student course and year should also appear in profile page
+    - [ ]: roadmap view should also be seen here. -pending
+
+- [ ]: end year term (admin only)
+    - [X]: Add a button on the dashboard student page, that would end the year term
+        - this would advance all students year if their year doesnt exceed course
+    - [ ]: only admin can access
+
+- [X] : add student profile status (enroleed [default], graduated, dropped out)
+    - [X]: on dashboard, student page add button on updating status (admin only)
+
+- [ ]: on course model/database, add abbrivation
+
+- [X]: on "your information" if student has existing record, direct to student info instead
+- [X]: add student information and student grade view
+- [X]: on start test, check if student is valid to take test
+
+- [ ]: user_recommendation score should record all scores, which means that this should have its own model, (fields: user_recommendation_id, field_id, field_score)
+
+- [ ]: send verfication email - @krtsfpmd
+
+- [ ]: survey update
+    - question: befure using the system, are you aware of the different specializations in the field of IT? (yes/no/a few)
+    - if yes, in your choosen specialization, how much do you know about it? (1-5)
+    - after using the system, did it help you in choosing your specialization? (1-5)
+    - what specialization did you choose? 
+    - how much did the system help you in knowing your specialization? (1-5)
+
+- find what aspects can be used to verify and evaluate the system for those who doesn't even finish the recommendation system
+    - [ ]: create a survey for those who doesn't finish the recommendation system
+        - possible questions:
+        
+
+# Design
+- [ ]: home design, make it better, apply sectioning
+- [ ]: base_user.html when user is not logged, sign-in icon button is bugged
+- [ ]: specialization page, add card design
+- [ ]: path.html, fix design
+= [ ]: change other buttons to breadcrumbs (on student_info, student_grade, etc)
 
 
 ## High Priority

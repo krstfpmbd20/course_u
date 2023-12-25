@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load b64encode %}
+{% load static %}
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tracer Report</title>
+        <style>
+                body {
+                        font-family: Arial, sans-serif;
+                        margin: 20px;
+                }
+
+                #header {
+                        text-align: center;
+
+                }
+
+                #logo {
+                        max-width: 100px;
+                        /* Adjust the size as needed */
+                        max-height: 100px;
+                        /* Adjust the size as needed */
+                }
+
+                #title {
+                        font-size: 24px;
+                        font-weight: bold;
+                        margin-top: 10px;
+                        color: darkred;
+                }
+
+                #subtitle {
+                        font-size: 18px;
+                        margin-top: 5px;
+                }
+
+                #system-name {
+                        font-size: 24px;
+                        margin-top: 5px;
+                }
+
+                #user-info {
+                        font-size: 16px;
+                        margin-top: 5px;
+                }
+        </style>
+</head>
+
+<body>
+
+        <div id="header">
+                <img src="{% static 'images/report-logo.png' %}" alt="Logo" id="logo">
+                <div id="title">Polytechnic University of the Philippines</div>
+                <div id="subtitle">College of Computer and Information Science</div>
+                <div id="system-name">Course University: An ontology based recommendation system</div><br>
+                <div id="user-info">Date: {{current_time}} | User: {{name}}</div>
+        </div>
+        <div style="padding:20px;">
+                <div>
+                        <h2>Recommendation Impact</h2>
+                        <div style="text-align:center;">
+                                <h3>Recommendation Impact</h3>
+                                <img src="data:image/png;base64,{{ confidence_rating|b64encode }}"
+                                        alt="Recommendation Impact">
+                        </div>
+                        <div style="text-align:center;">
+                                <h3>Recommendation Influence</h3>
+                                <img src="data:image/png;base64,{{ recommendation_influence|b64encode }}"
+                                        alt="Recommendation Influence">
+                        </div>
+                </div>
+
+                <div>
+                        <h2>Job Alignment and Satisfaction</h2>
+                        <div style="text-align:center;">
+                                <h3>Job Alignment and Overall Career Satisfaction Relationship</h3>
+                                <img src="data:image/png;base64,{{ alignment_and_satisfaction|b64encode }}"
+                                        alt="Job Alignment and Satisfaction">
+                        </div>
+                        <div style="text-align:center;">
+                                <h3>Job Alignment</h3>
+                                <img src="data:image/png;base64,{{ job_alignment|b64encode }}"
+                                        alt="Job Alignment and Satisfaction">
+                        </div>
+                </div>
+                <div>
+                        <h2>Time-Series Analysis</h2>
+                        <div style="text-align:center;">
+                                <h3>Job Alignmen Across Cohorts</h3>
+                                <img src="data:image/png;base64,{{ job_alignment_across_cohorts|b64encode }}"
+                                        alt="Job Alignment and Satisfaction">
+                        </div>
+                        <div style="text-align:center;">
+                                <h3>Job Alignment Time Series</h3>
+                                <img src="data:image/png;base64,{{ job_alignment_time_series|b64encode }}"
+                                        alt="Job Alignment and Satisfaction">
+                        </div>
+                        <div style="text-align:center;">
+                                <h3>Confidence Rating Time Series</h3>
+                                <img src="data:image/png;base64,{{ confidence_rating_time_series|b64encode }}"
+                                        alt="Job Alignment and Satisfaction">
+                        </div>
+                </div>
+
+        </div>
+
+
+</body>
+
+</html>

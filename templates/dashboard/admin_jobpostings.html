@@ -1,0 +1,85 @@
+{% extends 'base_user.html' %}
+
+{% block title %}Admin - Students{% endblock %}
+
+{% load static %}
+{% block head_extra %}
+<!-- Additional stylesheets or scripts specific to thiss page -->
+
+<link rel="stylesheet" href="{% static 'css/admin_home.css' %}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+{% endblock head_extra %}
+
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'admin_home' %}">Dasboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Job Posts</li>
+    </ol>
+</nav>
+<!-- <p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Job Posts</a></p> -->
+{% include 'dashboard/status.html' %}
+<div class="container">
+
+    <div class="row">
+        <div class="col-md">
+            <div class="table-heading">
+                <h5>Job Posts</h5>
+                <div class="table-heading-btn table-wrapper">
+                    <a href="{% url 'admin_home' %}" class="btn btn-primary">Scrape New job Posts</a>
+                </div>
+            </div>
+            <div class="card card-body table-wrapper">
+                <!-- <a class="btn bth-primary btn-sm btn-block" href="">Create</a> -->
+                <table class="table table-sm">
+                    <thead>
+                        <th>Link</th>
+                        <!-- <th>Keyword</th> -->
+                        <th>Field</th>
+                        <th>Job Title</th>
+                        <th>Company</th>
+                        <!-- <th>Company Link</th> -->
+                        <th>Date Posted</th>
+                        <th>Location</th>
+                        <th>Employment Type</th>
+                        <th>Job Function</th>
+                        <th>Industries</th>
+                        <th>Seniority Level</th>
+                        <!-- <th>Job Description</th> -->
+                    </thead>
+                    <tbody>
+                        {% for data in jobpostings %}
+                        <tr>
+                            <td><a href="{{ data.link }}">link</a></td>
+                            <!-- <td> data.keyword </td> -->
+                            <td>{{ data.field }}</td>
+                            <td>{{ data.job_title }}</td>
+                            <td><a href="{{ data.company_link }}">{{ data.company_name }}</a></td>
+                            <td>{{ data.date_posted }}</td>
+                            <td>{{ data.location }}</td>
+                            <td>{{ data.employment_type }}</td>
+                            <td>{{ data.job_function }}</td>
+                            <td>{{ data.industries }}</td>
+                            <td>{{ data.seniority_level }}</td>
+                            <!-- <td> data.job_description </td> -->
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div><br><br>
+        </div>
+    </div>
+</div>
+{% else %}
+
+{% endif %}
+
+
+
+{% endblock content %}
