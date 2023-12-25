@@ -1,14 +1,15 @@
 {% extends 'base_user.html' %}
 
+{% block title %}Add Test Question{% endblock %}
 
-
-{% block title %}Home{% endblock %}
 
 {% load static %}
 
 
 {% block head_extra %}
 <script></script>
+<link rel="stylesheet" href="{% static 'css/create_test.css' %}">
+
 {% endblock head_extra %}
 
 {% block content %}
@@ -16,7 +17,7 @@
 <form action="" method="POST">
     {% csrf_token %}
     {{ form }}
-    <input type="submit" name="Submit">
+    <input type="submit" name="Submit" class="btn btn-primary">
 </form>
 
 {% endblock content %}

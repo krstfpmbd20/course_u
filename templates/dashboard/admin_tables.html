@@ -41,13 +41,13 @@
 </div> -->
 
 
-<hr>
+
 <div class="row">
     <div class="col-md-6 ">
         <div class="table-heading">
-            <h5>Graduates</h5>
+            <h5>Courses</h5>
             <div class="table-heading-btn">
-                <a class="btn btn-primary" href="{% url 'admin_students' %}">View All Student</a>
+                <a class="btn btn-primary" href="{% url 'admin_students' %}">View Corriculum </a>
             </div>
         </div>
         <div class="card card-body">
@@ -57,6 +57,7 @@
                     <th>Username</th>
                     <th>Email</th>
                     <!-- <th>Active</th> -->
+                    <th>Subjects</th>
                 </thead>
                 <tbody>
                     {% for user in auth_user %}
@@ -64,6 +65,7 @@
                         <td><a href="#">{{ user.username}}</a></td>
                         <td>{{ user.email }}</td>
                         <!-- <td>{{ user.is_active}}</td> -->
+                        <td><a href="" class="btn">View</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -73,7 +75,7 @@
         <div class="table-heading">
             <h5>Assessment</h5>
             <div class="table-heading-btn">
-                <a class="btn btn-primary" href="{% url 'admin_report' %}"> Assessment Report </a>
+                <!-- <a class="btn btn-primary" href="{% url 'admin_report' %}"> Assessment Report </a> -->
                 <a href="/admin/assessment/test/add/" class="btn">Add Test</a>
                 <a href="/admin/assessment/test/" class="btn">View Test</a>
             </div>

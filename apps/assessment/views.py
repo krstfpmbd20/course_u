@@ -22,7 +22,7 @@ from apps.assessment.models import Test, QuestionSet, UserResponse
 from apps.website.models import Field, Specialization, Skill
 from apps.recommender.models import UserSkill
 
-from apps.acad.models import StudentProfile
+from apps.acad.models import StudentProfile, Course, Subject, Curriculum, StudentGrades
 
 from apps.personality.models import MBTISet
 
@@ -97,8 +97,18 @@ def start_test(request):
         print("No Student Profile")
         return redirect('select_course')  # Replace 'select_course' with the actual URL name
     else:
-        print("Has Student Profile")
-
+        # check student_profile.current year if it does not exceed enrolled_courses course.number_of_year
+        student_profile = StudentProfile.objects.get(user_id=request.user.id)
+        student_year = student_profile.current_year
+        course_year = Course.objects.get(id=student_profile.enrolled_courses_id).number_of_years
+        if student_year > course_year:
+            # this means student has completed the course and cannot the test anymore
+            return HttpResponse("You have completed the course and cannot take the test anymore.")
+        # check if the user has taken the test in his current StudentProfile year
+        question_set = QuestionSet.objects.filter(user=request.user, year=student_profile.current_year)
+        if question_set.exists():
+            return redirect('student_test_report', question_set_id=question_set.set_id)
+        
     clear_session_variables(request)
     start = None
 
@@ -849,7 +859,7 @@ def create_test(request):
             return HttpResponse('Your test has not been created!')
     
     context = {'form' : form}
-    return render(request, 'test/create_test.html', context)
+    return render(request, 'dashboard/create_test.html', context)
 
 
 

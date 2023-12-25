@@ -3,14 +3,19 @@ from .models import Survey
 from .forms import SurveyForm
 from apps.recommender.models import UserRecommendations
 
+from apps.acad.models import StudentProfile
 
 def survey(request):
-    # Get the last UserRecommendation where user = request.user
-    last_recommendation = UserRecommendations.objects.filter(user_id=request.user).last()
-    
-    # If there's no recommendation, don't ask survey
-    if not last_recommendation:
-        return redirect('recommender')  # or wherever you want to redirect
+    prev_year = StudentProfile.objects.filter(user=request.user).first().current_year - 1
+    # get recommendation from previous year where user = request.user and year = prev_year
+    last_recommendation = UserRecommendations.objects.filter(user_id=request.user, current_year=prev_year).last()
+
+    # check if reco survey exists where recommendation_id = last_recommendation.recommendation_id
+    reco_survey = Survey.objects.filter(recommendation_id=last_recommendation.recommendation_id).first()
+    if reco_survey:
+        # if reco survey exists, redirect to recommender
+        return redirect('recommender')
+
 
     # If there's a recommendation and no answered survey, go to survey
     survey = Survey.objects.filter(recommendation_id=last_recommendation.recommendation_id).first()
@@ -22,7 +27,7 @@ def survey(request):
                 survey = form.save(commit=False)
                 survey.recommendation_id = last_recommendation.recommendation_id
                 survey.save()
-                return redirect('thank_you')
+                return redirect('recommender_thank_you')
         else:
             form = SurveyForm()
 
