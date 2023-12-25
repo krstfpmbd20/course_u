@@ -38,6 +38,19 @@ def student_information(request):
 
     course = Course.objects.get(pk=student_profile.enrolled_courses_id).course_name
     year_level = year_level_lable(student_profile.current_year)
+    print('year level: ', year_level)
+
+    if year_level != "Graduate":
+        print("Student enrolled in course: ", student_profile.enrolled_courses_id," student current year: ", student_profile.current_year,"redirecting to subject grade input" )
+        # check if student has grades in this year level
+        subject = Curriculum.objects.filter(course_id=student_profile.enrolled_courses_id, year=student_profile.current_year).first()
+        subject_grade = StudentGrades.objects.filter(student_id=student_profile.id, subject_id=subject.subject_id).exists()
+        print("Subject grade: ", subject_grade)
+        if not subject_grade:
+            print("No subject grade found for this year level: ", student_profile.current_year)
+            # if user haven't input their grades
+            return redirect('subjects_grade_input')
+
 
     return render(request, 'acad/student_information.html', {
         'student_profile': student_profile,
