@@ -9,20 +9,23 @@ Revision Matrix
 - [X]: Report Update
     - [ ]: By year, scatter plot of recommendation score, with regression line
     - [ ]: 
-- [ ]: user should only have one chance on adding their course and year term level
+- [X]: user should only have one chance on adding their course and year term level
     - [ ]: additional, student course and year should also appear in profile page
-    - [ ]: roadmap view should also be seen here.
+    - [ ]: roadmap view should also be seen here. -pending
+
 - [ ]: end year term (admin only)
     - [X]: Add a button on the dashboard student page, that would end the year term
         - this would advance all students year if their year doesnt exceed course
     - [ ]: only admin can access
 
-- [ ] : add student profile status (enroleed [default], graduated, dropped out)
-    - [ ]: on dashboard, student page add button on updating status (admin only)
+- [X] : add student profile status (enroleed [default], graduated, dropped out)
+    - [X]: on dashboard, student page add button on updating status (admin only)
+
+- [ ]: on course model/database, add abbrivation
 
 - [X]: on "your information" if student has existing record, direct to student info instead
 - [X]: add student information and student grade view
-- [ ]: on start test, check if student is valid to take test
+- [X]: on start test, check if student is valid to take test
 
 - [ ]: user_recommendation score should record all scores, which means that this should have its own model, (fields: user_recommendation_id, field_id, field_score)
 
