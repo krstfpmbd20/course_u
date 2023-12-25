@@ -12188,3 +12188,546 @@ INFO 2023-12-20 16:18:53,956 django.server basehttp basehttp.py 212 log_message 
 INFO 2023-12-20 16:18:56,358 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
 INFO 2023-12-20 16:19:01,405 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py changed, reloading.
 INFO 2023-12-20 16:19:10,244 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-25 19:50:28,802 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-25 19:50:38,267 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 15352
+INFO 2023-12-25 19:50:38,340 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 200 7506
+INFO 2023-12-25 19:50:42,132 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 10814
+INFO 2023-12-25 19:50:48,980 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-25 19:50:49,029 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-25 19:51:03,391 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-25 19:51:03,444 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2023-12-25 19:51:41,868 django.utils.autoreload autoreload autoreload.py 266 trigger_reload C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\course_u\settings.py changed, reloading.
+INFO 2023-12-25 19:51:44,932 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-25 19:52:25,182 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2023-12-25 19:52:27,454 django.server basehttp basehttp.py 212 log_message "GET /paths/ HTTP/1.1" 200 14166
+INFO 2023-12-25 19:52:39,996 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 53171
+INFO 2023-12-25 19:52:47,347 django.server basehttp basehttp.py 212 log_message "GET /admin_home/ HTTP/1.1" 200 24292
+INFO 2023-12-25 19:52:47,383 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+INFO 2023-12-25 19:52:53,407 django.server basehttp basehttp.py 212 log_message "GET /admin_students HTTP/1.1" 200 29703
+ERROR 2023-12-25 19:53:10,268 django.request log log.py 241 log_response Internal Server Error: /admin_end_term/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column acad_studentprofile.status does not exist
+LINE 1: ...ourses_id", "acad_studentprofile"."current_year", "acad_stud...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 495, in admin_end_term
+    update_student_current_year(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 482, in update_student_current_year
+    for student in students:
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 398, in __iter__
+    self._fetch_all()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 252, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 177, in _record
+    return method(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: column acad_studentprofile.status does not exist
+LINE 1: ...ourses_id", "acad_studentprofile"."current_year", "acad_stud...
+                                                             ^
+ERROR 2023-12-25 19:53:10,488 django.server basehttp basehttp.py 212 log_message "POST /admin_end_term/ HTTP/1.1" 500 177997
+INFO 2023-12-25 20:02:57,281 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-25 20:07:58,326 django.server basehttp basehttp.py 212 log_message "POST /admin_end_term/ HTTP/1.1" 302 0
+INFO 2023-12-25 20:08:01,700 django.server basehttp basehttp.py 212 log_message "GET /admin_students HTTP/1.1" 200 30175
+INFO 2023-12-25 20:08:01,774 django.server basehttp basehttp.py 212 log_message "GET /static/css/admin_home.css HTTP/1.1" 304 0
+ERROR 2023-12-25 20:08:14,390 django.request log log.py 241 log_response Internal Server Error: /admin_tracer
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column survey_survey.academic_course_id does not exist
+LINE 1: ... "survey_survey"."id", "survey_survey"."user_id", "survey_su...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 530, in admin_tracer
+    return render(request, 'dashboard/admin_tracer.html', {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 252, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 177, in _record
+    return method(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: column survey_survey.academic_course_id does not exist
+LINE 1: ... "survey_survey"."id", "survey_survey"."user_id", "survey_su...
+                                                             ^
+INFO 2023-12-25 20:08:14,748 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 3167)
+ERROR 2023-12-25 20:08:21,360 django.request log log.py 241 log_response Internal Server Error: /admin_tracer
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column survey_survey.academic_course_id does not exist
+LINE 1: ... "survey_survey"."id", "survey_survey"."user_id", "survey_su...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 530, in admin_tracer
+    return render(request, 'dashboard/admin_tracer.html', {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 252, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 177, in _record
+    return method(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: column survey_survey.academic_course_id does not exist
+LINE 1: ... "survey_survey"."id", "survey_survey"."user_id", "survey_su...
+                                                             ^
+ERROR 2023-12-25 20:08:21,505 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 500 303401
+INFO 2023-12-25 20:10:32,170 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2023-12-25 20:17:35,256 django.server basehttp basehttp.py 212 log_message "GET /admin_students HTTP/1.1" 200 29801
+ERROR 2023-12-25 20:17:46,944 django.request log log.py 241 log_response Internal Server Error: /admin_tracer
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column survey_survey.academic_course_id does not exist
+LINE 1: ... "survey_survey"."id", "survey_survey"."user_id", "survey_su...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\eng_ver\apps\website\views.py", line 530, in admin_tracer
+    return render(request, 'dashboard/admin_tracer.html', {
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 252, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 177, in _record
+    return method(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: column survey_survey.academic_course_id does not exist
+LINE 1: ... "survey_survey"."id", "survey_survey"."user_id", "survey_su...
+                                                             ^
+ERROR 2023-12-25 20:17:47,107 django.server basehttp basehttp.py 212 log_message "GET /admin_tracer HTTP/1.1" 500 303446
+INFO 2023-12-25 20:18:59,260 django.server basehttp basehttp.py 212 log_message "GET /admin HTTP/1.1" 301 0
+INFO 2023-12-25 20:19:02,543 django.server basehttp basehttp.py 212 log_message "GET /admin/ HTTP/1.1" 200 87928
+INFO 2023-12-25 20:19:02,615 django.server basehttp basehttp.py 212 log_message "GET /static/vendor/bootswatch/minty/bootstrap.min.css HTTP/1.1" 200 165946
+INFO 2023-12-25 20:19:02,724 django.server basehttp basehttp.py 212 log_message "GET /static/images/logo.png HTTP/1.1" 200 17386
+INFO 2023-12-25 20:19:02,961 django.server basehttp basehttp.py 212 log_message "GET /static/jazzmin/js/ui-builder.js HTTP/1.1" 200 13873
+ERROR 2023-12-25 20:19:12,825 django.request log log.py 241 log_response Internal Server Error: /admin/survey/survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column survey_survey.academic_course_id does not exist
+LINE 1: ... "survey_survey"."id", "survey_survey"."user_id", "survey_su...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 252, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 177, in _record
+    return method(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: column survey_survey.academic_course_id does not exist
+LINE 1: ... "survey_survey"."id", "survey_survey"."user_id", "survey_su...
+                                                             ^
+ERROR 2023-12-25 20:19:12,991 django.server basehttp basehttp.py 212 log_message "GET /admin/survey/survey/ HTTP/1.1" 500 223940
+INFO 2023-12-25 20:21:09,591 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+ERROR 2023-12-25 20:21:48,725 django.request log log.py 241 log_response Internal Server Error: /admin/survey/survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column survey_survey.academic_course_id does not exist
+LINE 1: ... "survey_survey"."id", "survey_survey"."user_id", "survey_su...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 252, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 177, in _record
+    return method(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: column survey_survey.academic_course_id does not exist
+LINE 1: ... "survey_survey"."id", "survey_survey"."user_id", "survey_su...
+                                                             ^
+ERROR 2023-12-25 20:21:48,862 django.server basehttp basehttp.py 212 log_message "GET /admin/survey/survey/ HTTP/1.1" 500 224077
+INFO 2023-12-25 20:22:05,009 django.server basehttp basehttp.py 212 log_message "GET /admin/ HTTP/1.1" 200 87928
+ERROR 2023-12-25 20:22:11,770 django.request log log.py 241 log_response Internal Server Error: /admin/survey/survey/
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column survey_survey.academic_course_id does not exist
+LINE 1: ... "survey_survey"."id", "survey_survey"."user_id", "survey_su...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\contrib\admin\options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 252, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 177, in _record
+    return method(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aky\AppData\Local\Programs\Python\Python38\courseu\lib\site-packages\psycopg\cursor.py", line 737, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: column survey_survey.academic_course_id does not exist
+LINE 1: ... "survey_survey"."id", "survey_survey"."user_id", "survey_su...
+                                                             ^
+ERROR 2023-12-25 20:22:11,875 django.server basehttp basehttp.py 212 log_message "GET /admin/survey/survey/ HTTP/1.1" 500 223940
+INFO 2023-12-25 20:29:05,604 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader

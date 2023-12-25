@@ -2,6 +2,12 @@
 
 # Highest Priority
 Revision Matrix
+- [ ]: on assessment, create new model test_settings,
+    - number of questions per field
+    - instructions
+    - time limit
+- [ ]: fields are labeled if its for CS or IT or both or none
+
 - [X]: Recommender Result Graphs (Stacked bar grap)
 - [ ]: Roadmap View (recommendation record view)
     - in progress
