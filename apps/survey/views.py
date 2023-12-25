@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import SurveyForm
+
 from django.http import HttpResponse
 
 from django.http import FileResponse
@@ -10,6 +11,7 @@ from .tracer_report import *
 
 from xhtml2pdf import pisa
 from django.template.loader import get_template
+
 
 
 def survey(request):

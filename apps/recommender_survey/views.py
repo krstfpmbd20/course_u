@@ -17,6 +17,7 @@ def survey(request):
         return redirect('recommender')
 
 
+
     # If there's a recommendation and no answered survey, go to survey
     survey = Survey.objects.filter(recommendation_id=last_recommendation.recommendation_id).first()
     if not survey:

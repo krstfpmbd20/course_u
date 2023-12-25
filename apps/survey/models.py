@@ -119,6 +119,7 @@ from apps.acad.models import Course
 #         default='Single'
 #     )
 
+
 class Survey(models.Model):
     user = models.ForeignKey(
         User,
@@ -331,4 +332,3 @@ class Survey(models.Model):
 
     class Meta:
         ordering = ['-timestamp']
-
