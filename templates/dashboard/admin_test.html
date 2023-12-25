@@ -1,0 +1,65 @@
+{% extends 'base_user.html' %}
+
+{% block title %}Admin - Students{% endblock %}
+
+{% load static %}
+{% block head_extra %}
+<!-- Additional stylesheets or scripts specific to thiss page -->
+<link rel="stylesheet" href="{% static 'css/admin_home.css' %}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+{% endblock head_extra %}
+
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'admin_home' %}">Dasboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Test</li>
+    </ol>
+</nav>
+<!-- <p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Test</a></p> -->
+{% include 'dashboard/status.html' %}
+<div class="container">
+    <div>
+        <!-- <a href="{% url 'admin_home' %}" class="btn btn-primary">< Back</a> -->
+    </div>
+
+    <div class="row">
+        <div class="col-md ">
+            <div class="table-heading">
+                <h5>Test Results</h5>
+            </div>
+            <div class="card card-body">
+                <table class="table table-sm">
+                    <thead>
+                        <th>Username</th>
+                        <th>Term Year Taken</th>
+                        <th>Score</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody>
+                        {% for data in questionset %}
+                        <tr>
+                            <td><a href="#">{{ data.username}}</a></td>
+                            <td>{{data.year}}</td>
+                            <td>{{data.score}}/{{data.n_questions}}</td>
+                            <td>{% if data.is_completed == 1%} True
+                                {% else %} False {% endif %}
+                            </td>
+                            
+                            
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div><br><br>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}

@@ -6,8 +6,13 @@
 <link rel="stylesheet" href="{% static 'css/user_profile.css' %}">
 {% endblock head_extra %}
 
-{% block content %}
+{% block content %} 
 <style>
+    <style>
+        :root {
+        --theme-color: rgb(228, 95, 65);
+        --light-theme-color: #ffcccb; 
+    }
     body {
         margin: 0;
         padding: 0;
@@ -17,71 +22,90 @@
         -o-background-size: cover;
         background-size: cover;
         height: 100%;
+        font-family: 'Arial', sans-serif;
     }
 
-    .main_section{
-        height:70vh;
-        background-color:red;
-        display:flex;
-        width:70%;
+    .main_section {
+        height: 100vh;
+        background: linear-gradient(to right, rgb(228, 95, 65), #ffcccb); /* Gradient using the theme color */
+        display: flex;
+        width: 90%;
+        border-radius: 15px;
+        overflow: hidden; /* Clip the border-radius overflow */
         margin: auto;
-        margin-top:60px;
+    }
+
+    .dp_section {
+        flex-basis: 65%;
+        background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    #dp_img {
         border-radius: 50%;
-        
+        width: 167px;
+        margin: auto;
+        height: 157px;
+        margin-top: 45px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
     }
-    .dp_section{
-        flex-basis:65%;
-        
-        background-color:#F8F3F2;
-        text-align:center;
-        padding-top:30px;
+
+    #dp_img>img {
+        border-radius: 50%;
+        width: 100%;
+        height: 157px;
     }
-    #dp_img{
-        
-        border-radius:50%;
-        width:167px;
-        margin:auto;
-        height:157px;
-        margin-top:45px;
+
+    .side_menu_section {
+        flex-basis: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(228, 95, 65); /* Gradient using the theme color */
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        overflow: hidden; /* Clip the border-radius overflow */
     }
-    #dp_img>img{
-        border-radius:50%;
-        width:100%;
-        height:157px;
-    }
-    .side_menu_section{
-        flex-basis:35%;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        background-color: #C85103;
-    }
-    .side_menu_section>ul{
-        text-align:center;
+
+    .side_menu_section>ul {
+        text-align: center;
         list-style: none;
-        width:230px;
+        width: 230px;
+        margin: 0;
+        padding: 0;
     }
-    .side_menu_section>ul>li{
-        padding:15px;
+
+    .side_menu_section>ul>li {
+        padding: 15px;
         border-top: 2px solid rgba(255, 255, 255, 0.1);
-        
-        width:100%:
-        
+        width: 100%;
+        transition: background-color 0.3s ease; /* Smooth transition on hover */
     }
-    .side_menu_section>ul>li>a:hover{
-        color:black;
+
+    .side_menu_section>ul>li:hover {
+        background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
     }
-    .side_menu_section>ul>li>a{
-        text-decoration:none;
-        color:white;
-        cursor:pointer;
+
+    .side_menu_section>ul>li>a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease; /* Smooth transition on hover */
+    }
+
+    .side_menu_section>ul>li>a:hover {
+        color: black;
     }
 </style>
-<div class="main_section" >
+
+<div class="main_section">
     <div class="dp_section">
-        <h2>Welcome User!</h3>
+        <h2>Welcome User!</h2> <!-- Changed from h3 to h2 -->
         <p>
-            {{ user.first_name}} {{ user.last_name}}
+            {{ user.first_name }} {{ user.last_name }}
         </p>
         {% if user.is_authenticated %}
         <div id="dp_img">
@@ -89,7 +113,7 @@
                 <img src="{{ user.userprofile.profile_picture.url }}" alt="">
                 <a href="/remove_profile_picture" style="font-size:12px;">Remove Profile Picture</a>
             {% else %}
-            <img src="{% static 'images/no-profile-pic.png' %}" alt="">
+                <img src="{% static 'images/no-profile-pic.png' %}" alt="">
                 <p style="font-size:12px;">No profile picture available.<a href="/upload_profile_pic">Upload Now</a>.</p>
             {% endif %}
         </div>
@@ -102,18 +126,17 @@
     <div class="side_menu_section">
         <ul>
             <li>
-                <a href="/edit_profile/">Edit Profile</a>             
+                <a href="/edit_profile/">Edit Profile</a>
             </li>
 
             <li>
-                <a href="/terms_and_conditions/">Terms And Conditions</a>               
+                <a href="/terms_and_conditions/">Terms And Conditions</a>
             </li>
-
 
             <li>
                 <a href="{% url 'survey' %}" class="profile__button">Tracer Survey Form</a>
             </li>
-            
+
             <li>
                 <a href="/settings/">Settings</a>
             </li>
@@ -124,6 +147,5 @@
         </ul>
     </div>
 </div>
-
 
 {% endblock content %}

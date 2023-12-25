@@ -2,7 +2,7 @@
 
 .content, .modal {
     /* max-width: 600px; */
-    min-width: 600px;
+    min-width: 600px; 
     padding: 20px;
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@
 }
 
 .modal-footer .btn-primary {
-    background-color: #007bff; /* Background color for Yes and No buttons */
+    background-color: rgb(228, 95, 65); /* Background color for Yes and No buttons */
     color: #fff; /* Text color for Yes and No buttons */
     margin-left: 5px; /* Adjust as needed to separate buttons */
 }
@@ -90,10 +90,6 @@
     transition: background-color 0.3s; /* Smooth color transition */
     cursor: pointer; /* Pointer cursor on hover */
     border-radius: 4px; /* Rounded corners */
-}
-
-.btn-primary:hover {
-    background-color: #0056b3; /* Darker color on hover */
 }
 
 footer {

@@ -1,0 +1,114 @@
+{% extends 'base_user.html' %}
+
+{% block title %}Admin - Students{% endblock %}
+
+{% load static %}
+{% block head_extra %}
+<!-- Additional stylesheets or scripts specific to thiss page -->
+
+<link rel="stylesheet" href="{% static 'css/admin_home.css' %}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+{% endblock head_extra %}
+
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'admin_home' %}">Dasboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Tracer</li>
+    </ol>
+</nav>
+<!-- <p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Tracer</a></p> -->
+{% include 'dashboard/status.html' %}
+ <!-- <a href="{% url 'admin_report' %}" class="btn btn-primary">Admin Report</a> -->
+<div class="container">
+    <div>
+        <!-- <a href="{% url 'admin_home' %}" class="btn btn-primary">< Back</a> -->
+    </div>
+
+    <div class="row">
+        <div class="col-md">
+            <div class="table-heading">
+                <h5>Tracer</h5>
+                <div class="table-heading-btn">
+                    <a href="{% url 'admin_report' %}" class="btn btn-primary">Admin Report</a>
+                    <a href="{% url 'admin_report_view' %}" class="btn btn-primary">View Admin Report</a>
+                    <a href="{% url 'admin_report_pdf' %}" class="btn btn-primary">Download Admin Report</a>
+                </div>
+            </div>
+            <div class="card card-body">
+                <table class="table table-sm table-wrapper">
+                    <thead>
+                        <!-- <th>ID</th> -->
+                        <th>Username</th>
+                        <th>Course</th>
+                        <th>Specialization</th>
+                        <th>Employed</th>
+                        <th>Received Recommendation</th>
+                        <th>Confidence Rating</th>
+                        <th>Influence</th>
+                        <th>Influence Reason</th>
+                        <th>System Information Helpfulness</th>
+                        <th>Feedbacks</th>
+                        <th>Job Alignment</th>
+                        <th>Job Misalignment Reason</th>
+                        <th>Job Satisfaction</th>
+                        <th>Study Preparation</th>
+                        <th>Explored Learning Materials</th>
+                        <th>Material Satisfaction</th>
+                        <th>Material Skill Gain</th>
+                        <th>Accessed Job Postings</th>
+                        <th>Posting Job Understanding</th>
+                        <th>Posting Career Influence</th>
+                        <th>More Specialized Postings</th>
+                        <th>Additional Feedback</th>
+                        <th>Timestamp</th>
+
+                    </thead>
+                    <tbody>
+                        {% for data in survey %}
+                        <tr>
+                            <!-- <td>{{ user.id}}</td> -->
+                            <td><a href="#">{{ user.username}}</a></td>
+                            <td>{{data.academic_course}}</td>
+                            <td>{{data.specialization}}</td>
+                            <td>{% if data.employed == 1%}
+                                {{data.current_job_title}}
+                                {% else %} False {% endif %}
+                                </td>
+                            <td>{{data.received_recommendation}}</td>
+                            <td>{{data.confidence_rating}}</td>
+                            <td>{{data.recommendation_influence}}</td>
+                            <td>{{data.recommendation_influence_reason}}</td>
+                            <td>{{data.system_information_helpfulness}}</td>
+                            <td>{{data.recommendation_system_improvements}}</td>
+                            <td>{{data.job_alignment}}</td>
+                            <td>{{data.job_misalignment_reason}}</td>
+                            <td>{{data.job_satisfaction}}</td>
+                            <td>{{data.study_preparation}}</td>
+                            <td>{{data.explored_learning_materials}}</td>
+                            <td>{{data.material_satisfaction}}</td>
+                            <td>{{data.material_skill_gain}}</td>
+                            <td>{{data.accessed_job_postings}}</td>
+                            <td>{{data.posting_job_understanding}}</td>
+                            <td>{{data.posting_career_influence}}</td>
+                            <td>{{data.more_specialized_postings}}</td>
+                            <td>{{data.additional_feedback}}</td>
+                            <td>{{data.timestamp}}</td>
+
+
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div><br><br>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}

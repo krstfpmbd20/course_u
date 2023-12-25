@@ -6,13 +6,14 @@
   <title>Containers with Descriptions and Images</title>
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/paths.css' %}">
+  
 </head>
 
 <style>
   body {
       margin: 0;
       padding: 0;
-      background: url('{% static "images/bg.png" %}') no-repeat center center fixed;
+      /* background: url('{% static "images/bg.png" %}') no-repeat center center fixed; */
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -139,7 +140,7 @@
   </div>
   <br>
   <div class="button-continer">
-    <a href="{% url 'login_user' %}" class="get-started-button" id="get-started-button"><b>Next</b></a>
+    <a href="{% url 'home' %}" class="get-started-button" id="get-started-button"><b>Next</b></a>
   </div>
 
 

@@ -5,6 +5,9 @@ from apps.acad.views import *
 from . import views
 
 urlpatterns = [
+    path('student_information/', views.student_information, name='student_information'),
+    path('student_grades/<int:year>/', views.student_grades, name='student_grades'),
+    
     path('select_course/', views.select_course, name='select_course'),
     path('select_year/<int:course_id>/', views.select_year, name='select_year'),
     

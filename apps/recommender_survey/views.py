@@ -22,7 +22,7 @@ def survey(request):
                 survey = form.save(commit=False)
                 survey.recommendation_id = last_recommendation.recommendation_id
                 survey.save()
-                return redirect('thank_you')
+                return redirect('recommender_thank_you')
         else:
             form = SurveyForm()
 
