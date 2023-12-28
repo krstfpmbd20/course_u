@@ -38,7 +38,7 @@ from django.db.models import F
 # import json
 import logging
 # import plotly.express as px
-from apps.survey.models import Survey
+
 
 #logger = logging.getLogger(__name__)
 logger = logging.getLogger("django") # name of logger : django
