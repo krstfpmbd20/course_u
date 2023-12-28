@@ -33,7 +33,7 @@ urlpatterns = [
     path('', include('apps.personality.urls')),
     path('', include('apps.acad.urls')),
     #path('', include('grades.urls')),
-    path('', include('apps.survey.urls')),
+    #path('', include('apps.survey.urls')),
     path('', include('apps.recommender_survey.urls')),
 ]
 
