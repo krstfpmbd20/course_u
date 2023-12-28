@@ -20,7 +20,7 @@ from apps.recommender.models import UserRecommendations, UserSkill
 from apps.acad.models import StudentProfile, Course, Subject
 from apps.assessment.models import Test, QuestionSet
 from apps.jobs.models import JobPosting
-from apps.survey.models import Survey
+#from apps.survey.models import Survey
 
 from utilities.decorators import unauthenticated_user, allowed_users, admin_only
 from .models import *
@@ -38,7 +38,7 @@ from django.db.models import F
 # import json
 import logging
 # import plotly.express as px
-from apps.survey.models import Survey
+#from apps.survey.models import Survey
 
 #logger = logging.getLogger(__name__)
 logger = logging.getLogger("django") # name of logger : django
