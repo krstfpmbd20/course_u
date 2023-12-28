@@ -1,7 +1,7 @@
-<div class="row cardBox">
+<div id="status" class="row cardBox">
     <div class="col-md">
         <a href="{% url 'admin_students' %}" class="status-btn">
-            <div class="card1 text-center text-white mb-3" id="">
+            <div class="card text-center text-white mb-3" id="">
                 <div class="card-body">
                     <div class="card-title numbers" style="color: #000;"> {{ Student_count }} </div>
                     <div class="card-title cardName" style="color: black;"> Students </div>
@@ -15,7 +15,7 @@
 
     <div class="col-md">
         <a href="{% url 'admin_test' %}" class="status-btn">
-            <div class="card1 text-center text-white mb-3" id="">
+            <div class="card text-center text-white mb-3" id="">
                 <div class="card-body">
                     <div class="card-title numbers" style="color: #000;"> {{ QuestionSet_count }} </div>
                     <div class="card-title cardName" style="color: black;"> Test Results </div>
@@ -28,7 +28,7 @@
     </div>
     <div class="col-md">
         <a href="{% url 'admin_tracer' %}" class="status-btn">
-            <div class="card1 text-center text-white mb-3" id="">
+            <div class="card text-center text-white mb-3" id="">
                 <div class="card-body">
                     <div class="card-title numbers" style="color: #000;"> {{ Survey_count }} </div>
                     <div class="card-title cardName" style="color: black;"> Tracer </div>

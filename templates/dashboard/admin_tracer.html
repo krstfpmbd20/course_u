@@ -16,17 +16,12 @@
 {% block content %}
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{% url 'admin_home' %}">Dasboard</a></li>
+        <li class="breadcrumb-item heading"><a href="{% url 'admin_home' %}">Dasboard</a></li>
         <li class="breadcrumb-item active" aria-current="page">Tracer</li>
     </ol>
 </nav>
-<!-- <p><a href="{% url 'admin_home' %}">Dasboard</a>/<a href="{% url 'admin_home' %}">Tracer</a></p> -->
 {% include 'dashboard/status.html' %}
- <!-- <a href="{% url 'admin_report' %}" class="btn btn-primary">Admin Report</a> -->
 <div class="container">
-    <div>
-        <!-- <a href="{% url 'admin_home' %}" class="btn btn-primary">< Back</a> -->
-    </div>
 
     <div class="row">
         <div class="col-md">

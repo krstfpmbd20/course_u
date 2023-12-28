@@ -18,7 +18,7 @@
 {% if user.is_authenticated %}
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{% url 'admin_home' %}">Dasboard</a></li>
+        <li class="breadcrumb-item heading"><a href="{% url 'admin_home' %}">Dasboard</a></li>
         <li class="breadcrumb-item active" aria-current="page">Student</li>
     </ol>
 </nav>
@@ -28,7 +28,7 @@
     <div>
         <!-- <a href="{% url 'admin_home' %}" class="btn btn-primary">< Back</a> -->
     </div>
-    <div class="row">
+    <div class="row data-section">
         <div class="col-md ">
             <div class="table-heading">
                 <h5>Students</h5>
@@ -37,7 +37,7 @@
                     <a class="btn bth-primary btn-sm btn-block" href="" data-toggle="modal" data-target="#endTermYearModal">End Term Year</a>
                 </div>
             </div>
-            <div class="card card-body">
+            <div class="card card-table card-body">
                 <table class="table table-sm">
                     <thead>
                         <!-- <th>ID</th> -->

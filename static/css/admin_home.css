@@ -16,7 +16,8 @@ html, body {
 }
 
 .content {
-    width: 100%;
+    width: calc(100% - 60px);
+    margin: 0 30px;
     box-sizing: border-box;
 }
 
@@ -28,16 +29,19 @@ html, body {
 }
 
 .row {
-    width: 100% !important;
+    width: 100%;
 }
 
 .data-section {
-    width: 100% !important;
+    /* width: 100%; */
     box-sizing: border-box;
 
     display: flex;
     justify-content: space-between;
     padding: 20px
+    /* have 2 cut */
+    /* grid-template-columns: repeat(2, 1fr); */
+
 }
 
 .btn {
@@ -49,20 +53,97 @@ html, body {
 a {
     text-decoration: none !important;
 }
+/* breadcrumb */
 
+.breadcrumb {
+    background: none;
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+}
+/* .breadcrumb-item:first-child a {
+    font-size: 1.5em;
+    color: #343a40;
+    font-weight: bold;
+} */
+
+.breadcrum-item.heading {
+    font-size: 1.5em;
+    color: #343a40;
+    font-weight: bold;
+    background-color: rebeccapurple;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+    color: #6c757d;
+    padding: 0 0.5rem;
+}
+
+.breadcrumb-item a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: #343a40;
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #343a40;
+    font-weight: 500;
+}
 /* Status */
 
 .card {
     
     background: var(--white);
-    padding: 30px;
-    border-radius: 30px;
+    padding: 20px;
+    border-radius: 15px;
     display: flex;
     justify-content: space-between;
     /* cursor: pointer; */
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
 }
 
+#status.row {
+    gap: 50px;
+    padding: 30px 10px;
+}
+
+#status .card {
+    padding: 12px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+
+.card-body {
+    max-height: 500px !important;
+}
+
+#status .card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#status .card-body .card-title {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#status .iconBx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: ;
+}
 
 .cardBox
 {
@@ -79,7 +160,7 @@ a {
 {
     box-sizing: border-box;
     flex: 0 0 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
     padding-left: 0px !important;
     padding-right: 0px !important;
     position: relative;
@@ -107,7 +188,7 @@ a {
     flex: 1 0 200px; /* adjust 200px to change the minimum item width */
 }
 
-.cardBox-others .card1
+.cardBox-others .card
 {
     max-height: 150px !important;
     min-height: 150px !important;
@@ -121,7 +202,7 @@ a {
     width: max-content;
 }
 
-.cardBox .card1
+.cardBox .card
 {
     position: relative;
     background: var(--white);
@@ -134,7 +215,7 @@ a {
     
 }
 
-.cardBox .card1 .numbers
+.cardBox .card .numbers
 {
     position: relative;
     font-weight: 500;
@@ -142,32 +223,50 @@ a {
     color: var(--blue);
 }
 
-.cardBox .card1 .cardName
+.cardBox .card .cardName
 {
     position: relative;
     font-size: 1.2em;
     color: var(--blue);
 }
 
-.cardBox .card1 .iconBx
+.cardBox .card .iconBx
 {
    font-size: 3.5rem;
    color: var(--black2);
 }
 
-.cardBox .card1:hover
+.cardBox .card:hover
 {
     background: var(--blue);
 }
 
-.cardBox .card1:hover .numbers,
-.cardBox .card1:hover .cardName,
-.cardBox .card1:hover:hover .iconBx
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover:hover .iconBx
 {
     color: var(--white);
 }
 
 /* tables */
+
+.col-md-1, .col-md-2 {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.data-section .card-table {
+    border-radius: 10px;
+    /* border outline; */
+    border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 768px) {
+    .col-md-1, .col-md-2 {
+        flex-basis: 100%;
+    }
+}
 
 .table {
     width: 100%;
@@ -182,12 +281,14 @@ a {
     flex-direction: row;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: auto;
 }
 
 .table-heading h5 {
     margin: 0;
     font-weight: 600;
     font-size: 1.2em;
+    padding-left: 5px;
 }
 
 .table-wrapper {
@@ -274,58 +375,72 @@ table td {
 
 }
 
-.card-body {
-    max-height: 500px !important;
-}
 
-.details table
+
+table
 {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    border-spacing: 0 15px;
+    table-layout: auto;
 }
 
 
 
-.details table thead th
+table thead th
 {
     font-weight: 600;
+    padding: 15px;
 }
-.details table thead th:first-child
+table thead th:first-child
 {
     text-align: start;
 }
 
-.details .accounts table tr
+table tr
 {
-    color: var(--black1);
-    border-bottom: 1px solid var(--black1);
+    color: black;
+    border-bottom: 1px solid #ddd;
 }
 
 .details .accounts table tr:last-child
 {
     border-bottom: none;
 }
-.details .accounts table tr:hover
+table tr:hover
 {
     background-color: var(--blue);
     color: var(--white);
 }
 
-.details .accounts table tr td
+table tr td
 {
     padding: 10px;
 }
 
-.details .accounts table tr td:last-child
+table tr td:last-child
 {
-    text-align: end;
+    /* text-align: end; */
 }
 
 .details .accounts table tr td:nth-child(2)
 {
     text-align: center;
 }
+
+table td:not(:first-child):not(:last-child), table th:not(:first-child):not(:last-child) {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    /* width: 100%; */
+}
+
+table td:last-child, table th:last-child {
+    text-align: right;
+}
+
 
 .status.user_active
 {

@@ -242,27 +242,53 @@ ol, ul
     display: None;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
 .nav a {
-    margin-right: 20px;
+    margin-right: 30px;
     color: #333;
     text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav a:hover {
+    color: #080808;
+}
+
+.nav a:active {
+    color:var(--highlight);
 }
 
 .nav a.brand {
     font-size: 1.4em;
     font-weight: 600;
-    /* background-color: var(--highlight);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: var(--white); */
     color: var(--highlight);
+    transition: background-color 0.3s ease;
+}
+
+.nav a.brand:hover {
+    background-color: var(--highlight);
+    color: var(--white);
+    border-radius: 5px;
 }
 
 .nav a .icon {
     margin-right: 5px;
-    display: None;
+    transition: transform 0.3s ease;
+    display: none;
 }
 
+.nav a:hover .icon {
+    transform: scale(1.1);
+    display: none;
+}
 
 .user
 {
