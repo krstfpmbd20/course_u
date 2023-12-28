@@ -8,10 +8,10 @@ Revision Matrix
     - time limit
 - [ ]: fields are labeled if its for CS or IT or both or none
 
+- [ ]: Home page layout design - rework
+- [ ]: Where to place roadmap view
+
 - [X]: Recommender Result Graphs (Stacked bar grap)
-- [ ]: Roadmap View (recommendation record view)
-    - in progress
-    - waiting for further desing revisions by -@dec
 - [X]: Report Update
     - [ ]: By year, scatter plot of recommendation score, with regression line
     - [ ]: 
@@ -33,21 +33,33 @@ Revision Matrix
 - [X]: add student information and student grade view
 - [X]: on start test, check if student is valid to take test
 
+### Database
 - [ ]: user_recommendation score should record all scores, which means that this should have its own model, (fields: user_recommendation_id, field_id, field_score)
-
-- [ ]: send verfication email - @krtsfpmd
-
+- [ ]: add record for user job application
+- [ ]: Selected Specialization
 - [ ]: survey update
     - question: befure using the system, are you aware of the different specializations in the field of IT? (yes/no/a few)
     - if yes, in your choosen specialization, how much do you know about it? (1-5)
     - after using the system, did it help you in choosing your specialization? (1-5)
     - what specialization did you choose? 
     - how much did the system help you in knowing your specialization? (1-5)
-
-- find what aspects can be used to verify and evaluate the system for those who doesn't even finish the recommendation system
+- [ ] find what aspects can be used to verify and evaluate the system for those who doesn't even finish the recommendation system
     - [ ]: create a survey for those who doesn't finish the recommendation system
         - possible questions:
-        
+
+
+### Others
+- [ ]: Redesign navbar, instead of using dropdown, use breadcrumbs, remove home, use logo instead. in this way we could get more horizontal space or make the navbar shorter
+- [ ]: send verfication email - @krtsfpmd
+- [ ]: table heading size to smaller
+- [ ]: Roadmap View (recommendation record view)
+    - in progress
+    - waiting for further desing revisions by -@dec
+
+- [ ]: recommendation dashboard
+    - shows different statistic visualization view of fields
+    - shows reason of how it is recommended, where does it came from
+    - etc, graphs, charts, etc
 
 # Design
 - [ ]: home design, make it better, apply sectioning
