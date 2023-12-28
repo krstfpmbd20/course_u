@@ -10,7 +10,8 @@ html, body {
 }
 
 .main {
-    width:calc(100% - 200px) !important;
+    /* width:calc(100% - 200px) !important; */
+    width: 100% !important;
     box-sizing: border-box !important;
 }
 
@@ -20,12 +21,23 @@ html, body {
 }
 
 .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.row {
     width: 100% !important;
 }
 
 .data-section {
     width: 100% !important;
     box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px
 }
 
 .btn {
@@ -40,6 +52,18 @@ a {
 
 /* Status */
 
+.card {
+    
+    background: var(--white);
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* cursor: pointer; */
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+
 .cardBox
 {
     position: relative;
@@ -51,9 +75,18 @@ a {
    
 }
 
-.col-md-6
+.col-md, .col-md-6
 {
     box-sizing: border-box;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
 }
 
 .cardBox-others
@@ -61,7 +94,7 @@ a {
     margin-top: 20px !important;   
     /* width: 100%  !important; */
      /* replace PaddingValue with the padding of the parent div */
-    width: calc(100% - 2 ) !important;
+    /* width: calc(100% - 2 ) !important; */
     align-items: center !important;
     display: flex !important;
     flex-wrap: wrap !important;
@@ -136,6 +169,11 @@ a {
 
 /* tables */
 
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 .table-heading {
     display: flex;
     justify-content: space-between !important;
@@ -145,6 +183,13 @@ a {
     margin-left: 0;
     margin-right: 0;
 }
+
+.table-heading h5 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
 .table-wrapper {
     /* width: 100%; adjust this value as needed */
     max-height: 500px; /* adjust this value as needed */
@@ -391,4 +436,53 @@ footer{
 
 .skill-cell:hover .skill-tooltip {
     display: block;
+}
+
+
+element.style {
+}
+.main {
+    /* width: calc(100% - 200px) !important; */
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+.main {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: var(--white); */
+    transition: 0,5s;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.container, .container-fluid, .container-lg, .container-md,
+.container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0 !important
+}
+
+.row {
+    --bs-gutter-x: 0 !important
+}
+
+@media (min-width: 768px) {
+    /* .cardBox {
+        grid-template-columns: repeat(4,1fr);
+    }
+    .cardBox-others {
+        grid-template-columns: repeat(3,1fr);
+    } */
+    .container, .container-md, .container-sm {
+        max-width: 100% !important;
+    }
 }
