@@ -1,0 +1,168 @@
+{% extends 'base_user.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block head_extra %}
+{% load static %}
+{% load b64encode %}
+<!-- Additional stylesheets or scripts specific to this page -->
+<!-- <link rel="stylesheet" href="{% static 'css/admin_home.css' %}"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    #header {
+        text-align: center;
+
+    }
+
+    #logo {
+        max-width: 100px;
+        /* Adjust the size as needed */
+        max-height: 100px;
+        /* Adjust the size as needed */
+    }
+
+    #title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: darkred;
+    }
+
+    #subtitle {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    #system-name {
+        font-size: 24px;
+        margin-top: 5px;
+    }
+
+    #user-info {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        /* color: rgb(68, 68, 68); */
+    }
+
+    footer {
+        display: none !important;
+    }
+    
+    
+</style>
+{% endblock head_extra %}
+
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'admin_home' %}">Dasboard</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'admin_tracer' %}">Tracer</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Report View</li>
+    </ol>
+</nav>
+<div id="header">
+    <img src="{% static 'images/report-logo.png' %}" alt="Logo" id="logo">
+    <div id="title">Polytechnic University of the Philippines</div>
+    <div id="subtitle">College of Computer and Information Science</div>
+    <div id="system-name">Course University: An ontology based recommendation system</div><br>
+    <div id="user-info">Date: {{current_time}} | User: {{name}}</div>
+</div>
+<div>
+    <h2>Recommendation Impact</h2>
+    <div >
+        <div style="text-align:center;">
+            <h3>Confidence Rating</h3>
+            {{ confidence_rating|safe }}
+        </div>
+    </div>
+    <div >
+        <div style="text-align:center;">
+            <h3>Recommendation Influence</h3>
+            {{ recommendation_influence|safe }}
+        </div>
+    </div>
+</div>
+<div>
+    <h2>Job Alignment and Satisfaction</h2>
+    <div >
+        <div style="text-align:center;">
+            <h3>Job Alignment and Overall Career Satisfaction Relationship</h3>
+            {{ alignment_and_satisfaction|safe }}
+        </div>
+    </div>
+    
+    <div >
+        <div style="text-align:center;">
+            <h3>Job Alignment</h3>
+            {{ job_alignment|safe }}
+        </div>
+    </div>
+</div>
+
+<div>
+    <h2>Time-Series Analysis</h2>
+    <div>
+        <div style="text-align:center;">
+            <h3>Job Alignment Across Cohorts</h3>
+            {{ job_alignment_across_cohorts|safe }}
+        </div>
+    </div>
+    <div>
+        <div style="text-align:center;">
+            <h3>Job Alignment Over Time</h3>
+            {{ job_alignment_time_series|safe }}
+        </div>
+    </div>
+    <div >
+        <div style="text-align:center;">
+            <h3>Confidence Rating Over Time</h3>
+            {{ confidence_rating_time_series|safe }}
+        </div>
+    </div>
+</div>
+
+<!-- <div >
+    <div style="text-align:center;">
+        <h3>TitleHeading</h3>
+        {{ html|safe }}
+    </div>
+</div>
+<div >
+    <div style="text-align:center;">
+        <h3>TitleHeading</h3>
+        {{ html|safe }}
+    </div>
+</div>
+<div >
+    <div style="text-align:center;">
+        <h3>TitleHeading</h3>
+        {{ html|safe }}
+    </div>
+</div>
+<div >
+    <div style="text-align:center;">
+        <h3>TitleHeading</h3>
+        {{ html|safe }}
+    </div>
+</div> -->
+
+{% else %}
+
+{% endif %}
+
+
+
+{% endblock content %}
