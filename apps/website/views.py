@@ -6,7 +6,7 @@ from django.contrib.auth.views import LogoutView
 from django.contrib.sessions.models import Session
 from django.contrib import messages
 from django.urls import reverse
-from django.http import HttpResponse
+
 from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.db.models import Count
@@ -14,29 +14,32 @@ from django.contrib.auth import update_session_auth_hash
 
 #from website.utils import *
 from apps.website.forms import SignUpForm, StudentScoreForm
-from apps.website.models import Specialization, Field
+from apps.website.models import Specialization, Field, LearningMaterial
 from apps.recommender.models import UserRecommendations, UserSkill
 
+from apps.acad.models import StudentProfile, Course, Subject
 from apps.assessment.models import Test, QuestionSet
 from apps.jobs.models import JobPosting
+from apps.survey.models import Survey
 
 from utilities.decorators import unauthenticated_user, allowed_users, admin_only
 from .models import *
+from django.db.models import F
 # from django.http import FileResponse
 # from reportlab.pdfgen import canvas
-# from django.template.loader import get_template
+
 
 # from django.http import FileResponse
-# from xhtml2pdf import pisa
+
 # from io import BytesIO
-import datetime
-from .report_generator import *
+
+
 # Other Imports
 # import json
 import logging
 # import plotly.express as px
 from apps.survey.models import Survey
-from .plotgenerator import *
+
 #logger = logging.getLogger(__name__)
 logger = logging.getLogger("django") # name of logger : django
 
@@ -144,6 +147,15 @@ def home_field(request, field_id=None):
         'user_recommendations': user_recommendations  # Pass the user recommendations to the template
     })
 
+
+def status_counts():
+    JobPosting_count = JobPosting.objects.all().count()
+    Specialization_count = Specialization.objects.all().count()
+    QuestionSet_count = QuestionSet.objects.all().count()
+    Student_count = User.objects.all().count()
+    Survey_count = Survey.objects.all().count()
+    return JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count
+
 #@admin_only # only admin can access this page # if admin only, then no need to add @login_required it will be redundant
 def admin_home(request):
     admin = True
@@ -162,27 +174,386 @@ def admin_home(request):
         field_name = Field.objects.get(field=field_id).field_name  # Get the field name
         field_test_count_dict[field_name] = test_count
 
+    courses = Course.objects.all()
+
     # Get other counts
     auth_user = User.objects.all()
-    JobPosting_count = JobPosting.objects.all().count()
-    Specialization_count = Specialization.objects.all().count()
-    QuestionSet_count = QuestionSet.objects.all().count()
-
-    return render(request, 'admin_home.html', {
+    # JobPosting_count = JobPosting.objects.all().count()
+    # Specialization_count = Specialization.objects.all().count()
+    # QuestionSet_count = QuestionSet.objects.all().count()
+    # Student_count = User.objects.all().count()
+    # Survey_count = Survey.objects.all().count()
+    LearningMaterial_count = LearningMaterial.objects.all().count()
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    return render(request, 'dashboard/admin_home.html', {
         'admin': admin,
         'field_test_count_dict': field_test_count_dict,
         'auth_user': auth_user,
+        'courses': courses,
+        'LearningMaterial_count': LearningMaterial_count,
         'JobPosting_count': JobPosting_count,
         'Specialization_count': Specialization_count,
         'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
         'fields': fields,  # Pass the list of fields
     })
     
 
-@admin_only # only admin can access this page # if admin only, then no need to add @login_required it will be redundant
+# def admin_course(request, course_id=None, term=None):
+#     JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+#     course_list = Course.objects.all()
+#     current_course = None
+
+#     if course_id is None:
+#         # Get a list of courses
+#         courses = Course.objects.all()
+#         course_name = "All Courses"
+#         return render(request, 'dashboard/admin_course.html', {
+#             'courses': courses,
+#             'course_name': course_name,
+#             'QuestionSet_count': QuestionSet_count,
+#             'Student_count': Student_count,
+#             'Survey_count': Survey_count,
+#         })
+#     current_course = Course.objects.get(id=course_id)
+#     course_term = Course.objects.get(id=course_id).number_of_years
+#     # make course_term a list from 1 to course_term
+#     course_term_list = list(range(1, course_term+1))
+
+
+#     if term is None: 
+#         course_subjects = User.objects.raw('''
+#         SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+#         FROM acad_course
+#         INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#         INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#         WHERE acad_course.id = %s''', [course_id])
+#     else:
+#         course_subjects = User.objects.raw('''
+#         SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+#         FROM acad_course
+#         INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#         INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#         WHERE acad_course.id = %s AND acad_curriculum.term = %s''', [course_id, term])
+    
+#     return render(request, 'dashboard/admin_course.html', {
+#         'course_list': course_list, # for dropdown menu
+#         'course_subjects': course_subjects,
+#         'current_course': current_course,
+#         'course_term_list': course_term_list,
+#         'QuestionSet_count': QuestionSet_count,
+#         'Student_count': Student_count,
+#         'Survey_count': Survey_count,
+#     })
+def admin_course(request):
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    course_list = Course.objects.all()
+    current_course = None
+    current_term = None
+    course_id = request.GET.get('course_id')
+    term = request.GET.get('term')
+
+
+    if course_id:
+        current_course = Course.objects.get(id=course_id)
+        course_term = Course.objects.get(id=course_id).number_of_years
+        course_term_list = list(range(1, course_term+1))
+
+        if term:
+            if term == 'all':
+                current_term = "all"
+                course_subjects = User.objects.raw('''
+                SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+                FROM acad_course
+                INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+                INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+                WHERE acad_course.id = %s''', [course_id])
+            else:
+                current_term = int(term)
+                course_subjects = User.objects.raw('''
+                SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+                FROM acad_course
+                INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+                INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+                WHERE acad_course.id = %s AND acad_curriculum.year = %s''', [course_id, term])
+        else:
+            course_subjects = User.objects.raw('''
+            SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+            FROM acad_course
+            INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+            INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+            WHERE acad_course.id = %s''', [course_id])
+    else:
+        course_subjects = None
+        course_term_list = None
+
+    return render(request, 'dashboard/admin_course.html', {
+        'course_list': course_list, # for dropdown menu
+        'course_subjects': course_subjects,
+        'current_course': current_course,
+        'current_term': current_term,
+        'course_term_list': course_term_list,
+        'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
+    })
+# def admin_course(request):
+#     JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+#     course_list = Course.objects.all()
+#     current_course = None
+#     course_id = request.GET.get('course_id')
+#     term = request.GET.get('term')
+
+#     if course_id:
+#         current_course = Course.objects.get(id=course_id)
+#         course_term = Course.objects.get(id=course_id).number_of_years
+#         course_term_list = list(range(1, course_term+1))
+
+#         # if term:
+#         #     if term == 'all':
+#         #         current_term = "all"
+#         #         course_subjects = User.objects.raw('''
+#         #         SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+#         #         FROM acad_course
+#         #         INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#         #         INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#         #         WHERE acad_course.id = %s''', [course_id])
+#         #     else:     
+#         #         current_term = int(term)
+#         #         course_subjects = User.objects.raw('''
+#         #         SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+#         #         FROM acad_course
+#         #         INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#         #         INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#         #         WHERE acad_course.id = %s AND acad_curriculum.year = %s''', [course_id, term])
+#         # else:
+#         #     current_term = None
+#         #     course_subjects = User.objects.raw('''
+#         #     SELECT acad_course.*, acad_curriculum.*, acad_subject.*
+#         #     FROM acad_course
+#         #     INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#         #     INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#         #     WHERE acad_course.id = %s''', [course_id])
+#         if term:
+#             if term == 'all':
+#                 current_term = "all"
+#                 course_subjects = Subject.objects.raw('''
+#                 SELECT acad_subject.id, acad_subject.subject_name, GROUP_CONCAT(website_skill.skill) as skills
+#                 FROM acad_course
+#                 INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#                 INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#                 LEFT JOIN acad_subject_skills ON acad_subject.id = acad_subject_skills.subject_id
+#                 LEFT JOIN website_skill ON acad_subject_skills.skill_id = website_skill.id
+#                 WHERE acad_course.id = %s
+#                 GROUP BY acad_subject.id''', [course_id])
+#             else:     
+#                 current_term = int(term)
+#                 # course_subjects = User.objects.raw('''
+#                 # SELECT acad_course.*, acad_curriculum.*, acad_subject.*, GROUP_CONCAT(website_skill.skill) as skills
+#                 # FROM acad_course
+#                 # INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#                 # INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#                 # LEFT JOIN acad_subject_skills ON acad_subject.id = acad_subject_skills.subject_id
+#                 # LEFT JOIN website_skill ON acad_subject_skills.skill_id = website_skill.id
+#                 # WHERE acad_course.id = %s AND acad_curriculum.year = %s
+#                 # GROUP BY acad_subject.id''', [course_id, term])
+#                 course_subjects = Subject.objects.raw('''
+#                 SELECT acad_subject.id, acad_subject.subject_name, GROUP_CONCAT(website_skill.skill) as skills
+#                 FROM acad_course
+#                 INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#                 INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#                 LEFT JOIN acad_subject_skills ON acad_subject.id = acad_subject_skills.subject_id
+#                 LEFT JOIN website_skill ON acad_subject_skills.skill_id = website_skill.id
+#                 WHERE acad_course.id = %s AND acad_curriculum.year = %s
+#                 GROUP BY acad_subject.id, acad_subject.name''', [course_id, term])
+#         else:
+#             current_term = None
+#             course_subjects = Subject.objects.raw('''
+#             SELECT acad_subject.id, acad_subject.subject_name, GROUP_CONCAT(website_skill.skill) as skills
+#             FROM acad_course
+#             INNER JOIN acad_curriculum ON acad_course.id = acad_curriculum.course_id
+#             INNER JOIN acad_subject ON acad_curriculum.subject_id = acad_subject.id
+#             LEFT JOIN acad_subject_skills ON acad_subject.id = acad_subject_skills.subject_id
+#             LEFT JOIN website_skill ON acad_subject_skills.skill_id = website_skill.id
+#             WHERE acad_course.id = %s
+#             GROUP BY acad_subject.id''', [course_id])
+#     else:
+#         course_subjects = None
+#         course_term_list = None
+#     # for subject in course_subjects:
+#     #     subject.skills = subject.skills.split(',')
+#     course_subjects_list = []
+#     for subject in course_subjects:
+#         subject_dict = {
+#             'id': subject.id,
+#             'subject_name': subject.subject_name,
+#             'skills': subject.skills.split(',') if subject.skills else []
+#         }
+#         course_subjects_list.append(subject_dict)
+#     # if course_subjects:  # make sure the RawQuerySet is not empty
+#     #     first_subject = course_subjects[0]
+#     #     column_names = [field.name for field in first_subject._meta.fields]
+#     #     print(column_names)
+
+#     print("current_course: ", current_course)
+#     print("current_term: ", current_term)
+#     return render(request, 'dashboard/admin_course.html', {
+#         'course_list': course_list, # for dropdown menu
+#         'course_subjects': course_subjects_list,
+#         'current_course': current_course,
+#         'current_term': current_term,
+#         'course_term_list': course_term_list,
+#         'QuestionSet_count': QuestionSet_count,
+#         'Student_count': Student_count,
+#         'Survey_count': Survey_count,
+#     })
+
+#@admin_only # only admin can access this page # if admin only, then no need to add @login_required it will be redundant
 def admin_students(request):
-    auth_user = User.objects.all()
-    return render(request, 'admin_students.html', {'auth_user': auth_user})
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    
+    # join by user_id and id
+    students = User.objects.raw('''
+    SELECT auth_user.*, acad_studentprofile.*, acad_course.course_name as course_name 
+    FROM auth_user 
+    INNER JOIN acad_studentprofile ON auth_user.id = acad_studentprofile.user_id
+    INNER JOIN acad_course ON acad_studentprofile.enrolled_courses_id = acad_course.id
+    ''')
+
+    # print firs students all fields
+    #print("students: ", students[0].__dict__)
+    
+    return render(request, 'dashboard/admin_students.html', {
+        'students': students,
+        'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
+        })
+
+
+def is_student_graduated(student_id):
+    # check if student is graduated
+    # if student is graduated, return true
+    # else return false
+    # get student's current year
+    student = StudentProfile.objects.get(user_id=student_id)
+    current_year = student.current_year
+    # get student's course
+    course = Course.objects.get(id=student.enrolled_courses_id)
+    number_of_years = course.number_of_years
+    # check if current_year > number_of_years
+    if current_year > number_of_years:
+        return True
+    else:
+        return False
+    
+def student_status_update(student_id):
+    # check if student is graduated
+    # if student is graduated, update studentprofile.status to 'graduated'
+    # else update studentprofile.status to 'enrolled'
+    # get student's current year
+    student = StudentProfile.objects.get(user_id=student_id)
+    current_year = student.current_year
+    # get student's course
+    course = Course.objects.get(id=student.enrolled_courses_id)
+    number_of_years = course.number_of_years
+    # check if current_year > number_of_years
+    if student.status != 'dropped out':
+        if current_year > number_of_years:
+            student.status = 'graduated'
+        else:
+            student.status = 'enrolled'
+    student.save()
+    return student.status
+
+def update_students_status(request):
+    # update all studentprofile.status
+    students = StudentProfile.objects.all()
+    for student in students:
+        student_status_update(student.user_id)
+    messages.success(request, 'All students status have been updated')
+    return None
+    
+
+def update_student_current_year(request):
+    #StudentProfile.objects.all().update(current_year=F('current_year')+1)
+    students = StudentProfile.objects.all()
+    for student in students:
+        if student.status != 'dropped out' and student.status != 'graduated':
+            if not is_student_graduated(student.user_id):
+                student.current_year = student.current_year + 1
+            else:
+                student.status = "graduated"
+            student.save()
+    messages.success(request, 'All students current year have been updated')
+    return None
+        
+
+def admin_end_term(request):
+    # update all studentprofile.current_year + 1
+    update_student_current_year(request)
+    # update all studentprofile.status
+    update_students_status(request)
+    #messages.success(request, 'All students have been promoted to the next year')
+    return redirect('admin_students')
+
+
+
+def admin_test(request):
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    
+    questionset = QuestionSet.objects.all()
+    # auth_user and questionset join by user_id and id
+    questionset = User.objects.raw('''
+    SELECT auth_user.*, assessment_questionset.*
+    FROM auth_user
+    INNER JOIN assessment_questionset ON auth_user.id = assessment_questionset.user_id
+    ''')
+    
+
+    # disply field names
+    print("questionset: ", questionset[0].__dict__)
+    
+    return render(request, 'dashboard/admin_test.html', {
+        'questionset': questionset,
+        'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
+        })
+
+def admin_tracer(request):
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    survey = Survey.objects.all()
+
+
+    return render(request, 'dashboard/admin_tracer.html', {
+        'survey': survey, 
+        'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
+        })
+
+def admin_jobpostings(request):
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    jobpostings = JobPosting.objects.all()
+    return render(request, 'dashboard/admin_jobpostings.html', {
+        'jobpostings': jobpostings, 
+        'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
+        })
+
+
+def admin_LM(request):
+    JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
+    learningmaterial = LearningMaterial.objects.all()
+    return render(request, 'dashboard/admin_LM.html', {
+        'learningmaterial': learningmaterial, 
+        'QuestionSet_count': QuestionSet_count,
+        'Student_count': Student_count,
+        'Survey_count': Survey_count,
+        })
 
 
 @unauthenticated_user # instead of adding if user.is_authenticated, use this decorator
@@ -331,141 +702,9 @@ def specialization_page(request, item_id):
     specialization_item = get_object_or_404(Specialization, pk=item_id)
 
     # Render the specialization_page template with the item
-    return render(request, 'specialization_page.html', {'specialization_item': specialization_item})
+    return render(request, 'dashboard/specialization_page.html', {'specialization_item': specialization_item})
 
 
-
-def admin_report(request):
-    # get current time
-    current_time = datetime.datetime.now()
-    
-    # get first and last as name
-    first_name = request.user.first_name
-    last_name = request.user.last_name
-    name = first_name + " " + last_name
-    if first_name == "" and last_name == "":
-        name = request.user.username
-    
-
-    # Generate all necessary plots
-    alignment_and_satisfaction = generate_alignment_and_satisfaction()
-    role_satisfaction_by_academic_specialization = generate_role_satisfaction_by_academic_specialization()
-    gender_distribution_plot = generate_gender_distribution_plot()
-    civil_status_distribution_plot = generate_civil_status_distribution_plot()
-    academic_specialization_distribution_plot = generate_academic_specialization_distribution_plot()
-    alignment_with_job_responsibilities_plot = generate_alignment_with_job_responsibilities_plot()
-    satisfaction_levels_plot = generate_satisfaction_levels_plot()
-    certifications_training_percentage_plot = generate_certifications_training_percentage_plot()
-    different_specialization_percentage_plot = generate_different_specialization_percentage_plot()
-    overall_satisfaction_plot = generate_overall_satisfaction_plot()
-    job_fields_distribution_plot = generate_job_fields_distribution_plot()
-    user_engagement_plot = generate_user_engagement_plot()
-
-    return render(request, 'admin_report.html', {
-        'current_time': current_time,
-        'name': name,
-        'alignment_and_satisfaction': alignment_and_satisfaction,
-        'role_satisfaction_by_academic_specialization': role_satisfaction_by_academic_specialization,
-        'gender_distribution_plot': gender_distribution_plot,
-        'civil_status_distribution_plot': civil_status_distribution_plot,
-        'academic_specialization_distribution_plot': academic_specialization_distribution_plot,
-        'alignment_with_job_responsibilities_plot': alignment_with_job_responsibilities_plot,
-        'satisfaction_levels_plot': satisfaction_levels_plot,
-        'certifications_training_percentage_plot': certifications_training_percentage_plot,
-        'different_specialization_percentage_plot': different_specialization_percentage_plot,
-        'overall_satisfaction_plot': overall_satisfaction_plot,
-        'job_fields_distribution_plot': job_fields_distribution_plot,  
-        'user_engagement_plot': user_engagement_plot,
-    })
-
-
-# def admin_report_view(request):
-#      # get current time
-#     current_time = datetime.datetime.now()
-    
-#     # get first and last as name
-#     first_name = request.user.first_name
-#     last_name = request.user.last_name
-#     name = first_name + " " + last_name
-#     if first_name == "" and last_name == "":
-#         name = request.user.username
-
-#     # Generate all necessary plots
-#     alignment_and_satisfaction = plotly_alignment_and_satisfaction()
-#     alignment_and_satisfaction2 = chart_alignment_and_satisfaction()
-
-#     return render(request, 'admin_report_view.html', {
-#         'current_time': current_time,
-#         'name': name,
-#         'alignment_and_satisfaction': alignment_and_satisfaction,
-#         'alignment_and_satisfaction2': alignment_and_satisfaction2,
-#         #'role_satisfaction_by_academic_specialization': role_satisfaction_by_academic_specialization,
-#     })
-
-
-# def admin_report_pdf(request):
-#     # get current time
-#     current_time = datetime.datetime.now()
-    
-#     # get first and last as name
-#     first_name = request.user.first_name
-#     last_name = request.user.last_name
-#     name = first_name + " " + last_name
-#     if first_name == "" and last_name == "":
-#         name = request.user.username
-#     # image_path = os.path.join(settings.STATICFILES_DIRS[0], 'images/report-logo.png')
-#     # #image_path = staticfiles_storage.path(static('images/report-logo.png'))
-#     # with open(image_path, 'rb') as image_file:
-#     #     base64_logo = base64.b64encode(image_file.read()).decode('utf-8')
-
-#      # Generate all necessary plots
-#     alignment_and_satisfaction = generate_alignment_and_satisfaction()
-#     role_satisfaction_by_academic_specialization = generate_role_satisfaction_by_academic_specialization()
-#     gender_distribution_plot = generate_gender_distribution_plot()
-#     civil_status_distribution_plot = generate_civil_status_distribution_plot()
-#     academic_specialization_distribution_plot = generate_academic_specialization_distribution_plot()
-#     alignment_with_job_responsibilities_plot = generate_alignment_with_job_responsibilities_plot()
-#     satisfaction_levels_plot = generate_satisfaction_levels_plot()
-#     certifications_training_percentage_plot = generate_certifications_training_percentage_plot()
-#     different_specialization_percentage_plot = generate_different_specialization_percentage_plot()
-#     overall_satisfaction_plot = generate_overall_satisfaction_plot()
-#     job_fields_distribution_plot = generate_job_fields_distribution_plot()
-#     user_engagement_plot = generate_user_engagement_plot()
-#     template = get_template('admin_report.html')
-#     context = {
-#         'current_time': current_time,
-#         'name': name,
-#         # 'base64_logo': base64_logo,
-#         'alignment_and_satisfaction': alignment_and_satisfaction,
-#         'role_satisfaction_by_academic_specialization': role_satisfaction_by_academic_specialization,
-#         'gender_distribution_plot': gender_distribution_plot,
-#         'civil_status_distribution_plot': civil_status_distribution_plot,
-#         'academic_specialization_distribution_plot': academic_specialization_distribution_plot,
-#         'alignment_with_job_responsibilities_plot': alignment_with_job_responsibilities_plot,
-#         'satisfaction_levels_plot': satisfaction_levels_plot,
-#         'certifications_training_percentage_plot': certifications_training_percentage_plot,
-#         'different_specialization_percentage_plot': different_specialization_percentage_plot,
-#         'overall_satisfaction_plot': overall_satisfaction_plot,
-#         'job_fields_distribution_plot': job_fields_distribution_plot,     
-#         'user_engagement_plot': user_engagement_plot,
-#     }
-#     html = template.render(context)
-
-#     # Create a file-like buffer to receive PDF data
-#     buffer = BytesIO()
-
-#     # Create a PDF file
-#     pisa_status = pisa.CreatePDF(html, dest=buffer)
-
-#     # If error, show some funy view
-#     if pisa_status.err:
-#         return HttpResponse('We had some errors <pre>' + html + '</pre>')
-#     buffer.seek(0)
-
-#     # Make a pdf response
-#     pdf = FileResponse(buffer, filename='admin_report.pdf')
-#     pdf['Content-Disposition'] = 'attachment; filename="admin_report.pdf"'
-#     return pdf
 
 def field_page(request, field_id=None):
 
@@ -475,12 +714,12 @@ def field_page(request, field_id=None):
     # get specialization items with field_id
     specialization_items = Specialization.objects.filter(field=field_id)
 
-    print("Field page,  SPecialization items: ", specialization_items)
+    #print("Field page,  SPecialization items: ", specialization_items)
 
     # Get Test objects with field_id
     test_items = Test.objects.filter(field=field_id)
     
-    return render(request, 'field.html', {'field_object' : field_object, 'specialization_items': specialization_items, 'test_items': test_items})
+    return render(request, 'dashboard/field.html', {'field_object' : field_object, 'specialization_items': specialization_items, 'test_items': test_items})
 
 
 

@@ -35,6 +35,13 @@ class StudentProfile(models.Model):
     is_student = models.BooleanField(default=False)
     enrolled_courses = models.ForeignKey('Course', on_delete=models.SET_NULL, null=True, blank=True)
     current_year = models.PositiveIntegerField(null=True, blank=True, default=0)
+    status = models.CharField(max_length=255, null=True, blank=True, default="enrolled")
+
+    # status can only be one of the following:
+    # - enrolled
+    # - graduated
+    # - dropped out
+
 
     def __str__(self):
         return self.user.username

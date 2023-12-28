@@ -4,15 +4,97 @@ from django.shortcuts import redirect
 
 from apps.acad.models import Course, Subject, Curriculum, StudentProfile, StudentGrades
 from apps.acad.forms import StudentGradeForm
-
+from django.contrib.auth.models import User
 from apps.website.models import Skill
 from apps.recommender.models import UserSkill
 
+from django.http import HttpResponse
+
+def year_level_lable(year):
+    if year == 1:
+        return "First Year"
+    elif year == 2:
+        return "Second Year"
+    elif year == 3:
+        return "Third Year"
+    elif year == 4:
+        return "Fourth Year"
+    else:
+        return "Graduate"
+
 def select_course(request):
+
     courses = Course.objects.all()
     print("Courses: ", courses)
     # return warning if ther are no courses
     return render(request, 'acad/select_course.html', {'courses': courses})
+
+def student_information(request):
+    # check if student  have student profile
+    student_profile = StudentProfile.objects.filter(user=request.user).first()
+    if not student_profile:
+        # redirect to success page
+        return redirect('select_course')
+
+    course = Course.objects.get(pk=student_profile.enrolled_courses_id).course_name
+    year_level = year_level_lable(student_profile.current_year)
+    print('year level: ', year_level)
+
+    if year_level != "Graduate":
+        print("Student enrolled in course: ", student_profile.enrolled_courses_id," student current year: ", student_profile.current_year,"redirecting to subject grade input" )
+        # check if student has grades in this year level
+        subject = Curriculum.objects.filter(course_id=student_profile.enrolled_courses_id, year=student_profile.current_year).first()
+        subject_grade = StudentGrades.objects.filter(student_id=student_profile.id, subject_id=subject.subject_id).exists()
+        print("Subject grade: ", subject_grade)
+        if not subject_grade:
+            print("No subject grade found for this year level: ", student_profile.current_year)
+            # if user haven't input their grades
+            return redirect('subjects_grade_input')
+
+
+    return render(request, 'acad/student_information.html', {
+        'student_profile': student_profile,
+        'course': course,
+        'year_level': year_level,
+        })
+    
+def student_grades(request, year):
+    # check if student  have student profile
+    student_profile = StudentProfile.objects.filter(user=request.user).first()
+    if not student_profile:
+        # redirect to success page
+        return HttpResponse("No student profile found")
+
+    course = Course.objects.get(pk=student_profile.enrolled_courses_id).course_name
+    year_level = year_level_lable(year)
+    
+    student_subject_grades = User.objects.raw("""
+    SELECT acad_subject.id, acad_subject.subject_name, acad_studentgrades.grade, acad_studentgrades.subject_id
+    FROM acad_studentgrades
+    INNER JOIN acad_subject
+    ON acad_studentgrades.subject_id = acad_subject.id
+    WHERE acad_studentgrades.student_id = %s
+    AND acad_studentgrades.subject_id IN (
+        SELECT acad_curriculum.subject_id
+        FROM acad_curriculum
+        WHERE acad_curriculum.course_id = %s
+        AND acad_curriculum.year = %s
+    )
+    """, [student_profile.id, student_profile.enrolled_courses_id, year])
+    
+    # print subject and grade
+    for grade in student_subject_grades:
+        print("Subject: ", grade.subject_name, " Grade: ", grade.grade)
+
+
+    return render(request, 'acad/student_grades.html', {
+        'student_profile': student_profile,
+        'course': course,
+        'year_level': year_level,
+        'subjects': student_subject_grades,
+        })
+
+
 
 def select_year(request, course_id):
     course = Course.objects.get(pk=course_id)
@@ -163,18 +245,12 @@ def success_page(request):
                 # add skill source
 
         course_name = Course.objects.get(pk=course).course_name
-        if year_level == 1 or year_level == 0:
-            year_level = "First Year"
-        elif year_level == 2:
-            year_level = "Second Year"
-        elif year_level == 3:
-            year_level = "Third Year"
-        elif year_level == 4:
-            year_level = "Fourth Year"
-        else:
-            year_level = "Graduate"
+        
+        year_level = year_level_lable(year_level)
+        
         return render(request, 'acad/success_page.html', {
             #'student': student,
             'course': course_name,
             'year_level': year_level,
         })
+
