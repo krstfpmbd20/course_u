@@ -250,8 +250,9 @@ ol, ul
 
 .nav a {
     margin-right: 30px;
-    color: #333;
+    color: #363636;
     text-decoration: none;
+    font-weight: 400;
     transition: color 0.3s ease;
     padding: 5px 10px;
     display: flex;
@@ -260,7 +261,8 @@ ol, ul
 
 .nav a:hover {
     text-decoration: none;
-    color: #080808;
+    color: var(--highlight);
+    font-weight: 700;
 }
 
 .nav a:active {
@@ -277,7 +279,8 @@ ol, ul
 .nav a.brand {
     font-size: 1.6em;
     font-weight: 600;
-    color: var(--highlight);
+    /* color: var(--highlight); */
+    color:var(--highlight);
     transition: background-color 0.3s ease;
     min-width: 120px;
     max-height: 50px;
@@ -287,7 +290,7 @@ ol, ul
 .nav a.brand .subtitle {
     font-size: 0.4em;
     font-weight: 400;
-    color: #999;
+    color: #494949;
     margin: 0;
     padding: 0;
     padding-left: .1px;
@@ -411,15 +414,17 @@ ol, ul
 }
 
 #username {
-    font-size: 1.2em; /* adjust as needed */
-    font-weight: 400; /* adjust as needed */
-    color: #333; /* adjust as needed */
+    font-size: 1em; /* adjust as needed */
+    font-weight: bold; /* adjust as needed */
+    color: #ffffff; /* adjust as needed */
     vertical-align: middle;
     display: flex;
     align-items: center;
     /* margin-bottom: 10px; adjust as needed */
     /* border-bottom: 2px solid #333; adjust as needed */
     /* padding-bottom: 5px; adjust as needed */
+    /* all uppercase */
+    text-transform: uppercase;
 }
 
 #dropdown li a {
