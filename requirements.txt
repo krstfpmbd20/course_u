@@ -29,7 +29,7 @@ django-jazzmin
 plotly_express
 #pycairo==1.20
 # reportlab
-# xhtml2pdf
+xhtml2pdf
 
 #pkg-config
 #libcairo2-dev
