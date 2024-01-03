@@ -24,14 +24,18 @@ main {
 }
 
 .home {
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
+  margin: auto;
+  /* display: flex; */
+  /* flex-direction: row; */
+  width: 1200px;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .home-main {
   /* widht 100% - 100px */
-  width: calc(100% - 200px);
+  /* width: calc(100% - 200px); */
+  width: 100%;
 }
 
 .skill {
@@ -105,12 +109,24 @@ main {
 }
 
 h3 {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 41px;
   padding-left: 10px;
   margin-top: 25px;
+  /* color: rgb(128, 128, 128); */
+  color: black;
+}
+
+#field-description {
+  padding-left: 10px;
+  max-width: 450px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: left;
   margin-bottom: 10px;
-  color: rgb(128, 128, 128);
+  color: var(--black2);
 }
 
 .outer {
@@ -125,7 +141,7 @@ h3 {
   color: black;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4);
-  margin: 10px;
+  margin: 30px 10px 10px 10px;
 }
 
 .intro-section .inner {
@@ -214,6 +230,12 @@ h3 {
   padding: 5px;
   padding-bottom: 20px;
   /* Add some padding at the bottom for better visibility */
+}
+
+#specialization-container {
+  display: flex;
+  flex-wrap: wrap !important;
+
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

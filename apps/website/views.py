@@ -27,14 +27,9 @@ from .models import *
 from django.db.models import F
 # from django.http import FileResponse
 # from reportlab.pdfgen import canvas
-
-
 # from django.http import FileResponse
-
 # from io import BytesIO
 
-
-# Other Imports
 # import json
 import logging
 # import plotly.express as px
@@ -42,17 +37,17 @@ import logging
 #logger = logging.getLogger(__name__)
 logger = logging.getLogger("django") # name of logger : django
 
+# Views
+
 
 @login_required(login_url='login_user')
 #@allowed_users(allowed_roles=['admin','staff','student','instructor']) # only users on the list can access this page, ie. admin and staff
 def home(request):
-    # logger.debug("User: " + str(request.user) + " is accessing home page")
-    # logger.info("User: " + str(request.user) + " is accessing home page")
-    # logger.warning("User: " + str(request.user) + " is accessing home page")
-    # logger.error("User: " + str(request.user) + " is accessing home page")
-    # logger.critical("User: " + str(request.user) + " is accessing home page")
 
     specialization_items = Specialization.objects.all()
+    # get only 20 specilaization objects
+    specialization_items = specialization_items[:20]
+
     field_items = Field.objects.all()
     # Fetch user recommendations
     user_recommendations = None
@@ -61,41 +56,38 @@ def home(request):
     if request.user.is_authenticated:
         user_recommendations = UserRecommendations.objects.filter(user=request.user).first()
 
-    # Create a list to store the recommended fields
     recommended_fields = []
-
-    # Order recommended fields first
     if user_recommendations:
         recommended_fields.extend([user_recommendations.field_1, user_recommendations.field_2, user_recommendations.field_3])
 
-    print("recommended_fields: ", recommended_fields)
 
     # Use a list comprehension to get the IDs of the recommended fields
     recommended_field_ids = [field.pk for field in recommended_fields]
 
-    print("recommended_field_ids: ", recommended_field_ids)
+    #print("recommended_fields: ", recommended_fields)
+    #print("recommended_field_ids: ", recommended_field_ids)
 
     # Filter out the recommended fields from the field_items queryset
     field_items = field_items.exclude(pk__in=recommended_field_ids)
 
-    try:
-        user_skills = UserSkill.objects.filter(user=request.user)
-        # user_skills_list = [skill.skill.skill for skill in user_skills]
-        highest_skill_level = user_skills.order_by('-level').first()
-        # filter top 15 skills
-        user_skills = user_skills.order_by('-level')[:15]
-        # get multiplier for highest_skill_level that will not exceed 100
-        level_multiplier = 100 / highest_skill_level.level
-    except:
-        user_skills = None
-        level_multiplier = 1
+    # try:
+    #     user_skills = UserSkill.objects.filter(user=request.user)
+    #     # user_skills_list = [skill.skill.skill for skill in user_skills]
+    #     highest_skill_level = user_skills.order_by('-level').first()
+    #     # filter top 15 skills
+    #     user_skills = user_skills.order_by('-level')[:15]
+    #     # get multiplier for highest_skill_level that will not exceed 100
+    #     level_multiplier = 100 / highest_skill_level.level
+    # except:
+    #     user_skills = None
+    #     level_multiplier = 1
 
     return render(request, 'home.html', {
         'specialization_items': specialization_items, 
         'field_items': recommended_fields + list(field_items),
         'user_recommendations': user_recommendations,
-        'user_skills': user_skills,
-        'level_multiplier': level_multiplier
+        # 'user_skills': user_skills,
+        # 'level_multiplier': level_multiplier
         })
 
 
@@ -134,7 +126,7 @@ def home_field(request, field_id=None):
         #messages.success(request, "specialization items is filtered")
     else:
         specialization_items = Specialization.objects.all()
-        messages.success(request, "specialization items is not filtered")
+        messages.success(request, "dashboard/specialization items is not filtered")
 
     #specialization_items = Specialization.objects.all()
     
