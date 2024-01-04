@@ -58,34 +58,39 @@ def home(request):
 
     recommended_fields = []
     if user_recommendations:
-        recommended_fields.extend([user_recommendations.field_1, user_recommendations.field_2, user_recommendations.field_3])
-
+        recommended_fields.extend([
+            user_recommendations.field_1, 
+            user_recommendations.field_2, 
+            user_recommendations.field_3
+            ])
+        recommendation_field_1 = Field.objects.get(field_name=user_recommendations.field_1)
+        recommendation_field_2 = Field.objects.get(field_name=user_recommendations.field_2)
+        recommendation_field_3 = Field.objects.get(field_name=user_recommendations.field_3)
+    else:
+        recommendation_field_1 = None
+        recommendation_field_2 = None
+        recommendation_field_3 = None
 
     # Use a list comprehension to get the IDs of the recommended fields
     recommended_field_ids = [field.pk for field in recommended_fields]
+    
 
-    #print("recommended_fields: ", recommended_fields)
-    #print("recommended_field_ids: ", recommended_field_ids)
+    print("recommended_fields: ", recommended_fields)
+    print("recommended_field_ids: ", recommended_field_ids)
 
     # Filter out the recommended fields from the field_items queryset
     field_items = field_items.exclude(pk__in=recommended_field_ids)
 
-    # try:
-    #     user_skills = UserSkill.objects.filter(user=request.user)
-    #     # user_skills_list = [skill.skill.skill for skill in user_skills]
-    #     highest_skill_level = user_skills.order_by('-level').first()
-    #     # filter top 15 skills
-    #     user_skills = user_skills.order_by('-level')[:15]
-    #     # get multiplier for highest_skill_level that will not exceed 100
-    #     level_multiplier = 100 / highest_skill_level.level
-    # except:
-    #     user_skills = None
-    #     level_multiplier = 1
 
     return render(request, 'home.html', {
         'specialization_items': specialization_items, 
         'field_items': recommended_fields + list(field_items),
         'user_recommendations': user_recommendations,
+
+        'recommendation_field_1': recommendation_field_1,
+        'recommendation_field_2': recommendation_field_2,
+        'recommendation_field_3': recommendation_field_3,
+
         # 'user_skills': user_skills,
         # 'level_multiplier': level_multiplier
         })
@@ -108,14 +113,24 @@ def home_field(request, field_id=None):
 
     # Order recommended fields first
     if user_recommendations:
-        recommended_fields.extend([user_recommendations.field_1, user_recommendations.field_2, user_recommendations.field_3])
-
-    print("recommended_fields: ", recommended_fields)
+        recommended_fields.extend([
+            user_recommendations.field_1, 
+            user_recommendations.field_2, 
+            user_recommendations.field_3
+            ])
+        recommendation_field_1 = Field.objects.get(field_name=user_recommendations.field_1)
+        recommendation_field_2 = Field.objects.get(field_name=user_recommendations.field_2)
+        recommendation_field_3 = Field.objects.get(field_name=user_recommendations.field_3)
+    else:
+        recommendation_field_1 = None
+        recommendation_field_2 = None
+        recommendation_field_3 = None
+    #print("recommended_fields: ", recommended_fields)
 
     # Use a list comprehension to get the IDs of the recommended fields
     recommended_field_ids = [field.pk for field in recommended_fields]
 
-    print("recommended_field_ids: ", recommended_field_ids)
+    #print("recommended_field_ids: ", recommended_field_ids)
 
     # Filter out the recommended fields from the field_items queryset
     field_items = field_items.exclude(pk__in=recommended_field_ids)
@@ -131,11 +146,15 @@ def home_field(request, field_id=None):
     #specialization_items = Specialization.objects.all()
     
 
-    return render(request, 'specialization_list.html', {
+    return render(request, 'dashboard/specialization_list.html', {
         'specialization_items': specialization_items,
         'field_items': recommended_fields + list(field_items),
         'selected_field': selected_field,
-        'user_recommendations': user_recommendations  # Pass the user recommendations to the template
+        'user_recommendations': user_recommendations,  # Pass the user recommendations to the template
+        
+        'recommendation_field_1': recommendation_field_1,
+        'recommendation_field_2': recommendation_field_2,
+        'recommendation_field_3': recommendation_field_3,
     })
 
 

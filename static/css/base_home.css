@@ -282,7 +282,7 @@ ol, ul
     /* color: var(--highlight); */
     color:var(--highlight);
     transition: background-color 0.3s ease;
-    min-width: 120px;
+    min-width: 130px;
     max-height: 50px;
     line-height: 1;
 }
@@ -458,7 +458,7 @@ ol, ul
     } */
 
     
-    .nav span.title {
+    .nav span.title, .nav span.subtitle {
         display: none;
     }
 

@@ -20,7 +20,8 @@ main {
 
 
 .section {
-  padding: 10px;
+  padding: 30px 10px;
+  width: 100%;
 }
 
 .home {
@@ -31,7 +32,9 @@ main {
   /* justify-content: center; */
 }
 #header {
-  height: 280px;
+  height: 30vw;
+  min-height: 200px;
+  max-height: 300px;
 }
 
 header {
@@ -47,15 +50,22 @@ header {
   /* position: absolute; */
   /* top: 3%; */
 
-  height: 300px;
+  /* height: 280px; */
+  height: 30vw;
+  min-height: 200px;
+  max-height: 300px;
+
   width: calc(100% - 40px);
   /* z-index: -1; */
 }
 
 
-
 .page-head {
-  padding: 100px 12px 50px;
+  height: 30vw;
+  min-height: 200px;
+  max-height: 300px;
+
+  padding: auto;
   /* position: relative; */
   /* z-index: 1; */
   width: 100%;
@@ -76,7 +86,8 @@ header {
 
 .home-main {
   margin: auto;
-  width: 1100px;
+  width: 100vw;
+  max-width: 1100px;
   /* widht 100% - 100px */
   /* width: calc(100% - 200px); */
   /* width: 100%; */
@@ -268,20 +279,31 @@ h3 {
 
 
 
-.card-container {
-  display: flex;
-  position: relative;
-  overflow-x: auto;
-  /* Allow horizontal scrolling if content overflows */
-  padding: 5px;
-  padding-bottom: 20px;
-  /* Add some padding at the bottom for better visibility */
-}
-
 #specialization-container {
   display: flex;
   flex-wrap: wrap !important;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  gap: 20px 10px;
+  max-height: 600px;
+  /* hide or dont show out of thee div */
+  overflow: hidden;
+}
 
+#specialization-container .card-link {
+  min-width: 120px;
+  flex-basis: 20%;
+}
+
+
+.card.specialization {
+  /* height: 100px;
+  width: 220px;
+  min-height: 100px;
+  min-width: 220px;
+  max-height: 100px;
+  max-width: 220px; */
+  overflow: hidden;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -300,6 +322,12 @@ h3 {
   display: flex;
   overflow: auto;
   position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 20px;
+  padding: 10px;
 }
 
 /* .card-container::after {
@@ -321,7 +349,7 @@ h3 {
   display: flex;
 }
 
-.card-container-wrapper::after {
+/* .card-container-wrapper::after {
   content: '';
   position: absolute;
   top: 0;
@@ -329,15 +357,15 @@ h3 {
   width: 50px; 
   height: 100%;
   background: linear-gradient(to right, rgba(255,255,255,0), var(--body-color) 100%);
-}
+} */
 
 .card {
   /*box for fields*/
   /* border: 2px solid rgb(228, 95, 65); ; */
   padding: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  margin-left: 30px;
+  /* width: 300px; */
+  /* margin-left: 30px; */
   flex-shrink: 0;
   /* Prevent cards from shrinking to fit */
   /* text-align: center; */
@@ -363,17 +391,6 @@ h3 {
 
 
 
-.card.specialization {
-  height: 100px;
-  width: 220px;
-  min-height: 100px;
-  min-width: 220px;
-  max-height: 100px;
-  max-width: 220px;
-  overflow: hidden;
-}
-
-
 .card.field {
   /* background-color:rgb(228, 95, 65);  */
   /* background-color: #FFA599;; */
@@ -382,8 +399,6 @@ h3 {
   overflow: hidden;
   color: white;
   size: 10px;
-  margin-left: 0;
-  margin-right: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -483,10 +498,10 @@ h3 {
 
 }
 
-a .card.specialization {
+/* a .card.specialization {
   margin-left: 0;
   margin-right: 12px;
-}
+} */
 
 .card.specialization p {
   /* Small font */
@@ -509,11 +524,17 @@ a .card.specialization {
 /* remove a styles */
 a {
   text-decoration: none;
-  color: transparent;
+  /* color: transparent; */
+  /* remove underline */
+  text-decoration: none;
+  /* remove blue color */
+  color: inherit;
+   /* underline color */
+  text-decoration-color: transparent;
 }
 
 a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 
@@ -535,24 +556,73 @@ a:active {
   align-items: stretch; /* This makes all children take up full height */
 }
 
-
-.explore-section .col {
-  width: 50%;
+.explore-section .container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.explore-section .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  /* when screen is small bring down other elements */
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+  gap: 20px 20px;
+}
+
+.explore-section .col {
+  width: 45%;
+  /* min-width: 400px; */
+
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
 .explore-section .card {
+  /* flex: 1 0 200px; */
+  flex-shrink: 1;
+
+  /* width: 400px;
+  height: 400px; */
+
+  margin: 0;
+  padding: 50px;
+
   align-items: center;
   text-align: center;
-  width: auto;
-  margin: 10px;
+
 }
 
 .explore-section .card h3 {
   padding-left: 0px;
 }
 
+@media (max-width: 800px) {
+  .explore-section .col {
+    width: 100%; /* make the columns full width on small screens */
+    min-width: 0; /* remove the minimum width on small screens */
+  }
+  .explore-section a {
+    width: 80%;
+  }
+  .explore-section .card {
+    width: 100%; /* make the cards full width on small screens */
+    height: auto; /* let the height adjust based on the content */
+  }
+}
+
+
 footer {
-  display: none;
+  /* display: none; */
+  background-color: #000;
+
 }
 
 
@@ -584,6 +654,12 @@ footer {
   font-size: 9em;
   font-weight: bold;
 
+}
+
+.field-link {
+  /* display: flex;
+  justify-content: center;  
+  align-items: center; */
 }
 
 .field-card {
