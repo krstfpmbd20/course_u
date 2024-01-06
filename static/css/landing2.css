@@ -71,8 +71,8 @@ body {
 .section {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     padding: 0;
     height: 100%;
@@ -83,11 +83,11 @@ body {
     padding: 0;
     width: 100vw;
     max-width: 1000px;
-    background-image: url('http://127.0.0.1:8000/static/images/pling.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    /* background-image: url('http://127.0.0.1:8000/static/images/pling.png'); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* height: 100vh; */
 }
 
 .row {
@@ -109,6 +109,7 @@ body {
     align-items: flex-start;
 }
 
+
 h1 {
     align-self: center;
     font-size: 3rem;
@@ -117,6 +118,11 @@ h1 {
     /* padding: 0; */
     text-align: center;
     
+}
+
+p {
+    /* align-self: center;
+    text-align: center; */
 }
 
 .btn {
@@ -155,8 +161,8 @@ h1 {
 }
 
 .section-courseu .section-content {
-    max-width: 80%;
-    margin: 0px 50px;
+    /* max-width: 80%;
+    margin: 0px 50px; */
 }
 
 .section-courseu .row .col-info {
@@ -171,8 +177,9 @@ h1 {
 
 
 .section-courseu .row .col-info h1 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
+    text-align: left;
 }
 
 .section-courseu .row .col-info .btn {
