@@ -44,11 +44,15 @@ logger = logging.getLogger("django") # name of logger : django
 #@allowed_users(allowed_roles=['admin','staff','student','instructor']) # only users on the list can access this page, ie. admin and staff
 def home(request):
 
-    specialization_items = Specialization.objects.all()
-    # get only 20 specilaization objects
-    specialization_items = specialization_items[:20]
+    have_reco = True
 
-    field_items = Field.objects.all()
+    try:
+        specialization_items = Specialization.objects.all()
+        # get only 20 specilaization objects
+        specialization_items = specialization_items[:16]
+    except Specialization.DoesNotExist:
+        specialization_items = None
+
     # Fetch user recommendations
     user_recommendations = None
     recommended_fields = None
@@ -67,24 +71,31 @@ def home(request):
         recommendation_field_2 = Field.objects.get(field_name=user_recommendations.field_2)
         recommendation_field_3 = Field.objects.get(field_name=user_recommendations.field_3)
     else:
+        have_reco = False
         recommendation_field_1 = None
         recommendation_field_2 = None
         recommendation_field_3 = None
 
-    # Use a list comprehension to get the IDs of the recommended fields
-    recommended_field_ids = [field.pk for field in recommended_fields]
-    
+    try:
+        field_items = Field.objects.all()
+        # Use a list comprehension to get the IDs of the recommended fields
+        recommended_field_ids = [field.pk for field in recommended_fields]
+            
+        # Filter out the recommended fields from the field_items queryset
+        field_items = field_items.exclude(pk__in=recommended_field_ids)
 
-    print("recommended_fields: ", recommended_fields)
-    print("recommended_field_ids: ", recommended_field_ids)
+    except:
+        field_items = None
+        recommended_field_ids = None    
 
-    # Filter out the recommended fields from the field_items queryset
-    field_items = field_items.exclude(pk__in=recommended_field_ids)
+    #print("recommended_fields: ", recommended_fields)
+    #print("recommended_field_ids: ", recommended_field_ids)
 
 
     return render(request, 'home.html', {
+        'have_reco': have_reco,
         'specialization_items': specialization_items, 
-        'field_items': recommended_fields + list(field_items),
+        'field_items': recommended_fields,# + list(field_items),
         'user_recommendations': user_recommendations,
 
         'recommendation_field_1': recommendation_field_1,

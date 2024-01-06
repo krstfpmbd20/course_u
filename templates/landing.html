@@ -1,17 +1,185 @@
-
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course University</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+    <link rel="stylesheet" href="{% static 'css/landing2.css' %}">
+
 </head>
+
 <body>
-    <div class="background-image">
-        <div class="content">
-            <a href="{% url 'login_user' %}" class="get-started-button" id="get-started-button"><b>Get Started</b></a>
+
+    <div class="section section-courseu">
+        <div class="section-content">
+            <div class="row">
+                <div class="col col-info">
+                    <div class="logo">
+                        <img src="{% static 'images/acad.png' %}" alt="logo">
+                    </div>
+                    <h1>Career Recommendation System & Roadmap</h1>
+                    <p>Find out what topics you find interesting, learn a new skill & connect with poeple that are
+                        passionate about similar topics.</p>
+                    <a href="{% url 'login_user' %}" class="btn btn-primary"><b>Get Started</b></a>
+                </div>
+                <div class="col col-img">
+                    <div class="img">
+                        <img src="{% static 'images/landing-img.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <div class="section section-introduction">
+        <div class="section-content">
+            <h1>Course Universtiy</h1>
+            <div class="row">
+                <div class="col instruct">
+                    <img src="{% static 'images/instruct.png' %}" alt="">
+                </div>
+                <div class="col instruct-info">
+                    <p>A career recommendation system caters to a diverse range of users, offering personalized guidance
+                        and
+                        recommendations to support PUP CCIS students in making well-informed decisions about their
+                        educational and professional journeys.</p>
+                    <a href="{% url 'login_user' %}" class="btn btn-primary"><b>Get Started</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-features">
+        <div class="section-content">
+            <h1>Course U Features</h1>
+
+            <div class="feature assessment">
+                <h2>Assessments</h2>
+                <div class="row">
+                    <p>Users will input their information such as their grades, course, and year.</p>
+                    <p>Users will take the assessment to evaluate their skills.</p>
+                    <p>Users will continue the assessment process until they graduate.</p>
+                </div>
+            </div>
+            <div class="feature generate-results">
+                <h2>Generate Results</h2>
+                <div class="row">
+                    <p>The system will generate the result based on the assessment.</p>
+                    <p>The system will provide transparency and records of the result.</p>
+                </div>
+            </div>
+            <div class="feature generate-recommendations">
+                <h2>Generate Recommendations</h2>
+                <div class="row">
+                    <p>The system will generate the Top 3 field recommendations and provide transparency of the results.
+                    </p>
+                    <p>he system will also provide a roadmap, jobs, and specializations after the recommendation..</p>
+                </div>
+            </div>
+            <div class="feature provide-learning-materials">
+                <h2>Provide Learning Materials</h2>
+                <div class="row">
+                    <p>Learning materials, resources, and links are provided after the recommendation.</p>
+                    <p>Tracking of previous activity and jobs are also available in the system.</p>
+                </div>
+            </div>
+            <div class="feature recommend-jobs">
+                <h2>Recommend Jobs</h2>
+                <div class="row">
+                    <p>The system will generate job recommendations based on the result of the assessment.</p>
+                    <p>Users will be redirected to LinkedIn once they click apply.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section section-guidelines">
+        <div class="section-content">
+            <h1>Section Guidelines</h1>
+            <div class="row">
+                <div class="col col-content">
+                    <div id="content1" style="display: none;">
+                        <img src="{% static 'images/student.png' %}" alt="content-image">
+                        <p>Before entering their first year of college, freshmen users will undergo an initial
+                            assessment to evaluate
+                            their knowledge and skills that will serve as their guide.</p>
+                    </div>
+                    <div id="content2" style="display: none;">
+                        <img src="{% static 'images/student.png' %}" alt="content-image">
+                        <p>Following the pre assessment, users will input their grades for 1st-year majors before
+                            proceeding to the next
+                            assessment.</p>
+                    </div>
+                    <div id="content3" style="display: none;">
+                        <img src="{% static 'images/student.png' %}" alt="content-image">
+                        <p>Following the 1st year assessment, users input grades for 2nd-year majors before proceeding
+                            to the next
+                            assessment.</p>
+                    </div>
+                    <div id="content4" style="display: none;">
+                        <img src="{% static 'images/student.png' %}" alt="content-image">
+                        <p>After the 2nd year assessment, users will input grades for their 3rd-year majors before
+                            taking their last
+                            assessment.</p>
+                    </div>
+                    <div id="content5" style="display: none;">
+                        <img src="{% static 'images/student.png' %}" alt="content-image">
+                        <p>After 3rd year assessment, users input their grades for 4th-year majors and will recommend
+                            career based on the
+                            results.</p>
+                    </div>
+                    <div id="content6" style="display: none;">
+                        <img src="{% static 'images/student.png' %}" alt="content-image">
+                        <p>Lasty, once the student has graudated a email will send a form that will verify the
+                            recomendation helpfullness.</p>
+                    </div>
+                </div>
+                <div class="col col-tab">
+                    <ul>
+                        <li id="tab1">> Pre Assessment</li>
+                        <li id="tab2">> 1st year</li>
+                        <li id="tab3">> 2nd year</li>
+                        <li id="tab4">> 3rd year</li>
+                        <li id="tab5">> 4th year</li>
+                        <li id="tab6">> Graduate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-last">
+        <div class="section-content">
+            <div class="col">
+                <h1>Start your Career with us!</h1>
+                <a href="{% url 'login_user' %}" class="btn btn-primary"><b>Get Started</b></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('li').click(function () {
+                // Remove 'selected' class from all li elements
+                $('li').removeClass('selected');
+
+                // Add 'selected' class to the clicked li element
+                $(this).addClass('selected');
+
+                // Hide all content divs
+                $('[id^=content]').hide();
+
+                // Show the div with the corresponding ID
+                $('#content' + this.id.replace('tab', '')).show();
+            });
+
+            // Trigger click event on tab1
+            $('#tab1').click();
+        });
+    </script>
 </body>
+
 </html>
