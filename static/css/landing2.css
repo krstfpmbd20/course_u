@@ -83,6 +83,11 @@ body {
     padding: 0;
     width: 100vw;
     max-width: 1000px;
+    background-image: url('http://127.0.0.1:8000/static/images/pling.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }
 
 .row {
@@ -118,17 +123,16 @@ h1 {
     padding: 15px 30px;
     
     font-weight: 800;
-    font-size: 26px;
+    font-size: 16px;
 
     background-color: #007bff;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 20px;
     text-decoration: none;
     transition: background-color 0.3s ease;
     margin: auto;
     align-self: center;
 }
-
 
 @media only screen and (max-width: 600px) {
     .section {
@@ -151,7 +155,7 @@ h1 {
 }
 
 .section-courseu .section-content {
-    max-width: 100%;
+    max-width: 80%;
     margin: 0px 50px;
 }
 
@@ -212,11 +216,11 @@ h1 {
 }
 
 .section-introduction .section-content {
-    margin-bottom: 180px;
+    margin-bottom: 150px;
 }
 
 .section-introduction h1 {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .section-introduction .col {
     padding: auto;
@@ -225,11 +229,13 @@ h1 {
 .section-introduction .instruct {
     width: 55%;
     height: auto;
+    margin-right: 50px;
 }
 
 .section-introduction .instruct img {
     width: 100%;
     height: auto;
+   
 }
 
 .section-introduction .instruct-info {
@@ -243,12 +249,19 @@ h1 {
 
 .section-introduction .instruct-info p {
     text-align: center;
+    color:grey;
+    font-size: 14px;
+}
+.section-introduction .instruct-info h2{
+    font-size:60px;
+    text-align: center;
+    
 }
 
 /* section features */
 
 .section-features {
-    background-color: #2e2e2e;
+    background-color:rgb(228, 95, 65); /*#2e2e2e;*/
     color: #fff;
 }
 
@@ -257,7 +270,7 @@ h1 {
 }
 
 .section-features .section-content div {
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 .section-features .row {
@@ -382,7 +395,7 @@ h1 {
 /* section-last */
 
 .section-last {
-    background-color: #2e2e2e;
+    background-color: rgb(228, 95, 65);;
     color: #fff;
 }
 
