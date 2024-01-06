@@ -36,17 +36,21 @@ iv.test-container .card
 
 .character-container {
     /* add image */
-    background-image: url('../../static/images/character.png');
+    background-image: url('../../static/images/two1.png');
     /* png no white bg */
 
-    background-size: cover;
+   background-size:contain;
     background-color: transparent;
     background-repeat: no-repeat;
-    min-width: 30%;
-    min-height: 520px;
+    height: 550px;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 100px;
+    /* min-width: 30%;
+    min-height: 520=0px;
     max-width: 30%;
     max-height: 550px;
-    /* margin-left: 150px; */
+    margin-left: 150px; */
 }
 /* .test-container{
     justify-content: left;
