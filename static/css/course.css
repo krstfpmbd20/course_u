@@ -241,3 +241,15 @@ p {
 footer {
   display: none;
 }
+@media (max-width: 800px) {
+  .character-section {
+      display: none;
+  }
+
+  .btn {
+    margin: 30px auto;
+
+    /* font-size: 14px; */
+    width: 300px;
+  }
+}

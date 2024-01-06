@@ -110,3 +110,15 @@ body{
 footer {
     display: none;
 }
+
+
+@media (max-width: 800px) {
+    .character-container {
+        display: none;
+    }
+
+    .btn {
+        font-size: 14px;
+        width: 200px;
+    }
+}

@@ -135,3 +135,22 @@ form input[type="text"],
     background: blue;
     cursor: pointer;
  }
+
+ @media (max-width: 800px) { 
+    .container {
+        width: 100%;
+        /* margin-right: 20px;
+        margin-left: 20px; */
+        padding: 0 20px;
+
+    }
+    .right {
+        width: 100%;
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .side {
+        display: none;
+    }
+ }
