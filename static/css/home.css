@@ -22,6 +22,7 @@ main {
 .section {
   padding: 30px 10px;
   width: 100%;
+
 }
 
 .home {
@@ -293,6 +294,7 @@ h3 {
 #specialization-container .card-link {
   min-width: 120px;
   flex-basis: 20%;
+  
 }
 
 
@@ -328,6 +330,7 @@ h3 {
   align-content: flex-start;
   gap: 20px;
   padding: 10px;
+ 
 }
 
 /* .card-container::after {
