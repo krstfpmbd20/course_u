@@ -105,8 +105,14 @@ def start_test(request):
             # this means student has completed the course and cannot the test anymore
             return HttpResponse("You have completed the course and cannot take the test anymore.")
         # check if the user has taken the test in his current StudentProfile year
-        question_set = QuestionSet.objects.filter(user=request.user, year=student_profile.current_year)
-        if question_set.exists():
+        try:
+            question_set = QuestionSet.objects.filter(user=request.user, year=student_profile.current_year).first()
+        except:
+            question_set = None
+            print("No Question Set")
+            messages.error(request, 'Error retrieving question set')
+        #print("!!!!!!!!!!!!!!!!!",question_set)
+        if question_set.is_completed:
             return redirect('student_test_report', question_set_id=question_set.set_id)
         
     clear_session_variables(request)

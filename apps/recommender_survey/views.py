@@ -8,11 +8,20 @@ from apps.acad.models import StudentProfile
 def survey(request):
     prev_year = StudentProfile.objects.filter(user=request.user).first().current_year - 1
     # get recommendation from previous year where user = request.user and year = prev_year
-    last_recommendation = UserRecommendations.objects.filter(user_id=request.user, current_year=prev_year).last()
+    
+    try:
+        last_recommendation = UserRecommendations.objects.filter(user_id=request.user, current_year=prev_year).last()
+    except:
+        last_recommendation = None
+    if  last_recommendation == None:
+        return redirect('recommender')
 
     # check if reco survey exists where recommendation_id = last_recommendation.recommendation_id
-    reco_survey = Survey.objects.filter(recommendation_id=last_recommendation.recommendation_id).first()
-    if reco_survey:
+    try:
+        reco_survey = Survey.objects.filter(recommendation_id=last_recommendation.recommendation_id).first()
+    except:
+        reco_survey = None
+    if reco_survey == None:
         # if reco survey exists, redirect to recommender
         return redirect('recommender')
 
