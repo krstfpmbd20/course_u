@@ -149,10 +149,10 @@ def home(request):
         step_3_status = False
         step_4_status = False
         step_5_status = False
-        user_reco_steps_status = [False, False, False, False]
-        user_test_status = [False, False, False, False]
-        user_grade_status = [False, False, False, False]
-        user_survey_s_status = [False, False, False, False]
+        user_reco_steps_status = [False, False, False, False, False]
+        user_test_status = [False, False, False, False, False]
+        user_grade_status = [False, False, False, False, False]
+        user_survey_s_status = [False, False, False, False, False]
 
     return render(request, 'home.html', {
         'have_reco': have_reco,
