@@ -17,10 +17,14 @@ from apps.website.forms import SignUpForm, StudentScoreForm
 from apps.website.models import Specialization, Field, LearningMaterial
 from apps.recommender.models import UserRecommendations, UserSkill
 
-from apps.acad.models import StudentProfile, Course, Subject
+
+from apps.acad.models import StudentProfile, Course, Subject, StudentGrades
 from apps.assessment.models import Test, QuestionSet
 from apps.jobs.models import JobPosting
 from apps.survey.models import Survey
+from apps.recommender.models import UserRecommendations
+from apps.recommender_survey.models import Survey as RecommenderSurvey
+
 
 from utilities.decorators import unauthenticated_user, allowed_users, admin_only
 from .models import *
@@ -91,6 +95,49 @@ def home(request):
     #print("recommended_fields: ", recommended_fields)
     #print("recommended_field_ids: ", recommended_field_ids)
 
+        # Roadmap
+    user_reco_steps = [UserRecommendations.objects.filter(user=request.user, current_year=i) for i in range(5)]
+    user_reco_steps_status = [step.exists() for step in user_reco_steps]
+    user_test_status = [QuestionSet.objects.filter(user=request.user, year=i).exists() for i in range(5)]
+
+    # check if it has recommender_survey model survey has user_reco_step_n ID
+    user_survey_s_status = []
+    for step in user_reco_steps:
+        #print(step)
+        try:
+            status = RecommenderSurvey.objects.filter(recommendation_id=step.first().recommendation_id).exists()
+        except AttributeError:
+            status = False
+        #print(status)
+        user_survey_s_status.append(status)
+
+    # get studentprofile
+    student_profile = StudentProfile.objects.get(user=request.user)
+    student_profile_exists = StudentProfile.objects.filter(user=request.user).exists()
+    print("student_profile_exists",student_profile_exists)
+    # get course
+    course = Course.objects.get(id=student_profile.enrolled_courses_id)
+    course_name = course.course_name
+    # get course number of years
+    user_grade_status = []
+    for year in range(1,course.number_of_years+1):
+        #first subject from curriculum
+        first_subject = Subject.objects.filter(curriculum__course=course, curriculum__year=year).first()
+        # on studentgrades check if student_profile.id and subject.id exists
+        # if not, return false
+        try:
+            status = StudentGrades.objects.filter(student_id=student_profile.id, subject_id=first_subject.id).exists()
+        except AttributeError:
+            status = False
+        #print("user grade status {}: {}", year, status)
+        user_grade_status.append(status)
+        
+    step_1_status =  user_reco_steps_status[0] and user_test_status[0]
+    step_2_status =  user_reco_steps_status[1] and user_test_status[1] and user_survey_s_status[0] and user_grade_status[0]
+    step_3_status =  user_reco_steps_status[2] and user_test_status[2] and user_survey_s_status[1] and user_grade_status[1]
+    step_4_status =  user_reco_steps_status[3] and user_test_status[3] and user_survey_s_status[2] and user_grade_status[2]
+    step_5_status =  user_reco_steps_status[4] and user_test_status[4] and user_survey_s_status[3] and user_grade_status[3]
+
 
     return render(request, 'home.html', {
         'have_reco': have_reco,
@@ -104,6 +151,45 @@ def home(request):
 
         # 'user_skills': user_skills,
         # 'level_multiplier': level_multiplier
+
+        'student_profile_exists': student_profile_exists,
+        "course_name": course_name,
+
+        # Roadmap
+        'step_1_status': step_1_status,
+        'step_2_status': step_2_status,
+        'step_3_status': step_3_status,
+        'step_4_status': step_4_status,
+        'step_5_status': step_5_status,
+
+
+        # Roadmap
+        'reco_1_status': user_reco_steps_status[0],
+        'reco_2_status': user_reco_steps_status[1],
+        'reco_3_status': user_reco_steps_status[2],
+        'reco_4_status': user_reco_steps_status[3],
+        'reco_5_status': user_reco_steps_status[4],
+
+        # test
+        'test_1_status': user_test_status[0],
+        'test_2_status': user_test_status[1],
+        'test_3_status': user_test_status[2],
+        'test_4_status': user_test_status[3],
+        'test_5_status': user_test_status[4],
+
+        # Survey
+        'survey_s_1_status': user_survey_s_status[0],
+        'survey_s_2_status': user_survey_s_status[1],
+        'survey_s_3_status': user_survey_s_status[2],
+        'survey_s_4_status': user_survey_s_status[3],
+        'survey_s_5_status': user_survey_s_status[4],
+
+        # Grades
+        # 'grade_1_status': user_grade_status[0],
+        'grade_2_status': user_grade_status[0],
+        'grade_3_status': user_grade_status[1],
+        'grade_4_status': user_grade_status[2],
+        'grade_5_status': user_grade_status[3],
         })
 
 

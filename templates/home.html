@@ -83,7 +83,8 @@
             {% elif item == user_recommendations.field_2 %}recommendedfield_second
             {% elif item == user_recommendations.field_3 %}recommendedfield_third{% endif %}{% endif %}"
             data-field-id="{{ item.field }}">
-            <div class="card field{% if selected_field and selected_field.field_id == item.field_id %}-selected{% endif %} text-truncate">
+            <div
+              class="card field{% if selected_field and selected_field.field_id == item.field_id %}-selected{% endif %} text-truncate">
 
               <!-- <p class="small">{{ item.description }}</p> -->
               <!-- Check if the field is recommended -->
@@ -112,7 +113,7 @@
               <h4 class="" style="color:  rgb(107, 107, 107) !important;">No Recommendation</h4>
             </div>
           </a>
-          <a href=""  class="card-link field-link link-offset-2 link-underline link-underline-opacity-0">
+          <a href="" class="card-link field-link link-offset-2 link-underline link-underline-opacity-0">
             <div class="card field text-truncate">
               <h4 class="" style="color: rgb(107, 107, 107) !important;">No Recommendation</h4>
             </div>
@@ -196,8 +197,107 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- <div class="skill">
+    <div class="section section-roadmap">
+      <h3>Roadmap Progress</h3>
+      <div class="roadmap-step">
+        <div class="roadmap-line"></div>
+
+        <div class="step-card">
+          <div class="step-status {{step_1_status|yesno:'active,'}}" data-step="1" data-tooltip=""></div>
+          <h4>Step 1</h4>
+          <h5>Pre-Assessment</h5>
+          <ul>
+            <a href="">
+              <li><span class="milestone-status {{student_profile_exists|yesno:'active,'}}"></span>Student Record</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{test_1_status|yesno:'active,'}}"></span>Assessment</li>
+            </a>
+            <a href="">
+              <li class=" {{step_1_status|yesno:'active,'}}"><span
+                  class="milestone-status {{reco_1_status|yesno:'active,'}}"></span>Recommendation</li>
+            </a>
+          </ul>
+        </div>
+        <div class="step-card">
+          <div class="step-status {{step_2_status|yesno:'active,'}}" data-step="1" data-tooltip=""></div>
+          <h4>Step 2</h4>
+          <h5>1st Year</h5>
+          <ul>
+            <a href="">
+              <li><span class="milestone-status {{grade_2_status|yesno:'active,'}}"></span>Grade Input</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{test_2_status|yesno:'active,'}}"></span>Assessment</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{survey_s_1_status|yesno:'active,'}}"></span>Recommendation Survey</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{reco_2_status|yesno:'active,'}}"></span>Recommendation</li>
+            </a>
+          </ul>
+        </div>
+        <div class="step-card">
+          <div class="step-status {{step_3_status|yesno:'active,'}}" data-step="1" data-tooltip=""></div>
+          <h4>Step 3</h4>
+          <h5>2nd Year</h5>
+          <ul>
+            <a href="">
+              <li><span class="milestone-status {{grade_3_status|yesno:'active,'}}"></span>Grade Input</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{test_3_status|yesno:'active,'}}"></span>Assessment</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{survey_s_2_status|yesno:'active,'}}"></span>Recommendation Survey</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{reco_3_status|yesno:'active,'}}"></span>Recommendation</li>
+            </a>
+          </ul>
+        </div>
+        <div class="step-card">
+          <div class="step-status {{step_4_status|yesno:'active,'}}" data-step="1" data-tooltip=""></div>
+          <h4>Step 4</h4>
+          <h5>3rd Year</h5>
+          <ul>
+            <a href="">
+              <li><span class="milestone-status {{grade_4_status|yesno:'active,'}}"></span>Grade Input</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{test_4_status|yesno:'active,'}}"></span>Assessment</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{survey_s_3_status|yesno:'active,'}}"></span>Recommendation Survey</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{reco_4_status|yesno:'active,'}}"></span>Recommendation</li>
+            </a>
+          </ul>
+        </div>
+        <div class="step-card">
+          <div class="step-status {{step_5_status|yesno:'active,'}}" data-step="1" data-tooltip=""></div>
+          <h4>Step 5</h4>
+          <h5>4th Year</h5>
+          <ul>
+            <a href="">
+              <li><span class="milestone-status {{grade_5_status|yesno:'active,'}}"></span>Grade Input</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{test_5_status|yesno:'active,'}}"></span>Assessment</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{survey_s_4_status|yesno:'active,'}}"></span>Recommendation Survey</li>
+            </a>
+            <a href="">
+              <li><span class="milestone-status {{reco_5_status|yesno:'active,'}}"></span>Recommendation</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="skill">
     <div class="skill-section">
       <h3>Skills</h3>
       {% for skill in user_skills %}
@@ -211,21 +311,22 @@
       {% endfor %}
     </div>
   </div> -->
-</div>
+
+  </div>
 
 
-<!-- Include your custom JavaScript file -->
-<script src="{% static 'js/specialization_filter.js' %}"></script>
-{% else %}
-<!-- 
+  <!-- Include your custom JavaScript file -->
+  <script src="{% static 'js/specialization_filter.js' %}"></script>
+  {% else %}
+  <!-- 
 <div class="col-md-6 offset-md-3">
     <br><br><br>
     <h3 class="">You need to login first</h3>
     <a href="{% url 'login_user' %}" class="btn btn-secondary">Login Page</a>
 </div> -->
 
-{% endif %}
+  {% endif %}
 
 
 
-{% endblock content %}
+  {% endblock content %}

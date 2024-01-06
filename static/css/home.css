@@ -690,3 +690,307 @@ footer {
   word-wrap: break-word;
   overflow: hidden;
 }
+
+
+/* roadmap */
+
+
+.section-roadmap {
+  margin: 70px auto;
+}
+
+.section-roadmap h3 {
+  margin-bottom: 100px;
+}
+
+
+.roadmap-section {
+  display: flex;
+  align-items: center;
+}
+
+.roadmap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Add this line */
+  width: 80%;
+  padding: 20px 0;
+  margin: auto;
+}
+
+.roadmap-content {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  width: 80%;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 5%;
+  background-color: #ddd;
+  top: 27.5px; /* Adjust this value to position the line correctly */
+  z-index: -1; /* Add this line */
+}
+
+
+.progress-line {
+  position: absolute; 
+  height: 5%;
+  background-color: rgb(228, 95, 65);
+  top: 27.5px;
+  z-index: -1; /* Add this line */
+}
+
+.progress_1 {
+  width: 25%;
+}
+
+.progress_2 {
+  width: 50%;
+}
+
+.progress_3 {
+  width: 75%;
+}
+
+.progress_4 {
+  width: 100%;
+}
+
+.roadmap.second .step {
+  width: 20px;
+  height: 20px;
+}
+
+.step {
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 50%;
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
+}
+
+.step span {
+  position: absolute;
+  top: 30px; /* Adjust this value to position the label correctly */
+  left: -10px; /* Adjust this value to position the label correctly */
+  width: 40px; /* Adjust this value to fit the label */
+  text-align: center; /* Add this line */
+}
+
+.step.active {
+  background-color: rgb(228, 95, 65);
+}
+
+.step {
+  /* ... existing styles ... */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the step */
+}
+
+.step:hover::after {
+  content: attr(data-tooltip); /* Use the data-step attribute as the content of the tooltip */
+  position: absolute;
+  top: 30px; /* Position the tooltip above the step */
+  left: 50%;
+  transform: translateX(-50%); /* Center the tooltip */
+  background-color: #333;
+  color: #fff;
+  max-width: 200px;
+  /* make content be one new line if */
+  padding: 5px;
+  border-radius: 5px;
+  /* white-space: nowrap; Prevent the tooltip from wrapping to the next line */
+}
+
+.roadmap-heading {
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: centers;
+}
+
+.roadmap-heading h1, .roadmap-heading h3 {
+  
+}
+
+
+.roadmap-step {
+  display: grid;
+  /* justify-content: space-between; */
+  grid-template-columns: repeat(5,  1fr); /* Adjust the 200px to your desired minimum width */
+  gap: 3px; /* Adjust the gap as needed */
+  align-items: stretch;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+
+.roadmap-line {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 3px;
+  background-color: #ddd;
+  top: 50%; /* Adjust this value to position the line correctly */
+  z-index: -1 !important; 
+  
+}
+
+.step-card {
+  /* background-color: #fff; */
+  border-radius: 5px;
+  display: block;
+  
+  position: relative;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+  border: 1px solid #ddd;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 7px;
+  padding-top: 20px;
+  margin: auto;
+  /* margin-bottom: 50px; */
+  max-width: 900px;
+  /* wrap text */
+  word-wrap: break-word;
+  /* gap: 5px; */
+  /* width: auto; */
+  /* height: auto; */
+  min-width: 150px;
+  min-height: 200px;
+  
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1 !important;
+}
+
+.step-card h4, .step-card ul, .step-card h5 {
+  flex: 1;
+}
+
+.step-card h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 3px;
+  /* align middle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-card h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  /* align middle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font weight */
+  font-weight: 400;
+  color: grey;
+}
+
+.step-card li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  font-size: 12px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  position: relative;
+  margin-left: 10px;
+}
+
+.step-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.step-status {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: #ddd;
+  color: #fff;
+  text-align: center;
+  
+}
+
+.step-status.active {
+  background-color: rgb(228, 95, 65);
+}
+
+.step-card li.active {
+  color:rgb(228, 95, 65);
+}
+
+.step-card .milestone-status {
+  content: "";
+  /* position: absolute; */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  /* background-color: #4CAF50; */
+  background-color: #ddd;
+  color: #fff;
+  z-index: 1;
+  margin-right: 3px;
+}
+
+.step-card .milestone-status.active {
+  background-color: rgb(228, 95, 65);
+}
+
+
+/* will display only when hovered */
+.step-card.hidden {
+  /* ... existing styles ... */
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* position: absolute; */
+  transform: translate(-65.5px, 9px);
+  /* left border */
+  border-left: 2px solid #ddd;
+}
+.step-card.hidden ul li {
+  display: flex;
+  align-items: center;
+}
+.step-card:hover {
+  opacity: 1;
+}
+
+
+.step-card.hidden .milestone-status {
+  width: 15px;
+  height: 15px;
+  /* position: absolute; */
+  /* top: 50%;
+  left: -6%; */
+  /* top: 30px;
+  left: -10px */
+  /* transform: translate(-50%, -50%); */
+  border: 2px solid #ddd;
+  margin-right: 15px;
+}
