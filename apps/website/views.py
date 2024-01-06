@@ -112,32 +112,47 @@ def home(request):
         user_survey_s_status.append(status)
 
     # get studentprofile
-    student_profile = StudentProfile.objects.get(user=request.user)
-    student_profile_exists = StudentProfile.objects.filter(user=request.user).exists()
-    print("student_profile_exists",student_profile_exists)
-    # get course
-    course = Course.objects.get(id=student_profile.enrolled_courses_id)
-    course_name = course.course_name
-    # get course number of years
-    user_grade_status = []
-    for year in range(1,course.number_of_years+1):
-        #first subject from curriculum
-        first_subject = Subject.objects.filter(curriculum__course=course, curriculum__year=year).first()
-        # on studentgrades check if student_profile.id and subject.id exists
-        # if not, return false
-        try:
-            status = StudentGrades.objects.filter(student_id=student_profile.id, subject_id=first_subject.id).exists()
-        except AttributeError:
-            status = False
-        #print("user grade status {}: {}", year, status)
-        user_grade_status.append(status)
+    try:
+        student_profile = StudentProfile.objects.get(user=request.user)
+        student_profile_exists = StudentProfile.objects.filter(user=request.user).exists()
+        print("student_profile_exists",student_profile_exists)
         
-    step_1_status =  user_reco_steps_status[0] and user_test_status[0]
-    step_2_status =  user_reco_steps_status[1] and user_test_status[1] and user_survey_s_status[0] and user_grade_status[0]
-    step_3_status =  user_reco_steps_status[2] and user_test_status[2] and user_survey_s_status[1] and user_grade_status[1]
-    step_4_status =  user_reco_steps_status[3] and user_test_status[3] and user_survey_s_status[2] and user_grade_status[2]
-    step_5_status =  user_reco_steps_status[4] and user_test_status[4] and user_survey_s_status[3] and user_grade_status[3]
-
+        # get course
+        course = Course.objects.get(id=student_profile.enrolled_courses_id)
+        course_name = course.course_name
+        # get course number of years
+        user_grade_status = []
+        for year in range(1,course.number_of_years+1):
+            #first subject from curriculum
+            first_subject = Subject.objects.filter(curriculum__course=course, curriculum__year=year).first()
+            # on studentgrades check if student_profile.id and subject.id exists
+            # if not, return false
+            try:
+                status = StudentGrades.objects.filter(student_id=student_profile.id, subject_id=first_subject.id).exists()
+            except AttributeError:
+                status = False
+            #print("user grade status {}: {}", year, status)
+            user_grade_status.append(status)
+            
+        step_1_status =  user_reco_steps_status[0] and user_test_status[0]
+        step_2_status =  user_reco_steps_status[1] and user_test_status[1] and user_survey_s_status[0] and user_grade_status[0]
+        step_3_status =  user_reco_steps_status[2] and user_test_status[2] and user_survey_s_status[1] and user_grade_status[1]
+        step_4_status =  user_reco_steps_status[3] and user_test_status[3] and user_survey_s_status[2] and user_grade_status[2]
+        step_5_status =  user_reco_steps_status[4] and user_test_status[4] and user_survey_s_status[3] and user_grade_status[3]
+        
+    except:
+        student_profile = None
+        student_profile_exists = False
+        course_name = None
+        step_1_status = False
+        step_2_status = False
+        step_3_status = False
+        step_4_status = False
+        step_5_status = False
+        user_reco_steps_status = [False, False, False, False]
+        user_test_status = [False, False, False, False]
+        user_grade_status = [False, False, False, False]
+        user_survey_s_status = [False, False, False, False]
 
     return render(request, 'home.html', {
         'have_reco': have_reco,
