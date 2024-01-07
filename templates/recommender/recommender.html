@@ -58,7 +58,7 @@
         </div>
     </div>
 </div>
-<div class="container skill-score">
+<!-- <div class="container skill-score">
     <h3> Skill Score Representation</h3>
     <div class="skill-bar">
         
@@ -84,69 +84,9 @@
             The skill also shows what relevance score it has to the Field of Study.
         </p>
     </div>
-</div>
+</div> -->
 <!-- <div class="container">
     {{ radar_skills|safe }}
 </div> -->
-
-
-<div class="roadmap">
-    <div class="line"></div> <!-- Add this line -->
-    <div class="step {{step_1_status|yesno:'active,'}}" data-step="1"><span>Step 1</span></div>
-    <div class="step {{step_2_status|yesno:'active,'}}" data-step="2"><span>Step 2</span></div>
-    <div class="step {{step_3_status|yesno:'active,'}}" data-step="3"><span>Step 3</span></div>
-    <div class="step {{step_4_status|yesno:'active,'}}" data-step="4"><span>Step 4</span></div>
-    <div class="step {{step_5_status|yesno:'active,'}}" data-step="5"><span>Step 5</span></div>
-</div>
-
-<br>
-<div>
-    <h3>Your Recommendation History</h3>
-    <div class="path">
-        <!-- from 1st year to last year -->
-        <div class="card path-1">
-            <div class="path-content">
-                <p>Freshmen</p>
-            </div>
-            <div class="arrow">
-
-            </div>
-        </div>
-        <div class="card path-2">
-            <div class="path-content">
-                <p>1st Year</p>
-            </div>
-            <div class="arrow">
-                
-            </div>
-        </div>
-        <div class="card path-3">
-            <div class="path-content">
-                <p>2nd Year</p>
-            </div>
-            <div class="arrow">
-                
-            </div>
-        </div>
-        <div class="card path-4">
-            <div class="path-content">
-                <p>3rd Year</p>
-            </div>
-            <div class="arrow">
-                
-            </div>
-        </div>
-        <div class="card path-5">
-            <div class="path-content">
-                <p>4th Year</p>
-            </div>
-            <div class="arrow">
-                
-            </div>
-        </div>
-        
-    </div>
-</div>
-
 
 {% endblock content %}

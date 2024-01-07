@@ -218,35 +218,35 @@ def recommender(request):
     })
     #pivot_df = user_skills_df.pivot(index='skill', columns='field', values='level').fillna(0)
 
-    user_skills_df['fields_score'] = user_skills_df['field_id'].map(fields_score)
-    user_skills_df = user_skills_df.sort_values('fields_score', ascending=False)
-    user_skills_df = user_skills_df.drop('fields_score', axis=1)
+    # user_skills_df['fields_score'] = user_skills_df['field_id'].map(fields_score)
+    # user_skills_df = user_skills_df.sort_values('fields_score', ascending=False)
+    # user_skills_df = user_skills_df.drop('fields_score', axis=1)
 
-    skill_plot = create_skill_plot(user_skills_df)
+    # skill_plot = create_skill_plot(user_skills_df)
    
     # Create a DataFrame with Field_ID, Field_Name, and Score
     fields_df = pd.DataFrame(list(zip(field_ids, fields_name, fields_score.values())), columns=['Field_ID', 'Field_Name', 'Score'])   
     field_plot = create_field_plot(fields_df)
    
 
-    # make a copy of normamlied_field
-    normalized_copy = normalized_field_skills_filtered.copy()
-    # label field id of normalized_field_skills_filtered with field_dict
-    normalized_copy['field_name'] = normalized_copy['field_id'].map(field_dict)
-    # melt normalized_field_skills_filtered
-    normalized_copy = normalized_copy.melt(id_vars=['field_id', 'field_name'], var_name='skill', value_name='level')
-    # use fields_score mapping for field_id into field_order
-    normalized_copy['field_order'] = normalized_copy['field_id'].map(fields_score)
-    # sort by field_order
-    normalized_copy = normalized_copy.sort_values('field_order', ascending=False)
-    # remove field_order
-    normalized_copy = normalized_copy.drop('field_order', axis=1)
+    # # make a copy of normamlied_field
+    # normalized_copy = normalized_field_skills_filtered.copy()
+    # # label field id of normalized_field_skills_filtered with field_dict
+    # normalized_copy['field_name'] = normalized_copy['field_id'].map(field_dict)
+    # # melt normalized_field_skills_filtered
+    # normalized_copy = normalized_copy.melt(id_vars=['field_id', 'field_name'], var_name='skill', value_name='level')
+    # # use fields_score mapping for field_id into field_order
+    # normalized_copy['field_order'] = normalized_copy['field_id'].map(fields_score)
+    # # sort by field_order
+    # normalized_copy = normalized_copy.sort_values('field_order', ascending=False)
+    # # remove field_order
+    # normalized_copy = normalized_copy.drop('field_order', axis=1)
 
     #print('normalized_copy: ', normalized_copy)
 
-    stacked_skills = create_stacked_skills(normalized_copy)
+    # stacked_skills = create_stacked_skills(normalized_copy)
 
-    radar_skills = create_radar_skills(normalized_copy)
+    # radar_skills = create_radar_skills(normalized_copy)
 
     # Sort the fields by the sum of the cosine similarity scores, in descending order.
     top_3_fields = sorted(fields_score, key=fields_score.get, reverse=True)[:3]
@@ -265,11 +265,11 @@ def recommender(request):
     save_user_recommendation(request, top_3_fields, top_3_fields_score)
 
     # Roadmap
-    user_reco_step_1 = UserRecommendations.objects.filter(user=request.user, current_year=0).exists()
-    user_reco_step_2 = UserRecommendations.objects.filter(user=request.user, current_year=1).exists()
-    user_reco_step_3 = UserRecommendations.objects.filter(user=request.user, current_year=2).exists()
-    user_reco_step_4 = UserRecommendations.objects.filter(user=request.user, current_year=3).exists()
-    user_reco_step_5 = UserRecommendations.objects.filter(user=request.user, current_year=4).exists()
+    # user_reco_step_1 = UserRecommendations.objects.filter(user=request.user, current_year=0).exists()
+    # user_reco_step_2 = UserRecommendations.objects.filter(user=request.user, current_year=1).exists()
+    # user_reco_step_3 = UserRecommendations.objects.filter(user=request.user, current_year=2).exists()
+    # user_reco_step_4 = UserRecommendations.objects.filter(user=request.user, current_year=3).exists()
+    # user_reco_step_5 = UserRecommendations.objects.filter(user=request.user, current_year=4).exists()
 
     return render(request, 'recommender/recommender.html', {
         # Top Results
@@ -282,19 +282,17 @@ def recommender(request):
         'field_3': Field.objects.get(field=top_3_fields[2]),
         
         # Plots
-        'skill_plot': skill_plot,           # skill score representation
+        #'skill_plot': skill_plot,           # skill score representation
         'field_plot': field_plot,           # pie graph field recommendation
-        'stacked_skills': stacked_skills,   # skill relevance representation
+        #'stacked_skills': stacked_skills,   # skill relevance representation
         #'radar_skills': radar_skills,      # skill relevance representation
 
         # Roadmap
-        'step_1': user_reco_step_1,
-        'step_2': user_reco_step_2,
-        'step_3': user_reco_step_3,
-        'step_4': user_reco_step_4,
-        'step_5': user_reco_step_5,
-
-
+        # 'step_1': user_reco_step_1,
+        # 'step_2': user_reco_step_2,
+        # 'step_3': user_reco_step_3,
+        # 'step_4': user_reco_step_4,
+        # 'step_5': user_reco_step_5,
     })
 
 
@@ -340,7 +338,6 @@ def recommender(request):
 #     })
 
 def roadmap(request):
-
 
     # Roadmap
     user_reco_steps = [UserRecommendations.objects.filter(user=request.user, current_year=i) for i in range(5)]
