@@ -107,13 +107,13 @@ def start_test(request):
         # check if the user has taken the test in his current StudentProfile year
         try:
             question_set = QuestionSet.objects.filter(user=request.user, year=student_profile.current_year).first()
+            if question_set.is_completed:
+                return redirect('student_test_report', question_set_id=question_set.set_id)
         except:
             question_set = None
             print("No Question Set")
             messages.error(request, 'Error retrieving question set')
         #print("!!!!!!!!!!!!!!!!!",question_set)
-        if question_set.is_completed:
-            return redirect('student_test_report', question_set_id=question_set.set_id)
         
     clear_session_variables(request)
     start = None
