@@ -688,7 +688,7 @@ def login_user(request):
         if user is not None:
             login(request, user)
             messages.success(request, 'You have successfully logged in')
-            return redirect('paths')
+            return redirect('home')
         else:
             messages.success(request, 'Error logging in')
             return redirect('login_user')
