@@ -166,22 +166,27 @@ p {
 }
 
 .section-courseu .row .col-info {
-    width: 35%;
+    width: 45%;
 }
 
 .section-courseu .logo img {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     margin-bottom: 30px;
 }
 
 
 .section-courseu .row .col-info h1 {
-    font-size: 30px;
+    font-size: 47px;
     font-weight: 600;
     text-align: left;
+    font-family: 'pristine';
 }
-
+.section-courseu .row .col-info p{
+    color:gray;
+    font-size:15px;
+    text-align: center;
+}
 .section-courseu .row .col-info .btn {
     margin-top: 20px;
 }

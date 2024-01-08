@@ -36,7 +36,7 @@ iv.test-container .card
 
 .character-container {
     /* add image */
-    background-image: url('../../static/images/two1.png');
+    background-image: url('../../static/images/two.png');
     /* png no white bg */
 
    background-size:contain;
