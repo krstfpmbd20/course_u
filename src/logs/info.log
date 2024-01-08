@@ -14140,3 +14140,242 @@ INFO 2024-01-08 13:20:21,962 django.server basehttp basehttp.py 212 log_message 
 INFO 2024-01-08 13:40:04,909 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17255
 INFO 2024-01-08 13:40:04,933 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
 WARNING 2024-01-08 13:40:04,943 django.server basehttp basehttp.py 212 log_message "GET /static/images/graduate.png HTTP/1.1" 404 1917
+INFO 2024-01-08 13:40:47,285 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2024-01-08 13:41:00,950 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17254
+WARNING 2024-01-08 13:41:00,980 django.server basehttp basehttp.py 212 log_message "GET /static/images/graduate.png HTTP/1.1" 404 1917
+INFO 2024-01-08 13:41:16,376 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 9405
+INFO 2024-01-08 13:41:16,518 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2486
+WARNING 2024-01-08 13:41:20,955 django.server basehttp basehttp.py 212 log_message "GET /static/images/two.png HTTP/1.1" 404 1902
+INFO 2024-01-08 13:41:21,851 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17223
+INFO 2024-01-08 13:41:21,922 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7835
+WARNING 2024-01-08 13:41:21,936 django.server basehttp basehttp.py 212 log_message "GET /static/images/graduate.png HTTP/1.1" 404 1917
+INFO 2024-01-08 13:41:21,939 django.server basehttp basehttp.py 212 log_message "GET /static/images/landing-img.jpg HTTP/1.1" 200 196344
+WARNING 2024-01-08 13:41:22,079 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 13:41:22,088 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 13:41:22,476 django.server basehttp basehttp.py 212 log_message "GET /static/images/instruct.png HTTP/1.1" 200 1182018
+INFO 2024-01-08 13:41:22,490 django.server basehttp basehttp.py 212 log_message "GET /static/images/working.png HTTP/1.1" 200 38833
+INFO 2024-01-08 13:41:22,526 django.server basehttp basehttp.py 212 log_message "GET /static/images/student_0.png HTTP/1.1" 200 817425
+INFO 2024-01-08 13:41:22,543 django.server basehttp basehttp.py 212 log_message "GET /static/images/student_1.png HTTP/1.1" 200 221008
+INFO 2024-01-08 13:41:22,553 django.server basehttp basehttp.py 212 log_message "GET /static/images/com.png HTTP/1.1" 304 0
+INFO 2024-01-08 13:41:22,560 django.server basehttp basehttp.py 212 log_message "GET /static/images/student.png HTTP/1.1" 200 681312
+INFO 2024-01-08 13:41:22,561 django.server basehttp basehttp.py 212 log_message "GET /static/images/student_2.png HTTP/1.1" 200 392958
+WARNING 2024-01-08 13:41:23,084 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2024-01-08 13:41:27,485 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2024-01-08 13:41:27,487 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 28436
+INFO 2024-01-08 13:53:10,402 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2024-01-08 13:53:30,187 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17254
+INFO 2024-01-08 13:53:30,205 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
+INFO 2024-01-08 13:53:30,220 django.server basehttp basehttp.py 212 log_message "GET /static/images/graduate.png HTTP/1.1" 200 24752
+INFO 2024-01-08 13:54:27,334 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17255
+INFO 2024-01-08 13:54:28,745 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17254
+INFO 2024-01-08 13:54:37,612 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17254
+INFO 2024-01-08 13:54:37,742 django.server basehttp basehttp.py 212 log_message "GET /static/images/graduate.png HTTP/1.1" 200 24752
+INFO 2024-01-08 13:54:37,761 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7835
+INFO 2024-01-08 13:54:56,253 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17254
+INFO 2024-01-08 13:54:56,317 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7835
+INFO 2024-01-08 13:55:04,770 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17254
+INFO 2024-01-08 13:55:04,796 django.server basehttp basehttp.py 212 log_message "GET /static/images/graduate.png HTTP/1.1" 304 0
+INFO 2024-01-08 13:55:42,195 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-08 13:55:42,248 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7835
+INFO 2024-01-08 13:55:42,435 django.server basehttp basehttp.py 212 log_message "GET /static/images/graduate.png HTTP/1.1" 200 24752
+INFO 2024-01-08 13:56:18,862 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17254
+INFO 2024-01-08 13:57:17,057 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 10814
+INFO 2024-01-08 13:58:08,389 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2024-01-08 13:59:29,860 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 10814
+INFO 2024-01-08 13:59:29,959 django.server basehttp basehttp.py 212 log_message "GET /static/css/login_user.css HTTP/1.1" 304 0
+INFO 2024-01-08 13:59:32,864 django.server basehttp basehttp.py 212 log_message "GET /static/images/log.jpg HTTP/1.1" 304 0
+WARNING 2024-01-08 13:59:33,061 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2024-01-08 13:59:40,976 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37165
+INFO 2024-01-08 13:59:41,046 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-2.png HTTP/1.1" 200 294167
+INFO 2024-01-08 13:59:42,375 django.server basehttp basehttp.py 212 log_message "GET /static/images/home-headline.png HTTP/1.1" 200 254607
+INFO 2024-01-08 14:00:47,922 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18876
+INFO 2024-01-08 14:03:19,127 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2024-01-08 14:03:54,489 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-08 14:03:54,699 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
+INFO 2024-01-08 14:03:54,711 django.server basehttp basehttp.py 212 log_message "GET /static/images/graduate.png HTTP/1.1" 304 0
+INFO 2024-01-08 14:05:08,421 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 302 0
+INFO 2024-01-08 14:06:03,671 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37031
+INFO 2024-01-08 14:06:03,828 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 18865
+WARNING 2024-01-08 14:06:11,158 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:06:11,161 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:06:11,579 django.server basehttp basehttp.py 212 log_message "GET /static/images/home-headline.png HTTP/1.1" 304 0
+INFO 2024-01-08 14:06:42,093 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18901
+INFO 2024-01-08 14:06:42,152 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2487
+INFO 2024-01-08 14:06:44,475 django.server basehttp basehttp.py 212 log_message "GET /static/images/two1.png HTTP/1.1" 200 49691
+WARNING 2024-01-08 14:06:49,714 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:06:49,717 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:07:50,486 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18904
+INFO 2024-01-08 14:07:50,535 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 304 0
+WARNING 2024-01-08 14:07:53,422 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:07:53,426 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:08:25,293 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18905
+INFO 2024-01-08 14:08:25,395 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2485
+WARNING 2024-01-08 14:08:34,720 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:08:34,721 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:10:25,079 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18904
+INFO 2024-01-08 14:10:25,132 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2458
+WARNING 2024-01-08 14:10:28,061 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:10:28,065 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:10:46,847 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18904
+INFO 2024-01-08 14:10:46,929 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2439
+WARNING 2024-01-08 14:10:50,442 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:10:50,444 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:11:26,047 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18904
+INFO 2024-01-08 14:11:26,154 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2459
+WARNING 2024-01-08 14:11:28,638 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:11:28,640 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:11:47,854 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18904
+INFO 2024-01-08 14:11:47,911 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2485
+WARNING 2024-01-08 14:11:52,354 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:11:52,358 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+ERROR 2024-01-08 14:14:10,811 django.request log log.py 241 log_response Internal Server Error: /test_home/
+Traceback (most recent call last):
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "viaduct.proxy.rlwy.net" (35.213.158.48), port 29888 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Cedrick Estolas\new_version\apps\assessment\views.py", line 44, in test_home
+    assessment = QuestionSet.objects.filter(user=request.user).exists()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1435, in build_filter
+    value = self.resolve_lookup_value(value, can_reuse, allow_joins)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1203, in resolve_lookup_value
+    if hasattr(value, "resolve_expression"):
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 59, in cursor
+    cursor = connection._djdt_cursor(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: connection to server at "viaduct.proxy.rlwy.net" (35.213.158.48), port 29888 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+ERROR 2024-01-08 14:14:11,355 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 500 284609
+INFO 2024-01-08 14:15:00,926 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18904
+INFO 2024-01-08 14:15:01,050 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2485
+WARNING 2024-01-08 14:15:03,532 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:15:03,535 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:16:49,030 django.server basehttp basehttp.py 212 log_message "GET /start_test/ HTTP/1.1" 302 0
+INFO 2024-01-08 14:16:52,780 django.server basehttp basehttp.py 212 log_message "GET /create_new_question_set/53/ HTTP/1.1" 302 0
+INFO 2024-01-08 14:17:05,828 django.server basehttp basehttp.py 212 log_message "GET /continue_create_new_question_set/54 HTTP/1.1" 302 0
+INFO 2024-01-08 14:17:11,153 django.server basehttp basehttp.py 212 log_message "GET /question/69/ HTTP/1.1" 200 18745
+INFO 2024-01-08 14:17:11,336 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_page.css HTTP/1.1" 200 2490
+WARNING 2024-01-08 14:17:14,181 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:17:14,183 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:17:49,002 django.server basehttp basehttp.py 212 log_message "GET /check_school_year/ HTTP/1.1" 200 17785
+INFO 2024-01-08 14:17:49,062 django.server basehttp basehttp.py 212 log_message "GET /static/css/check_school_year.css HTTP/1.1" 304 0
+WARNING 2024-01-08 14:17:53,038 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:17:53,041 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:17:59,916 django.server basehttp basehttp.py 212 log_message "GET /check_school_year_choice/no/ HTTP/1.1" 302 0
+INFO 2024-01-08 14:18:02,467 django.server basehttp basehttp.py 212 log_message "GET /check_school_year_status/not_completed/ HTTP/1.1" 302 0
+INFO 2024-01-08 14:18:06,145 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 19132
+INFO 2024-01-08 14:18:06,267 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 304 0
+WARNING 2024-01-08 14:18:08,424 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:18:08,428 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:21:36,034 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18904
+INFO 2024-01-08 14:21:36,102 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2443
+WARNING 2024-01-08 14:21:41,865 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:21:41,871 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:24:48,409 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18904
+INFO 2024-01-08 14:24:48,528 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2448
+WARNING 2024-01-08 14:24:50,766 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:24:50,769 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:26:20,425 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18879
+INFO 2024-01-08 14:26:48,790 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18879
+INFO 2024-01-08 14:27:01,844 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18904
+INFO 2024-01-08 14:27:01,947 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2448
+WARNING 2024-01-08 14:27:05,061 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:27:05,065 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-08 14:27:47,673 django.server basehttp basehttp.py 212 log_message "GET /test_home/ HTTP/1.1" 200 18904
+INFO 2024-01-08 14:27:47,781 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2443
+WARNING 2024-01-08 14:27:54,268 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:27:54,270 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792

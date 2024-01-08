@@ -7747,3 +7747,156 @@ WARNING 2024-01-08 12:04:44,819 django.server Thread-9 (process_request_thread) 
 WARNING 2024-01-08 12:58:03,166 django.request Thread-12 (process_request_thread) 11356 log log.py 241 django.request log_response 3664 Not Found: /favicon.ico
 WARNING 2024-01-08 12:58:03,168 django.server Thread-12 (process_request_thread) 11356 basehttp basehttp.py 212 django.server log_message 3664 "GET /favicon.ico HTTP/1.1" 404 28435
 WARNING 2024-01-08 13:40:04,943 django.server Thread-79 (process_request_thread) 8740 basehttp basehttp.py 212 django.server log_message 3664 "GET /static/images/graduate.png HTTP/1.1" 404 1917
+WARNING 2024-01-08 13:41:00,980 django.server Thread-1 (process_request_thread) 16536 basehttp basehttp.py 212 django.server log_message 11060 "GET /static/images/graduate.png HTTP/1.1" 404 1917
+WARNING 2024-01-08 13:41:20,955 django.server Thread-5 (process_request_thread) 11628 basehttp basehttp.py 212 django.server log_message 11060 "GET /static/images/two.png HTTP/1.1" 404 1902
+WARNING 2024-01-08 13:41:21,936 django.server Thread-7 (process_request_thread) 7220 basehttp basehttp.py 212 django.server log_message 11060 "GET /static/images/graduate.png HTTP/1.1" 404 1917
+WARNING 2024-01-08 13:41:22,079 django.request Thread-4 (process_request_thread) 11192 log log.py 241 django.request log_response 11060 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 13:41:22,088 django.server Thread-4 (process_request_thread) 11192 basehttp basehttp.py 212 django.server log_message 11060 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 13:41:23,084 django.server Thread-12 (process_request_thread) 852 basehttp basehttp.py 212 django.server log_message 11060 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2024-01-08 13:41:27,485 django.request Thread-13 (process_request_thread) 8012 log log.py 241 django.request log_response 11060 Not Found: /favicon.ico
+WARNING 2024-01-08 13:41:27,487 django.server Thread-13 (process_request_thread) 8012 basehttp basehttp.py 212 django.server log_message 11060 "GET /favicon.ico HTTP/1.1" 404 28436
+WARNING 2024-01-08 13:59:33,061 django.server Thread-13 (process_request_thread) 11316 basehttp basehttp.py 212 django.server log_message 2672 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2024-01-08 14:06:11,158 django.request Thread-1 (process_request_thread) 14780 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:06:11,161 django.server Thread-1 (process_request_thread) 14780 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:06:49,714 django.request Thread-3 (process_request_thread) 10000 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:06:49,717 django.server Thread-3 (process_request_thread) 10000 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:07:53,422 django.request Thread-2 (process_request_thread) 17196 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:07:53,426 django.server Thread-2 (process_request_thread) 17196 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:08:34,720 django.request Thread-3 (process_request_thread) 10000 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:08:34,721 django.server Thread-3 (process_request_thread) 10000 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:10:28,061 django.request Thread-2 (process_request_thread) 17196 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:10:28,065 django.server Thread-2 (process_request_thread) 17196 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:10:50,442 django.request Thread-3 (process_request_thread) 10000 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:10:50,444 django.server Thread-3 (process_request_thread) 10000 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:11:28,638 django.request Thread-2 (process_request_thread) 17196 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:11:28,640 django.server Thread-2 (process_request_thread) 17196 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:11:52,354 django.request Thread-3 (process_request_thread) 10000 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:11:52,358 django.server Thread-3 (process_request_thread) 10000 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+ERROR 2024-01-08 14:14:10,811 django.request Thread-3 (process_request_thread) 10000 log log.py 241 django.request log_response 6856 Internal Server Error: /test_home/
+Traceback (most recent call last):
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "viaduct.proxy.rlwy.net" (35.213.158.48), port 29888 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Cedrick Estolas\new_version\apps\assessment\views.py", line 44, in test_home
+    assessment = QuestionSet.objects.filter(user=request.user).exists()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1435, in build_filter
+    value = self.resolve_lookup_value(value, can_reuse, allow_joins)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1203, in resolve_lookup_value
+    if hasattr(value, "resolve_expression"):
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 59, in cursor
+    cursor = connection._djdt_cursor(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: connection to server at "viaduct.proxy.rlwy.net" (35.213.158.48), port 29888 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+ERROR 2024-01-08 14:14:11,355 django.server Thread-3 (process_request_thread) 10000 basehttp basehttp.py 212 django.server log_message 6856 "GET /test_home/ HTTP/1.1" 500 284609
+WARNING 2024-01-08 14:15:03,532 django.request Thread-2 (process_request_thread) 17196 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:15:03,535 django.server Thread-2 (process_request_thread) 17196 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:17:14,181 django.request Thread-2 (process_request_thread) 17196 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:17:14,183 django.server Thread-2 (process_request_thread) 17196 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:17:53,038 django.request Thread-3 (process_request_thread) 10000 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:17:53,041 django.server Thread-3 (process_request_thread) 10000 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:18:08,424 django.request Thread-3 (process_request_thread) 10000 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:18:08,428 django.server Thread-3 (process_request_thread) 10000 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:21:41,865 django.request Thread-2 (process_request_thread) 17196 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:21:41,871 django.server Thread-2 (process_request_thread) 17196 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:24:50,766 django.request Thread-3 (process_request_thread) 10000 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:24:50,769 django.server Thread-3 (process_request_thread) 10000 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:27:05,061 django.request Thread-2 (process_request_thread) 17196 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:27:05,065 django.server Thread-2 (process_request_thread) 17196 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+WARNING 2024-01-08 14:27:54,268 django.request Thread-3 (process_request_thread) 10000 log log.py 241 django.request log_response 6856 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-08 14:27:54,270 django.server Thread-3 (process_request_thread) 10000 basehttp basehttp.py 212 django.server log_message 6856 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792

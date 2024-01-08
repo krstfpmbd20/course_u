@@ -36,16 +36,14 @@ iv.test-container .card
 
 .character-container {
     /* add image */
-    background-image: url('../../static/images/two.png');
+    background-image: url('../../static/images/two1.png');
     /* png no white bg */
-
    background-size:contain;
     background-color: transparent;
     background-repeat: no-repeat;
-    height: 550px;
-    width: 350px;
-    margin-top: 20px;
-    margin-left: 100px;
+    height: 500px;
+    width: 300px;
+    
     /* min-width: 30%;
     min-height: 520=0px;
     max-width: 30%;
