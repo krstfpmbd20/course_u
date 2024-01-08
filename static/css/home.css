@@ -39,7 +39,7 @@ main {
 }
 
 header {
-  background-image: url('../../static/images/home-headline.png');
+  background-image: url('../../static/images/home-headline1.png');
   background-size: cover;
   background-repeat: no-repeat;
   /* center image */
@@ -79,8 +79,8 @@ header {
 }
 
 .page-head h1 {
-  font-weight: 300;
-  font-size: 40px;
+  font-weight: bold;
+  font-size: 8vw;
   line-height: 46px;
   margin: 21px auto;
 }
