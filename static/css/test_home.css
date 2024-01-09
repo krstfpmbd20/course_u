@@ -120,3 +120,18 @@ footer {
         width: 200px;
     }
 }
+
+
+.no-test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.no-test h1,
+.no-test p,
+.no-test a {
+    align-self: center;
+}

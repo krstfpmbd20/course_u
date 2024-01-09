@@ -1016,7 +1016,15 @@ def student_test_report_overall(request):
 
     # Get user results from all QuestionSets
     user_id = request.user.id
-    user_results = QuestionSet.objects.filter(user_id=user_id)
+
+    try:
+        user_results = QuestionSet.objects.filter(user_id=user_id)
+    except:
+        user_results = None
+    
+    if user_results == None:
+        return render(request, 'test/no_result.html')
+
 
     if user_results.count() != 0:
         print("user_results: ", user_results)
@@ -1107,8 +1115,9 @@ def student_test_report_overall(request):
         })
     else:
         # Handle the case where the user has not taken any tests
-        print("You have not taken any tests yet.")
-        return HttpResponse("You have not taken any tests yet.")
+        #print("You have not taken any tests yet.")
+        #return HttpResponse("You have not taken any tests yet.")
+        return render(request, 'test/no_result.html')
 
 def test_query(request):
     print('test_query()')

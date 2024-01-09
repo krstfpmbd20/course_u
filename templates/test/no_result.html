@@ -1,0 +1,28 @@
+{% extends 'base_user.html' %}<!--navbar-->
+
+
+
+{% block title %}No Result{% endblock %}<!--hindi ko alam kung saan to aky kaya di-->
+
+{% load static %}
+
+
+{% block head_extra %}
+
+<!-- Additional stylesheets or scripts specific to this page -->
+<!-- <link rel="stylesheet" href="{% static 'css/home.css' %}"> -->
+<link rel="stylesheet" href="{% static 'css/test_home.css' %}">
+{% endblock head_extra %}
+
+{% block content %}
+
+<div class="no-test">
+    <h1>Can't View Results</h1>
+    <p>No Test have been taken</p>
+    <a href="{% url 'test_home' %}" class="btn btn-primary">Go back to Test Home</a>
+</div>
+
+
+
+
+{% endblock content %}
