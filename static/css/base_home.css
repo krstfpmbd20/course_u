@@ -1,11 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* use montserrat */
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 :root{
@@ -416,7 +419,7 @@ ol, ul
 #username {
     font-size: 1em; /* adjust as needed */
     font-weight: bold; /* adjust as needed */
-    color: #292929; /* adjust as needed */
+    color: #363636; /* adjust as needed */
     vertical-align: middle;
     display: flex;
     align-items: center;
