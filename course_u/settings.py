@@ -349,3 +349,11 @@ JAZZMIN_UI_TWEAKS = {
     },
     "actions_sticky_top": True
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.zoho.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'marylancegboceso@gmail.com'
+EMAIL_HOST_PASSWORD = 'M*H6y,$5!QDcJrQ'
+DEFAULT_FROM_EMAIL = 'admin@courseu.site'
