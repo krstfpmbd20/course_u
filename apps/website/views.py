@@ -115,6 +115,7 @@ def home(request):
         user_survey_s_status.append(status)
 
     # get studentprofile
+    have_student = False
     try:
         student_profile = StudentProfile.objects.get(user=request.user)
         student_profile_exists = StudentProfile.objects.filter(user=request.user).exists()
@@ -123,6 +124,7 @@ def home(request):
         # get course
         course = Course.objects.get(id=student_profile.enrolled_courses_id)
         course_name = course.course_name
+        course_id = course.id
         # get course number of years
         user_grade_status = []
         for year in range(1,course.number_of_years+1):
@@ -142,11 +144,13 @@ def home(request):
         step_3_status =  user_reco_steps_status[2] and user_test_status[2] and user_survey_s_status[1] and user_grade_status[1]
         step_4_status =  user_reco_steps_status[3] and user_test_status[3] and user_survey_s_status[2] and user_grade_status[2]
         step_5_status =  user_reco_steps_status[4] and user_test_status[4] and user_survey_s_status[3] and user_grade_status[3]
-        
+        have_student = True
     except:
         student_profile = None
         student_profile_exists = False
         course_name = None
+        have_student = False
+        course_id = None
         step_1_status = False
         step_2_status = False
         step_3_status = False
@@ -172,7 +176,8 @@ def home(request):
 
         'student_profile_exists': student_profile_exists,
         "course_name": course_name,
-        'course_id' : course.id,
+        'course_id' : course_id,
+        'have_student' : have_student,
         # Roadmap
         'step_1_status': step_1_status,
         'step_2_status': step_2_status,
