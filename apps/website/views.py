@@ -120,6 +120,7 @@ def home(request):
         # get course
         course = Course.objects.get(id=student_profile.enrolled_courses_id)
         course_name = course.course_name
+        # year = student_profile.current_year
         # get course number of years
         user_grade_status = []
         for year in range(1,course.number_of_years+1):
@@ -169,6 +170,7 @@ def home(request):
 
         'student_profile_exists': student_profile_exists,
         "course_name": course_name,
+        'course_id': course.id,
 
         # Roadmap
         'step_1_status': step_1_status,

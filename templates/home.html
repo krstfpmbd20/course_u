@@ -224,7 +224,7 @@
           <h4>Step 2</h4>
           <h5>1st Year</h5>
           <ul>
-            <a href="">
+            <a href="{% url 'subjects_grade_input_old' course_id=course_id year_level=1 %}">
               <li><span class="milestone-status {{grade_2_status|yesno:'active,'}}"></span>Grade Input</li>
             </a>
             <a href="">
@@ -243,7 +243,7 @@
           <h4>Step 3</h4>
           <h5>2nd Year</h5>
           <ul>
-            <a href="">
+            <a href="{% url 'subjects_grade_input_old' course_id=course_id year_level=2 %}">
               <li><span class="milestone-status {{grade_3_status|yesno:'active,'}}"></span>Grade Input</li>
             </a>
             <a href="">
@@ -262,7 +262,7 @@
           <h4>Step 4</h4>
           <h5>3rd Year</h5>
           <ul>
-            <a href="">
+            <a href="{% url 'subjects_grade_input_old' course_id=course_id year_level=3 %}">
               <li><span class="milestone-status {{grade_4_status|yesno:'active,'}}"></span>Grade Input</li>
             </a>
             <a href="">
@@ -281,7 +281,7 @@
           <h4>Step 5</h4>
           <h5>4th Year</h5>
           <ul>
-            <a href="">
+            <a href="{% url 'subjects_grade_input_old' course_id=course_id year_level=4 %}">
               <li><span class="milestone-status {{grade_5_status|yesno:'active,'}}"></span>Grade Input</li>
             </a>
             <a href="">
