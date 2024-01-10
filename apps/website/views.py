@@ -172,7 +172,7 @@ def home(request):
 
         'student_profile_exists': student_profile_exists,
         "course_name": course_name,
-
+        'course_id' : course.id,
         # Roadmap
         'step_1_status': step_1_status,
         'step_2_status': step_2_status,
