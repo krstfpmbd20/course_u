@@ -724,7 +724,7 @@ def sign_in(request):
 
             # Send welcome email to the user
             subject = 'Welcome to CourseU - Verify Your Email'
-            url = 'http://127.0.0.1:8000/verify_email/'
+            url = 'https://www.courseu.site/verify_email/'
             verification_link = f'{url}{user.id}/'
             message = f"Hi {user.username},\n\nThank you for signing up for CourseU! To activate your account, please click the following link:\n\n{verification_link}\n\nIf you didn't sign up for CourseU, please ignore this email.\n\nBest regards,\nThe CourseU Team"
             from_email = 'admin@courseu.site'
