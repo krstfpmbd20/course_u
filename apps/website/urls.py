@@ -18,8 +18,8 @@ urlpatterns = [
     path('sign_in/', views.sign_in, name='sign_in'),
     path('forgot_password/', views.forgot_password, name='forgot_password'),
     path('recovery/', views.recovery, name='recovery'),
-    
-   
+    path('send-test-email/', views.send_test_email, name='send_test_email'),
+    path('verify_email/<int:id>/', views.verify_email, name='verify_email'),
     # For User Page
     path('profile/', views.user_profile, name='user_profile'),
     path('edit_profile/', views.edit_profile, name='edit_profile'),

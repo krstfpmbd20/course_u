@@ -11,7 +11,7 @@ from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.db.models import Count
 from django.contrib.auth import update_session_auth_hash
-
+from django.http import HttpResponse
 #from website.utils import *
 from apps.website.forms import SignUpForm, StudentScoreForm
 from apps.website.models import Specialization, Field, LearningMaterial
@@ -24,11 +24,14 @@ from apps.jobs.models import JobPosting
 from apps.survey.models import Survey
 from apps.recommender.models import UserRecommendations
 from apps.recommender_survey.models import Survey as RecommenderSurvey
-
+from django.core.mail import send_mail
+from django.conf import settings
 
 from utilities.decorators import unauthenticated_user, allowed_users, admin_only
 from .models import *
 from django.db.models import F
+
+
 # from django.http import FileResponse
 # from reportlab.pdfgen import canvas
 # from django.http import FileResponse
@@ -44,8 +47,8 @@ logger = logging.getLogger("django") # name of logger : django
 # Views
 
 
-@login_required(login_url='login_user')
 #@allowed_users(allowed_roles=['admin','staff','student','instructor']) # only users on the list can access this page, ie. admin and staff
+@login_required(login_url='login_user')
 def home(request):
 
     have_reco = True
@@ -120,7 +123,6 @@ def home(request):
         # get course
         course = Course.objects.get(id=student_profile.enrolled_courses_id)
         course_name = course.course_name
-        # year = student_profile.current_year
         # get course number of years
         user_grade_status = []
         for year in range(1,course.number_of_years+1):
@@ -170,7 +172,6 @@ def home(request):
 
         'student_profile_exists': student_profile_exists,
         "course_name": course_name,
-        'course_id': course.id,
 
         # Roadmap
         'step_1_status': step_1_status,
@@ -696,22 +697,41 @@ def login_user(request):
             return redirect('login_user')
     else:
         return render(request, 'user/login.html')
+def send_test_email(request):
+    subject = 'Test Email'
+    message = 'This is a test email sent from Django.'
+    from_email = 'admin@courseu.site'
+    recipient_list = ['umairsabirjutt@gmail.com']
 
+    send_mail(subject, message, from_email, recipient_list)
+
+    return HttpResponse('Test email sent successfully!')
 @unauthenticated_user
 def sign_in(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
         if form.is_valid():
-            form.save()
+            user = form.save()
             username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password1')            
+            password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=password)
-            # check if student group exisits
-            # else create group
-            #group = Group.objects.get(name='student')
-            #user.groups.add(group)
-            login(request,user)
-            messages.success(request, 'Student ' + username + ' have successfully created an account')
+
+            # Check if student group exists, else create group
+            # group = Group.objects.get(name='student')
+            # user.groups.add(group)
+
+            login(request, user)
+
+            # Send welcome email to the user
+            subject = 'Welcome to CourseU - Verify Your Email'
+            url = 'http://127.0.0.1:8000/verify_email/'
+            verification_link = f'{url}{user.id}/'
+            message = f"Hi {user.username},\n\nThank you for signing up for CourseU! To activate your account, please click the following link:\n\n{verification_link}\n\nIf you didn't sign up for CourseU, please ignore this email.\n\nBest regards,\nThe CourseU Team"
+            from_email = 'admin@courseu.site'
+            recipient_list = [user.email]
+            send_mail(subject, message, from_email, recipient_list)
+
+            messages.success(request, f'Student {username} has successfully created an account')
             return redirect('home')
     else:
         form = SignUpForm()
@@ -724,7 +744,15 @@ def sign_in(request):
 
     return render(request, 'user/sign_in.html', {'form': form})
 
+def verify_email(request,id):
+    
+    obj = get_object_or_404(User, id=id)
+    print(obj.id,obj.username,obj.email)
+    user_profile, created = UserProfile.objects.get_or_create(user=obj)
 
+    user_profile.isvarified = True
+    user_profile.save()
+    return render(request,"user/verification_email.html")
 def forgot_password(request):
     return render(request, 'user/forgot_password.html')
 
@@ -848,11 +876,13 @@ def field_page(request, field_id=None):
 
 
 ###########################################Engr Umair Worked ##################################
+@login_required(login_url='login_user')
 def upload_profile_pic(request):
     if request.method == "POST":
         profile_picture = request.FILES.get('profile_picture')
-        obj = UserProfile(user=request.user,profile_picture=profile_picture)
-        obj.save()
+        user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+        user_profile.profile_picture = profile_picture
+        user_profile.save()
         return redirect("user_profile")
     return render(request,"user/upload.html")
 def remove_profile_picture(request):
