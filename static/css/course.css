@@ -253,3 +253,30 @@ footer {
     width: 300px;
   }
 }
+
+.button {
+  display: inline-block;
+  font-size: 16px;
+  padding: 12px 24px;
+  margin: 10px auto;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(228, 95, 65);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  align-items: center;
+  margin-top: 30px;
+}
+
+.button:hover {background-color: rgb(228, 95, 65);}
+
+.button:active {
+background-color:rgb(228, 95, 65);
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
