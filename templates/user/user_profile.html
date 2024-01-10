@@ -103,10 +103,16 @@
 
 <div class="main_section">
     <div class="dp_section">
-        <h2>Welcome User!</h2> <!-- Changed from h3 to h2 -->
-        <p>
-            {{ user.first_name }} {{ user.last_name }}
-        </p>
+        
+            <h2>Welcome User!</h2>
+            <p>
+                {{ user.first_name }} {{ user.last_name }}
+            </p>
+            {% if not user.userprofile.isvarified %}
+            <p style="color:red;">
+                Thank you for signing up! Please check your email to verify your account.
+            </p>
+            {% endif %}
         {% if user.is_authenticated %}
         <div id="dp_img">
             {% if user.userprofile.profile_picture %}
@@ -122,6 +128,8 @@
                 <img src="{% static 'images/no-profile-pic.png' %}" alt="">
             </div>
         {% endif %}
+
+        
     </div>
     <div class="side_menu_section">
         <ul>
