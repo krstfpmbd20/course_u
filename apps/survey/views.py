@@ -4,8 +4,8 @@ from django.http import HttpResponse
 
 from django.http import FileResponse
 import datetime
-from .dump.report_generator import *
-from .dump.plotgenerator import *
+# from .dump.report_generator import *
+# from .dump.plotgenerator import *
 from .tracer_report import *
 
 # from xhtml2pdf import pisa
@@ -80,34 +80,33 @@ def admin_report_view(request):
     if first_name == "" and last_name == "":
         name = request.user.username
 
- 
-
     return render(request, 'dashboard/admin_report_view.html', {
         'current_time': current_time,
         'name': name,
         
-
         # PLOTS
         # Recommendation Impact
         'confidence_rating':  html_fig_confidence_rating(tracer_dataframe()),
+        'tbl_confidence_rating': table_confidence_rating(tracer_dataframe()),
         'recommendation_influence': html_fig_recommendation_influence(tracer_dataframe()),
+        'tbl_recommendation_influence': table_recommendation_influence(tracer_dataframe()),
         # word cloud
+        'remakrs_recommendation_influence': remakrs_recommendation_influence(tracer_dataframe()),
         
         # Job Alignment and Satisfaction
         'alignment_and_satisfaction': html_fig_alignment_and_satisfaction(tracer_dataframe()),
         'job_alignment': html_fig_job_alignment(tracer_dataframe()),
+        'tbl_job_alignment': table_job_alignment(tracer_dataframe()),
         # 'job_alignment_bubble': html_fig_job_alignment_bubble(tracer_dataframe()),
         
         # Time-Series Analysis  
         # bar
-        'job_alignment_across_cohorts': html_fig_job_alignment_across_cohorts(tracer_dataframe()),
-        'job_alignment_time_series' : html_fig_job_alignment_time_series(tracer_dataframe()),
+        # 'job_alignment_across_cohorts': html_fig_job_alignment_across_cohorts(tracer_dataframe()),
+        # 'job_alignment_time_series' : html_fig_job_alignment_time_series(tracer_dataframe()),
         # line
         # over_year
-        'confidence_rating_time_series' : html_fig_confidence_rating_time_series(tracer_dataframe()),
-        
-        
-        
+        # 'confidence_rating_time_series' : html_fig_confidence_rating_time_series(tracer_dataframe()),
+        'remakrs_additional_feedback': remakrs_additional_feedback(tracer_dataframe()),
     })
 
 def admin_report_pdf(request):

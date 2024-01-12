@@ -16,6 +16,10 @@ def tracer_dataframe():
     survey = pd.DataFrame(list(Survey.objects.all().values()))
     return survey
 
+# def print df columns
+def print_df_columns(df):
+    print("columns:", df.columns)
+
 def to_html(fig):
     return fig.to_html(full_html=False)
 
@@ -69,6 +73,38 @@ def html_fig_confidence_rating(df):
     fig = fig_confidence_rating(df)
     return to_html(fig)
 
+def table_confidence_rating(df):
+    # order by confidence_rating
+    confidence_rating = "Not confident at all", "Somewhat confident", "Moderately confident", "Very confident"
+    df['confidence_rating'] = pd.Categorical(df['confidence_rating'], categories=confidence_rating, ordered=True)
+    df = df.sort_values('confidence_rating')
+
+    # count of each rating
+    count = df['confidence_rating'].value_counts().sort_index()
+
+    # percentage of each rating
+    percentage = df['confidence_rating'].value_counts(normalize=True).sort_index() * 100
+
+    # remove decimal place and add % sign
+    percentage = percentage.round(0).astype(int).astype(str) + '%'
+
+    # create a DataFrame
+    table = pd.DataFrame({'Count': count, 'Percentage': percentage})
+
+    # reset the index
+    table.reset_index(inplace=True)
+
+    # rename the index column
+    table.rename(columns={'index': 'Confidence Rating'}, inplace=True)
+
+    # add a last row
+    total_count = table['Count'].sum()
+    table.loc[len(table.index)] = ['Total', total_count, '100%']
+
+    # convert the DataFrame to HTML
+    table_html = table.to_html(index=False)
+    # print(table_html)
+    return table_html
 
 
 # ***1. Recommendation Impact:***
@@ -91,6 +127,76 @@ def html_fig_recommendation_influence(df):
     fig = fig_recommendation_influence(df)
     return to_html(fig)
 
+def table_recommendation_influence(df):
+    # order by confidence_rating
+    recommendation_influence = "Not at all", "Slightly", "Moderately", "Significantly"
+    df['recommendation_influence'] = pd.Categorical(df['recommendation_influence'], categories=recommendation_influence, ordered=True)
+    df = df.sort_values('recommendation_influence')
+
+    # count of each rating
+    count = df['recommendation_influence'].value_counts().sort_index()
+
+    # percentage of each rating
+    percentage = df['recommendation_influence'].value_counts(normalize=True).sort_index() * 100
+    
+    # remove decimal place and add % sign
+    percentage = percentage.round(0).astype(int).astype(str) + '%'
+
+    # create a DataFrame
+    table = pd.DataFrame({'Count': count, 'Percentage': percentage})
+
+    # reset the index
+    table.reset_index(inplace=True)
+
+    # rename the index column
+    table.rename(columns={'index': 'Recommendation Influence'}, inplace=True)
+
+    # add a last row
+    total_count = table['Count'].sum()
+    table.loc[len(table.index)] = ['Total', total_count, '100%']
+
+    # convert the DataFrame to HTML
+    table_html = table.to_html(index=False)
+    return table_html
+
+
+# displaying reasons of influence remakrs 
+# def remakrs_recommendation_influence(df):
+#     # get 'recommendation_influence_reason' column
+#     df = df[['recommendation_influence', 'recommendation_influence_reason']]
+#     # display 3 samples of 'recommendation_influence_reason' for each 'recommendation_influence' if it is not null
+#     df = df.groupby('recommendation_influence').apply(lambda x: x.sample(3) if len(x) > 3 else x)
+    
+#     # empty html
+#     remakrs_html = ''
+
+#     # create their own dataframe by recommendation_influence as head and recommendation_influence_reason as rows
+#     for recommendation_influence in df['recommendation_influence'].unique():
+#         reco = df[df['recommendation_influence'] == recommendation_influence]
+#         # make it to html
+#         reco_html = reco.to_html(index=False)
+#         # add to remakrs_html
+#         remakrs_html += reco_html
+    
+#     return remakrs_html
+def remakrs_recommendation_influence(df):
+    # get 'recommendation_influence' and 'recommendation_influence_reason' columns and drop rows with null values
+    df = df[['recommendation_influence', 'recommendation_influence_reason']].dropna()
+
+    # remove rows where 'recommendation_influence_reason' is NA or NaN
+    df = df.dropna(subset=['recommendation_influence_reason'])
+    # drop recommendation_influence_reason = '' or ' '
+    df = df[df['recommendation_influence_reason'] != '']
+    df = df[df['recommendation_influence_reason'] != ' ']
+
+    # get 3 samples of 'recommendation_influence_reason' for each 'recommendation_influence' if it is not null
+    df = df.groupby('recommendation_influence').apply(lambda x: x.sample(3) if len(x) > 3 else x).reset_index(drop=True)
+
+    # create their own dataframe by recommendation_influence as head and recommendation_influence_reason as rows
+    remakrs_html = ''.join([f'<h3>{recommendation_influence}</h3>{df[df["recommendation_influence"] == recommendation_influence].drop(columns=["recommendation_influence"]).to_html(index=False, header=False)}' 
+                            for recommendation_influence in df['recommendation_influence'].unique()])
+
+    return remakrs_html
 
 
 # -   **Word Cloud**: Analyze open-ended responses about why or why not the recommended 
@@ -131,6 +237,40 @@ def fig_job_alignment(df):
 def html_fig_job_alignment(df):
     fig = fig_job_alignment(df)
     return to_html(fig)
+
+
+def table_job_alignment(df):
+    # order by confidence_rating
+    job_alignment = "Not at all aligned", "Somewhat aligned", "Moderately aligned", "Significantly aligned"
+    df['job_alignment'] = pd.Categorical(df['job_alignment'], categories=job_alignment, ordered=True)
+    df = df.sort_values('job_alignment')
+
+    # count of each rating
+    count = df['job_alignment'].value_counts().sort_index()
+
+    # percentage of each rating
+    percentage = df['job_alignment'].value_counts(normalize=True).sort_index() * 100
+    
+    # remove decimal place and add % sign
+    percentage = percentage.round(0).astype(int).astype(str) + '%'
+
+    # create a DataFrame
+    table = pd.DataFrame({'Count': count, 'Percentage': percentage})
+
+    # reset the index
+    table.reset_index(inplace=True)
+
+    # rename the index column
+    table.rename(columns={'index': 'Job Alignment'}, inplace=True)
+
+    # add a last row
+    total_count = table['Count'].sum()
+    table.loc[len(table.index)] = ['Total', total_count, '100%']
+
+    # convert the DataFrame to HTML
+    table_html = table.to_html(index=False)
+    return table_html
+
 
 # **Bubble Chart**: Represent job alignment as the bubble size and career satisfaction as the color, 
 # with each bubble representing a graduate. This can reveal connections between specific specializations 
@@ -226,7 +366,16 @@ def html_fig_job_alignment_across_cohorts(df):
 # **Circle Chart**: Represent the percentage of graduates whose job search or career goals were influenced by the recommended job postings.
 
 
+def remakrs_additional_feedback(df):
+    df = df[['additional_feedback']].dropna()
 
+    # get 10 samples of 'additional_feedback' if it is not null/na/''/' 
+    df = df.groupby('additional_feedback').apply(lambda x: x.sample(10) if len(x) > 10 else x).reset_index(drop=True)
+
+    # make p tag for each additional_feedback
+    remakrs_html = ''.join([f'<p>{additional_feedback}</p>' 
+                            for additional_feedback in df['additional_feedback'].unique()])
+    return remakrs_html
 
 
 # general
