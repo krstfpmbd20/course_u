@@ -655,7 +655,11 @@ def admin_test(request):
 def admin_tracer(request):
     JobPosting_count, Specialization_count, QuestionSet_count, Student_count, Survey_count = status_counts()
     survey = Survey.objects.all()
-
+    survey = User.objects.raw('''
+    SELECT survey_survey.*, auth_user.*
+    FROM survey_survey
+    INNER JOIN auth_user ON auth_user.id =  survey_survey.user_id
+    ''')
 
     return render(request, 'dashboard/admin_tracer.html', {
         'survey': survey, 

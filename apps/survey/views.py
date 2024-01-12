@@ -106,7 +106,7 @@ def admin_report_view(request):
         # line
         # over_year
         # 'confidence_rating_time_series' : html_fig_confidence_rating_time_series(tracer_dataframe()),
-        'remakrs_additional_feedback': remakrs_additional_feedback(tracer_dataframe()),
+        'remarks_additional_feedback': remarks_additional_feedback(tracer_dataframe()),
     })
 
 def admin_report_pdf(request):

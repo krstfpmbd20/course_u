@@ -66,7 +66,7 @@
                         {% for data in survey %}
                         <tr>
                             <!-- <td>{{ user.id}}</td> -->
-                            <td><a href="#">{{ user.username}}</a></td>
+                            <td><a href="/admin/auth/user/{{data.id}}/change/">{{ data.username}}</a></td>
                             <td>{{data.academic_course}}</td>
                             <td>{{data.specialization}}</td>
                             <td>{% if data.employed == 1%}

@@ -113,7 +113,7 @@
 {% if user.is_authenticated %}
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item heading"><a href="{% url 'admin_home' %}">Dasboard</a></li>
+        <li class="breadcrumb-item heading"><a href="{% url 'admin_home' %}">Dashboard</a></li>
         <li class="breadcrumb-item"><a href="{% url 'admin_tracer' %}">Tracer</a></li>
         <li class="breadcrumb-item active" aria-current="page">Report View</li>
     </ol>
@@ -224,7 +224,7 @@
         <div style="text-align:center;" class="report">
             <h3>Additional Feedbacks</h3>
             <div id="remarks">
-                {{ remakrs_additional_feedback|safe }}
+                {{ remarks_additional_feedback|safe }}
             </div>
         </div>
     </div>

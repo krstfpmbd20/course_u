@@ -366,7 +366,7 @@ def html_fig_job_alignment_across_cohorts(df):
 # **Circle Chart**: Represent the percentage of graduates whose job search or career goals were influenced by the recommended job postings.
 
 
-def remakrs_additional_feedback(df):
+def remarks_additional_feedback(df):
     df = df[['additional_feedback']].dropna()
 
     # get 10 samples of 'additional_feedback' if it is not null/na/''/' 
