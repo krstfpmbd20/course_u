@@ -10,9 +10,9 @@ def survey(request):
         prev_year = StudentProfile.objects.filter(user=request.user).first().current_year - 1
     except:
         # direct to test home
-        prev_year = False
+        prev_year = None
     
-    if prev_year == False:
+    if prev_year == None:
         return redirect('test_home')
     
     # get recommendation from previous year where user = request.user and year = prev_year
