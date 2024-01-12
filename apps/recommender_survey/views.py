@@ -12,7 +12,7 @@ def survey(request):
         # direct to test home
         prev_year = False
     
-    if not prev_year:
+    if prev_year == False:
         return redirect('test_home')
     
     # get recommendation from previous year where user = request.user and year = prev_year
