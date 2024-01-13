@@ -46,17 +46,17 @@
         <!-- <a href="" class="btn btn-secondary">
                 Submit
             </a> -->
-        <button type="submit" class="btn btn-secondary">Submit</button>
 
 
         <!-- Navigation buttons -->
         <a href="{% url 'prev_test' question_id=question.question_id question_set_id=question_set_id %}"
             class="btn btn-secondary">Previous</a>
-        <a href="{% url 'next_test' question_id=question.question_id question_set_id=question_set_id %}"
-            class="btn btn-secondary">Next</a>
+        <!-- <a href="{% url 'next_test' question_id=question.question_id question_set_id=question_set_id %}"
+            class="btn btn-secondary">Next</a> -->
+        <button type="submit" class="btn btn-secondary">Next</button>
 
-        </div>
-    </form>
+</div>
+</form>
 <a href="{% url 'test_overview' question_set_id=question_set_id %}" class="btn btn-secondary1">Page Overview</a>
 
 {% else %}
@@ -69,6 +69,36 @@
 
 {% endif %}
 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(document).keydown(function (e) {
+            switch (e.which) {
+                case 49: // number 1
+                    $("input[name='selected_option'][value='0']").prop('checked', true);
+                    break;
 
+                case 50: // number 2
+                    $("input[name='selected_option'][value='1']").prop('checked', true);
+                    break;
+
+                case 51: // number 3
+                    $("input[name='selected_option'][value='2']").prop('checked', true);
+                    break;
+
+                case 52: // number 4
+                    $("input[name='selected_option'][value='3']").prop('checked', true);
+                    break;
+
+                case 13: // Enter
+                    $("button[type='submit']").click();
+                    break;
+
+                default: return; // exit this handler for other keys
+            }
+            e.preventDefault(); // prevent the default action (scroll / move caret)
+        });
+    });
+</script>
 
 {% endblock content %}
