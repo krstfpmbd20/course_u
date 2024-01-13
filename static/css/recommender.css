@@ -498,3 +498,18 @@ div.result {
     border: 2px solid #ddd;
     margin-right: 15px;
 }
+
+
+a.btn {
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5b1f;
+    border-radius: 5px;
+    display: block;
+    font-size: 20px;
+    margin: auto;
+    padding: 15px 30px;
+    max-width: 400px;
+    text-align: center;
+}
