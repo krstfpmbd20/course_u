@@ -371,6 +371,10 @@ def remarks_additional_feedback(df):
 
     # get 10 samples of 'additional_feedback' if it is not null/na/''/' 
     df = df.groupby('additional_feedback').apply(lambda x: x.sample(10) if len(x) > 10 else x).reset_index(drop=True)
+    # remove '' and ' '
+    df = df[df['additional_feedback'] != '']
+    df = df[df['additional_feedback'] != ' ']
+    
 
     # make p tag for each additional_feedback
     remakrs_html = ''.join([f'<p>{additional_feedback}</p>' 
