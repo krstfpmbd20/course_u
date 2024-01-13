@@ -777,29 +777,34 @@ def submit_question(request, question_id):
 
 def submit_test(request):
     question_set_id = request.session.get('question_set_id')
-    unfinished_response = UserResponse.objects.filter(set_id=question_set_id, is_answered=False).count()
+    try:
+        unfinished_response = UserResponse.objects.filter(set_id=question_set_id, is_answered=False).count()
 
-    if unfinished_response == 0:
-        test_started = request.session.get('test_started', False)
-        #question_set_id = request.session.get('question_set_id')
-        
-        if test_started:
-            question_set = QuestionSet.objects.get(set_id=question_set_id)
-            question_set.is_completed = True
-            total_correct = UserResponse.objects.filter(set_id=question_set_id, is_correct=True).count()
-            question_set.score = total_correct
-            question_set.save()
-            save_user_skills(request, question_set_id)
-            clear_session_variables(request)
-            messages.success(request, 'You have completed the test')
-            return redirect('student_test_report', question_set_id=question_set_id)
+        if unfinished_response == 0:
+            test_started = request.session.get('test_started', False)
+            #question_set_id = request.session.get('question_set_id')
+            
+            if test_started:
+                question_set = QuestionSet.objects.get(set_id=question_set_id)
+                question_set.is_completed = True
+                total_correct = UserResponse.objects.filter(set_id=question_set_id, is_correct=True).count()
+                question_set.score = total_correct
+                question_set.save()
+                save_user_skills(request, question_set_id)
+                clear_session_variables(request)
+                messages.success(request, 'You have completed the test')
+                return redirect('student_test_report', question_set_id=question_set_id)
+            else:
+                messages.success(request, 'You have not started the test')
+                return redirect('home')
         else:
-            messages.success(request, 'You have not started the test')
-            return redirect('home')
-    else:
-        messages.success(request, 'You have not answered all questions')
-        question_set_id = request.session.get('question_set_id')
-        #return redirect('test_overview', question_set_id=question_set_id)
+            messages.success(request, 'You have not answered all questions')
+            question_set_id = request.session.get('question_set_id')
+            #return redirect('test_overview', question_set_id=question_set_id)
+            return redirect('test_overview', question_set_id=question_set_id)
+    except:
+        # return to test_overview
+        messages.warning(request, 'You have not completed the test')
         return redirect('test_overview', question_set_id=question_set_id)
 
 def save_user_skills(request, set_id):
