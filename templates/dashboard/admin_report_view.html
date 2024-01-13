@@ -48,6 +48,22 @@
         margin-top: 5px;
     }
 
+    /* #downloadable {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        vertical-align: middle;
+    } */
+
+    #one-page-div {
+        /* width: 595px; */
+        /* Approximate width of an A4 page at 72 DPI */
+        /* height: 842px; */
+        /* Approximate height of an A4 page at 72 DPI */
+        /* overflow: auto; */
+        /* Add scrollbars if the content is larger than the div */
+    }
+
     h2 {
         text-align: center;
         margin-bottom: 10px;
@@ -71,6 +87,7 @@
         min-width: 400px;
         /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
     }
+
     /* add space below table */
 
 
@@ -79,7 +96,7 @@
         color: #ffffff;
         text-align: center;
         vertical-align: middle;
-        
+
     }
 
     table th,
@@ -100,9 +117,24 @@
     table tbody tr:last-of-type {
         /* border-bottom: 2px solid #eb751b; */
     }
-
-    #remakrs p {
-        
+    #remarks {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    #remarks p {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        padding: 20px;
+        max-width: 80%;
+        margin: 10px auto;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
     }
 </style>
 {% endblock head_extra %}
@@ -118,60 +150,74 @@
         <li class="breadcrumb-item active" aria-current="page">Report View</li>
     </ol>
 </nav>
-<div id="header" class="report">
-    <img src="{% static 'images/report-logo.png' %}" alt="Logo" id="logo">
-    <div id="title">Polytechnic University of the Philippines</div>
-    <div id="subtitle">College of Computer and Information Science</div>
-    <div id="system-name">Course University: An ontology based recommendation system</div><br>
-    <div id="user-info">Date: {{current_time}} | User: {{name}}</div>
-</div>
-<div>
-    <h2>Recommendation Impact</h2>
-    <div>
-        <div style="text-align:center;" class="report">
-            <h3>Confidence Rating</h3>
-            <p>The bar graph below shows the count of users who rated their confidence level based on the given recommendation.</p>
-            {{ confidence_rating|safe }}
-            {{ tbl_confidence_rating|safe }}
+<button id="download">Download as PDF</button>
+<div id="downloadable">
+    <div id="one-page-div">
+        <div id="header" class="report">
+            <img src="{% static 'images/report-logo.png' %}" alt="Logo" id="logo">
+            <div id="title">Polytechnic University of the Philippines</div>
+            <div id="subtitle">College of Computer and Information Science</div>
+            <div id="system-name">Course University: An ontology based recommendation system</div><br>
+            <div id="user-info">Date: {{current_time}} | User: {{name}}</div>
         </div>
-    </div>
-    <div>
-        <div style="text-align:center;" class="report">
-            <h3>Recommendation Influence</h3>
-            <p>This represents the count and percentage of users who were influenced by the Recommednation system.</p>
-            {{ recommendation_influence|safe }}
-            {{ tbl_recommendation_influence|safe }}
-        </div>
-    </div>
-    <div>
-        <div style="text-align:center;" class="report">
-            <h3>Recommednation Influence Remarks</h3>
-            <p>Remakrs for each Recommendation Infuence Rating.</p>
-            {{ remakrs_recommendation_influence|safe }}
-        </div>
-    </div>
-</div>
-<div>
-    <h2>Job Alignment and Satisfaction</h2>
-    <div>
-        <div style="text-align:center;" class="report">
-            <h3>Job Alignment and Overall Career Satisfaction Relationship</h3>
-            <p>The Scatter represents the relationship between the User's Job Alignment and Career Satisfaction. Each dot represents the relationship between each rating from  the Job alignment and career satisfaction while the larger the dot is the larger the relationship is.</p>
-            {{ alignment_and_satisfaction|safe }}
-        </div>
-    </div>
 
-    <div>
-        <div style="text-align:center;" class="report">
-            <h3>Job Alignment</h3>
-            <p>The bar graph below shows the count of users who rated their confidence level based on the given recommendation.</p>
-            {{ job_alignment|safe }}
-            {{ tbl_job_alignment|safe }}
+        <h2>Recommendation Impact</h2>
+        <div>
+            <div style="text-align:center;" class="report">
+                <h3>Confidence Rating</h3>
+                <p>The bar graph below shows the count of users who rated their confidence level based on the given
+                    recommendation.</p>
+                {{ confidence_rating|safe }}
+                {{ tbl_confidence_rating|safe }}
+            </div>
         </div>
     </div>
-</div>
+    <div id="one-page-div">
+        <div>
+            <div style="text-align:center;" class="report">
+                <h3>Recommendation Influence</h3>
+                <p>This represents the count and percentage of users who were influenced by the Recommednation system.
+                </p>
+                {{ recommendation_influence|safe }}
+                {{ tbl_recommendation_influence|safe }}
+            </div>
+        </div>
+    </div>
+    <div id="one-page-div">
+        <div>
+            <div style="text-align:center;" class="report">
+                <h3>Recommednation Influence Remarks</h3>
+                <p>Remakrs for each Recommendation Infuence Rating.</p>
+                {{ remakrs_recommendation_influence|safe }}
+            </div>
+        </div>
+    </div>
+    <div id="one-page-div">
 
-<!--<div>
+        <h2>Job Alignment and Satisfaction</h2>
+        <div>
+            <div style="text-align:center;" class="report">
+                <h3>Job Alignment and Overall Career Satisfaction Relationship</h3>
+                <p>The Scatter represents the relationship between the User's Job Alignment and Career Satisfaction.
+                    Each dot represents the relationship between each rating from the Job alignment and career
+                    satisfaction while the larger the dot is the larger the relationship is.</p>
+                {{ alignment_and_satisfaction|safe }}
+            </div>
+        </div>
+    </div>
+    <div id="one-page-div">
+        <div>
+            <div style="text-align:center;" class="report">
+                <h3>Job Alignment</h3>
+                <p>The bar graph below shows the count of users who rated their confidence level based on the given
+                    recommendation.</p>
+                {{ job_alignment|safe }}
+                {{ tbl_job_alignment|safe }}
+            </div>
+        </div>
+
+    </div>
+    <!--<div>
      <h2>Time-Series Analysis</h2>
     <div>
         <div style="text-align:center;" class="report">
@@ -193,7 +239,7 @@
     </div> 
 </div>-->
 
-<!-- <div >
+    <!-- <div >
     <div style="text-align:center;">
         <h3>TitleHeading</h3>
         {{ html|safe }}
@@ -218,23 +264,53 @@
     </div>
 </div> -->
 
-<div>
-    <h2>Others</h2>
-    <div>
-        <div style="text-align:center;" class="report">
-            <h3>Additional Feedbacks</h3>
-            <div id="remarks">
-                {{ remarks_additional_feedback|safe }}
+    <div id="one-page-div">
+        <h2>Others</h2>
+        <div>
+            <div style="text-align:center;" class="report">
+                <h3>Additional Feedbacks</h3>
+                <div id="remarks">
+                    {{ remarks_additional_feedback|safe }}
+                </div>
             </div>
         </div>
     </div>
-    
 </div>
-
 {% else %}
 
 {% endif %}
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<script>
+    document.getElementById('download').addEventListener('click', function () {
+        var doc = new jsPDF();
+        var element = document.getElementById('downloadable');
+
+        html2canvas(element).then(function (canvas) {
+            var imgData = canvas.toDataURL('image/png');
+            var imgWidth = 210;
+            var pageHeight = 295;
+            var imgHeight = canvas.height * imgWidth / canvas.width;
+            var heightLeft = imgHeight;
+
+            var doc = new jsPDF('p', 'mm');
+            var position = 0;
+
+            doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+            heightLeft -= pageHeight;
+
+            while (heightLeft >= 0) {
+                position = heightLeft - imgHeight;
+                doc.addPage();
+                doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+                heightLeft -= pageHeight;
+            }
+            doc.save('Tracer_report.pdf');
+        });
+    });
+</script>
 {% endblock content %}
