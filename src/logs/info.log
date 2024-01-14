@@ -14379,3 +14379,265 @@ INFO 2024-01-08 14:27:47,673 django.server basehttp basehttp.py 212 log_message 
 INFO 2024-01-08 14:27:47,781 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2443
 WARNING 2024-01-08 14:27:54,268 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
 WARNING 2024-01-08 14:27:54,270 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 28792
+INFO 2024-01-14 05:24:42,084 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2024-01-14 05:25:27,707 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17260
+INFO 2024-01-14 05:25:27,829 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
+INFO 2024-01-14 05:25:27,838 django.server basehttp basehttp.py 212 log_message "GET /static/images/landing-img.jpg HTTP/1.1" 304 0
+INFO 2024-01-14 05:25:27,848 django.server basehttp basehttp.py 212 log_message "GET /static/images/student_0.png HTTP/1.1" 200 817425
+INFO 2024-01-14 05:25:27,851 django.server basehttp basehttp.py 212 log_message "GET /static/images/instruct.png HTTP/1.1" 304 0
+INFO 2024-01-14 05:25:27,860 django.server basehttp basehttp.py 212 log_message "GET /static/images/student_2.png HTTP/1.1" 200 392958
+INFO 2024-01-14 05:25:27,864 django.server basehttp basehttp.py 212 log_message "GET /static/images/com.png HTTP/1.1" 200 173117
+INFO 2024-01-14 05:25:27,875 django.server basehttp basehttp.py 212 log_message "GET /static/images/working.png HTTP/1.1" 200 38833
+INFO 2024-01-14 05:25:27,876 django.server basehttp basehttp.py 212 log_message "GET /static/images/student.png HTTP/1.1" 304 0
+INFO 2024-01-14 05:25:27,885 django.server basehttp basehttp.py 212 log_message "GET /static/images/student_1.png HTTP/1.1" 200 221008
+INFO 2024-01-14 05:25:27,902 django.server basehttp basehttp.py 212 log_message "GET /static/images/graduate.png HTTP/1.1" 200 24752
+WARNING 2024-01-14 05:25:30,232 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2024-01-14 05:25:30,241 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 29284
+INFO 2024-01-14 05:29:49,003 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17260
+INFO 2024-01-14 05:30:26,561 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17260
+INFO 2024-01-14 05:32:56,262 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17260
+INFO 2024-01-14 05:33:55,454 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17260
+INFO 2024-01-14 05:35:41,225 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17260
+INFO 2024-01-14 05:35:50,071 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 05:35:50,297 django.server basehttp basehttp.py 212 log_message "GET /static/images/graduate.png HTTP/1.1" 304 0
+INFO 2024-01-14 05:35:50,298 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7917
+INFO 2024-01-14 05:35:50,310 django.server basehttp basehttp.py 212 log_message "GET /static/images/student_2.png HTTP/1.1" 304 0
+INFO 2024-01-14 05:35:50,329 django.server basehttp basehttp.py 212 log_message "GET /static/images/student.png HTTP/1.1" 304 0
+INFO 2024-01-14 05:35:50,339 django.server basehttp basehttp.py 212 log_message "GET /static/images/landing-img.jpg HTTP/1.1" 304 0
+INFO 2024-01-14 05:35:50,349 django.server basehttp basehttp.py 212 log_message "GET /static/images/com.png HTTP/1.1" 304 0
+INFO 2024-01-14 05:35:50,358 django.server basehttp basehttp.py 212 log_message "GET /static/images/working.png HTTP/1.1" 304 0
+INFO 2024-01-14 05:35:50,486 django.server basehttp basehttp.py 212 log_message "GET /static/images/student_0.png HTTP/1.1" 304 0
+INFO 2024-01-14 05:35:50,546 django.server basehttp basehttp.py 212 log_message "GET /static/images/instruct.png HTTP/1.1" 304 0
+INFO 2024-01-14 05:35:50,561 django.server basehttp basehttp.py 212 log_message "GET /static/images/student_1.png HTTP/1.1" 304 0
+WARNING 2024-01-14 05:35:50,695 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2024-01-14 05:35:50,704 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 29282
+INFO 2024-01-14 05:36:14,856 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 05:36:14,951 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7867
+INFO 2024-01-14 05:38:37,903 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 05:38:38,013 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7892
+INFO 2024-01-14 05:38:43,530 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 05:38:43,583 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
+INFO 2024-01-14 05:41:10,548 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17259
+INFO 2024-01-14 05:41:10,713 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7901
+INFO 2024-01-14 05:42:32,861 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 05:42:32,939 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7899
+INFO 2024-01-14 05:42:52,246 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 05:42:52,312 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7904
+INFO 2024-01-14 05:47:18,904 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 05:47:19,017 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7997
+INFO 2024-01-14 05:48:30,778 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 05:48:30,873 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 8003
+INFO 2024-01-14 05:48:47,607 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 05:48:47,698 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 8003
+INFO 2024-01-14 05:48:54,558 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 05:48:54,619 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 8003
+INFO 2024-01-14 06:33:17,133 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:33:17,240 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7990
+INFO 2024-01-14 06:33:39,052 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:33:39,143 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 8008
+INFO 2024-01-14 06:33:40,493 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:33:40,640 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
+INFO 2024-01-14 06:33:41,858 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:33:41,939 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
+INFO 2024-01-14 06:34:09,066 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:34:09,148 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7968
+INFO 2024-01-14 06:34:28,849 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:34:28,942 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7970
+INFO 2024-01-14 06:35:36,263 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:35:36,359 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 8000
+INFO 2024-01-14 06:35:51,908 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:35:52,005 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7950
+INFO 2024-01-14 06:36:06,296 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:36:06,363 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7969
+INFO 2024-01-14 06:36:36,014 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:36:36,091 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7976
+INFO 2024-01-14 06:36:52,645 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:36:52,714 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 8000
+INFO 2024-01-14 06:39:47,843 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:39:47,953 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7991
+INFO 2024-01-14 06:41:00,352 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:41:00,449 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7981
+INFO 2024-01-14 06:43:41,512 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:43:41,623 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7981
+INFO 2024-01-14 06:45:08,653 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:45:08,748 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7981
+INFO 2024-01-14 06:46:36,955 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:46:37,067 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7981
+INFO 2024-01-14 06:51:05,427 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:51:05,542 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7981
+INFO 2024-01-14 06:51:35,692 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17258
+INFO 2024-01-14 06:51:35,799 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7982
+INFO 2024-01-14 06:52:14,960 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 06:52:15,039 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
+INFO 2024-01-14 07:00:46,635 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17294
+INFO 2024-01-14 07:00:46,776 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 8049
+INFO 2024-01-14 07:01:15,978 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:01:16,070 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 8044
+INFO 2024-01-14 07:01:34,796 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:01:34,945 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 8011
+INFO 2024-01-14 07:02:47,855 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:02:47,961 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 8010
+INFO 2024-01-14 07:03:07,811 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:03:07,908 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7982
+INFO 2024-01-14 07:03:30,367 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17295
+INFO 2024-01-14 07:03:51,498 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:03:51,587 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7982
+INFO 2024-01-14 07:03:52,712 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:03:52,914 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
+INFO 2024-01-14 07:03:53,091 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:03:53,427 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
+INFO 2024-01-14 07:03:59,380 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:03:59,462 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7982
+INFO 2024-01-14 07:04:21,061 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:04:21,168 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7982
+INFO 2024-01-14 07:04:22,249 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:04:22,553 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
+INFO 2024-01-14 07:04:37,561 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:04:37,626 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7982
+INFO 2024-01-14 07:04:38,724 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:04:38,931 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
+INFO 2024-01-14 07:04:39,918 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:04:40,203 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 304 0
+INFO 2024-01-14 07:05:04,884 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17293
+INFO 2024-01-14 07:05:04,954 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7982
+INFO 2024-01-14 07:07:36,269 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 10814
+INFO 2024-01-14 07:07:36,345 django.server basehttp basehttp.py 212 log_message "GET /static/css/login_user.css HTTP/1.1" 304 0
+INFO 2024-01-14 07:07:36,374 django.server basehttp basehttp.py 212 log_message "GET /static/images/log.jpg HTTP/1.1" 304 0
+WARNING 2024-01-14 07:07:36,496 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2024-01-14 07:07:41,558 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2024-01-14 07:07:41,648 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2024-01-14 07:07:49,653 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2024-01-14 07:07:49,728 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2024-01-14 07:08:07,846 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2024-01-14 07:08:07,927 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2024-01-14 07:08:31,591 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2024-01-14 07:08:31,633 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2024-01-14 07:08:50,141 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2024-01-14 07:08:50,181 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2024-01-14 07:08:57,639 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2024-01-14 07:08:57,673 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2024-01-14 07:09:18,783 django.server basehttp basehttp.py 212 log_message "POST /login_user/ HTTP/1.1" 302 0
+INFO 2024-01-14 07:09:18,821 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 200 11254
+INFO 2024-01-14 07:09:39,492 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 302 0
+INFO 2024-01-14 07:09:43,210 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 302 0
+INFO 2024-01-14 07:09:49,879 django.server basehttp basehttp.py 81 handle_error - Broken pipe from ('127.0.0.1', 53303)
+INFO 2024-01-14 07:09:53,010 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37105
+INFO 2024-01-14 07:09:53,055 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 9595
+INFO 2024-01-14 07:09:53,087 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 18865
+INFO 2024-01-14 07:09:53,099 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-1.png HTTP/1.1" 200 244160
+INFO 2024-01-14 07:09:53,117 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-2.png HTTP/1.1" 200 294167
+INFO 2024-01-14 07:09:53,130 django.server basehttp basehttp.py 212 log_message "GET /static/js/specialization_filter.js HTTP/1.1" 304 0
+INFO 2024-01-14 07:09:53,182 django.server basehttp basehttp.py 212 log_message "GET /static/images/home-headline1.png HTTP/1.1" 200 287036
+WARNING 2024-01-14 07:09:54,983 django.request log log.py 241 log_response Not Found: /images/profile_pics/Pambid_KNJI7pr.jpg
+WARNING 2024-01-14 07:09:54,988 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/Pambid_KNJI7pr.jpg HTTP/1.1" 404 29480
+WARNING 2024-01-14 07:09:55,074 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2024-01-14 07:13:23,448 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37122
+WARNING 2024-01-14 07:13:25,525 django.request log log.py 241 log_response Not Found: /images/profile_pics/Pambid_KNJI7pr.jpg
+WARNING 2024-01-14 07:13:25,528 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/Pambid_KNJI7pr.jpg HTTP/1.1" 404 29480
+INFO 2024-01-14 07:13:56,314 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37122
+WARNING 2024-01-14 07:13:58,486 django.request log log.py 241 log_response Not Found: /images/profile_pics/Pambid_KNJI7pr.jpg
+WARNING 2024-01-14 07:13:58,490 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/Pambid_KNJI7pr.jpg HTTP/1.1" 404 29480
+INFO 2024-01-14 07:14:52,315 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37122
+WARNING 2024-01-14 07:14:54,379 django.request log log.py 241 log_response Not Found: /images/profile_pics/Pambid_KNJI7pr.jpg
+WARNING 2024-01-14 07:14:54,381 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/Pambid_KNJI7pr.jpg HTTP/1.1" 404 29480
+INFO 2024-01-14 07:16:10,631 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37122
+WARNING 2024-01-14 07:16:12,841 django.request log log.py 241 log_response Not Found: /images/profile_pics/Pambid_KNJI7pr.jpg
+WARNING 2024-01-14 07:16:12,844 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/Pambid_KNJI7pr.jpg HTTP/1.1" 404 29480
+INFO 2024-01-14 07:17:01,725 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37122
+WARNING 2024-01-14 07:17:03,698 django.request log log.py 241 log_response Not Found: /images/profile_pics/Pambid_KNJI7pr.jpg
+WARNING 2024-01-14 07:17:03,700 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/Pambid_KNJI7pr.jpg HTTP/1.1" 404 29480
+INFO 2024-01-14 07:18:25,831 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37121
+WARNING 2024-01-14 07:18:28,000 django.request log log.py 241 log_response Not Found: /images/profile_pics/Pambid_KNJI7pr.jpg
+WARNING 2024-01-14 07:18:28,002 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/Pambid_KNJI7pr.jpg HTTP/1.1" 404 29480
+INFO 2024-01-14 07:21:46,306 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37122
+WARNING 2024-01-14 07:21:48,415 django.request log log.py 241 log_response Not Found: /images/profile_pics/Pambid_KNJI7pr.jpg
+WARNING 2024-01-14 07:21:48,418 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/Pambid_KNJI7pr.jpg HTTP/1.1" 404 29480
+INFO 2024-01-14 07:22:06,815 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37122
+INFO 2024-01-14 07:22:07,668 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 302 0
+INFO 2024-01-14 07:22:07,721 django.server basehttp basehttp.py 212 log_message "GET /login_user/?next=/home HTTP/1.1" 200 10825
+WARNING 2024-01-14 07:22:08,768 django.request log log.py 241 log_response Not Found: /images/profile_pics/Pambid_KNJI7pr.jpg
+WARNING 2024-01-14 07:22:08,770 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/Pambid_KNJI7pr.jpg HTTP/1.1" 404 29480
+INFO 2024-01-14 07:23:55,546 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37122
+WARNING 2024-01-14 07:23:57,536 django.request log log.py 241 log_response Not Found: /images/profile_pics/Pambid_KNJI7pr.jpg
+WARNING 2024-01-14 07:23:57,539 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/Pambid_KNJI7pr.jpg HTTP/1.1" 404 29480
+INFO 2024-01-14 07:25:38,247 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37122
+WARNING 2024-01-14 07:25:40,355 django.request log log.py 241 log_response Not Found: /images/profile_pics/Pambid_KNJI7pr.jpg
+WARNING 2024-01-14 07:25:40,359 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/Pambid_KNJI7pr.jpg HTTP/1.1" 404 29480
+INFO 2024-01-14 07:25:52,476 django.utils.autoreload autoreload autoreload.py 668 run_with_reloader Watching for file changes with StatReloader
+INFO 2024-01-14 07:26:05,349 django.server basehttp basehttp.py 212 log_message "GET /static/css/base_home.css HTTP/1.1" 200 9595
+INFO 2024-01-14 07:26:05,996 django.server basehttp basehttp.py 212 log_message "GET /static/css/test_home.css HTTP/1.1" 200 2645
+INFO 2024-01-14 07:26:09,944 django.server basehttp basehttp.py 212 log_message "GET /static/images/light.png HTTP/1.1" 304 0
+INFO 2024-01-14 07:26:11,704 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17261
+WARNING 2024-01-14 07:26:12,195 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 07:26:12,430 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+INFO 2024-01-14 07:26:13,114 django.server basehttp basehttp.py 212 log_message "GET /static/images/boom.png HTTP/1.1" 304 0
+INFO 2024-01-14 07:26:13,120 django.server basehttp basehttp.py 212 log_message "GET /static/css/landing2.css HTTP/1.1" 200 7982
+INFO 2024-01-14 07:26:13,121 django.server basehttp basehttp.py 212 log_message "GET /static/images/graduate.png HTTP/1.1" 304 0
+INFO 2024-01-14 07:26:13,141 django.server basehttp basehttp.py 212 log_message "GET /static/images/result.png HTTP/1.1" 304 0
+INFO 2024-01-14 07:26:13,156 django.server basehttp basehttp.py 212 log_message "GET /static/images/landing-img.jpg HTTP/1.1" 304 0
+INFO 2024-01-14 07:26:14,180 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17295
+INFO 2024-01-14 07:26:14,608 django.server basehttp basehttp.py 212 log_message "GET /static/images/student_0.png HTTP/1.1" 304 0
+INFO 2024-01-14 07:26:14,612 django.server basehttp basehttp.py 212 log_message "GET /static/images/instruct.png HTTP/1.1" 304 0
+INFO 2024-01-14 07:26:14,613 django.server basehttp basehttp.py 212 log_message "GET /static/images/student_1.png HTTP/1.1" 304 0
+INFO 2024-01-14 07:26:14,616 django.server basehttp basehttp.py 212 log_message "GET /static/images/student.png HTTP/1.1" 304 0
+INFO 2024-01-14 07:26:14,616 django.server basehttp basehttp.py 212 log_message "GET /static/images/student_2.png HTTP/1.1" 304 0
+INFO 2024-01-14 07:26:14,746 django.server basehttp basehttp.py 212 log_message "GET /static/images/com.png HTTP/1.1" 304 0
+INFO 2024-01-14 07:26:14,759 django.server basehttp basehttp.py 212 log_message "GET /static/images/working.png HTTP/1.1" 304 0
+WARNING 2024-01-14 07:26:17,160 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2024-01-14 07:26:17,174 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 29284
+WARNING 2024-01-14 07:26:19,281 django.request log log.py 241 log_response Not Found: /favicon.ico
+WARNING 2024-01-14 07:26:19,282 django.server basehttp basehttp.py 212 log_message "GET /favicon.ico HTTP/1.1" 404 29284
+INFO 2024-01-14 07:26:20,724 django.server basehttp basehttp.py 212 log_message "GET / HTTP/1.1" 200 17295
+INFO 2024-01-14 07:27:42,043 django.server basehttp basehttp.py 212 log_message "GET /login_user/ HTTP/1.1" 302 0
+INFO 2024-01-14 07:27:52,713 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37191
+INFO 2024-01-14 07:27:52,796 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 18904
+INFO 2024-01-14 07:27:52,882 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-1.png HTTP/1.1" 200 244160
+INFO 2024-01-14 07:27:52,938 django.server basehttp basehttp.py 212 log_message "GET /static/images/com-2.png HTTP/1.1" 200 294167
+INFO 2024-01-14 07:27:52,949 django.server basehttp basehttp.py 212 log_message "GET /static/js/specialization_filter.js HTTP/1.1" 304 0
+INFO 2024-01-14 07:27:53,038 django.server basehttp basehttp.py 212 log_message "GET /static/images/home-headline1.png HTTP/1.1" 200 287036
+WARNING 2024-01-14 07:27:54,877 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 07:27:54,880 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+WARNING 2024-01-14 07:27:55,006 django.server basehttp basehttp.py 212 log_message "GET /static/images/favicon.png HTTP/1.1" 404 1914
+INFO 2024-01-14 07:39:31,580 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37191
+INFO 2024-01-14 07:39:31,623 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 304 0
+WARNING 2024-01-14 07:39:33,747 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 07:39:33,748 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+INFO 2024-01-14 07:41:53,777 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37191
+INFO 2024-01-14 07:41:53,846 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 18904
+WARNING 2024-01-14 07:41:56,026 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 07:41:56,028 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+INFO 2024-01-14 07:43:32,040 django.server basehttp basehttp.py 212 log_message "GET /static/css/recommender.css HTTP/1.1" 200 9747
+WARNING 2024-01-14 07:43:34,086 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 07:43:34,087 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+INFO 2024-01-14 07:43:45,623 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37191
+INFO 2024-01-14 07:43:45,722 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 18904
+WARNING 2024-01-14 07:43:47,848 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 07:43:47,851 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+INFO 2024-01-14 07:46:01,769 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37191
+INFO 2024-01-14 07:46:01,862 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 18904
+WARNING 2024-01-14 07:46:04,036 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 07:46:04,038 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+INFO 2024-01-14 07:53:45,604 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37191
+INFO 2024-01-14 07:53:45,681 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 18904
+WARNING 2024-01-14 07:53:47,896 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 07:53:47,899 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+INFO 2024-01-14 07:56:21,268 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37191
+INFO 2024-01-14 07:56:21,339 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 18904
+WARNING 2024-01-14 07:56:23,663 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 07:56:23,666 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+INFO 2024-01-14 07:58:46,333 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37191
+INFO 2024-01-14 07:58:46,439 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 18914
+WARNING 2024-01-14 07:58:48,546 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 07:58:48,548 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+INFO 2024-01-14 07:59:12,858 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37191
+INFO 2024-01-14 07:59:13,030 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 18919
+WARNING 2024-01-14 07:59:15,056 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 07:59:15,058 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+INFO 2024-01-14 08:00:26,962 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37191
+INFO 2024-01-14 08:00:27,069 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 18919
+WARNING 2024-01-14 08:00:29,222 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 08:00:29,224 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+INFO 2024-01-14 08:02:08,648 django.server basehttp basehttp.py 212 log_message "GET /home HTTP/1.1" 200 37191
+INFO 2024-01-14 08:02:08,746 django.server basehttp basehttp.py 212 log_message "GET /static/css/home.css HTTP/1.1" 200 18919
+WARNING 2024-01-14 08:02:10,695 django.request log log.py 241 log_response Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 08:02:10,697 django.server basehttp basehttp.py 212 log_message "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640

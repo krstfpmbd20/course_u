@@ -4,8 +4,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-
-
+ 
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -63,16 +62,16 @@ body {
 
 /* Change button color on hover */
 .get-started-button:hover {
-    background-color: #0056b3;
+    background-color: orange;
     /* New background color on hover */
 }
 
 
 .section {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    display: flex;
     margin: 0 auto;
     padding: 0;
     height: 100%;
@@ -83,6 +82,7 @@ body {
     padding: 0;
     width: 100vw;
     max-width: 1000px;
+    
     /* background-image: url('http://127.0.0.1:8000/static/images/pling.png'); */
     /* background-size: contain; */
     /* background-repeat: no-repeat; */
@@ -97,6 +97,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+   
 }
 
 .col {
@@ -107,6 +108,8 @@ body {
     flex-wrap: wrap;
     align-content: stretch;
     align-items: flex-start;
+    text-align: center;
+    
 }
 
 
@@ -130,14 +133,19 @@ p {
     
     font-weight: 800;
     font-size: 16px;
-
-    background-color: #007bff;
+   justify-content: center;
+    background-color: #FF5F41; /*#007bff*/
     color: #fff;
     border-radius: 20px;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    margin: auto;
-    align-self: center;
+    text-align: center;
+    
+}
+.btn:hover{
+    background-color: white;
+    color: #FF5F41;
+    border: 3px solid #FF5F41;
 }
 
 @media only screen and (max-width: 600px) {
@@ -273,7 +281,7 @@ p {
 /* section features */
 
 .section-features {
-    background-color:rgb(228, 95, 65); /*#2e2e2e;*/
+    background-color:#FF745a; /*#2e2e2e;*/
     color: #fff;
 }
 
@@ -407,7 +415,7 @@ p {
 /* section-last */
 
 .section-last {
-    background-color: rgb(228, 95, 65);;
+    background-color: #FF745a; 
     color: #fff;
 }
 
