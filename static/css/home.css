@@ -418,26 +418,26 @@ h3 {
 .field_title {
   font-size: 28px;
   font-weight: bold;
-  color: #d62b00;
+  color: whitesmoke; /*d62b00;*/
   margin-right: 10px;
 }
 .recommendedfield_first .card.field{
   /* background-color: #FF6347;  */
-  background-color: #FFB072;
+  background-color: #ce796b; /*#FFB072;*/
   color: white; /* White text */
 }
 
 .recommendedfield_second .card.field{
   /* background-color: #ADFF2F; */
   /* background-color: #FF8470; */
-  background-color: #F9FFA5;
+  background-color: #e7ad99; /*#F9FFA5;*/
   color: white; /* White text */
 }
 
 .recommendedfield_third .card.field{
   /* background-color: #1E90FF; */
   /* background-color: #FFA599; */
-  background-color: #FFC0CB;
+  background-color: #ecc8af; /*#FFC0CB;*/
   color: white; /* White text */
 }
 /* color: #FFC6C2; */
