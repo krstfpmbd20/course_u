@@ -6,6 +6,17 @@ from django.contrib import messages
 from apps.acad.models import StudentProfile
 
 def survey_validation(request):
+    try:
+        # have user profile
+        profile = StudentProfile.objects.filter(user=request.user).first()
+    except:
+        # no user profile
+        profile = None
+    if profile == None:
+        # system message
+        messages.warning(request, 'You have not created your profile yet')
+        return redirect('test_home')
+
     prev_year = StudentProfile.objects.filter(user=request.user).first().current_year - 1
     # get recommendation from previous year where user = request.user and year = prev_year
     
@@ -40,11 +51,13 @@ def survey_validation(request):
         return redirect('recommender')
 
 def survey(request):
-    prev_year = StudentProfile.objects.filter(user=request.user).first().current_year - 1
+    #prev_year = StudentProfile.objects.filter(user=request.user).first().current_year - 1
+    
     try:
-        last_recommendation = UserRecommendations.objects.filter(user_id=request.user, current_year=prev_year).last()
+        last_recommendation = UserRecommendations.objects.filter(user_id=request.user).last()
     except:
         last_recommendation = None
+    
     if request.method == 'POST':
         form = SurveyForm(request.POST)
         if form.is_valid():
