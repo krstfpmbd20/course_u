@@ -58,6 +58,11 @@ def survey(request):
     except:
         last_recommendation = None
     
+    if last_recommendation == None:
+        # system message
+        messages.warning(request, 'You have not received any recommendation yet. You are redirected to Recommender Page.')
+        return redirect('recommender')
+    
     if request.method == 'POST':
         form = SurveyForm(request.POST)
         if form.is_valid():
