@@ -63,14 +63,15 @@ def survey(request):
         messages.warning(request, 'You have not received any recommendation yet. You are redirected to Recommender Page.')
         return redirect('recommender')
     
+    # Check if a survey for this recommendation already exists
+    existing_survey = Survey.objects.filter(recommendation_id=last_recommendation.recommendation_id).first()
+    if existing_survey:
+        messages.warning(request, 'You have already submitted a survey for this recommendation.')
+        return redirect('recommender')
+
     if request.method == 'POST':
         form = SurveyForm(request.POST)
         if form.is_valid():
-            # Check if a survey for this recommendation already exists
-            existing_survey = Survey.objects.filter(user=request.user, recommendation_id=last_recommendation.recommendation_id).first()
-            if existing_survey:
-                messages.warning(request, 'You have already submitted a survey for this recommendation.')
-                return redirect('recommender')
             # Save userrecommendation_id to recommender survey
             survey = form.save(commit=False)
             survey.recommendation_id = last_recommendation.recommendation_id
