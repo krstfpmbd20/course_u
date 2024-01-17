@@ -2,7 +2,7 @@
 
 /* Style the main container */
 .container{
-    max-width: 750px;
+    max-width: 680px;
     margin: 0 auto;
 }
 
@@ -95,13 +95,13 @@ footer{
     transition: background-color 0.3s ease;
     padding:7px;
     margin-top: 10px;
-    margin-left: 43px;
+    margin-left: 145px;
     justify-content: center;
     box-shadow: 0 4px 6px rgb(0,0,0,0.4);
     
   }
   .btn-secondary1{ 
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
