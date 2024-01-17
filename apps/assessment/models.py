@@ -16,7 +16,7 @@ class Test(models.Model):
     description = models.CharField(max_length=1000)
     options = models.JSONField()
     correct_option = models.IntegerField() # Index of the correct option in the options list
-
+    reference = models.URLField(max_length=200, default='https://www.google.com', blank=True, null=True)
      # Add the many-to-many relationship with Skill
     skills = models.ManyToManyField(Skill)
 
