@@ -14,6 +14,7 @@ from apps.website.models import Skill, Specialization, SpecializationSkills, Fie
 from apps.acad.models import StudentProfile, Course, Curriculum, Subject, StudentGrades
 from apps.recommender_survey.models import Survey as RecommenderSurvey
 from apps.assessment.models import QuestionSet
+from apps.survey.models import Survey as Tracer
 
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
@@ -338,50 +339,150 @@ def recommender(request):
 #     })
 
 def roadmap(request):
-
-    # Roadmap
-    user_reco_steps = [UserRecommendations.objects.filter(user=request.user, current_year=i) for i in range(5)]
-    user_reco_steps_status = [step.exists() for step in user_reco_steps]
-    user_test_status = [QuestionSet.objects.filter(user=request.user, year=i).exists() for i in range(5)]
-
-    # check if it has recommender_survey model survey has user_reco_step_n ID
-    user_survey_s_status = []
-    for step in user_reco_steps:
-        #print(step)
-        try:
-            status = RecommenderSurvey.objects.filter(recommendation_id=step.first().recommendation_id).exists()
-        except AttributeError:
-            status = False
-        #print(status)
-        user_survey_s_status.append(status)
-
-    # get studentprofile
-    student_profile = StudentProfile.objects.get(user=request.user)
-    student_profile_exists = StudentProfile.objects.filter(user=request.user).exists()
-    print("student_profile_exists",student_profile_exists)
-    # get course
-    course = Course.objects.get(id=student_profile.enrolled_courses_id)
-    course_name = course.course_name
-    # get course number of years
-    user_grade_status = []
-    for year in range(1,course.number_of_years+1):
-        #first subject from curriculum
-        first_subject = Subject.objects.filter(curriculum__course=course, curriculum__year=year).first()
-        # on studentgrades check if student_profile.id and subject.id exists
-        # if not, return false
-        try:
-            status = StudentGrades.objects.filter(student_id=student_profile.id, subject_id=first_subject.id).exists()
-        except AttributeError:
-            status = False
-        #print("user grade status {}: {}", year, status)
-        user_grade_status.append(status)
+    
+    try:
+        # Roadmap
+        # User has Recommendation for each year 
+        user_reco_steps = [UserRecommendations.objects.filter(user=request.user, current_year=i) for i in range(5)]
+        user_reco = [UserRecommendations.objects.filter(user=request.user, current_year=i).first() for i in range(5)]
+        # if it exists
+        user_reco_steps_status = [step.exists() for step in user_reco_steps]
+        # get top 3 recommendation for each
+        top_1_recos = []
+        top_2_recos = []
+        top_3_recos = []
+        for reco in user_reco:
+            #print("reco",reco)
+            try:
+                if reco is not None:
+                # # if QuerySet is not empty
+                # if reco.exists():
+                #     print("Exists")
+                    top_1_recos.append(reco.field_1.field_name)
+                    top_2_recos.append(reco.field_2.field_name)
+                    top_3_recos.append(reco.field_3.field_name)
+                # else:
+                #     print("Does not exists")
+                else:
+                    top_1_recos.append('empty')
+                    top_2_recos.append('empty')
+                    top_3_recos.append('empty')
+            except:
+                print("Error or does not exists")
+                top_1_recos.append('empty')
+                top_2_recos.append('empty')
+                top_3_recos.append('empty')
         
-    step_1_status =  user_reco_steps_status[0] and user_test_status[0]
-    step_2_status =  user_reco_steps_status[1] and user_test_status[1] and user_survey_s_status[0] and user_grade_status[0]
-    step_3_status =  user_reco_steps_status[2] and user_test_status[2] and user_survey_s_status[1] and user_grade_status[1]
-    step_4_status =  user_reco_steps_status[3] and user_test_status[3] and user_survey_s_status[2] and user_grade_status[2]
-    step_5_status =  user_reco_steps_status[4] and user_test_status[4] and user_survey_s_status[3] and user_grade_status[3]
+    
 
+
+        # User has answer Test for each year
+        user_test_status = [QuestionSet.objects.filter(user=request.user, year=i).exists() for i in range(5)]
+        tests = [QuestionSet.objects.filter(user=request.user, year=i).first() for i in range(5)]
+        test_results = []
+        for test in tests:
+            print(test)
+            try:
+                test_results.append((test.score/12)*100)
+            except:
+                test_results.append(0)
+
+        #print('test results:',test_results)
+        # check if it has recommender_survey model survey has user_reco_step_n ID
+        user_survey_s_status = []
+        user_survey_accuracy = []
+        for step in user_reco_steps:
+            #print(step)
+            try:
+                status = RecommenderSurvey.objects.filter(recommendation_id=step.first().recommendation_id).exists()
+            except AttributeError:
+                status = False
+            
+            #print(status)
+            user_survey_s_status.append(status)
+
+            try:
+                # fields = [f.name for f in RecommenderSurvey._meta.get_fields()]
+                # for field in fields:
+                #     print(field)
+                RecommenderSurvey.objects.filter(recommendation_id=step.first().recommendation_id)
+                survey = RecommenderSurvey.objects.get(recommendation_id=step.first().recommendation_id)
+                accuracy = survey.ques3
+                #survey_id = survey.id
+                #print('id: ',survey_id ,', accuracy: ',accuracy)
+            except AttributeError:
+                accuracy = 0
+            
+            # 1 - not accurate
+            # 2 - somewhat accurate
+            # 3 - Neutral
+            # 4 - Accurate
+            # 5 - Very Accurate
+
+            # if accuracy == 'Not Accurate':
+            #     accuracy = 1
+            # elif accuracy == 'Somewhat Accuracte':
+            #     accuracy = 2
+            # elif accuracy == 'Neutral':
+            #     accuracy = 3
+            # elif accuracy == 'Accurate':
+            #     accuracy = 4
+            # elif accuracy == 'Very Accuracte':
+            #     accuracy = 5
+            # else:
+            #     accuracy = 0
+            user_survey_accuracy.append(accuracy)
+            
+        #print("Accuracy",user_survey_accuracy)
+        # get studentprofile
+        student_profile = StudentProfile.objects.get(user=request.user)
+        student_profile_exists = StudentProfile.objects.filter(user=request.user).exists()
+        # get course
+        course = Course.objects.get(id=student_profile.enrolled_courses_id)
+        course_name = course.course_name
+        # get course number of years
+        user_grade_status = []
+        for year in range(1,course.number_of_years+1):
+            #first subject from curriculum
+            first_subject = Subject.objects.filter(curriculum__course=course, curriculum__year=year).first()
+            # on studentgrades check if student_profile.id and subject.id exists
+            # if not, return false
+            try:
+                status = StudentGrades.objects.filter(student_id=student_profile.id, subject_id=first_subject.id).exists()
+                
+            except AttributeError:
+                status = False
+                
+            #print("user grade status {}: {}", year, status)
+            user_grade_status.append(status)
+            
+        step_1_status =  user_reco_steps_status[0] and user_test_status[0]
+        step_2_status =  user_reco_steps_status[1] and user_test_status[1] and user_survey_s_status[0] and user_grade_status[0]
+        step_3_status =  user_reco_steps_status[2] and user_test_status[2] and user_survey_s_status[1] and user_grade_status[1]
+        step_4_status =  user_reco_steps_status[3] and user_test_status[3] and user_survey_s_status[2] and user_grade_status[2]
+        step_5_status =  user_reco_steps_status[4] and user_test_status[4] and user_survey_s_status[3] and user_grade_status[3]
+    except:
+        student_profile = None
+        student_profile_exists = False
+        course_name = None
+        have_student = False
+        course_id = None
+        step_1_status = False
+        step_2_status = False
+        step_3_status = False
+        step_4_status = False
+        step_5_status = False
+        user_reco_steps_status = [False, False, False, False, False]
+        user_test_status = [False, False, False, False, False]
+        test_results = [0,0,0,0,0]
+        user_grade_status = [False, False, False, False, False]
+        user_survey_s_status = [False, False, False, False, False]
+        user_survey_accuracy = [0, 0, 0, 0]
+
+    try:
+        tracer = Tracer.objects.filter(user_id=request.user).last()
+    except:
+        tracer = False
 
     return render(request, 'recommender/roadmap.html', {
         'student_profile_exists': student_profile_exists,
@@ -402,6 +503,11 @@ def roadmap(request):
         'reco_4_status': user_reco_steps_status[3],
         'reco_5_status': user_reco_steps_status[4],
 
+        # reco
+        'top_1_recos': top_1_recos,
+        'top_2_recos': top_2_recos,
+        'top_3_recos': top_3_recos, 
+
         # test
         'test_1_status': user_test_status[0],
         'test_2_status': user_test_status[1],
@@ -409,12 +515,24 @@ def roadmap(request):
         'test_4_status': user_test_status[3],
         'test_5_status': user_test_status[4],
 
+        # test result
+        'test_results' : test_results,
+
         # Survey
         'survey_s_1_status': user_survey_s_status[0],
         'survey_s_2_status': user_survey_s_status[1],
         'survey_s_3_status': user_survey_s_status[2],
         'survey_s_4_status': user_survey_s_status[3],
-        'survey_s_5_status': user_survey_s_status[4],
+        # 'survey_s_5_status': user_survey_s_status[4],
+
+        
+        # Accuracy Score
+        'survey_acc_1': user_survey_accuracy[0],
+        'survey_acc_2': user_survey_accuracy[1],
+        'survey_acc_3': user_survey_accuracy[2],
+        'survey_acc_4': user_survey_accuracy[3],
+        #'survey_acc_5': user_survey_accuracy[4],
+    
 
         # Grades
         # 'grade_1_status': user_grade_status[0],
@@ -422,6 +540,9 @@ def roadmap(request):
         'grade_3_status': user_grade_status[1],
         'grade_4_status': user_grade_status[2],
         'grade_5_status': user_grade_status[3],
+
+        # Tracer
+        'tracer' : tracer,
     })
     
 
@@ -635,3 +756,110 @@ def recommendation_course(request, field_id):
 #     selected_job.job_description = mark_safe(selected_job.job_description)
 
 #     return render(request, 'job/job_list.html', {'job_postings': job_postings, 'selected_job': selected_job})
+
+
+def recommendation_roadmap(request):
+    # Roadmap
+    user_reco_steps = [UserRecommendations.objects.filter(user=request.user, current_year=i) for i in range(5)]
+    user_reco_steps_status = [step.exists() for step in user_reco_steps]
+    user_test_status = [QuestionSet.objects.filter(user=request.user, year=i).exists() for i in range(5)]
+
+    # check if it has recommender_survey model survey has user_reco_step_n ID
+    user_survey_s_status = []
+    for step in user_reco_steps:
+        #print(step)
+        try:
+            status = RecommenderSurvey.objects.filter(recommendation_id=step.first().recommendation_id).exists()
+        except AttributeError:
+            status = False
+        #print(status)
+        user_survey_s_status.append(status)
+
+    # get studentprofile
+    have_student = False
+    try:
+        student_profile = StudentProfile.objects.get(user=request.user)
+        student_profile_exists = StudentProfile.objects.filter(user=request.user).exists()
+        print("student_profile_exists",student_profile_exists)
+        
+        # get course
+        course = Course.objects.get(id=student_profile.enrolled_courses_id)
+        course_name = course.course_name
+        course_id = course.id
+        # get course number of years
+        user_grade_status = []
+        for year in range(1,course.number_of_years+1):
+            #first subject from curriculum
+            first_subject = Subject.objects.filter(curriculum__course=course, curriculum__year=year).first()
+            # on studentgrades check if student_profile.id and subject.id exists
+            # if not, return false
+            try:
+                status = StudentGrades.objects.filter(student_id=student_profile.id, subject_id=first_subject.id).exists()
+            except AttributeError:
+                status = False
+            #print("user grade status {}: {}", year, status)
+            user_grade_status.append(status)
+            
+        step_1_status =  user_reco_steps_status[0] and user_test_status[0]
+        step_2_status =  user_reco_steps_status[1] and user_test_status[1] and user_survey_s_status[0] and user_grade_status[0]
+        step_3_status =  user_reco_steps_status[2] and user_test_status[2] and user_survey_s_status[1] and user_grade_status[1]
+        step_4_status =  user_reco_steps_status[3] and user_test_status[3] and user_survey_s_status[2] and user_grade_status[2]
+        step_5_status =  user_reco_steps_status[4] and user_test_status[4] and user_survey_s_status[3] and user_grade_status[3]
+        have_student = True
+    except:
+        student_profile = None
+        student_profile_exists = False
+        course_name = None
+        have_student = False
+        course_id = None
+        step_1_status = False
+        step_2_status = False
+        step_3_status = False
+        step_4_status = False
+        step_5_status = False
+        user_reco_steps_status = [False, False, False, False, False]
+        user_test_status = [False, False, False, False, False]
+        user_grade_status = [False, False, False, False, False]
+        user_survey_s_status = [False, False, False, False, False]
+    return render(request, 'recommender/recommendation_roadmap.html', {
+        
+        'course_name': course_name,
+        'course_id' : course_id,
+        'have_student' : have_student,
+
+        # Roadmap
+        'step_1_status': step_1_status,
+        'step_2_status': step_2_status,
+        'step_3_status': step_3_status,
+        'step_4_status': step_4_status,
+        'step_5_status': step_5_status,
+
+
+        # Roadmap
+        'reco_1_status': user_reco_steps_status[0],
+        'reco_2_status': user_reco_steps_status[1],
+        'reco_3_status': user_reco_steps_status[2],
+        'reco_4_status': user_reco_steps_status[3],
+        'reco_5_status': user_reco_steps_status[4],
+
+        # test
+        'test_1_status': user_test_status[0],
+        'test_2_status': user_test_status[1],
+        'test_3_status': user_test_status[2],
+        'test_4_status': user_test_status[3],
+        'test_5_status': user_test_status[4],
+
+        # Survey
+        'survey_s_1_status': user_survey_s_status[0],
+        'survey_s_2_status': user_survey_s_status[1],
+        'survey_s_3_status': user_survey_s_status[2],
+        'survey_s_4_status': user_survey_s_status[3],
+        'survey_s_5_status': user_survey_s_status[4],
+
+        # Grades
+        # 'grade_1_status': user_grade_status[0],
+        'grade_2_status': user_grade_status[0],
+        'grade_3_status': user_grade_status[1],
+        'grade_4_status': user_grade_status[2],
+        'grade_5_status': user_grade_status[3],
+    })

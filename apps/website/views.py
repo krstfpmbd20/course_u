@@ -98,7 +98,7 @@ def home(request):
     #print("recommended_fields: ", recommended_fields)
     #print("recommended_field_ids: ", recommended_field_ids)
 
-        # Roadmap
+    # Roadmap
     user_reco_steps = [UserRecommendations.objects.filter(user=request.user, current_year=i) for i in range(5)]
     user_reco_steps_status = [step.exists() for step in user_reco_steps]
     user_test_status = [QuestionSet.objects.filter(user=request.user, year=i).exists() for i in range(5)]
@@ -175,7 +175,7 @@ def home(request):
         # 'level_multiplier': level_multiplier
 
         'student_profile_exists': student_profile_exists,
-        "course_name": course_name,
+        'course_name': course_name,
         'course_id' : course_id,
         'have_student' : have_student,
         # Roadmap

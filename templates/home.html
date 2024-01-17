@@ -199,7 +199,11 @@
     </div>
     {% if have_student %}
     <div class="section section-roadmap">
-      <h3>Roadmap Progress</h3>
+      <div class="row">
+        <h3>Roadmap Progress</h3>
+        <a href="{% url 'roadmap' %}" class="btn btn-primary">Roadmap</a>
+      </div>
+      
       <div class="roadmap-step">
         <div class="roadmap-line"></div>
 
