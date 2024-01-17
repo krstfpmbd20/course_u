@@ -1,6 +1,23 @@
 # TODO
 
 # Highest Priority
+
+- [ ]: User Roadmap Page and Report
+- [ ]: 
+
+- [ ]: shift your info year level
+
+- [ ]: recommender survey remove questions 6-7
+- [ ]: recommender survey question 3&!5 will identify if reco is good or not
+- [ ]: on reco_survey add questions does your top1/2/3 reco 
+    - database should contain which recommendation is top1/2/3
+    - database based from survey would define if  reco is good or not
+    - choices are: not influenced, influenced, very influenced
+- [ ]: user_recommendation score should record all scores, which means that this should have its own model, (fields: user_recommendation_id, field_id, field_score)
+- [ ]: 
+
+
+
 Revision Matrix
 - [ ]: on assessment, create new model test_settings,
     - number of questions per field
@@ -8,7 +25,7 @@ Revision Matrix
     - time limit
 - [ ]: fields are labeled if its for CS or IT or both or none
 
-- [ ]: Home page layout design - rework
+- [X]: Home page layout design - rework
 - [ ]: Where to place roadmap view
 
 - [X]: Recommender Result Graphs (Stacked bar grap)
@@ -19,10 +36,10 @@ Revision Matrix
     - [ ]: additional, student course and year should also appear in profile page
     - [ ]: roadmap view should also be seen here. -pending
 
-- [ ]: end year term (admin only)
+- [X]: end year term (admin only)
     - [X]: Add a button on the dashboard student page, that would end the year term
         - this would advance all students year if their year doesnt exceed course
-    - [ ]: only admin can access
+    - [X]: only admin can access
 
 - [X] : add student profile status (enroleed [default], graduated, dropped out)
     - [X]: on dashboard, student page add button on updating status (admin only)
@@ -34,7 +51,9 @@ Revision Matrix
 - [X]: on start test, check if student is valid to take test
 
 ### Database
-- [ ]: user_recommendation score should record all scores, which means that this should have its own model, (fields: user_recommendation_id, field_id, field_score)
+
+
+
 - [ ]: add record for user job application
 - [ ]: Selected Specialization
 - [ ]: survey update
