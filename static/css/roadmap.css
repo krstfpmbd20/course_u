@@ -1,5 +1,7 @@
 
-
+body{
+    background-color: #fcf0e6;
+}
 #report {
     width: 85%;
     max-width: 1500px;
@@ -46,18 +48,38 @@
 
 #report .roadmap-heading h1,
 #report .roadmap-heading h3 {
-    display: flex;
     margin: auto;
-    align-self: center;
+    text-align: center;
+    color: #FF5F41;
 }
-
+#report .student{
+    transition: transform 0.3s ease-in-out;
+}
+#report .student:hover{
+    transform: scale(1.1);
+    background-color: #e7ad99;
+    color:white;
+}
+#report .section{
+    transition: transform 0.3s ease-in-out;
+}
+#report .section:hover{
+    transform: scale(1.1);
+    background-color: #e7ad99;
+    color:white;
+}
+#report .student h2,
+#report .section h2,h3{
+    text-align:center;
+    color: #FF5F41;
+}
 #report .history {
     padding: 20px;
 }
 
 #report .card {
     width: 20%;
-    min-width: 180px;
+    min-width: 150px;
     margin: 5px;
     padding: 10px;
     /* border-radius: 10px;
@@ -69,7 +91,6 @@
     color: green;
     font-weight: 600;
 }
-
 #report .status-red {
     color: red;
     font-weight: 600;
@@ -93,4 +114,27 @@
 #report .icon.accuracy-4,
 #report .icon.accuracy-5 {
     color: green;
+}
+
+.btn {
+        padding: 12px 20px;
+        font-size: 16px;
+       justify-content: center;
+        background-color: #FF5F41; /*#007bff*/
+        color: #fff;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        text-align: left;
+        margin-left: 1300px;
+        margin-top:30px;
+        margin-bottom:100px;
+    }
+    .btn:hover{
+        background-color: white;
+        color: #FF5F41;
+        border: 3px solid #FF5F41;
+    }
+footer{
+    display:none;
 }

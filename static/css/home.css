@@ -703,7 +703,20 @@ footer {
   margin-bottom: 100px;
 }
 
-
+.section-roadmap .btn-primary{
+  padding: 10px 20px;
+  font-weight:600;
+  font-size: 16px;
+ justify-content: center;
+  color:  #FF5F41; 
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-roadmap .btn-primary:hover{
+  color:blue; 
+}
 .roadmap-section {
   display: flex;
   align-items: center;

@@ -7959,3 +7959,88 @@ WARNING 2024-01-14 08:00:29,222 django.request Thread-18 (process_request_thread
 WARNING 2024-01-14 08:00:29,224 django.server Thread-18 (process_request_thread) 15636 basehttp basehttp.py 212 django.server log_message 7964 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
 WARNING 2024-01-14 08:02:10,695 django.request Thread-19 (process_request_thread) 19804 log log.py 241 django.request log_response 7964 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
 WARNING 2024-01-14 08:02:10,697 django.server Thread-19 (process_request_thread) 19804 basehttp basehttp.py 212 django.server log_message 7964 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+WARNING 2024-01-14 08:12:42,107 django.request Thread-21 (process_request_thread) 6388 log log.py 241 django.request log_response 7964 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-14 08:12:42,111 django.server Thread-21 (process_request_thread) 6388 basehttp basehttp.py 212 django.server log_message 7964 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+WARNING 2024-01-15 04:39:04,968 django.request Thread-4 (process_request_thread) 20024 log log.py 241 django.request log_response 18648 Not Found: /favicon.ico
+WARNING 2024-01-15 04:39:04,977 django.server Thread-4 (process_request_thread) 20024 basehttp basehttp.py 212 django.server log_message 18648 "GET /favicon.ico HTTP/1.1" 404 29284
+WARNING 2024-01-15 04:39:35,045 django.request Thread-6 (process_request_thread) 8732 log log.py 241 django.request log_response 18648 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-15 04:39:35,049 django.server Thread-6 (process_request_thread) 8732 basehttp basehttp.py 212 django.server log_message 18648 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-15 04:39:35,123 django.server Thread-6 (process_request_thread) 8732 basehttp basehttp.py 212 django.server log_message 18648 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2024-01-15 04:40:26,262 django.request Thread-2 (process_request_thread) 1088 log log.py 241 django.request log_response 18648 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-15 04:40:26,265 django.server Thread-2 (process_request_thread) 1088 basehttp basehttp.py 212 django.server log_message 18648 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-15 04:40:40,900 django.request Thread-3 (process_request_thread) 19860 log log.py 241 django.request log_response 18648 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-15 04:40:40,903 django.server Thread-3 (process_request_thread) 19860 basehttp basehttp.py 212 django.server log_message 18648 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-15 04:40:43,037 django.request Thread-3 (process_request_thread) 19860 log log.py 241 django.request log_response 18648 Not Found: /test_page/
+WARNING 2024-01-15 04:40:43,039 django.server Thread-3 (process_request_thread) 19860 basehttp basehttp.py 212 django.server log_message 18648 "GET /test_page/ HTTP/1.1" 404 29280
+WARNING 2024-01-15 04:57:30,298 django.request Thread-9 (process_request_thread) 7656 log log.py 241 django.request log_response 18648 Not Found: /favicon.ico
+WARNING 2024-01-15 04:57:30,310 django.server Thread-9 (process_request_thread) 7656 basehttp basehttp.py 212 django.server log_message 18648 "GET /favicon.ico HTTP/1.1" 404 29283
+WARNING 2024-01-15 04:57:40,655 django.request Thread-8 (process_request_thread) 4484 log log.py 241 django.request log_response 18648 Not Found: /question/
+WARNING 2024-01-15 04:57:40,660 django.server Thread-8 (process_request_thread) 4484 basehttp basehttp.py 212 django.server log_message 18648 "GET /question/ HTTP/1.1" 404 29276
+WARNING 2024-01-15 04:57:55,248 django.server Thread-14 (process_request_thread) 10200 basehttp basehttp.py 212 django.server log_message 18648 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+ERROR 2024-01-15 05:15:15,768 django.request Thread-24 (process_request_thread) 17592 log log.py 241 django.request log_response 18648 Internal Server Error: /submit_question/71/
+Traceback (most recent call last):
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Cedrick Estolas\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Cedrick Estolas\new_version\apps\assessment\views.py", line 756, in submit_question
+    current_index = question_ids.index(question_id)
+UnboundLocalError: local variable 'question_ids' referenced before assignment
+ERROR 2024-01-15 05:15:15,860 django.server Thread-24 (process_request_thread) 17592 basehttp basehttp.py 212 django.server log_message 18648 "POST /submit_question/71/ HTTP/1.1" 500 90035
+WARNING 2024-01-15 05:23:32,944 django.request Thread-3 (process_request_thread) 6848 log log.py 241 django.request log_response 11532 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-15 05:23:32,945 django.server Thread-3 (process_request_thread) 6848 basehttp basehttp.py 212 django.server log_message 11532 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+WARNING 2024-01-15 05:23:33,658 django.server Thread-10 (process_request_thread) 17132 basehttp basehttp.py 212 django.server log_message 11532 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2024-01-15 05:23:34,324 django.request Thread-9 (process_request_thread) 7612 log log.py 241 django.request log_response 11532 Not Found: /favicon.ico
+WARNING 2024-01-15 05:23:34,330 django.server Thread-9 (process_request_thread) 7612 basehttp basehttp.py 212 django.server log_message 11532 "GET /favicon.ico HTTP/1.1" 404 29284
+WARNING 2024-01-15 05:23:49,740 django.request Thread-11 (process_request_thread) 2696 log log.py 241 django.request log_response 11532 Not Found: /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg
+WARNING 2024-01-15 05:23:49,742 django.server Thread-11 (process_request_thread) 2696 basehttp basehttp.py 212 django.server log_message 11532 "GET /images/profile_pics/334674473_698970765337977_576906987598343706_n.jpg HTTP/1.1" 404 29640
+WARNING 2024-01-19 06:54:57,714 django.request Thread-1 (process_request_thread) 2088 log log.py 241 django.request log_response 16420 Not Found: /favicon.ico
+WARNING 2024-01-19 06:54:57,722 django.server Thread-1 (process_request_thread) 2088 basehttp basehttp.py 212 django.server log_message 16420 "GET /favicon.ico HTTP/1.1" 404 29284
+WARNING 2024-01-19 06:55:32,905 django.server Thread-3 (process_request_thread) 16228 basehttp basehttp.py 212 django.server log_message 16420 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2024-01-19 06:56:07,565 django.request Thread-1 (process_request_thread) 2088 log log.py 241 django.request log_response 16420 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-19 06:56:07,568 django.server Thread-1 (process_request_thread) 2088 basehttp basehttp.py 212 django.server log_message 16420 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-19 06:56:47,393 django.request Thread-6 (process_request_thread) 13748 log log.py 241 django.request log_response 16420 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-19 06:56:47,397 django.server Thread-6 (process_request_thread) 13748 basehttp basehttp.py 212 django.server log_message 16420 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-19 06:57:28,431 django.request Thread-4 (process_request_thread) 17252 log log.py 241 django.request log_response 16420 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-19 06:57:28,433 django.server Thread-4 (process_request_thread) 17252 basehttp basehttp.py 212 django.server log_message 16420 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-19 07:55:29,509 django.request Thread-7 (process_request_thread) 14068 log log.py 241 django.request log_response 16420 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-19 07:55:29,515 django.server Thread-7 (process_request_thread) 14068 basehttp basehttp.py 212 django.server log_message 16420 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-19 07:55:46,373 django.request Thread-11 (process_request_thread) 5384 log log.py 241 django.request log_response 16420 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-19 07:55:46,376 django.server Thread-11 (process_request_thread) 5384 basehttp basehttp.py 212 django.server log_message 16420 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 12:11:42,729 django.request Thread-6 (process_request_thread) 13184 log log.py 241 django.request log_response 7276 Not Found: /favicon.ico
+WARNING 2024-01-20 12:11:42,732 django.server Thread-6 (process_request_thread) 13184 basehttp basehttp.py 212 django.server log_message 7276 "GET /favicon.ico HTTP/1.1" 404 29284
+WARNING 2024-01-20 12:11:59,420 django.request Thread-9 (process_request_thread) 18252 log log.py 241 django.request log_response 7276 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 12:11:59,422 django.server Thread-9 (process_request_thread) 18252 basehttp basehttp.py 212 django.server log_message 7276 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 12:11:59,460 django.server Thread-9 (process_request_thread) 18252 basehttp basehttp.py 212 django.server log_message 7276 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2024-01-20 12:43:21,946 django.request Thread-10 (process_request_thread) 11940 log log.py 241 django.request log_response 7276 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 12:43:21,950 django.server Thread-10 (process_request_thread) 11940 basehttp basehttp.py 212 django.server log_message 7276 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 12:43:40,755 django.server Thread-15 (process_request_thread) 6792 basehttp basehttp.py 212 django.server log_message 7276 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2024-01-20 12:52:57,148 django.request Thread-21 (process_request_thread) 7512 log log.py 241 django.request log_response 7276 Not Found: /favicon.ico
+WARNING 2024-01-20 12:52:57,149 django.server Thread-21 (process_request_thread) 7512 basehttp basehttp.py 212 django.server log_message 7276 "GET /favicon.ico HTTP/1.1" 404 29284
+WARNING 2024-01-20 12:52:58,069 django.server Thread-22 (process_request_thread) 12692 basehttp basehttp.py 212 django.server log_message 7276 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2024-01-20 12:52:59,190 django.request Thread-20 (process_request_thread) 2096 log log.py 241 django.request log_response 7276 Not Found: /favicon.ico
+WARNING 2024-01-20 12:52:59,197 django.server Thread-20 (process_request_thread) 2096 basehttp basehttp.py 212 django.server log_message 7276 "GET /favicon.ico HTTP/1.1" 404 29284
+WARNING 2024-01-20 14:33:22,668 django.request Thread-32 (process_request_thread) 21228 log log.py 241 django.request log_response 7276 Not Found: /favicon.ico
+WARNING 2024-01-20 14:33:22,670 django.server Thread-32 (process_request_thread) 21228 basehttp basehttp.py 212 django.server log_message 7276 "GET /favicon.ico HTTP/1.1" 404 29284
+WARNING 2024-01-20 14:46:30,090 django.request Thread-37 (process_request_thread) 14480 log log.py 241 django.request log_response 7276 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 14:46:30,093 django.server Thread-37 (process_request_thread) 14480 basehttp basehttp.py 212 django.server log_message 7276 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 14:50:00,385 django.request Thread-8 (process_request_thread) 19272 log log.py 241 django.request log_response 7376 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 14:50:00,388 django.server Thread-8 (process_request_thread) 19272 basehttp basehttp.py 212 django.server log_message 7376 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 14:50:23,837 django.request Thread-8 (process_request_thread) 19272 log log.py 241 django.request log_response 7376 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 14:50:23,853 django.server Thread-8 (process_request_thread) 19272 basehttp basehttp.py 212 django.server log_message 7376 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 14:51:12,939 django.request Thread-6 (process_request_thread) 11548 log log.py 241 django.request log_response 7376 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 14:51:12,947 django.server Thread-6 (process_request_thread) 11548 basehttp basehttp.py 212 django.server log_message 7376 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 14:51:31,005 django.request Thread-5 (process_request_thread) 15944 log log.py 241 django.request log_response 7376 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 14:51:31,006 django.server Thread-5 (process_request_thread) 15944 basehttp basehttp.py 212 django.server log_message 7376 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 14:52:46,863 django.request Thread-6 (process_request_thread) 11548 log log.py 241 django.request log_response 7376 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 14:52:46,865 django.server Thread-6 (process_request_thread) 11548 basehttp basehttp.py 212 django.server log_message 7376 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 14:53:11,750 django.request Thread-5 (process_request_thread) 15944 log log.py 241 django.request log_response 7376 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 14:53:11,753 django.server Thread-5 (process_request_thread) 15944 basehttp basehttp.py 212 django.server log_message 7376 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 14:53:36,853 django.request Thread-6 (process_request_thread) 11548 log log.py 241 django.request log_response 7376 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 14:53:36,854 django.server Thread-6 (process_request_thread) 11548 basehttp basehttp.py 212 django.server log_message 7376 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 14:55:29,770 django.request Thread-5 (process_request_thread) 15944 log log.py 241 django.request log_response 7376 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 14:55:29,772 django.server Thread-5 (process_request_thread) 15944 basehttp basehttp.py 212 django.server log_message 7376 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 14:55:35,326 django.request Thread-9 (process_request_thread) 16516 log log.py 241 django.request log_response 7376 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 14:55:35,328 django.server Thread-9 (process_request_thread) 16516 basehttp basehttp.py 212 django.server log_message 7376 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
+WARNING 2024-01-20 14:57:17,304 django.request Thread-6 (process_request_thread) 11548 log log.py 241 django.request log_response 7376 Not Found: /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg
+WARNING 2024-01-20 14:57:17,306 django.server Thread-6 (process_request_thread) 11548 basehttp basehttp.py 212 django.server log_message 7376 "GET /images/profile_pics/413348257_355527533857962_6745645959607867283_n.jpg HTTP/1.1" 404 29645
